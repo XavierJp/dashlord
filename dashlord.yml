@@ -20,6 +20,8 @@ urls:
     category: api
   - url: https://api.trackdechets.beta.gouv.fr
     category: api
+  - url: https://annuaire-entreprises.data.gouv.fr
+    category: binum
   - url: https://acceslibre.beta.gouv.fr
     category: startup
   - url: https://adock.beta.gouv.fr
