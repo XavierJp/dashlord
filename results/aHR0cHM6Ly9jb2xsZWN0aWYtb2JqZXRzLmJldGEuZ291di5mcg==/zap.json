@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 12:08:59",
+	"@generated": "Wed, 11 May 2022 22:58:16",
 	"site":[ 
 		{
 			"@name": "https://collectif-objets.beta.gouv.fr",
@@ -61,6 +61,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://collectif-objets.beta.gouv.fr/objets/2629",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://collectif-objets.beta.gouv.fr/objets?page=2",
 							"method": "GET",
 							"param": "",
@@ -69,13 +76,6 @@
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr/objets?page=3",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://collectif-objets.beta.gouv.fr/objets?page=668",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -340,6 +340,13 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
+							"uri": "https://collectif-objets.beta.gouv.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "45807799"
+						},
+						{
 							"uri": "https://collectif-objets.beta.gouv.fr/dsfr_1_5_1/dsfr/dsfr.min.css",
 							"method": "GET",
 							"param": "",
@@ -361,13 +368,13 @@
 							"evidence": "23929292"
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>23000091, which evaluates to: 1970-09-24 04:54:51</p>",
+					"otherinfo": "<p>45807799, which evaluates to: 1971-06-15 04:23:19</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "92"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10021",
@@ -487,28 +494,28 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "6w46dcuFp3l6YDhde4lAHTSPf292F7ErJ2Zogu3SKG2XDROF6-06cZajviOHaQD5dNWNnv4ar1SqiHGMmO6ZCw"
+							"evidence": "2Bix9q40mhZE9xgup94rvqVhERBRCZA2aMIVI11rzXcjXIGg0NxST3WJb8AxPzXWvdZv5MhhpqD1HAosxYaX26FFNhQ17RKgKGya8ZabaN1BzXvpaK9tXSXUm2sVnZRjW7RzZeBCYrHDg5ldeFw1EggoF32qr07syzLW"
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2B6ESQ1--RIeweuPu4UAJ6z2C--4qxB3Ubwh4enlHcLg3NY"
+							"evidence": "0iuFDs8bnqWpX8mfDbnTb1lZKPdAQHS4JT7"
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BseKfzMdDzlMH6bivDfF28jSHQwVQfKfDd3gHu3974d6SAVQs6U7junF5D"
+							"evidence": "5398El9MYJH1pgZhRXgEBzeeZeDkPwYQaiY"
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr/comment-ca-marche",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2F5RBnC8AISUR9b0EcFq6l8ilF1PslTrDjN1D8So5S7"
+							"evidence": "jmuifhxLZTdowRbemvTSCjs1ww9JwTNVbEChOot5FNAV7GwnJBLcorzRWpuRmVIdrv1eSsXQWDzHYagMkA2g1g"
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr/dsfr_1_5_1/dsfr/dsfr.min.css",
@@ -536,44 +543,44 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2Buj3gUhZUOOu17nQNxrVBOVCMkgykE7cF2PUpSafyiucqCYGXNhRVerpeDFqEP17WzgbI"
+							"evidence": "2FZAAvAC2966U5JLYE06731LCAFrsgJKylGySeePjUt1bIEAC2Ygqu5eQXiYEK5csPOcwLx4cIp"
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr/objets",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "U1w2jwXGGZhQZp2QSHaCHNkiMmiiqWfQgkAvXtFJ5fiN6XTU"
+							"evidence": "2F9tBemoIDVUYAK2hJLh9PVA7UYq93nmequK"
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr/stats",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "swu66Itp6M9p7kxWz5XBKOI0BwvR4w2qX1RTRgh"
+							"evidence": "2FWP6eGd92hsWv6olbQXrFD6btPL66zE"
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr/users/sign_in",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FTPnjObfORVOiXlHu0jTUHqBXIFVGXM50eL"
+							"evidence": "2FFgDGgBZTV49aGEQdNvVWJ9O3izuxxvplEZWv"
 						},
 						{
 							"uri": "https://collectif-objets.beta.gouv.fr/users/magic_links",
 							"method": "POST",
 							"param": "",
 							"attack": "",
-							"evidence": "ZAIR2jjTvjyvReBjtNvfvvrIbkemXh6vkQ85XGwPYc4"
+							"evidence": "2FpHcOSo9yprCFm3Bzssk798lahUgZMqL52CDDmfCJsmun7ftXJ6QKYI1vuPfv4c47QydngaU2XBvUCqcsy7Pe3VjVkgR7g2DK"
 						}
 					],
 					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x000e:u\u02C5\uFFFDyz`8]{\uFFFD@\\x001d4\uFFFDov\\x0017\uFFFD+'fh\uFFFD\uFFFD\uFFFD(m\uFFFD\r\\x0013\uFFFD\uFFFD\uFFFD:q\uFFFD\uFFFD\uFFFD#\uFFFDi\\x0000\uFFFDt\u054D\uFFFD\uFFFD\\x001a\uFFFDT\uFFFD\uFFFDq\uFFFD\uFFFD\uFFFD\\x000b</p>",
+					"otherinfo": "<p>\uFFFD\\x0018\uFFFD\uFFFD\uFFFD4\uFFFD\\x0016D\uFFFD\\x0018.\uFFFD\uFFFD+\uFFFD\uFFFDa\\x0011\\x0010Q\t\uFFFD6h\uFFFD\\x0015#]k\uFFFDw#\\\uFFFD\uFFFD\uFFFD\uFFFDROu\uFFFDo\uFFFD1?5\u05BD\uFFFDo\uFFFD\uFFFDa\uFFFD\uFFFD\uFFFD\\x001c</p><p>,\u0146\uFFFD\u06E1E6\\x00145\uFFFD\\x0012\uFFFD(l\uFFFD\uFFFDh\uFFFDA\uFFFD{\uFFFDh\uFFFDm]%\u051Bk\\x0015\uFFFD\uFFFDc[\uFFFDse\uFFFDBb\uFFFD\u00C3\uFFFD]x\\5\\x0012\\x0008(\\x0017}\uFFFD\uFFFDN\uFFFD\uFFFD2\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10024",
@@ -606,7 +613,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1805"
+					"sourceid": "1804"
 				},
 				{
 					"pluginid": "10027",
@@ -1008,6 +1015,13 @@
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
 						{
+							"uri": "https://collectif-objets.beta.gouv.fr/objets?page=1",
+							"method": "GET",
+							"param": "page",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://collectif-objets.beta.gouv.fr/users/sign_in?error=no_user_found&success=false&user%5Bemail%5D=foo-bar%40example.com",
 							"method": "GET",
 							"param": "success",
@@ -1029,13 +1043,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://collectif-objets.beta.gouv.fr/users/sign_in?error=no_user_found&success=false&user%5Bemail%5D=foo-bar%40example.com</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [button] tag [aria-expanded] attribute </p><p></p><p>The user input found was:</p><p>success=false</p><p></p><p>The user-controlled value was:</p><p>false</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://collectif-objets.beta.gouv.fr/objets?page=1</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [meta] tag [content] attribute </p><p></p><p>The user input found was:</p><p>page=1</p><p></p><p>The user-controlled value was:</p><p>width=device-width, initial-scale=1, shrink-to-fit=no</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1805"
+					"sourceid": "6090"
 				}
 			]
 		}
