@@ -70,18 +70,18 @@
     "x-xss-protection": "0",
     "accept-ranges": "bytes",
     "cache-control": "public, max-age=0",
-    "last-modified": "Thu, 05 May 2022 18:53:48 GMT",
-    "etag": "W/\"6a6-18095923563\"",
+    "last-modified": "Wed, 11 May 2022 09:16:30 GMT",
+    "etag": "W/\"6a6-180b267d316\"",
     "content-type": "text/html; charset=UTF-8",
     "content-length": "1702",
-    "date": "Sun, 08 May 2022 08:25:53 GMT",
+    "date": "Wed, 11 May 2022 19:28:16 GMT",
     "keep-alive": "timeout=5",
-    "sozu-id": "01G2HCCSKFMC5BTWBCCTQVDKAS"
+    "sozu-id": "01G2T9FSZJVJNRYTPWM9QVM8KX"
   },
   "endpoints": [
     {
       "hostname": "inscription.snu.gouv.fr",
-      "ip": "185.42.117.109",
+      "ip": "46.252.181.104",
       "geoip": {
         "continent": {
           "code": "EU",
@@ -137,7 +137,7 @@
     },
     {
       "hostname": "code.jquery.com",
-      "ip": "69.16.175.42",
+      "ip": "69.16.175.10",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -191,8 +191,20 @@
     },
     {
       "hostname": "plausible.io",
-      "ip": "37.19.206.70",
+      "ip": "212.102.40.114",
       "geoip": {
+        "city": {
+          "geoname_id": 4684888,
+          "names": {
+            "de": "Dallas",
+            "en": "Dallas",
+            "es": "Dallas",
+            "fr": "Dallas",
+            "ja": "ダラス",
+            "pt-BR": "Dallas",
+            "ru": "Даллас"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -222,10 +234,14 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
+          "accuracy_radius": 20,
+          "latitude": 32.7908,
+          "longitude": -96.8336,
+          "metro_code": 623,
           "time_zone": "America/Chicago"
+        },
+        "postal": {
+          "code": "75207"
         },
         "registered_country": {
           "geoname_id": 2635167,
@@ -240,12 +256,26 @@
             "ru": "Британия",
             "zh-CN": "英国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 4736286,
+            "iso_code": "TX",
+            "names": {
+              "en": "Texas",
+              "es": "Texas",
+              "fr": "Texas",
+              "ja": "テキサス州",
+              "ru": "Техас",
+              "zh-CN": "德克萨斯州"
+            }
+          }
+        ]
       }
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "142.251.16.95",
+      "ip": "142.250.68.170",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -384,7 +414,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "172.253.115.94",
+      "ip": "142.250.138.94",
       "geoip": {
         "continent": {
           "code": "NA",
