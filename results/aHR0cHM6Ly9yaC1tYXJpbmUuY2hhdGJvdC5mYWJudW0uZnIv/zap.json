@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 09:43:51",
+	"@generated": "Wed, 11 May 2022 20:38:23",
 	"site":[ 
 		{
 			"@name": "https://rh-marine.chatbot.fabnum.fr",
@@ -26,14 +26,14 @@
 							"evidence": "default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:"
 						},
 						{
-							"uri": "https://rh-marine.chatbot.fabnum.fr/chatbot/",
+							"uri": "https://rh-marine.chatbot.fabnum.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:"
 						},
 						{
-							"uri": "https://rh-marine.chatbot.fabnum.fr/robots.txt",
+							"uri": "https://rh-marine.chatbot.fabnum.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -66,14 +66,14 @@
 							"evidence": "default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:"
 						},
 						{
-							"uri": "https://rh-marine.chatbot.fabnum.fr/chatbot/",
+							"uri": "https://rh-marine.chatbot.fabnum.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:"
 						},
 						{
-							"uri": "https://rh-marine.chatbot.fabnum.fr/robots.txt",
+							"uri": "https://rh-marine.chatbot.fabnum.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -106,14 +106,14 @@
 							"evidence": "default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:"
 						},
 						{
-							"uri": "https://rh-marine.chatbot.fabnum.fr/chatbot/",
+							"uri": "https://rh-marine.chatbot.fabnum.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:"
 						},
 						{
-							"uri": "https://rh-marine.chatbot.fabnum.fr/robots.txt",
+							"uri": "https://rh-marine.chatbot.fabnum.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -378,28 +378,28 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Tue, 10 May 2022 09:43:45 GMT"
+							"evidence": "Fri, 13 May 2022 20:38:16 GMT"
 						},
 						{
 							"uri": "https://rh-marine.chatbot.fabnum.fr/chatbot/polyfills.83321f0c0c58627a0a91.js?1526100521",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Tue, 10 May 2022 09:43:45 GMT"
+							"evidence": "Fri, 13 May 2022 20:38:16 GMT"
 						},
 						{
 							"uri": "https://rh-marine.chatbot.fabnum.fr/chatbot/runtime.734ca5ca4583a14f2d0d.js?1526100521",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Tue, 10 May 2022 09:43:45 GMT"
+							"evidence": "Fri, 13 May 2022 20:38:15 GMT"
 						},
 						{
 							"uri": "https://rh-marine.chatbot.fabnum.fr/chatbot/styles.c96bc7e20db9abdff610.css?1526100521",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Tue, 10 May 2022 09:43:44 GMT"
+							"evidence": "Fri, 13 May 2022 20:38:15 GMT"
 						},
 						{
 							"uri": "https://rh-marine.chatbot.fabnum.fr/robots.txt",

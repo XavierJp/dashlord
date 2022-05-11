@@ -19,9 +19,9 @@
     "host": "https://rh-marine.chatbot.fabnum.fr/",
     "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:36 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:30 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
     "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:36.432498226Z",
+    "timestamp": "2022-05-11T20:44:31.180927886Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
     "matcher-status": true,
     "matched-line": null
@@ -46,316 +46,39 @@
     "host": "https://rh-marine.chatbot.fabnum.fr/",
     "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:35 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:30 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
     "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:37.020389961Z",
+    "timestamp": "2022-05-11T20:44:31.609616445Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
     "matcher-status": true,
     "matched-line": null
   },
   {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
+    "template": "exposures/apis/swagger-api.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposures/apis/swagger-api.yaml",
+    "template-id": "swagger-api",
     "info": {
-      "name": "HTTP Missing Security Headers",
+      "name": "Public Swagger API",
       "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
+        "pdteam",
+        "c-sh0"
       ],
       "tags": [
-        "misconfig",
-        "generic"
+        "exposure",
+        "api",
+        "swagger"
       ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "access-control-allow-methods",
     "type": "http",
     "host": "https://rh-marine.chatbot.fabnum.fr/",
-    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
+    "matched-at": "https://rh-marine.chatbot.fabnum.fr/api/index.html",
+    "request": "GET /api/index.html HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Wed, 11 May 2022 20:44:42 GMT\r\nEtag: W/\"590-7438674ba0\"\r\nLast-Modified: Sat, 26 Oct 1985 08:15:00 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 300\r\nX-Ratelimit-Remaining: 284\r\nX-Ratelimit-Reset: 1652302718\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Swagger UI</title>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"./swagger-ui.css\" >\n    <link rel=\"icon\" type=\"image/png\" href=\"./favicon-32x32.png\" sizes=\"32x32\" />\n    <link rel=\"icon\" type=\"image/png\" href=\"./favicon-16x16.png\" sizes=\"16x16\" />\n    <style>\n      html\n      {\n        box-sizing: border-box;\n        overflow: -moz-scrollbars-vertical;\n        overflow-y: scroll;\n      }\n\n      *,\n      *:before,\n      *:after\n      {\n        box-sizing: inherit;\n      }\n\n      body\n      {\n        margin:0;\n        background: #fafafa;\n      }\n    </style>\n  </head>\n\n  <body>\n    <div id=\"swagger-ui\"></div>\n\n    <script src=\"./swagger-ui-bundle.js\"> </script>\n    <script src=\"./swagger-ui-standalone-preset.js\"> </script>\n    <script>\n    window.onload = function() {\n      // Begin Swagger UI call region\n      const ui = SwaggerUIBundle({\n        url: \"https://petstore.swagger.io/v2/swagger.json\",\n        dom_id: '#swagger-ui',\n        deepLinking: true,\n        presets: [\n          SwaggerUIBundle.presets.apis,\n          SwaggerUIStandalonePreset\n        ],\n        plugins: [\n          SwaggerUIBundle.plugins.DownloadUrl\n        ],\n        layout: \"StandaloneLayout\"\n      })\n      // End Swagger UI call region\n\n      window.ui = ui\n    }\n  </script>\n  </body>\n</html>\n",
     "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.617879002Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "permission-policy",
-    "type": "http",
-    "host": "https://rh-marine.chatbot.fabnum.fr/",
-    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
-    "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.617993004Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-permitted-cross-domain-policies",
-    "type": "http",
-    "host": "https://rh-marine.chatbot.fabnum.fr/",
-    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
-    "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.618040104Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-embedder-policy",
-    "type": "http",
-    "host": "https://rh-marine.chatbot.fabnum.fr/",
-    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
-    "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.618076305Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-opener-policy",
-    "type": "http",
-    "host": "https://rh-marine.chatbot.fabnum.fr/",
-    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
-    "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.618169006Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-resource-policy",
-    "type": "http",
-    "host": "https://rh-marine.chatbot.fabnum.fr/",
-    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
-    "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.618234407Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-origin",
-    "type": "http",
-    "host": "https://rh-marine.chatbot.fabnum.fr/",
-    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
-    "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.618268907Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "referrer-policy",
-    "type": "http",
-    "host": "https://rh-marine.chatbot.fabnum.fr/",
-    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
-    "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.618306008Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "clear-site-data",
-    "type": "http",
-    "host": "https://rh-marine.chatbot.fabnum.fr/",
-    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
-    "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.618340408Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
+    "timestamp": "2022-05-11T20:44:42.568861257Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/api/index.html'",
     "matcher-status": true,
     "matched-line": null
   },
@@ -386,43 +109,9 @@
     "host": "https://rh-marine.chatbot.fabnum.fr/",
     "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
     "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.621497749Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-expose-headers",
-    "type": "http",
-    "host": "https://rh-marine.chatbot.fabnum.fr/",
-    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
-    "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.621695552Z",
+    "timestamp": "2022-05-11T20:44:59.736587125Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
     "matcher-status": true,
     "matched-line": null
@@ -454,179 +143,9 @@
     "host": "https://rh-marine.chatbot.fabnum.fr/",
     "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
     "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.621742352Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-permitted-cross-domain-policies",
-    "type": "http",
-    "host": "https://rh-marine.chatbot.fabnum.fr/",
-    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
-    "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.622469262Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "clear-site-data",
-    "type": "http",
-    "host": "https://rh-marine.chatbot.fabnum.fr/",
-    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
-    "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.622496362Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-opener-policy",
-    "type": "http",
-    "host": "https://rh-marine.chatbot.fabnum.fr/",
-    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
-    "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.622518963Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-origin",
-    "type": "http",
-    "host": "https://rh-marine.chatbot.fabnum.fr/",
-    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
-    "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.622536563Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-methods",
-    "type": "http",
-    "host": "https://rh-marine.chatbot.fabnum.fr/",
-    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
-    "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.622553763Z",
+    "timestamp": "2022-05-11T20:44:59.736709626Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
     "matcher-status": true,
     "matched-line": null
@@ -658,9 +177,77 @@
     "host": "https://rh-marine.chatbot.fabnum.fr/",
     "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
     "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.622575263Z",
+    "timestamp": "2022-05-11T20:44:59.736747626Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-permitted-cross-domain-policies",
+    "type": "http",
+    "host": "https://rh-marine.chatbot.fabnum.fr/",
+    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
+    "ip": "178.33.230.78",
+    "timestamp": "2022-05-11T20:44:59.736781526Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "clear-site-data",
+    "type": "http",
+    "host": "https://rh-marine.chatbot.fabnum.fr/",
+    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
+    "ip": "178.33.230.78",
+    "timestamp": "2022-05-11T20:44:59.736813726Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
     "matcher-status": true,
     "matched-line": null
@@ -692,9 +279,43 @@
     "host": "https://rh-marine.chatbot.fabnum.fr/",
     "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
     "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.622591264Z",
+    "timestamp": "2022-05-11T20:44:59.736842127Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-opener-policy",
+    "type": "http",
+    "host": "https://rh-marine.chatbot.fabnum.fr/",
+    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
+    "ip": "178.33.230.78",
+    "timestamp": "2022-05-11T20:44:59.736870727Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
     "matcher-status": true,
     "matched-line": null
@@ -726,9 +347,9 @@
     "host": "https://rh-marine.chatbot.fabnum.fr/",
     "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
     "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.622613664Z",
+    "timestamp": "2022-05-11T20:44:59.736904927Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
     "matcher-status": true,
     "matched-line": null
@@ -755,82 +376,14 @@
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "access-control-allow-credentials",
+    "matcher-name": "access-control-allow-methods",
     "type": "http",
     "host": "https://rh-marine.chatbot.fabnum.fr/",
     "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
     "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.622629364Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-expose-headers",
-    "type": "http",
-    "host": "https://rh-marine.chatbot.fabnum.fr/",
-    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
-    "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.622650464Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-max-age",
-    "type": "http",
-    "host": "https://rh-marine.chatbot.fabnum.fr/",
-    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
-    "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.622667565Z",
+    "timestamp": "2022-05-11T20:44:59.736938127Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
     "matcher-status": true,
     "matched-line": null
@@ -862,10 +415,512 @@
     "host": "https://rh-marine.chatbot.fabnum.fr/",
     "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:38 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
     "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:38.622687265Z",
+    "timestamp": "2022-05-11T20:44:59.736971528Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-origin",
+    "type": "http",
+    "host": "https://rh-marine.chatbot.fabnum.fr/",
+    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
+    "ip": "178.33.230.78",
+    "timestamp": "2022-05-11T20:44:59.738280637Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://rh-marine.chatbot.fabnum.fr/",
+    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nEtag: W/\"615c6e8d-9a1\"\r\nLast-Modified: Tue, 05 Oct 2021 15:26:05 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Webchat</title>\n  <base href=\"/chatbot/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/icons/icon.png\">\n  <link rel=\"manifest\" href=\"manifest.webmanifest\">\n  <meta name=\"theme-color\" content=\"#6e91f0\">\n\n  <meta http-equiv=\"cache-control\" content=\"no-cache, must-revalidate, post-check=0, pre-check=0\">\n  <meta http-equiv=\"expires\" content=\"0\">\n  <meta http-equiv=\"pragma\" content=\"no-cache\">\n\n  <link rel=\"apple-touch-icon\" href=\"assets/icons/icon.png\">\n<style>@font-face{font-family:Roboto;src:url(Roboto-Regular.0cf65693114d8617e1e2.woff2) format(\"woff2\"),url(Roboto-Regular.19030d54abbf3435f76e.woff) format(\"woff\");font-weight:400;font-style:normal;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Italic.7ef5f6a09af888178f2d.woff2) format(\"woff2\"),url(Roboto-Italic.c25fbd68d25ff2cf8f85.woff) format(\"woff\");font-weight:400;font-style:italic;font-display:swap;}@font-face{font-family:Roboto;src:url(Roboto-Bold.2b0452b11a04f73513df.woff2) format(\"woff2\"),url(Roboto-Bold.46b382069d6de7c5b0f9.woff) format(\"woff\");font-weight:700;font-style:normal;font-display:swap;}body,html{height:100%;margin:0;}*{box-sizing:border-box;position:relative;font-family:Roboto,Open Sans,Helvetica Neue,sans-serif;}</style><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\" media=\"print\" onload=\"this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"styles.c96bc7e20db9abdff610.css?1526100521\"></noscript></head>\n<body>\n  <div id=\"old-browsers\" style=\"display: none;\n  background-color: #6e91f0;\n  color: white;\n  width: 100vw;\n  height: 100vh;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 1.5em;\n  font-weight: 700;\n  padding: 10px;\n  box-sizing: border-box;\n  text-align: center;\">\n    <div>La version de votre navigateur ne permet pas de faire fonctionner le chatbot correctement.</div>\n    <div style=\"margin-top: 20px;\">Merci d'installer les dernières versions de Firefox, Chrome ou Edge.</div>\n  </div>\n  <app-root></app-root>\n<script src=\"runtime.734ca5ca4583a14f2d0d.js?1526100521\" defer></script><script src=\"polyfills-es5.03d9c12ecdcf79382a18.js?1526100521\" nomodule defer></script><script src=\"polyfills.83321f0c0c58627a0a91.js?1526100521\" defer></script><script src=\"main.03de071a71002def71b3.js?1526100521\" defer></script>\n\n</body></html>",
+    "ip": "178.33.230.78",
+    "timestamp": "2022-05-11T20:44:59.738384638Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-max-age",
+    "type": "http",
+    "host": "https://rh-marine.chatbot.fabnum.fr/",
+    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
+    "ip": "178.33.230.78",
+    "timestamp": "2022-05-11T20:44:59.739114743Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "permission-policy",
+    "type": "http",
+    "host": "https://rh-marine.chatbot.fabnum.fr/",
+    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
+    "ip": "178.33.230.78",
+    "timestamp": "2022-05-11T20:44:59.739184043Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "referrer-policy",
+    "type": "http",
+    "host": "https://rh-marine.chatbot.fabnum.fr/",
+    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
+    "ip": "178.33.230.78",
+    "timestamp": "2022-05-11T20:44:59.739221843Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-embedder-policy",
+    "type": "http",
+    "host": "https://rh-marine.chatbot.fabnum.fr/",
+    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
+    "ip": "178.33.230.78",
+    "timestamp": "2022-05-11T20:44:59.739281344Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://rh-marine.chatbot.fabnum.fr/",
+    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
+    "ip": "178.33.230.78",
+    "timestamp": "2022-05-11T20:44:59.739317044Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-credentials",
+    "type": "http",
+    "host": "https://rh-marine.chatbot.fabnum.fr/",
+    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
+    "ip": "178.33.230.78",
+    "timestamp": "2022-05-11T20:44:59.739405445Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-methods",
+    "type": "http",
+    "host": "https://rh-marine.chatbot.fabnum.fr/",
+    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
+    "ip": "178.33.230.78",
+    "timestamp": "2022-05-11T20:44:59.739437245Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-permitted-cross-domain-policies",
+    "type": "http",
+    "host": "https://rh-marine.chatbot.fabnum.fr/",
+    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
+    "ip": "178.33.230.78",
+    "timestamp": "2022-05-11T20:44:59.739459345Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "clear-site-data",
+    "type": "http",
+    "host": "https://rh-marine.chatbot.fabnum.fr/",
+    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
+    "ip": "178.33.230.78",
+    "timestamp": "2022-05-11T20:44:59.739475545Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-opener-policy",
+    "type": "http",
+    "host": "https://rh-marine.chatbot.fabnum.fr/",
+    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
+    "ip": "178.33.230.78",
+    "timestamp": "2022-05-11T20:44:59.739504645Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-origin",
+    "type": "http",
+    "host": "https://rh-marine.chatbot.fabnum.fr/",
+    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
+    "ip": "178.33.230.78",
+    "timestamp": "2022-05-11T20:44:59.739521146Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://rh-marine.chatbot.fabnum.fr/",
+    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:44:59 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n",
+    "ip": "178.33.230.78",
+    "timestamp": "2022-05-11T20:44:59.739541546Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://rh-marine.chatbot.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/chatbot/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/tls-version.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
+    "template-id": "tls-version",
+    "info": {
+      "name": "TLS Version",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://rh-marine.chatbot.fabnum.fr/",
+    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
+    "extracted-results": [
+      "TLS13"
+    ],
+    "ip": "178.33.230.78",
+    "timestamp": "2022-05-11T20:45:18.940441083Z",
     "matcher-status": true,
     "matched-line": null
   },
@@ -900,66 +955,11 @@
     "type": "http",
     "host": "https://rh-marine.chatbot.fabnum.fr/",
     "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
-    "request": "POST / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:50:40 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+    "request": "POST / HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:45:40 GMT\r\nLocation: https://rh-marine.chatbot.fabnum.fr/chatbot/\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
     "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:40.217450065Z",
+    "timestamp": "2022-05-11T20:45:40.623500462Z",
     "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: rh-marine.chatbot.fabnum.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "ssl/tls-version.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
-    "template-id": "tls-version",
-    "info": {
-      "name": "TLS Version",
-      "author": [
-        "pdteam"
-      ],
-      "tags": [
-        "ssl"
-      ],
-      "reference": null,
-      "severity": "info"
-    },
-    "type": "ssl",
-    "host": "https://rh-marine.chatbot.fabnum.fr/",
-    "matched-at": "https://rh-marine.chatbot.fabnum.fr/",
-    "extracted-results": [
-      "TLS13"
-    ],
-    "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:46.249478267Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "exposures/apis/swagger-api.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposures/apis/swagger-api.yaml",
-    "template-id": "swagger-api",
-    "info": {
-      "name": "Public Swagger API",
-      "author": [
-        "pdteam",
-        "c-sh0"
-      ],
-      "tags": [
-        "exposure",
-        "api",
-        "swagger"
-      ],
-      "reference": null,
-      "severity": "info"
-    },
-    "type": "http",
-    "host": "https://rh-marine.chatbot.fabnum.fr/",
-    "matched-at": "https://rh-marine.chatbot.fabnum.fr/api/index.html",
-    "request": "GET /api/index.html HTTP/1.1\r\nHost: rh-marine.chatbot.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nCache-Control: max-age=86400\r\nContent-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 08 May 2022 09:50:58 GMT\r\nEtag: W/\"590-7438674ba0\"\r\nLast-Modified: Sat, 26 Oct 1985 08:15:00 GMT\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 300\r\nX-Ratelimit-Remaining: 272\r\nX-Ratelimit-Reset: 1652003918\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Swagger UI</title>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"./swagger-ui.css\" >\n    <link rel=\"icon\" type=\"image/png\" href=\"./favicon-32x32.png\" sizes=\"32x32\" />\n    <link rel=\"icon\" type=\"image/png\" href=\"./favicon-16x16.png\" sizes=\"16x16\" />\n    <style>\n      html\n      {\n        box-sizing: border-box;\n        overflow: -moz-scrollbars-vertical;\n        overflow-y: scroll;\n      }\n\n      *,\n      *:before,\n      *:after\n      {\n        box-sizing: inherit;\n      }\n\n      body\n      {\n        margin:0;\n        background: #fafafa;\n      }\n    </style>\n  </head>\n\n  <body>\n    <div id=\"swagger-ui\"></div>\n\n    <script src=\"./swagger-ui-bundle.js\"> </script>\n    <script src=\"./swagger-ui-standalone-preset.js\"> </script>\n    <script>\n    window.onload = function() {\n      // Begin Swagger UI call region\n      const ui = SwaggerUIBundle({\n        url: \"https://petstore.swagger.io/v2/swagger.json\",\n        dom_id: '#swagger-ui',\n        deepLinking: true,\n        presets: [\n          SwaggerUIBundle.presets.apis,\n          SwaggerUIStandalonePreset\n        ],\n        plugins: [\n          SwaggerUIBundle.plugins.DownloadUrl\n        ],\n        layout: \"StandaloneLayout\"\n      })\n      // End Swagger UI call region\n\n      window.ui = ui\n    }\n  </script>\n  </body>\n</html>\n",
-    "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:50:58.286016943Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://rh-marine.chatbot.fabnum.fr/api/index.html'",
     "matcher-status": true,
     "matched-line": null
   },
@@ -985,7 +985,7 @@
       "rh-marine.chatbot.fabnum.fr"
     ],
     "ip": "178.33.230.78",
-    "timestamp": "2022-05-08T09:51:22.718325218Z",
+    "timestamp": "2022-05-11T20:45:57.028056719Z",
     "matcher-status": true,
     "matched-line": null
   }
