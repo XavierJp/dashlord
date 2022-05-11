@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 04:28:03",
+	"@generated": "Wed, 11 May 2022 15:26:43",
 	"site":[ 
 		{
 			"@name": "https://eva.beta.gouv.fr",
@@ -19,7 +19,7 @@
 					"desc": "<p>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</p>",
 					"instances":[ 
 						{
-							"uri": "https://eva.beta.gouv.fr/jeu/js/index_9c72fbc4f3a4294149fa.js",
+							"uri": "https://eva.beta.gouv.fr/jeu/js/index_f098e52b44a0a339eca7.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -614,7 +614,7 @@
 					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
 					"instances":[ 
 						{
-							"uri": "https://eva.beta.gouv.fr/jeu/js/index_9c72fbc4f3a4294149fa.js",
+							"uri": "https://eva.beta.gouv.fr/jeu/js/index_f098e52b44a0a339eca7.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -974,45 +974,38 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1651984015"
+							"evidence": "1652282728"
 						},
 						{
 							"uri": "https://eva.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1651984017"
+							"evidence": "1652282729"
 						},
 						{
-							"uri": "https://eva.beta.gouv.fr/qui-sommes-nous/",
+							"uri": "https://eva.beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "1651096928"
 						},
 						{
-							"uri": "https://eva.beta.gouv.fr/qui-sommes-nous/",
+							"uri": "https://eva.beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "1651097368"
 						},
 						{
-							"uri": "https://eva.beta.gouv.fr/qui-sommes-nous/",
+							"uri": "https://eva.beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1651122068"
-						},
-						{
-							"uri": "https://eva.beta.gouv.fr/qui-sommes-nous/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1651984018"
+							"evidence": "1652282731"
 						}
 					],
-					"count": "8",
+					"count": "7",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1651096928, which evaluates to: 2022-04-27 22:02:08</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -1180,14 +1173,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "JzfVq5zH5Elc168N42bLmqmp8LU1JnLDZfsHaZzLYyc0W6l1caIklM2T"
+							"evidence": "2FIosXvLLyDfeSm3tK9Tfb3TRtgXFw"
 						},
 						{
 							"uri": "https://eva.beta.gouv.fr/pro/structures",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2Be4446gCKcJuUoKimL4DcuPmKU9U2M"
+							"evidence": "2BRz03pYjn7wOPbappMClc8WzRDEbPxgUFye6w5HqqI6VGysfOGHZ16EO0fewaQe65NFlGuBlTsFXJn9oUTNDMGG3uZBYF"
 						},
 						{
 							"uri": "https://eva.beta.gouv.fr/qui-sommes-nous/",
@@ -1313,7 +1306,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "313"
+					"sourceid": "315"
 				},
 				{
 					"pluginid": "10019",
@@ -1481,7 +1474,7 @@
 							"evidence": "<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://eva.beta.gouv.fr/#organization\",\"name\":\"eva\",\"url\":\"https://eva.beta.gouv.fr/\",\"sameAs\":[\"https://www.linkedin.com/company/eva-betagouv/\",\"https://www.youtube.com/watch?v=HQNj5XyR4Zo\"],\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https://eva.beta.gouv.fr/#/schema/logo/image/\",\"url\":\"https://eva.beta.gouv.fr/wp-content/uploads/2021/05/cropped-eva-blue-logo-e1620814424919.png\",\"contentUrl\":\"https://eva.beta.gouv.fr/wp-content/uploads/2021/05/cropped-eva-blue-logo-e1620814424919.png\",\"width\":150,\"height\":128,\"caption\":\"eva\"},\"image\":{\"@id\":\"https://eva.beta.gouv.fr/#/schema/logo/image/\"}},{\"@type\":\"WebSite\",\"@id\":\"https://eva.beta.gouv.fr/#website\",\"url\":\"https://eva.beta.gouv.fr/\",\"name\":\"\",\"description\":\"Evaluer les comp\u00E9tences transversales\",\"publisher\":{\"@id\":\"https://eva.beta.gouv.fr/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://eva.beta.gouv.fr/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"WebPage\",\"@id\":\"https://eva.beta.gouv.fr/elementor-page-datterrissage-395/#webpage\",\"url\":\"https://eva.beta.gouv.fr/elementor-page-datterrissage-395/\",\"name\":\"Elementor Page d\u2019atterrissage #395 -\",\"isPartOf\":{\"@id\":\"https://eva.beta.gouv.fr/#website\"},\"datePublished\":\"2021-05-17T19:56:00+00:00\",\"dateModified\":\"2021-05-17T19:56:32+00:00\",\"breadcrumb\":{\"@id\":\"https://eva.beta.gouv.fr/elementor-page-datterrissage-395/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://eva.beta.gouv.fr/elementor-page-datterrissage-395/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://eva.beta.gouv.fr/elementor-page-datterrissage-395/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://eva.beta.gouv.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Elementor Page d\u2019atterrissage #395\"}]}]}</script>"
 						},
 						{
-							"uri": "https://eva.beta.gouv.fr/jeu/js/index_9c72fbc4f3a4294149fa.js",
+							"uri": "https://eva.beta.gouv.fr/jeu/js/index_f098e52b44a0a339eca7.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1516,20 +1509,6 @@
 							"evidence": "<a id='\"+S+\"'></a>"
 						},
 						{
-							"uri": "https://eva.beta.gouv.fr/wp-json/wp/v2/categories/6",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script type=\\\"application\\/ld+json\\\" class=\\\"yoast-schema-graph\\\">"
-						},
-						{
-							"uri": "https://eva.beta.gouv.fr/wp-json/wp/v2/categories/7",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script type=\\\"application\\/ld+json\\\" class=\\\"yoast-schema-graph\\\">"
-						},
-						{
 							"uri": "https://eva.beta.gouv.fr/wp-json/wp/v2/pages/1235",
 							"method": "GET",
 							"param": "",
@@ -1544,13 +1523,13 @@
 							"evidence": "<script type=\\\"application\\/ld+json\\\" class=\\\"yoast-schema-graph\\\">"
 						}
 					],
-					"count": "10",
+					"count": "8",
 					"solution": "<p>This is an informational alert and so no changes are required.</p>",
 					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "660"
+					"sourceid": "737"
 				},
 				{
 					"pluginid": "10049",
