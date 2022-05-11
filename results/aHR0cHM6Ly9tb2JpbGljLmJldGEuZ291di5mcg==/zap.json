@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 05:33:43",
+	"@generated": "Wed, 11 May 2022 16:20:23",
 	"site":[ 
 		{
 			"@name": "https://mobilic.beta.gouv.fr",
@@ -140,7 +140,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "39"
+					"sourceid": "41"
 				},
 				{
 					"pluginid": "10063",
@@ -181,21 +181,21 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://mobilic.beta.gouv.fr/static/js/main.6a305bce.chunk.js",
+							"uri": "https://mobilic.beta.gouv.fr/static/js/main.e81bccd6.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://mobilic.beta.gouv.fr/static/js/runtime-main.6a0e466f.js",
+							"uri": "https://mobilic.beta.gouv.fr/static/js/runtime-main.6364d075.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.ae6d83ff.chunk.js",
+							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.abe49d25.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -234,7 +234,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "39"
+					"sourceid": "41"
 				},
 				{
 					"pluginid": "10096",
@@ -254,6 +254,13 @@
 							"evidence": "00390625"
 						},
 						{
+							"uri": "https://mobilic.beta.gouv.fr/manifest.json",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "20402367"
+						},
+						{
 							"uri": "https://mobilic.beta.gouv.fr/safari-mask-icon.svg",
 							"method": "GET",
 							"param": "",
@@ -261,55 +268,97 @@
 							"evidence": "00390625"
 						},
 						{
-							"uri": "https://mobilic.beta.gouv.fr/static/js/runtime-main.6a0e466f.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "77218322"
-						},
-						{
-							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.ae6d83ff.chunk.js",
+							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.abe49d25.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "0123456789"
 						},
 						{
-							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.ae6d83ff.chunk.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1073741821"
-						},
-						{
-							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.ae6d83ff.chunk.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1073741822"
-						},
-						{
-							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.ae6d83ff.chunk.js",
+							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.abe49d25.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "1073741823"
 						},
 						{
-							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.ae6d83ff.chunk.js",
+							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.abe49d25.chunk.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1073741824"
+						},
+						{
+							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.abe49d25.chunk.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1073741825"
+						},
+						{
+							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.abe49d25.chunk.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "134217727"
+						},
+						{
+							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.abe49d25.chunk.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "134217728"
+						},
+						{
+							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.abe49d25.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "2147483647"
+						},
+						{
+							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.abe49d25.chunk.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "268435456"
+						},
+						{
+							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.abe49d25.chunk.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "33554432"
+						},
+						{
+							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.abe49d25.chunk.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "62914560"
+						},
+						{
+							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.abe49d25.chunk.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "67108864"
+						},
+						{
+							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.abe49d25.chunk.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "805306368"
 						}
 					],
-					"count": "8",
+					"count": "15",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>00390625, which evaluates to: 1970-01-05 12:30:25</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "34"
+					"sourceid": "32"
 				},
 				{
 					"pluginid": "10094",
@@ -322,7 +371,7 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"uri": "https://mobilic.beta.gouv.fr/static/js/main.6a305bce.chunk.js",
+							"uri": "https://mobilic.beta.gouv.fr/static/js/main.e81bccd6.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -348,14 +397,14 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
 					"instances":[ 
 						{
-							"uri": "https://mobilic.beta.gouv.fr/static/js/main.6a305bce.chunk.js",
+							"uri": "https://mobilic.beta.gouv.fr/static/js/main.e81bccd6.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "query"
 						},
 						{
-							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.ae6d83ff.chunk.js",
+							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.abe49d25.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -364,7 +413,7 @@
 					],
 					"count": "2",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"(this.webpackJsonpmobilic=this.webpackJsonpmobilic||[]).push([[1],{102:function(e,t,n){\"use strict\";n.d(t,\"a\",(function(){return\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"(this.webpackJsonpmobilic=this.webpackJsonpmobilic||[]).push([[1],{1e3:function(e,t,n){\"use strict\";n.d(t,\"a\",(function(){return\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
@@ -385,31 +434,31 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"/static/js/runtime-main.6a0e466f.js\"></script>"
+							"evidence": "<script src=\"/static/js/runtime-main.6364d075.js\"></script>"
 						},
 						{
 							"uri": "https://mobilic.beta.gouv.fr/fc-callback",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"/static/js/runtime-main.6a0e466f.js\"></script>"
+							"evidence": "<script src=\"/static/js/runtime-main.6364d075.js\"></script>"
 						},
 						{
 							"uri": "https://mobilic.beta.gouv.fr/oauth/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"/static/js/runtime-main.6a0e466f.js\"></script>"
+							"evidence": "<script src=\"/static/js/runtime-main.6364d075.js\"></script>"
 						},
 						{
 							"uri": "https://mobilic.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"/static/js/runtime-main.6a0e466f.js\"></script>"
+							"evidence": "<script src=\"/static/js/runtime-main.6364d075.js\"></script>"
 						},
 						{
-							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.ae6d83ff.chunk.js",
+							"uri": "https://mobilic.beta.gouv.fr/static/js/vendors~main~playground.abe49d25.chunk.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -509,7 +558,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "39"
+					"sourceid": "41"
 				},
 				{
 					"pluginid": "10049",
