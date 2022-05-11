@@ -213,7 +213,7 @@
               "ip"           : "backend.passculture.beta.gouv.fr/34.76.99.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -353,7 +353,7 @@
               "ip"           : "backend.passculture.beta.gouv.fr/34.76.99.202",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "145 >= 60 days"
+              "finding"      : "142 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -514,7 +514,7 @@
               "ip"           : "backend.passculture.beta.gouv.fr/34.76.99.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1651990525"
+              "finding"      : "1652289103"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1098,6 +1098,6 @@
               "ip"           : "backend.passculture.beta.gouv.fr/34.76.99.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "91"
+              "finding"      : "90"
           }
 ]
