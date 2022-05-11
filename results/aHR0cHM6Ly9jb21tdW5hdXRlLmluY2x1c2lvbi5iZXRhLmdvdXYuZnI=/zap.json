@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 03:41:28",
+	"@generated": "Wed, 11 May 2022 14:36:24",
 	"site":[ 
 		{
 			"@name": "https://communaute.inclusion.beta.gouv.fr",
@@ -8,32 +8,6 @@
 			"@port": "443",
 			"@ssl": "true",
 			"alerts": [ 
-				{
-					"pluginid": "10062",
-					"alertRef": "10062",
-					"alert": "PII Disclosure",
-					"name": "PII Disclosure",
-					"riskcode": "3",
-					"confidence": "3",
-					"riskdesc": "High (High)",
-					"desc": "<p>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</p>",
-					"instances":[ 
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "500408258167"
-						}
-					],
-					"count": "1",
-					"solution": "",
-					"otherinfo": "<p>Credit Card Type detected: Maestro</p><p>Bank Identification Number: 500408</p><p>Brand: MAESTRO</p><p>Category: </p><p>Issuer: </p>",
-					"reference": "",
-					"cweid": "359",
-					"wascid": "13",
-					"sourceid": "1192"
-				},
 				{
 					"pluginid": "10202",
 					"alertRef": "10202",
@@ -80,42 +54,21 @@
 							"evidence": "<form id=\"bb-block-member\" action=\"javascript:void(0);\">"
 						},
 						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/",
+							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fcommunaute.inclusion.beta.gouv.fr%2Fwp-admin%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form role=\"search\" method=\"get\" class=\"search-form\" action=\"https://communaute.inclusion.beta.gouv.fr/\">"
+							"evidence": "<form name=\"loginform\" id=\"loginform\" action=\"https://communaute.inclusion.beta.gouv.fr/wp-login.php\" method=\"post\">"
 						},
 						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/",
+							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fcommunaute.inclusion.beta.gouv.fr%2Fwp-admin%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form role=\"search\" method=\"get\" class=\"search-form\" action=\"https://communaute.inclusion.beta.gouv.fr/\">"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form action=\"\" method=\"get\" class=\"bp-dir-search-form\" id=\"dir-activity-search-form\" autocomplete=\"off\">"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form id=\"bb-report-content\" action=\"javascript:void(0);\">"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form id=\"bb-block-member\" action=\"javascript:void(0);\">"
+							"evidence": "<form id=\"language-switcher\" action=\"\" method=\"get\">"
 						}
 					],
-					"count": "10",
+					"count": "7",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
@@ -162,13 +115,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenement/tour-de-france-de-la-clause-sociale-en-bourgogne-franche-comte/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/",
 							"method": "GET",
 							"param": "",
@@ -205,6 +151,13 @@
 						},
 						{
 							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fcommunaute.inclusion.beta.gouv.fr%2Fwp-admin%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -258,27 +211,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenement/les-bons-clics-classe-virtuelle-concevoir-des-activites-pedagogiques-de-a-a-z/tout/",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenement/les-emplois-de-linclusion-webinaire-questions-reponses-prescripteurs-niveau-2/",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenement/tour-de-france-de-la-clause-sociale-en-bourgogne-franche-comte/",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/",
 							"method": "GET",
 							"param": "X-Frame-Options",
@@ -307,7 +239,7 @@
 							"evidence": ""
 						}
 					],
-					"count": "11",
+					"count": "8",
 					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
@@ -401,60 +333,20 @@
 							"evidence": "Set-Cookie: wordpress_test_cookie"
 						},
 						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php?action=lostpassword",
-							"method": "GET",
-							"param": "wordpress_test_cookie",
-							"attack": "",
-							"evidence": "Set-Cookie: wordpress_test_cookie"
-						},
-						{
 							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fcommunaute.inclusion.beta.gouv.fr%2Fwp-admin%2F",
 							"method": "GET",
 							"param": "wordpress_test_cookie",
 							"attack": "",
 							"evidence": "Set-Cookie: wordpress_test_cookie"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/membre/",
-							"method": "POST",
-							"param": "bp_ps_request",
-							"attack": "",
-							"evidence": "Set-Cookie: bp_ps_request"
 						}
 					],
-					"count": "4",
+					"count": "2",
 					"solution": "<p>Ensure that the HttpOnly flag is set for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "266"
-				},
-				{
-					"pluginid": "10011",
-					"alertRef": "10011",
-					"alert": "Cookie Without Secure Flag",
-					"name": "Cookie Without Secure Flag",
-					"riskcode": "1",
-					"confidence": "2",
-					"riskdesc": "Low (Medium)",
-					"desc": "<p>A cookie has been set without the secure flag, which means that the cookie can be accessed via unencrypted connections.</p>",
-					"instances":[ 
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/membre/",
-							"method": "POST",
-							"param": "bp_ps_request",
-							"attack": "",
-							"evidence": "Set-Cookie: bp_ps_request"
-						}
-					],
-					"count": "1",
-					"solution": "<p>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.</p>",
-					"otherinfo": "",
-					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p>",
-					"cweid": "614",
-					"wascid": "13",
-					"sourceid": "2664"
+					"sourceid": "285"
 				},
 				{
 					"pluginid": "10054",
@@ -474,34 +366,20 @@
 							"evidence": "Set-Cookie: wordpress_test_cookie"
 						},
 						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php?action=lostpassword",
-							"method": "GET",
-							"param": "wordpress_test_cookie",
-							"attack": "",
-							"evidence": "Set-Cookie: wordpress_test_cookie"
-						},
-						{
 							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fcommunaute.inclusion.beta.gouv.fr%2Fwp-admin%2F",
 							"method": "GET",
 							"param": "wordpress_test_cookie",
 							"attack": "",
 							"evidence": "Set-Cookie: wordpress_test_cookie"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/membre/",
-							"method": "POST",
-							"param": "bp_ps_request",
-							"attack": "",
-							"evidence": "Set-Cookie: bp_ps_request"
 						}
 					],
-					"count": "4",
+					"count": "2",
 					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "266"
+					"sourceid": "285"
 				},
 				{
 					"pluginid": "10017",
@@ -536,13 +414,6 @@
 						},
 						{
 							"uri": "https://communaute.inclusion.beta.gouv.fr/communautes/",
-							"method": "GET",
-							"param": "https://cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js@1.9.3/tarteaucitron.js",
-							"attack": "",
-							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js@1.9.3/tarteaucitron.js\"></script>"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenement/tour-de-france-de-la-clause-sociale-en-bourgogne-franche-comte/",
 							"method": "GET",
 							"param": "https://cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js@1.9.3/tarteaucitron.js",
 							"attack": "",
@@ -591,46 +462,13 @@
 							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js@1.9.3/tarteaucitron.js\"></script>"
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
 					"sourceid": "1"
-				},
-				{
-					"pluginid": "10110",
-					"alertRef": "10110",
-					"alert": "Dangerous JS Functions",
-					"name": "Dangerous JS Functions",
-					"riskcode": "1",
-					"confidence": "1",
-					"riskdesc": "Low (Low)",
-					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
-					"instances":[ 
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-content/plugins/piotnet-addons-for-elementor-pro/assets/js/minify/extension.min.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-includes/js/jquery/jquery.min.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Eval"
-						}
-					],
-					"count": "2",
-					"solution": "<p>See the references for security advice on the use of these functions.</p>",
-					"otherinfo": "",
-					"reference": "<p>https://angular.io/guide/security</p>",
-					"cweid": "749",
-					"wascid": "-1",
-					"sourceid": "1058"
 				},
 				{
 					"pluginid": "10063",
@@ -665,13 +503,6 @@
 						},
 						{
 							"uri": "https://communaute.inclusion.beta.gouv.fr/communautes/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenement/tour-de-france-de-la-clause-sociale-en-bourgogne-franche-comte/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -714,6 +545,13 @@
 						},
 						{
 							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fcommunaute.inclusion.beta.gouv.fr%2Fwp-admin%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -774,13 +612,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/ressourcerie/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://communaute.inclusion.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -789,6 +620,13 @@
 						},
 						{
 							"uri": "https://communaute.inclusion.beta.gouv.fr/sinscrire/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://communaute.inclusion.beta.gouv.fr/sitemap_index.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -809,7 +647,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-sitemap.xml",
+							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fcommunaute.inclusion.beta.gouv.fr%2Fwp-admin%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -847,240 +685,9 @@
 							"param": "",
 							"attack": "",
 							"evidence": "02010100"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/comment-declarer-ses-impots-en-ligne/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1651981242"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/comment-passer-un-entretien-a-distance/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1651981240"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1651572000"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1651573800"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1651577400"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1651581000"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1651586400"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1651589100"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1651591800"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1651656600"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1651667400"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1651831200"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1651834800"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1652175000"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1652191200"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1652196600"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1652200200"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1652693400"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1652704200"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1652797800"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1652801400"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1653400800"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1653402600"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1653991200"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1653996600"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1654005600"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1654008300"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/?ical=1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1654009200"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/lentrepreneuriat-un-outil-dinsertion-professionnelle-pour-les-personnes-eloignees-de-lemploi/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1651981240"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/parametrer-des-alertes-pour-mieux-gerer-son-budget/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1651981238"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/parcours-daccompagnement-a-lemploi/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1651981243"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/stats/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1875169692"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/suns-dynamiser-son-entreprise-grace-au-digital/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1651981238"
 						}
 					],
-					"count": "35",
+					"count": "2",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>02010100, which evaluates to: 1970-01-24 06:21:40</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -1127,13 +734,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://communaute.inclusion.beta.gouv.fr/membre/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -1162,6 +762,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://communaute.inclusion.beta.gouv.fr/sitemap_index.xml",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -1169,7 +776,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-sitemap.xml",
+							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fcommunaute.inclusion.beta.gouv.fr%2Fwp-admin%2F",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1223,20 +830,6 @@
 							"evidence": "fr/wp-content/uploads/2021/09/Marianne-Bold"
 						},
 						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenement/les-emplois-de-linclusion-webinaire-questions-reponses-prescripteurs-niveau-2/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2Fles-emplois-de-linclusion-webinaire-questions-reponses-prescripteurs-niveau-2"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenement/tour-de-france-de-la-clause-sociale-en-bourgogne-franche-comte/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2Ftour-de-france-de-la-clause-sociale-en-bourgogne-franche-comte"
-						},
-						{
 							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/",
 							"method": "GET",
 							"param": "",
@@ -1270,55 +863,22 @@
 							"param": "",
 							"attack": "",
 							"evidence": "fr/wp-content/uploads/2021/09/Marianne-Bold"
+						},
+						{
+							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fcommunaute.inclusion.beta.gouv.fr%2Fwp-admin%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "fr/wp-content/uploads/2021/09/Marianne-Bold"
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p>~\uFFFD\uFFFD\uFFFD(\uFFFD\u05E7\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD_\uFFFD\uFFFD\uFFFD\\x001a\uFFFD&\uFFFD\uFFFD\uF062W</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
 					"sourceid": "1"
-				},
-				{
-					"pluginid": "90011",
-					"alertRef": "90011",
-					"alert": "Charset Mismatch ",
-					"name": "Charset Mismatch ",
-					"riskcode": "0",
-					"confidence": "1",
-					"riskdesc": "Informational (Low)",
-					"desc": "<p>This check identifies responses where the HTTP Content-Type header declares a charset different from the charset defined by the body of the HTML or XML. When there's a charset mismatch between the HTTP header and content body Web browsers can be forced into an undesirable content-sniffing mode to determine the content's correct character set.</p><p></p><p>An attacker could manipulate content on the page to be interpreted in an encoding of their choice. For example, if an attacker can control content at the beginning of the page, they could inject script using UTF-7 encoded text and manipulate some browsers into interpreting that text.</p>",
-					"instances":[ 
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fcommunaute.inclusion.beta.gouv.fr%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fcommunaute.inclusion.beta.gouv.fr%2Fcommunautes%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fcommunaute.inclusion.beta.gouv.fr%2Fmembre%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						}
-					],
-					"count": "3",
-					"solution": "<p>Force UTF-8 for all text content in both the HTTP header and meta tags in HTML or encoding declarations in XML.</p>",
-					"otherinfo": "<p>There was a charset mismatch between the HTTP Header and the XML encoding declaration: [UTF-8] and [null] do not match.</p>",
-					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
-					"cweid": "436",
-					"wascid": "15",
-					"sourceid": "934"
 				},
 				{
 					"pluginid": "10027",
@@ -1420,20 +980,6 @@
 							"evidence": "<a href=\"#\" class=\"bb-toggle-panel\"><i class=\"bb-icon-menu-left\"></i></a>"
 						},
 						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenement/les-emplois-de-linclusion-webinaire-questions-reponses-prescripteurs-niveau-2/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"#\" class=\"bb-toggle-panel\"><i class=\"bb-icon-menu-left\"></i></a>"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenement/tour-de-france-de-la-clause-sociale-en-bourgogne-franche-comte/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"#\" class=\"bb-toggle-panel\"><i class=\"bb-icon-menu-left\"></i></a>"
-						},
-						{
 							"uri": "https://communaute.inclusion.beta.gouv.fr/evenements/",
 							"method": "GET",
 							"param": "",
@@ -1467,9 +1013,16 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<noscript><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css\" /></noscript>"
+						},
+						{
+							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fcommunaute.inclusion.beta.gouv.fr%2Fwp-admin%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css\" /></noscript>"
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>This is an informational alert and so no changes are required.</p>",
 					"otherinfo": "<p>Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</p>",
 					"reference": "",
@@ -1487,6 +1040,13 @@
 					"riskdesc": "Informational (Medium)",
 					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
 					"instances":[ 
+						{
+							"uri": "https://communaute.inclusion.beta.gouv.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "no-store"
+						},
 						{
 							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-admin/",
 							"method": "GET",
@@ -1507,15 +1067,22 @@
 							"param": "",
 							"attack": "",
 							"evidence": "no-store"
+						},
+						{
+							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fcommunaute.inclusion.beta.gouv.fr%2Fwp-admin%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "no-store"
 						}
 					],
-					"count": "3",
+					"count": "5",
 					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "104"
+					"sourceid": "9"
 				},
 				{
 					"pluginid": "10015",
@@ -1550,13 +1117,6 @@
 						},
 						{
 							"uri": "https://communaute.inclusion.beta.gouv.fr/communautes/",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "max-age=0"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/evenement/tour-de-france-de-la-clause-sociale-en-bourgogne-franche-comte/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1598,14 +1158,14 @@
 							"evidence": "max-age=0"
 						},
 						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-sitemap.xml",
+							"uri": "https://communaute.inclusion.beta.gouv.fr/sitemap_index.xml",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": "max-age=0"
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
@@ -1664,13 +1224,6 @@
 							"evidence": "max-age=0"
 						},
 						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/aide/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=0"
-						},
-						{
 							"uri": "https://communaute.inclusion.beta.gouv.fr/communautes/",
 							"method": "GET",
 							"param": "",
@@ -1685,21 +1238,14 @@
 							"evidence": "max-age=0"
 						},
 						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=0"
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-sitemap.xml",
+							"uri": "https://communaute.inclusion.beta.gouv.fr/sitemap_index.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "max-age=0"
 						}
 					],
-					"count": "7",
+					"count": "5",
 					"solution": "",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
@@ -1718,27 +1264,6 @@
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
 						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php?action=lostpassword",
-							"method": "GET",
-							"param": "action",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php?action=lostpassword",
-							"method": "GET",
-							"param": "action",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php?action=lostpassword",
-							"method": "GET",
-							"param": "action",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://communaute.inclusion.beta.gouv.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fcommunaute.inclusion.beta.gouv.fr%2Fwp-admin%2F",
 							"method": "GET",
 							"param": "redirect_to",
@@ -1802,13 +1327,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "12",
+					"count": "9",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://communaute.inclusion.beta.gouv.fr/wp-login.php?action=lostpassword</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [form] tag [id] attribute </p><p></p><p>The user input found was:</p><p>action=lostpassword</p><p></p><p>The user-controlled value was:</p><p>lostpasswordform</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://communaute.inclusion.beta.gouv.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fcommunaute.inclusion.beta.gouv.fr%2Fwp-admin%2F</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [a] tag [href] attribute </p><p></p><p>The user input found was:</p><p>redirect_to=https://communaute.inclusion.beta.gouv.fr/wp-admin/</p><p></p><p>The user-controlled value was:</p><p>https://communaute.inclusion.beta.gouv.fr</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "2658"
+					"sourceid": "228"
 				}
 			]
 		}
