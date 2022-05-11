@@ -19,633 +19,10 @@
     "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
     "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Sun, 08 May 2022 05:54:53 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
+    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Wed, 11 May 2022 16:54:09 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
     "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:54:53.890626439Z",
+    "timestamp": "2022-05-11T16:54:09.808751586Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-permitted-cross-domain-policies",
-    "type": "http",
-    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Sun, 08 May 2022 05:54:58 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
-    "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:54:58.866078476Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-max-age",
-    "type": "http",
-    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Sun, 08 May 2022 05:54:58 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
-    "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:54:58.866162176Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-methods",
-    "type": "http",
-    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Sun, 08 May 2022 05:54:58 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
-    "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:54:58.866197976Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "content-security-policy",
-    "type": "http",
-    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Sun, 08 May 2022 05:54:58 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
-    "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:54:58.867113078Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "clear-site-data",
-    "type": "http",
-    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Sun, 08 May 2022 05:54:58 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
-    "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:54:58.867172178Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-opener-policy",
-    "type": "http",
-    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Sun, 08 May 2022 05:54:58 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
-    "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:54:58.870398883Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-resource-policy",
-    "type": "http",
-    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Sun, 08 May 2022 05:54:58 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
-    "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:54:58.870421584Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-expose-headers",
-    "type": "http",
-    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Sun, 08 May 2022 05:54:58 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
-    "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:54:58.870439284Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "strict-transport-security",
-    "type": "http",
-    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Sun, 08 May 2022 05:54:58 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
-    "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:54:58.870457884Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-content-type-options",
-    "type": "http",
-    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Sun, 08 May 2022 05:54:58 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
-    "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:54:58.870472484Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "referrer-policy",
-    "type": "http",
-    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Sun, 08 May 2022 05:54:58 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
-    "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:54:58.870491184Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-credentials",
-    "type": "http",
-    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Sun, 08 May 2022 05:54:58 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
-    "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:54:58.870504884Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "permission-policy",
-    "type": "http",
-    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Sun, 08 May 2022 05:54:58 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
-    "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:54:58.870523684Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-frame-options",
-    "type": "http",
-    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Sun, 08 May 2022 05:54:58 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
-    "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:54:58.870537284Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-embedder-policy",
-    "type": "http",
-    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Sun, 08 May 2022 05:54:58 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
-    "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:54:58.870554284Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "ssl/tls-version.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
-    "template-id": "tls-version",
-    "info": {
-      "name": "TLS Version",
-      "author": [
-        "pdteam"
-      ],
-      "tags": [
-        "ssl"
-      ],
-      "reference": null,
-      "severity": "info"
-    },
-    "type": "ssl",
-    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "extracted-results": [
-      "TLS12"
-    ],
-    "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:55:05.634736171Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "ssl/deprecated-tls.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/deprecated-tls.yaml",
-    "template-id": "deprecated-tls",
-    "info": {
-      "name": "Deprecated TLS Detection (inferior to TLS 1.2)",
-      "author": [
-        "righettod"
-      ],
-      "tags": [
-        "ssl"
-      ],
-      "reference": [
-        "https://ssl-config.mozilla.org/#config=intermediate"
-      ],
-      "severity": "info",
-      "metadata": {
-        "shodan-query": "ssl.version:sslv2 ssl.version:sslv3 ssl.version:tlsv1 ssl.version:tlsv1.1"
-      }
-    },
-    "type": "ssl",
-    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "extracted-results": [
-      "TLS11"
-    ],
-    "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:55:10.627315434Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "ssl/ssl-dns-names.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
-    "template-id": "ssl-dns-names",
-    "info": {
-      "name": "SSL DNS Names",
-      "author": [
-        "pdteam"
-      ],
-      "tags": [
-        "ssl"
-      ],
-      "reference": null,
-      "severity": "info"
-    },
-    "type": "ssl",
-    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "extracted-results": [
-      "openfisca.mes-aides.1jeune1solution.beta.gouv.fr"
-    ],
-    "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:55:21.542450369Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "miscellaneous/options-method.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/miscellaneous/options-method.yaml",
-    "template-id": "options-method",
-    "info": {
-      "name": "Allowed Options Method",
-      "author": [
-        "pdteam"
-      ],
-      "tags": [
-        "misc",
-        "generic"
-      ],
-      "reference": null,
-      "severity": "info"
-    },
-    "type": "http",
-    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
-    "extracted-results": [
-      "GET, OPTIONS, HEAD"
-    ],
-    "request": "OPTIONS / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccess-Control-Allow-Origin: *\r\nAllow: GET, OPTIONS, HEAD\r\nContent-Type: text/html; charset=utf-8\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Sun, 08 May 2022 05:55:24 GMT\r\nServer: nginx/1.14.2\r\nContent-Length: 0\r\n\r\n",
-    "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:55:24.986148005Z",
-    "curl-command": "curl -X 'OPTIONS' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
   },
@@ -680,11 +57,634 @@
     "type": "http",
     "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
     "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/",
-    "request": "POST / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 405 METHOD NOT ALLOWED\r\nConnection: close\r\nContent-Length: 178\r\nAccess-Control-Allow-Origin: *\r\nAllow: GET, OPTIONS, HEAD\r\nContent-Type: text/html; charset=utf-8\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Sun, 08 May 2022 05:55:48 GMT\r\nServer: nginx/1.14.2\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>405 Method Not Allowed</title>\n<h1>Method Not Allowed</h1>\n<p>The method is not allowed for the requested URL.</p>\n",
+    "request": "POST / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
+    "response": "HTTP/1.1 405 METHOD NOT ALLOWED\r\nConnection: close\r\nContent-Length: 178\r\nAccess-Control-Allow-Origin: *\r\nAllow: GET, OPTIONS, HEAD\r\nContent-Type: text/html; charset=utf-8\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Wed, 11 May 2022 16:54:10 GMT\r\nServer: nginx/1.14.2\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>405 Method Not Allowed</title>\n<h1>Method Not Allowed</h1>\n<p>The method is not allowed for the requested URL.</p>\n",
     "ip": "5.135.137.147",
-    "timestamp": "2022-05-08T05:55:48.915825351Z",
+    "timestamp": "2022-05-11T16:54:10.336884083Z",
     "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: openfisca.mes-aides.1jeune1solution.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/ssl-dns-names.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
+    "template-id": "ssl-dns-names",
+    "info": {
+      "name": "SSL DNS Names",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "extracted-results": [
+      "openfisca.mes-aides.1jeune1solution.beta.gouv.fr"
+    ],
+    "ip": "5.135.137.147",
+    "timestamp": "2022-05-11T16:54:15.397512869Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Wed, 11 May 2022 16:54:52 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
+    "ip": "5.135.137.147",
+    "timestamp": "2022-05-11T16:54:52.162854667Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-credentials",
+    "type": "http",
+    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Wed, 11 May 2022 16:54:52 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
+    "ip": "5.135.137.147",
+    "timestamp": "2022-05-11T16:54:52.162984267Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "permission-policy",
+    "type": "http",
+    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Wed, 11 May 2022 16:54:52 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
+    "ip": "5.135.137.147",
+    "timestamp": "2022-05-11T16:54:52.165042667Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-permitted-cross-domain-policies",
+    "type": "http",
+    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Wed, 11 May 2022 16:54:52 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
+    "ip": "5.135.137.147",
+    "timestamp": "2022-05-11T16:54:52.165097867Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "clear-site-data",
+    "type": "http",
+    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Wed, 11 May 2022 16:54:52 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
+    "ip": "5.135.137.147",
+    "timestamp": "2022-05-11T16:54:52.166312368Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "strict-transport-security",
+    "type": "http",
+    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Wed, 11 May 2022 16:54:52 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
+    "ip": "5.135.137.147",
+    "timestamp": "2022-05-11T16:54:52.167566268Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "referrer-policy",
+    "type": "http",
+    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Wed, 11 May 2022 16:54:52 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
+    "ip": "5.135.137.147",
+    "timestamp": "2022-05-11T16:54:52.167593468Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-embedder-policy",
+    "type": "http",
+    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Wed, 11 May 2022 16:54:52 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
+    "ip": "5.135.137.147",
+    "timestamp": "2022-05-11T16:54:52.167615868Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-opener-policy",
+    "type": "http",
+    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Wed, 11 May 2022 16:54:52 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
+    "ip": "5.135.137.147",
+    "timestamp": "2022-05-11T16:54:52.167635268Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-max-age",
+    "type": "http",
+    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Wed, 11 May 2022 16:54:52 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
+    "ip": "5.135.137.147",
+    "timestamp": "2022-05-11T16:54:52.167667268Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-content-type-options",
+    "type": "http",
+    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Wed, 11 May 2022 16:54:52 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
+    "ip": "5.135.137.147",
+    "timestamp": "2022-05-11T16:54:52.167690868Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-frame-options",
+    "type": "http",
+    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Wed, 11 May 2022 16:54:52 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
+    "ip": "5.135.137.147",
+    "timestamp": "2022-05-11T16:54:52.167711368Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Wed, 11 May 2022 16:54:52 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
+    "ip": "5.135.137.147",
+    "timestamp": "2022-05-11T16:54:52.167729268Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-methods",
+    "type": "http",
+    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Wed, 11 May 2022 16:54:52 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
+    "ip": "5.135.137.147",
+    "timestamp": "2022-05-11T16:54:52.167749768Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "content-security-policy",
+    "type": "http",
+    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 300 MULTIPLE CHOICES\r\nConnection: close\r\nContent-Length: 254\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Wed, 11 May 2022 16:54:52 GMT\r\nServer: nginx/1.14.2\r\n\r\n{\"welcome\":\"This is the root of an OpenFisca Web API. To learn how to use it, check the general documentation (https://openfisca.org/doc/) and the OpenAPI specification of this instance (https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr/spec).\"}\n",
+    "ip": "5.135.137.147",
+    "timestamp": "2022-05-11T16:54:52.167783468Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/tls-version.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
+    "template-id": "tls-version",
+    "info": {
+      "name": "TLS Version",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "extracted-results": [
+      "TLS12"
+    ],
+    "ip": "5.135.137.147",
+    "timestamp": "2022-05-11T16:55:01.403450056Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "miscellaneous/options-method.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/miscellaneous/options-method.yaml",
+    "template-id": "options-method",
+    "info": {
+      "name": "Allowed Options Method",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "misc",
+        "generic"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "http",
+    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "extracted-results": [
+      "GET, OPTIONS, HEAD"
+    ],
+    "request": "OPTIONS / HTTP/1.1\r\nHost: openfisca.mes-aides.1jeune1solution.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccess-Control-Allow-Origin: *\r\nAllow: GET, OPTIONS, HEAD\r\nContent-Type: text/html; charset=utf-8\r\nCountry-Package: openfisca-france\r\nCountry-Package-Version: 111.2.0\r\nDate: Wed, 11 May 2022 16:55:13 GMT\r\nServer: nginx/1.14.2\r\nContent-Length: 0\r\n\r\n",
+    "ip": "5.135.137.147",
+    "timestamp": "2022-05-11T16:55:13.62208557Z",
+    "curl-command": "curl -X 'OPTIONS' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/deprecated-tls.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/deprecated-tls.yaml",
+    "template-id": "deprecated-tls",
+    "info": {
+      "name": "Deprecated TLS Detection (inferior to TLS 1.2)",
+      "author": [
+        "righettod"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": [
+        "https://ssl-config.mozilla.org/#config=intermediate"
+      ],
+      "severity": "info",
+      "metadata": {
+        "shodan-query": "ssl.version:sslv2 ssl.version:sslv3 ssl.version:tlsv1 ssl.version:tlsv1.1"
+      }
+    },
+    "type": "ssl",
+    "host": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "matched-at": "https://openfisca.mes-aides.1jeune1solution.beta.gouv.fr",
+    "extracted-results": [
+      "TLS11"
+    ],
+    "ip": "5.135.137.147",
+    "timestamp": "2022-05-11T16:55:30.724410311Z",
     "matcher-status": true,
     "matched-line": null
   }
