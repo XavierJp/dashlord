@@ -353,7 +353,7 @@
               "ip"           : "classe-a-12.beta.gouv.fr/185.31.40.21",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "50 >= 30 days"
+              "finding"      : "46 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,21 +549,21 @@
               "ip"           : "classe-a-12.beta.gouv.fr/185.31.40.21",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "classe-a-12.beta.gouv.fr/185.31.40.21",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1651981254"
+              "finding"      : "1652279672"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "classe-a-12.beta.gouv.fr/185.31.40.21",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "51 seconds"
+              "finding"      : "46 seconds"
           }
 ,         {
               "id"           : "HSTS",
@@ -1126,6 +1126,6 @@
               "ip"           : "classe-a-12.beta.gouv.fr/185.31.40.21",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "108"
+              "finding"      : "94"
           }
 ]
