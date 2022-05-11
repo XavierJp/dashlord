@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 08:37:42",
+	"@generated": "Wed, 11 May 2022 19:30:14",
 	"site":[ 
 		{
 			"@name": "https://www.jeveuxaider.gouv.fr",
@@ -115,6 +115,13 @@
 					"desc": "<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>",
 					"instances":[ 
 						{
+							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/18660/benevolat-les-bureaux-du-coeur-paris-14e-arrondissement",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Internal Server Error"
+						},
+						{
 							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/20827/benevolat-aapei-epanou-copponex-1",
 							"method": "GET",
 							"param": "",
@@ -122,13 +129,13 @@
 							"evidence": "Internal Server Error"
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"solution": "<p>Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.</p>",
 					"otherinfo": "",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "18086"
+					"sourceid": "18251"
 				},
 				{
 					"pluginid": "10038",
@@ -408,7 +415,21 @@
 					"desc": "<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.jeveuxaider.gouv.fr/accessibilite",
+							"uri": "https://www.jeveuxaider.gouv.fr/login?email=foo-bar%40example.com&password=ZAP",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HTTP/1.1 500 Internal Server Error"
+						},
+						{
+							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/10245/benevolat-entraide-scolaire-amicale-antenne-paris-14-paris-14e-arrondissement-1",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HTTP/1.1 500 Internal Server Error"
+						},
+						{
+							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/10288/benevolat-banque-alimentaire-du-gard-nimes-1",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -422,14 +443,7 @@
 							"evidence": "HTTP/1.1 500 Internal Server Error"
 						},
 						{
-							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/15716/benevolat-lobby-des-consciences-antenne-du-calvados-14-pont-leveque",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "HTTP/1.1 500 Internal Server Error"
-						},
-						{
-							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/15905/benevolat-lobby-des-consciences-antenne-des-hautes-alpes-05-guillestre",
+							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/16145/benevolat-lobby-des-consciences-antenne-de-lariege-09-dun-1",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -450,21 +464,14 @@
 							"evidence": "HTTP/1.1 500 Internal Server Error"
 						},
 						{
-							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/17812/benevolat-sauvegarde-42-roanne-2",
+							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/19475/benevolat-accorderie-lille-fives-lille-1",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "HTTP/1.1 500 Internal Server Error"
 						},
 						{
-							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/18394/benevolat-agence-du-don-en-nature-caen",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "HTTP/1.1 500 Internal Server Error"
-						},
-						{
-							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/18660/benevolat-les-bureaux-du-coeur-paris-14e-arrondissement",
+							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/20825/benevolat-aapei-epanou-rumilly-1",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -476,22 +483,15 @@
 							"param": "",
 							"attack": "",
 							"evidence": "HTTP/1.1 500 Internal Server Error"
-						},
-						{
-							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/8216/benevolat-centre-communal-daction-sociale-ccas-de-lons-le-saunier-lons-le-saunier",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "HTTP/1.1 500 Internal Server Error"
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.</p>",
 					"otherinfo": "",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "18001"
+					"sourceid": "18220"
 				},
 				{
 					"pluginid": "10010",
@@ -517,7 +517,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "17452"
+					"sourceid": "6208"
 				},
 				{
 					"pluginid": "10017",
@@ -648,7 +648,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "17611"
+					"sourceid": "17778"
 				},
 				{
 					"pluginid": "10110",
@@ -661,7 +661,7 @@
 					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.jeveuxaider.gouv.fr/_nuxt/0f83c3b.js",
+							"uri": "https://www.jeveuxaider.gouv.fr/_nuxt/64a16ee.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -674,7 +674,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "18032"
+					"sourceid": "18197"
 				},
 				{
 					"pluginid": "10023",
@@ -687,7 +687,28 @@
 					"desc": "<p>The response appeared to contain common error messages returned by platforms such as ASP.NET, and Web-servers such as IIS and Apache. You can configure the list of common debug messages.</p>",
 					"instances":[ 
 						{
+							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/14791/benevolat-edvo-montmagny",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Internal Server Error"
+						},
+						{
 							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/15712/benevolat-lobby-des-consciences-antenne-du-calvados-14-douvres-la-delivrande",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Internal Server Error"
+						},
+						{
+							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/16155/benevolat-lobby-des-consciences-antenne-de-lariege-09-coutens",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Internal Server Error"
+						},
+						{
+							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/18660/benevolat-les-bureaux-du-coeur-paris-14e-arrondissement",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -701,20 +722,41 @@
 							"evidence": "Internal Server Error"
 						},
 						{
-							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/9517/benevolat-croix-rouge-francaise-delegation-territoriale-du-lot-et-garonne-agen",
+							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/21311/benevolat-office-national-des-anciens-combattants-et-victimes-de-guerre-service-de-la-savoie-chambery",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Internal Server Error"
+						},
+						{
+							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/2734/benevolat-france-benevolat-sarthe-le-mans-6",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Internal Server Error"
+						},
+						{
+							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/8750/benevolat-admr-bresse-revermont-saint-etienne-du-bois",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Internal Server Error"
+						},
+						{
+							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat/9342/benevolat-federation-admr-des-ardennes-charleville-mezieres",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "Internal Server Error"
 						}
 					],
-					"count": "3",
+					"count": "9",
 					"solution": "<p>Disable debugging messages before pushing to production.</p>",
 					"otherinfo": "",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "18132"
+					"sourceid": "18338"
 				},
 				{
 					"pluginid": "10063",
@@ -1012,14 +1054,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "fr/engagement/wp-content/uploads/2020/09/Capture-de"
+							"evidence": "fr/engagement/wp-content/uploads/2021/04/javier-trueba-iQPr1XkF5F0-unsplash-scaled-1"
 						},
 						{
 							"uri": "https://www.jeveuxaider.gouv.fr/engagement/organisations/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "fr/engagement/wp-content/uploads/2020/12/Chatillon"
+							"evidence": "fr/engagement/wp-content/uploads/2020/12/La-halte-du-coeur-logo"
 						},
 						{
 							"uri": "https://www.jeveuxaider.gouv.fr/inscription/benevole",
@@ -1054,7 +1096,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "299bbd-GNTvvMmqFnDgLOaQca3Nh4jbq8U"
+							"evidence": "29effb-IdlnmlBSxvg7VeGy2dL2Df8w6Mo"
 						},
 						{
 							"uri": "https://www.jeveuxaider.gouv.fr/territoires",
@@ -1110,7 +1152,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "18057"
+					"sourceid": "18220"
 				},
 				{
 					"pluginid": "10027",
@@ -1258,7 +1300,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<a tabindex=\"-1\" href=\"#\" class=\"inactive-link pushed\" data-lb-index=\"0\"><div class=\"t-entry-visual-overlay\"><div class=\"t-entry-visual-overlay-in style-dark-bg\" style=\"opacity: 0.5;\"></div></div><img class=\"wp-image-2769\" src=\"https://www.jeveuxaider.gouv.fr/engagement/wp-content/uploads/2021/04/logo-benevolat_0003_Calque-2.png\" width=\"1000\" height=\"563\" alt=\"\" srcset=\"https://www.jeveuxaider.gouv.fr/engagement/wp-content/uploads/2021/04/logo-benevolat_0003_Calque-2.png 1000w, https://www.jeveuxaider.gouv.fr/engagement/wp-content/uploads/2021/04/logo-benevolat_0003_Calque-2-300x169.png 300w, https://www.jeveuxaider.gouv.fr/engagement/wp-content/uploads/2021/04/logo-benevolat_0003_Calque-2-768x432.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></a>"
+							"evidence": "<a tabindex=\"-1\" href=\"#\" class=\"inactive-link pushed\" data-lb-index=\"0\"><div class=\"t-entry-visual-overlay\"><div class=\"t-entry-visual-overlay-in style-dark-bg\" style=\"opacity: 0.5;\"></div></div><img class=\"wp-image-2771\" src=\"https://www.jeveuxaider.gouv.fr/engagement/wp-content/uploads/2021/04/logo-benevolat_0001_Calque-4.png\" width=\"1000\" height=\"563\" alt=\"\" srcset=\"https://www.jeveuxaider.gouv.fr/engagement/wp-content/uploads/2021/04/logo-benevolat_0001_Calque-4.png 1000w, https://www.jeveuxaider.gouv.fr/engagement/wp-content/uploads/2021/04/logo-benevolat_0001_Calque-4-300x169.png 300w, https://www.jeveuxaider.gouv.fr/engagement/wp-content/uploads/2021/04/logo-benevolat_0001_Calque-4-768x432.png 768w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></a>"
 						},
 						{
 							"uri": "https://www.jeveuxaider.gouv.fr/engagement/organisations/",
@@ -1418,88 +1460,88 @@
 					"desc": "<p>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance. </p>",
 					"instances":[ 
 						{
-							"uri": "https://www.jeveuxaider.gouv.fr/_nuxt/0f572e0.js",
+							"uri": "https://www.jeveuxaider.gouv.fr/_nuxt/3afa630.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 256817"
-						},
-						{
-							"uri": "https://www.jeveuxaider.gouv.fr/_nuxt/0f83c3b.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 173096"
+							"evidence": "Age: 11235"
 						},
 						{
 							"uri": "https://www.jeveuxaider.gouv.fr/_nuxt/41879cc.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 173096"
+							"evidence": "Age: 495146"
 						},
 						{
-							"uri": "https://www.jeveuxaider.gouv.fr/_nuxt/4d32159.js",
+							"uri": "https://www.jeveuxaider.gouv.fr/_nuxt/64a16ee.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 256817"
+							"evidence": "Age: 11283"
 						},
 						{
 							"uri": "https://www.jeveuxaider.gouv.fr/_nuxt/7c39af2.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 853949"
+							"evidence": "Age: 1052449"
 						},
 						{
 							"uri": "https://www.jeveuxaider.gouv.fr/_nuxt/8315a86b4206d87accb519f0f93bf855.svg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 3820834"
+							"evidence": "Age: 4318288"
+						},
+						{
+							"uri": "https://www.jeveuxaider.gouv.fr/_nuxt/b319c41.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 11099"
+						},
+						{
+							"uri": "https://www.jeveuxaider.gouv.fr/_nuxt/d56d4b5.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 11182"
 						},
 						{
 							"uri": "https://www.jeveuxaider.gouv.fr/_nuxt/e22b2c08a4d6e8021184b8274c993874.svg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 3976591"
-						},
-						{
-							"uri": "https://www.jeveuxaider.gouv.fr/_nuxt/f4b0b9f.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 173096"
+							"evidence": "Age: 4318261"
 						},
 						{
 							"uri": "https://www.jeveuxaider.gouv.fr/favicon.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 3995574"
+							"evidence": "Age: 469435"
 						},
 						{
 							"uri": "https://www.jeveuxaider.gouv.fr/images/flag-ukraine.svg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 2052888"
+							"evidence": "Age: 4324291"
 						},
 						{
-							"uri": "https://www.jeveuxaider.gouv.fr/images/homepage/deco_1.svg",
+							"uri": "https://www.jeveuxaider.gouv.fr/images/icons/slideshow_chevron_left.svg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 713721"
+							"evidence": "Age: 4312878"
 						},
 						{
 							"uri": "https://www.jeveuxaider.gouv.fr/images/icons/slideshow_chevron_right.svg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 3029754"
+							"evidence": "Age: 4324291"
 						}
 					],
 					"count": "12",
@@ -1508,7 +1550,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "18036"
+					"sourceid": "18198"
 				},
 				{
 					"pluginid": "10049",
@@ -1623,7 +1665,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "16061"
+					"sourceid": "2938"
 				},
 				{
 					"pluginid": "10031",
@@ -1635,13 +1677,6 @@
 					"riskdesc": "Informational (Low)",
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
-						{
-							"uri": "https://www.jeveuxaider.gouv.fr/login?email=foo-bar%40example.com&password=ZAP",
-							"method": "GET",
-							"param": "email",
-							"attack": "",
-							"evidence": ""
-						},
 						{
 							"uri": "https://www.jeveuxaider.gouv.fr/missions-benevolat?refinementList%5Btype%5D%5B0%5D=Mission%20%C3%A0%20distance",
 							"method": "GET",
@@ -1657,13 +1692,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://www.jeveuxaider.gouv.fr/login?email=foo-bar%40example.com&password=ZAP</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>email=foo-bar@example.com</p><p></p><p>The user-controlled value was:</p><p>foo-bar@example.com</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://www.jeveuxaider.gouv.fr/missions-benevolat?refinementList%5Btype%5D%5B0%5D=Mission%20%C3%A0%20distance</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>refinementList[type][0]=Mission \u00E0 distance</p><p></p><p>The user-controlled value was:</p><p>mission \u00E0 distance</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "18057"
+					"sourceid": "18039"
 				}
 			]
 		}
