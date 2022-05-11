@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 05:57:39",
+	"@generated": "Wed, 11 May 2022 16:51:55",
 	"site":[ 
 		{
 			"@name": "https://pad.incubateur.net",
@@ -56,42 +56,42 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-6c9a22c0-b4c3-40e9-8aea-d8dde2dae376' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
+							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-54e0d933-338d-41a1-b015-a631556c0233' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
 						},
 						{
 							"uri": "https://pad.incubateur.net",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-72f57228-3f7f-400d-9d0f-dd671b1aebd9' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
+							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-f687f4d4-d4be-46c5-8f91-80ec13c5bfe1' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
 						},
 						{
 							"uri": "https://pad.incubateur.net/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-2e57a44f-c465-4017-9074-48e01a4f0e87' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
+							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-06ed5e75-d66e-4596-a199-1ae6df00ba83' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
 						},
 						{
 							"uri": "https://pad.incubateur.net/features",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-b3a2c1df-6dea-469d-84cc-9e43578a84da' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
+							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-3d86bafc-f0f9-4144-b1ba-d34d4ba7ac54' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
 						},
 						{
 							"uri": "https://pad.incubateur.net/s/release-notes",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-70f66972-fc2b-400e-8e2f-bd1ba3e5b552' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
+							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-80592609-2deb-4ee8-b25e-50ce55722f7b' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
 						},
 						{
 							"uri": "https://pad.incubateur.net/s/terms-of-use",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-23f3f11b-3292-4c5d-b4ab-9b3eeaf8e603' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
+							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-2bbd7ffd-a587-4f64-80fd-110d40628fd6' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
 						}
 					],
 					"count": "6",
@@ -117,42 +117,42 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-6c9a22c0-b4c3-40e9-8aea-d8dde2dae376' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
+							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-54e0d933-338d-41a1-b015-a631556c0233' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
 						},
 						{
 							"uri": "https://pad.incubateur.net",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-72f57228-3f7f-400d-9d0f-dd671b1aebd9' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
+							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-f687f4d4-d4be-46c5-8f91-80ec13c5bfe1' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
 						},
 						{
 							"uri": "https://pad.incubateur.net/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-2e57a44f-c465-4017-9074-48e01a4f0e87' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
+							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-06ed5e75-d66e-4596-a199-1ae6df00ba83' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
 						},
 						{
 							"uri": "https://pad.incubateur.net/features",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-b3a2c1df-6dea-469d-84cc-9e43578a84da' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
+							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-3d86bafc-f0f9-4144-b1ba-d34d4ba7ac54' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
 						},
 						{
 							"uri": "https://pad.incubateur.net/s/release-notes",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-70f66972-fc2b-400e-8e2f-bd1ba3e5b552' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
+							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-80592609-2deb-4ee8-b25e-50ce55722f7b' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
 						},
 						{
 							"uri": "https://pad.incubateur.net/s/terms-of-use",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-23f3f11b-3292-4c5d-b4ab-9b3eeaf8e603' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
+							"evidence": "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-2bbd7ffd-a587-4f64-80fd-110d40628fd6' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
 						}
 					],
 					"count": "6",
@@ -295,7 +295,7 @@
 					"reference": "<p>https://github.com/moment/moment/security/advisories/GHSA-8hfj-j24r-96c4</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "82"
+					"sourceid": "77"
 				},
 				{
 					"pluginid": "10110",
@@ -349,7 +349,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "76"
+					"sourceid": "75"
 				},
 				{
 					"pluginid": "10063",
@@ -650,13 +650,6 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://pad.incubateur.net",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "73368236"
-						},
-						{
 							"uri": "https://pad.incubateur.net/build/cover-styles-pack.98fdd9f8a0185f05e1a5.css",
 							"method": "GET",
 							"param": "",
@@ -669,15 +662,22 @@
 							"param": "",
 							"attack": "",
 							"evidence": "80000000"
+						},
+						{
+							"uri": "https://pad.incubateur.net/s/release-notes",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "80592609"
 						}
 					],
 					"count": "3",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>73368236, which evaluates to: 1972-04-29 04:03:56</p>",
+					"otherinfo": "<p>42857143, which evaluates to: 1971-05-12 00:45:43</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "76"
 				},
 				{
 					"pluginid": "10021",
@@ -797,7 +797,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "397d-96H37/+gXviDjOKgFG1x0oFjZic"
+							"evidence": "39bc-qzgi9MVsboyA516dfi8DO+PdRoU"
 						},
 						{
 							"uri": "https://pad.incubateur.net/features",
@@ -811,56 +811,56 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3AqFQQGoj9wZQiINvgoqoC5zeDnchohKfD"
+							"evidence": "3ABIwIs_o7Q3alk_XgJ3koBqrzBpWCucUl"
 						},
 						{
 							"uri": "https://pad.incubateur.net/me/delete/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3AqFQQGoj9wZQiINvgoqoC5zeDnchohKfD"
+							"evidence": "3ABIwIs_o7Q3alk_XgJ3koBqrzBpWCucUl"
 						},
 						{
 							"uri": "https://pad.incubateur.net/me/export",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3AqFQQGoj9wZQiINvgoqoC5zeDnchohKfD"
+							"evidence": "3ABIwIs_o7Q3alk_XgJ3koBqrzBpWCucUl"
 						},
 						{
 							"uri": "https://pad.incubateur.net/new",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3AqFQQGoj9wZQiINvgoqoC5zeDnchohKfD"
+							"evidence": "3ABIwIs_o7Q3alk_XgJ3koBqrzBpWCucUl"
 						},
 						{
 							"uri": "https://pad.incubateur.net/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3Awn40oDKQL8BYPzuF5GozOzNUHqemf-QA"
+							"evidence": "3ABIwIs_o7Q3alk_XgJ3koBqrzBpWCucUl"
 						},
 						{
 							"uri": "https://pad.incubateur.net/s/release-notes",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "f53a-K7bj2Mb8GfZZJlxamPUX3Jvhwuw"
+							"evidence": "f53a-7qKVP/NwfSvW1EUrvM1TInm1LJs"
 						},
 						{
 							"uri": "https://pad.incubateur.net/s/terms-of-use",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "13d2-EiDNV6L15Ze0XIOphaAPn8HEbpo"
+							"evidence": "13d2-PA/c8arak1NYvb0W6ASkxIHYkPk"
 						},
 						{
 							"uri": "https://pad.incubateur.net/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3AqFQQGoj9wZQiINvgoqoC5zeDnchohKfD"
+							"evidence": "3ABIwIs_o7Q3alk_XgJ3koBqrzBpWCucUl"
 						}
 					],
 					"count": "11",
@@ -979,7 +979,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "76"
+					"sourceid": "75"
 				},
 				{
 					"pluginid": "10109",
@@ -1150,7 +1150,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "36"
+					"sourceid": "33"
 				},
 				{
 					"pluginid": "10015",

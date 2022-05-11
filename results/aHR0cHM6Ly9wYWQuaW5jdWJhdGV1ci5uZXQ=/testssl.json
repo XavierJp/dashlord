@@ -353,7 +353,7 @@
               "ip"           : "pad.incubateur.net/109.232.236.90",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "81 >= 30 days"
+              "finding"      : "77 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -556,7 +556,7 @@
               "ip"           : "pad.incubateur.net/109.232.236.90",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1651989582"
+              "finding"      : "1652288040"
           }
 ,         {
               "id"           : "HSTS_multiple",
@@ -633,7 +633,7 @@
               "ip"           : "pad.incubateur.net/109.232.236.90",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-a1fa8f87-fbeb-4949-8b4e-2339cd89ade5' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
+              "finding"      : "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-7407a362-7cb0-4771-931c-d3851324be34' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
           }
 ,         {
               "id"           : "Referrer-Policy",
@@ -1503,7 +1503,7 @@
               "ip"           : "pad.incubateur.net/5.104.101.30",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "81 >= 30 days"
+              "finding"      : "77 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1706,7 +1706,7 @@
               "ip"           : "pad.incubateur.net/5.104.101.30",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1651989679"
+              "finding"      : "1652288137"
           }
 ,         {
               "id"           : "HSTS_multiple",
@@ -1783,7 +1783,7 @@
               "ip"           : "pad.incubateur.net/5.104.101.30",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-53a66760-44b1-492f-bf54-c06d695c7650' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
+              "finding"      : "default-src 'self';script-src 'self' vimeo.com https://gist.github.com www.slideshare.net 'unsafe-eval' https://disqus.com https://*.disqus.com https://*.disquscdn.com https://www.google-analytics.com 'nonce-be652c2c-6780-498f-aac7-f8226de07384' 'sha256-81acLZNZISnyGYZrSuoYhpzwDTTxi7vC1YM4uNxqWaM=';img-src *;style-src 'self' 'unsafe-inline' https://github.githubassets.com https://*.disquscdn.com;font-src 'self' data: https://public.slidesharecdn.com https://*.disquscdn.com;object-src *;media-src *;child-src *;connect-src *"
           }
 ,         {
               "id"           : "Referrer-Policy",
@@ -2304,6 +2304,6 @@
               "ip"           : "pad.incubateur.net/5.104.101.30",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "198"
+              "finding"      : "202"
           }
 ]
