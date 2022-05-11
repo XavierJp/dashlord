@@ -1,5 +1,86 @@
 [
   {
+    "template": "network/smtp-detection.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/network/smtp-detection.yaml",
+    "template-id": "smtp-service-detection",
+    "info": {
+      "name": "SMTP Service Detection",
+      "author": [
+        "pussycat0x"
+      ],
+      "tags": [
+        "network",
+        "service",
+        "smtp"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "network",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "sepia.fabnum.fr:25",
+    "request": "\r\n",
+    "response": "220 proxmox-gravelines ESMTP Postfix (Debian/GNU)\r\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:13:47.925902074Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "technologies/tech-detect.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/tech-detect.yaml",
+    "template-id": "tech-detect",
+    "info": {
+      "name": "Wappalyzer Technology Detection",
+      "author": [
+        "hakluke"
+      ],
+      "tags": [
+        "tech"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "nginx",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:13:47 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Wed, 11 May 2022 20:13:47 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:13:47.988138111Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "technologies/tech-detect.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/tech-detect.yaml",
+    "template-id": "tech-detect",
+    "info": {
+      "name": "Wappalyzer Technology Detection",
+      "author": [
+        "hakluke"
+      ],
+      "tags": [
+        "tech"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "nginx",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:13:47 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:13:48.372137494Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
     "template": "ssl/tls-version.yaml",
     "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
     "template-id": "tls-version",
@@ -21,197 +102,7 @@
       "TLS13"
     ],
     "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:14.921897859Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "technologies/tech-detect.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/tech-detect.yaml",
-    "template-id": "tech-detect",
-    "info": {
-      "name": "Wappalyzer Technology Detection",
-      "author": [
-        "hakluke"
-      ],
-      "tags": [
-        "tech"
-      ],
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "nginx",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:19:16 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Sun, 08 May 2022 09:19:16 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:17.037289252Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "technologies/tech-detect.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/tech-detect.yaml",
-    "template-id": "tech-detect",
-    "info": {
-      "name": "Wappalyzer Technology Detection",
-      "author": [
-        "hakluke"
-      ],
-      "tags": [
-        "tech"
-      ],
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "nginx",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:19:16 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:17.346388892Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-embedder-policy",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Sun, 08 May 2022 09:19:23 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.930412835Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-origin",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Sun, 08 May 2022 09:19:23 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.930487437Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-methods",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Sun, 08 May 2022 09:19:23 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.930518937Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-frame-options",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Sun, 08 May 2022 09:19:23 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.930540638Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "timestamp": "2022-05-11T20:13:54.328504892Z",
     "matcher-status": true,
     "matched-line": null
   },
@@ -242,179 +133,9 @@
     "host": "https://sepia.fabnum.fr/",
     "matched-at": "https://sepia.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Sun, 08 May 2022 09:19:23 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Wed, 11 May 2022 20:14:07 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
     "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.930561538Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-expose-headers",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Sun, 08 May 2022 09:19:23 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.930581838Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "strict-transport-security",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Sun, 08 May 2022 09:19:23 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.930611839Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-opener-policy",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Sun, 08 May 2022 09:19:23 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.930629139Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "content-security-policy",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Sun, 08 May 2022 09:19:23 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.93064874Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-credentials",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Sun, 08 May 2022 09:19:23 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.93066844Z",
+    "timestamp": "2022-05-11T20:14:07.473432088Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
     "matcher-status": true,
     "matched-line": null
@@ -446,9 +167,43 @@
     "host": "https://sepia.fabnum.fr/",
     "matched-at": "https://sepia.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Sun, 08 May 2022 09:19:23 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Wed, 11 May 2022 20:14:07 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
     "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.93068914Z",
+    "timestamp": "2022-05-11T20:14:07.47352699Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-credentials",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Wed, 11 May 2022 20:14:07 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:14:07.47354769Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
     "matcher-status": true,
     "matched-line": null
@@ -480,9 +235,43 @@
     "host": "https://sepia.fabnum.fr/",
     "matched-at": "https://sepia.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Sun, 08 May 2022 09:19:23 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Wed, 11 May 2022 20:14:07 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
     "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.930709541Z",
+    "timestamp": "2022-05-11T20:14:07.47356999Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "strict-transport-security",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Wed, 11 May 2022 20:14:07 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:14:07.473590691Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
     "matcher-status": true,
     "matched-line": null
@@ -514,9 +303,9 @@
     "host": "https://sepia.fabnum.fr/",
     "matched-at": "https://sepia.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Sun, 08 May 2022 09:19:23 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Wed, 11 May 2022 20:14:07 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
     "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.930726641Z",
+    "timestamp": "2022-05-11T20:14:07.473611391Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
     "matcher-status": true,
     "matched-line": null
@@ -543,14 +332,48 @@
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "clear-site-data",
+    "matcher-name": "access-control-allow-origin",
     "type": "http",
     "host": "https://sepia.fabnum.fr/",
     "matched-at": "https://sepia.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Sun, 08 May 2022 09:19:23 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Wed, 11 May 2022 20:14:07 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
     "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.930760842Z",
+    "timestamp": "2022-05-11T20:14:07.473636891Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Wed, 11 May 2022 20:14:07 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:14:07.473654092Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
     "matcher-status": true,
     "matched-line": null
@@ -582,9 +405,349 @@
     "host": "https://sepia.fabnum.fr/",
     "matched-at": "https://sepia.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Wed, 11 May 2022 20:14:07 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
     "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.931091048Z",
+    "timestamp": "2022-05-11T20:14:07.473673792Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "clear-site-data",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Wed, 11 May 2022 20:14:07 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:14:07.473693392Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-frame-options",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Wed, 11 May 2022 20:14:07 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:14:07.473714193Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-embedder-policy",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Wed, 11 May 2022 20:14:07 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:14:07.473733993Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-opener-policy",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Wed, 11 May 2022 20:14:07 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:14:07.473755493Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-methods",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nEtag: W/\"617824ae-4aa\"\r\nExpires: Wed, 11 May 2022 20:14:07 GMT\r\nLast-Modified: Tue, 26 Oct 2021 15:54:22 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title>Sepia v3</title>\n\n  <base href=\"/\" />\n\n  <meta name=\"viewport\" content=\"viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta name=\"msapplication-tap-highlight\" content=\"no\" />\n\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/logo_lite.svg\" />\n\n  <!-- add to homescreen for ios -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" />\n<link rel=\"stylesheet\" href=\"styles.f72457cb1e9c6a6f2f5f.css\"></head>\n\n<body>\n  <app-root></app-root>\n<script src=\"runtime-es2015.b9ac36d77b2af78a4da5.js\" type=\"module\"></script><script src=\"runtime-es5.b9ac36d77b2af78a4da5.js\" nomodule defer></script><script src=\"polyfills-es5.7bebc223554456e35572.js\" nomodule defer></script><script src=\"polyfills-es2015.b43d4dcd8c503294cc94.js\" type=\"module\"></script><script src=\"main-es2015.51ce19bc314baea62277.js\" type=\"module\"></script><script src=\"main-es5.51ce19bc314baea62277.js\" nomodule defer></script></body>\n\n</html>\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:14:07.473775794Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "content-security-policy",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:14:07.474070598Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-opener-policy",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:14:07.474094098Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-origin",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:14:07.474106899Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:14:07.474120099Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-methods",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:14:07.474137599Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
     "matcher-status": true,
     "matched-line": null
@@ -616,349 +779,9 @@
     "host": "https://sepia.fabnum.fr/",
     "matched-at": "https://sepia.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
     "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.931110448Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "clear-site-data",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.931128349Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-embedder-policy",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.931142049Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-frame-options",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.931156349Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-permitted-cross-domain-policies",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.931174749Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-max-age",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.93118715Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "strict-transport-security",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.932091866Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-content-type-options",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.932106067Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-opener-policy",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.933527993Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-expose-headers",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.933552093Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-methods",
-    "type": "http",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "https://sepia.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.934926719Z",
+    "timestamp": "2022-05-11T20:14:07.474151499Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
     "matcher-status": true,
     "matched-line": null
@@ -990,9 +813,9 @@
     "host": "https://sepia.fabnum.fr/",
     "matched-at": "https://sepia.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
     "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.934941819Z",
+    "timestamp": "2022-05-11T20:14:07.474164999Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
     "matcher-status": true,
     "matched-line": null
@@ -1019,14 +842,14 @@
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "cross-origin-resource-policy",
+    "matcher-name": "x-frame-options",
     "type": "http",
     "host": "https://sepia.fabnum.fr/",
     "matched-at": "https://sepia.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
     "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.936389646Z",
+    "timestamp": "2022-05-11T20:14:07.474936511Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
     "matcher-status": true,
     "matched-line": null
@@ -1053,14 +876,116 @@
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "access-control-allow-origin",
+    "matcher-name": "x-content-type-options",
     "type": "http",
     "host": "https://sepia.fabnum.fr/",
     "matched-at": "https://sepia.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
     "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.936406046Z",
+    "timestamp": "2022-05-11T20:14:07.474952211Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-permitted-cross-domain-policies",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:14:07.476386933Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "clear-site-data",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:14:07.476425034Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-embedder-policy",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:14:07.478372063Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
     "matcher-status": true,
     "matched-line": null
@@ -1092,9 +1017,111 @@
     "host": "https://sepia.fabnum.fr/",
     "matched-at": "https://sepia.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:19:23 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
     "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:23.937313763Z",
+    "timestamp": "2022-05-11T20:14:07.478633267Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-max-age",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:14:07.478651367Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "strict-transport-security",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:14:07.478664367Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://sepia.fabnum.fr/",
+    "matched-at": "https://sepia.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:14:07 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n",
+    "ip": "51.91.48.32",
+    "timestamp": "2022-05-11T20:14:07.478681868Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://sepia.fabnum.fr/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.defense.gouv.fr/'",
     "matcher-status": true,
     "matched-line": null
@@ -1130,38 +1157,11 @@
     "type": "http",
     "host": "https://sepia.fabnum.fr/",
     "matched-at": "https://sepia.fabnum.fr/",
-    "request": "POST / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 09:19:42 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+    "request": "POST / HTTP/1.1\r\nHost: sepia.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 20:14:21 GMT\r\nLocation: https://sepia.defense.gouv.fr/\r\nServer: nginx\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
     "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:43.060084115Z",
+    "timestamp": "2022-05-11T20:14:21.923590176Z",
     "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: sepia.fabnum.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://sepia.fabnum.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "network/smtp-detection.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/network/smtp-detection.yaml",
-    "template-id": "smtp-service-detection",
-    "info": {
-      "name": "SMTP Service Detection",
-      "author": [
-        "pussycat0x"
-      ],
-      "tags": [
-        "network",
-        "service",
-        "smtp"
-      ],
-      "reference": null,
-      "severity": "info"
-    },
-    "type": "network",
-    "host": "https://sepia.fabnum.fr/",
-    "matched-at": "sepia.fabnum.fr:25",
-    "request": "\r\n",
-    "response": "220 proxmox-gravelines ESMTP Postfix (Debian/GNU)\r\n",
-    "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:19:43.310773132Z",
     "matcher-status": true,
     "matched-line": null
   },
@@ -1187,7 +1187,7 @@
       "sepia.fabnum.fr"
     ],
     "ip": "51.91.48.32",
-    "timestamp": "2022-05-08T09:20:19.306195544Z",
+    "timestamp": "2022-05-11T20:14:27.47179111Z",
     "matcher-status": true,
     "matched-line": null
   }
