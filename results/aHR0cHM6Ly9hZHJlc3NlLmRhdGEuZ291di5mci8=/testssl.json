@@ -381,7 +381,7 @@
               "ip"           : "adresse.data.gouv.fr/178.33.88.236",
               "port"         : "443",
               "severity"     : "MEDIUM",
-              "finding"      : "expires < 30 days (25)"
+              "finding"      : "expires < 30 days (21)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,7 +549,7 @@
               "ip"           : "adresse.data.gouv.fr/178.33.88.236",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1652004829"
+              "finding"      : "1652303253"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1119,6 +1119,6 @@
               "ip"           : "adresse.data.gouv.fr/178.33.88.236",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "106"
+              "finding"      : "139"
           }
 ]
