@@ -1,5 +1,39 @@
 [
   {
+    "template": "dns/dns-waf-detect.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/dns-waf-detect.yaml",
+    "template-id": "dns-waf-detect",
+    "info": {
+      "name": "DNS WAF Detection",
+      "author": [
+        "lu4nx"
+      ],
+      "tags": [
+        "tech",
+        "waf",
+        "dns"
+      ],
+      "description": "A DNS WAF was detected.",
+      "reference": null,
+      "severity": "info",
+      "classification": {
+        "cve-id": null,
+        "cwe-id": [
+          "cwe-200"
+        ]
+      }
+    },
+    "matcher-name": "cloudflare",
+    "type": "dns",
+    "host": "https://kelrisks.beta.gouv.fr",
+    "matched-at": "https://kelrisks.beta.gouv.fr",
+    "request": ";; opcode: QUERY, status: NOERROR, id: 33157\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;kelrisks.beta.gouv.fr.\tIN\t NS\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 33157\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 512\n\n;; QUESTION SECTION:\n;kelrisks.beta.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nkelrisks.beta.gouv.fr.\t10800\tIN\tCNAME\tbetagouv-redirections.osc-fr1.scalingo.io.\nbetagouv-redirections.osc-fr1.scalingo.io.\t300\tIN\tCNAME\tsc-lb-pool-01.osc-fr1.scalingo-network.com.\n\n;; AUTHORITY SECTION:\nscalingo-network.com.\t1800\tIN\tSOA\tburt.ns.cloudflare.com. dns.cloudflare.com. 2277339532 10000 2400 604800 3600\n",
+    "timestamp": "2022-05-11T15:54:26.901031905Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
     "template": "technologies/tech-detect.yaml",
     "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/tech-detect.yaml",
     "template-id": "tech-detect",
@@ -19,218 +53,9 @@
     "host": "https://kelrisks.beta.gouv.fr",
     "matched-at": "https://kelrisks.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Sun, 08 May 2022 04:58:06 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
+    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Wed, 11 May 2022 15:54:28 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
     "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:06.518020051Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "technologies/waf-detect.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/waf-detect.yaml",
-    "template-id": "waf-detect",
-    "info": {
-      "name": "WAF Detection",
-      "author": [
-        "dwisiswant0",
-        "lu4nx"
-      ],
-      "tags": [
-        "waf",
-        "tech",
-        "misc"
-      ],
-      "description": "A web application firewall was detected.",
-      "reference": [
-        "https://github.com/ekultek/whatwaf"
-      ],
-      "severity": "info",
-      "classification": {
-        "cve-id": null,
-        "cwe-id": [
-          "cwe-200"
-        ]
-      }
-    },
-    "matcher-name": "nginxgeneric",
-    "type": "http",
-    "host": "https://kelrisks.beta.gouv.fr",
-    "matched-at": "https://kelrisks.beta.gouv.fr/",
-    "request": "POST / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 04:58:07 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: 8973772f-f0d4-4927-ac72-86a6eee8438e\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
-    "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:07.749214087Z",
-    "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://kelrisks.beta.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "clear-site-data",
-    "type": "http",
-    "host": "https://kelrisks.beta.gouv.fr",
-    "matched-at": "https://kelrisks.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
-    "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.908206243Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-embedder-policy",
-    "type": "http",
-    "host": "https://kelrisks.beta.gouv.fr",
-    "matched-at": "https://kelrisks.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
-    "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.908323045Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-credentials",
-    "type": "http",
-    "host": "https://kelrisks.beta.gouv.fr",
-    "matched-at": "https://kelrisks.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
-    "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.908356545Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-max-age",
-    "type": "http",
-    "host": "https://kelrisks.beta.gouv.fr",
-    "matched-at": "https://kelrisks.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
-    "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.908386546Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-methods",
-    "type": "http",
-    "host": "https://kelrisks.beta.gouv.fr",
-    "matched-at": "https://kelrisks.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
-    "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.908424046Z",
+    "timestamp": "2022-05-11T15:54:29.302903347Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -262,9 +87,9 @@
     "host": "https://kelrisks.beta.gouv.fr",
     "matched-at": "https://kelrisks.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
+    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
     "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.908449846Z",
+    "timestamp": "2022-05-11T15:54:36.707461234Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -296,111 +121,9 @@
     "host": "https://kelrisks.beta.gouv.fr",
     "matched-at": "https://kelrisks.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
+    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
     "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.908476047Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-opener-policy",
-    "type": "http",
-    "host": "https://kelrisks.beta.gouv.fr",
-    "matched-at": "https://kelrisks.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
-    "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.908510847Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "content-security-policy",
-    "type": "http",
-    "host": "https://kelrisks.beta.gouv.fr",
-    "matched-at": "https://kelrisks.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
-    "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.908540948Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "permission-policy",
-    "type": "http",
-    "host": "https://kelrisks.beta.gouv.fr",
-    "matched-at": "https://kelrisks.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
-    "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.908567248Z",
+    "timestamp": "2022-05-11T15:54:36.707576034Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -432,281 +155,9 @@
     "host": "https://kelrisks.beta.gouv.fr",
     "matched-at": "https://kelrisks.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
+    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
     "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.910244371Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-resource-policy",
-    "type": "http",
-    "host": "https://kelrisks.beta.gouv.fr",
-    "matched-at": "https://kelrisks.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
-    "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.912533801Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-origin",
-    "type": "http",
-    "host": "https://kelrisks.beta.gouv.fr",
-    "matched-at": "https://kelrisks.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
-    "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.912577902Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-expose-headers",
-    "type": "http",
-    "host": "https://kelrisks.beta.gouv.fr",
-    "matched-at": "https://kelrisks.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
-    "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.914495928Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-frame-options",
-    "type": "http",
-    "host": "https://kelrisks.beta.gouv.fr",
-    "matched-at": "https://kelrisks.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
-    "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.918485382Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-opener-policy",
-    "type": "http",
-    "host": "https://kelrisks.beta.gouv.fr",
-    "matched-at": "https://kelrisks.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: d7c59cd5-d89e-4c84-86e2-440bd9c3ddc8\r\n\r\n",
-    "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.919000989Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-credentials",
-    "type": "http",
-    "host": "https://kelrisks.beta.gouv.fr",
-    "matched-at": "https://kelrisks.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: d7c59cd5-d89e-4c84-86e2-440bd9c3ddc8\r\n\r\n",
-    "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.91912829Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-max-age",
-    "type": "http",
-    "host": "https://kelrisks.beta.gouv.fr",
-    "matched-at": "https://kelrisks.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: d7c59cd5-d89e-4c84-86e2-440bd9c3ddc8\r\n\r\n",
-    "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.919235692Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "clear-site-data",
-    "type": "http",
-    "host": "https://kelrisks.beta.gouv.fr",
-    "matched-at": "https://kelrisks.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: d7c59cd5-d89e-4c84-86e2-440bd9c3ddc8\r\n\r\n",
-    "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.919334993Z",
+    "timestamp": "2022-05-11T15:54:36.707616334Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -738,9 +189,9 @@
     "host": "https://kelrisks.beta.gouv.fr",
     "matched-at": "https://kelrisks.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: d7c59cd5-d89e-4c84-86e2-440bd9c3ddc8\r\n\r\n",
+    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
     "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.919437595Z",
+    "timestamp": "2022-05-11T15:54:36.707644035Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -767,14 +218,14 @@
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "access-control-allow-methods",
+    "matcher-name": "cross-origin-opener-policy",
     "type": "http",
     "host": "https://kelrisks.beta.gouv.fr",
     "matched-at": "https://kelrisks.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: d7c59cd5-d89e-4c84-86e2-440bd9c3ddc8\r\n\r\n",
+    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
     "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.919537796Z",
+    "timestamp": "2022-05-11T15:54:36.707698635Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -801,14 +252,14 @@
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "permission-policy",
+    "matcher-name": "access-control-allow-credentials",
     "type": "http",
     "host": "https://kelrisks.beta.gouv.fr",
     "matched-at": "https://kelrisks.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: d7c59cd5-d89e-4c84-86e2-440bd9c3ddc8\r\n\r\n",
+    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
     "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.919638997Z",
+    "timestamp": "2022-05-11T15:54:36.707729735Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -835,14 +286,14 @@
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "x-content-type-options",
+    "matcher-name": "x-frame-options",
     "type": "http",
     "host": "https://kelrisks.beta.gouv.fr",
     "matched-at": "https://kelrisks.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: d7c59cd5-d89e-4c84-86e2-440bd9c3ddc8\r\n\r\n",
+    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
     "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.919739599Z",
+    "timestamp": "2022-05-11T15:54:36.707761835Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -869,14 +320,14 @@
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "referrer-policy",
+    "matcher-name": "clear-site-data",
     "type": "http",
     "host": "https://kelrisks.beta.gouv.fr",
     "matched-at": "https://kelrisks.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: d7c59cd5-d89e-4c84-86e2-440bd9c3ddc8\r\n\r\n",
+    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
     "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.9198395Z",
+    "timestamp": "2022-05-11T15:54:36.707787335Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -908,9 +359,9 @@
     "host": "https://kelrisks.beta.gouv.fr",
     "matched-at": "https://kelrisks.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: d7c59cd5-d89e-4c84-86e2-440bd9c3ddc8\r\n\r\n",
+    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
     "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.919943301Z",
+    "timestamp": "2022-05-11T15:54:36.707816735Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -942,9 +393,553 @@
     "host": "https://kelrisks.beta.gouv.fr",
     "matched-at": "https://kelrisks.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: d7c59cd5-d89e-4c84-86e2-440bd9c3ddc8\r\n\r\n",
+    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
     "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.920042403Z",
+    "timestamp": "2022-05-11T15:54:36.707841635Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-max-age",
+    "type": "http",
+    "host": "https://kelrisks.beta.gouv.fr",
+    "matched-at": "https://kelrisks.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
+    "ip": "109.232.236.90",
+    "timestamp": "2022-05-11T15:54:36.710483138Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "content-security-policy",
+    "type": "http",
+    "host": "https://kelrisks.beta.gouv.fr",
+    "matched-at": "https://kelrisks.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
+    "ip": "109.232.236.90",
+    "timestamp": "2022-05-11T15:54:36.710536438Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "permission-policy",
+    "type": "http",
+    "host": "https://kelrisks.beta.gouv.fr",
+    "matched-at": "https://kelrisks.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
+    "ip": "109.232.236.90",
+    "timestamp": "2022-05-11T15:54:36.710566538Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-origin",
+    "type": "http",
+    "host": "https://kelrisks.beta.gouv.fr",
+    "matched-at": "https://kelrisks.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
+    "ip": "109.232.236.90",
+    "timestamp": "2022-05-11T15:54:36.718248747Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-methods",
+    "type": "http",
+    "host": "https://kelrisks.beta.gouv.fr",
+    "matched-at": "https://kelrisks.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 \r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Language: en\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLast-Modified: Mon, 03 Jan 2022 09:15:45 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers, Accept-Encoding\r\n\r\n<!DOCTYPE html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"><title>Evaluez simplement et rapidement les risques de votre bien - errial.georisques.gouv.fr</title><meta content=\"#ffffff\" name=\"theme-color\"><link href=\"/images/favicons/apple-icon-180x180.png\" rel=\"apple-touch-icon\" sizes=\"180x180\"><link href=\"/images/favicons/favicon-16x16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\"><link href=\"/images/favicons/favicon-32x32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\"><link href=\"/images/favicons/manifest.json\" rel=\"manifest\"><link color=\"#5bbad5\" href=\"/images/favicons/safari-pinned-tab.svg\" rel=\"mask-icon\"><script>if(window.navigator.userAgent.match(/(MSIE|Trident)/)){\n         var ieError = \"Essayez un navigateur plus moderne, ce site ne fonctionne pas avec Internet Explorer <= 11\";\n         document.write(ieError);\n         alert(ieError);\n      }</script><script src=\"https://cdn.polyfill.io/v2/polyfill.js?features=fetch\"></script><link href=\"/css/main.min.css\" rel=\"stylesheet\"><link href=\"/css/template.css\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Press+Start+2P\" rel=\"stylesheet\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"preload\" as=\"style\"><link href=\"/css/index.d8b02eef.css\" rel=\"preload\" as=\"style\"><link href=\"/js/chunk-vendors.a77f1e75.js\" rel=\"preload\" as=\"script\"><link href=\"/js/index.40a98a07.js\" rel=\"preload\" as=\"script\"><link href=\"/css/chunk-vendors.dc3f396b.css\" rel=\"stylesheet\"><link href=\"/css/index.d8b02eef.css\" rel=\"stylesheet\"></head><body><iframe id=\"tracker\" src=\"\" width=\"1\" height=\"1\" frameborder=\"0\" style=\"display:none\"></iframe><noscript></noscript><div id=\"app\"></div><script>var DOMAIN_MATOMO = '';\n\t\tvar ID_SITE_MATOMO = '';\n\t\t// 12\n\t    var MATOMO_API_KEYS = [\n\t        {host: 'kelrisks.brgm-rec.fr', idSite: '272', domainMatomo: 'brgm-rec'},\n\t        {host: 'errial.georisques.gouv.fr', idSite: '266', domainMatomo: 'brgm'},        \n\t        {host: '*', idSite: '272', domainMatomo: 'brgm-rec'}\n\t    ];\n\t    \n\t    for(var i=0; i<MATOMO_API_KEYS.length; i++){\n\t         var k = MATOMO_API_KEYS[i];\n\t         if ('*' === k.host || -1 !== document.domain.indexOf(k.host)) {\n\t\t\t\t ID_SITE_MATOMO = k.idSite;\n\t\t\t\t DOMAIN_MATOMO = k.domainMatomo;\n\t             break;\n\t         }    \n\t    }\t\n\t\n\t\t var _paq = window._paq || [];\n\t\t /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n\t\t _paq.push(['trackPageView']);\n\t\t _paq.push(['enableLinkTracking']);\n\t\t (function() {\n\t\t var u=\"https://wwwstats.\"+DOMAIN_MATOMO+\".fr/\";\n\t\t _paq.push(['setTrackerUrl', u+'piwik.php']);\n\t\t _paq.push(['setSiteId', ID_SITE_MATOMO]);\n\t\t var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n\t\t g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);\n\t\t })();</script><script src=\"/js/chunk-vendors.a77f1e75.js\"></script><script src=\"/js/index.40a98a07.js\"></script></body></html>",
+    "ip": "109.232.236.90",
+    "timestamp": "2022-05-11T15:54:36.718322947Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "content-security-policy",
+    "type": "http",
+    "host": "https://kelrisks.beta.gouv.fr",
+    "matched-at": "https://kelrisks.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: 7b9b25df-dd3d-42a8-9c55-c4b68cc713af\r\n\r\n",
+    "ip": "109.232.236.90",
+    "timestamp": "2022-05-11T15:54:36.719160248Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://kelrisks.beta.gouv.fr",
+    "matched-at": "https://kelrisks.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: 7b9b25df-dd3d-42a8-9c55-c4b68cc713af\r\n\r\n",
+    "ip": "109.232.236.90",
+    "timestamp": "2022-05-11T15:54:36.719193048Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-methods",
+    "type": "http",
+    "host": "https://kelrisks.beta.gouv.fr",
+    "matched-at": "https://kelrisks.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: 7b9b25df-dd3d-42a8-9c55-c4b68cc713af\r\n\r\n",
+    "ip": "109.232.236.90",
+    "timestamp": "2022-05-11T15:54:36.719207048Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-origin",
+    "type": "http",
+    "host": "https://kelrisks.beta.gouv.fr",
+    "matched-at": "https://kelrisks.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: 7b9b25df-dd3d-42a8-9c55-c4b68cc713af\r\n\r\n",
+    "ip": "109.232.236.90",
+    "timestamp": "2022-05-11T15:54:36.719220948Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-credentials",
+    "type": "http",
+    "host": "https://kelrisks.beta.gouv.fr",
+    "matched-at": "https://kelrisks.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: 7b9b25df-dd3d-42a8-9c55-c4b68cc713af\r\n\r\n",
+    "ip": "109.232.236.90",
+    "timestamp": "2022-05-11T15:54:36.719236348Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://kelrisks.beta.gouv.fr",
+    "matched-at": "https://kelrisks.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: 7b9b25df-dd3d-42a8-9c55-c4b68cc713af\r\n\r\n",
+    "ip": "109.232.236.90",
+    "timestamp": "2022-05-11T15:54:36.719251848Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-frame-options",
+    "type": "http",
+    "host": "https://kelrisks.beta.gouv.fr",
+    "matched-at": "https://kelrisks.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: 7b9b25df-dd3d-42a8-9c55-c4b68cc713af\r\n\r\n",
+    "ip": "109.232.236.90",
+    "timestamp": "2022-05-11T15:54:36.719264348Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-content-type-options",
+    "type": "http",
+    "host": "https://kelrisks.beta.gouv.fr",
+    "matched-at": "https://kelrisks.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: 7b9b25df-dd3d-42a8-9c55-c4b68cc713af\r\n\r\n",
+    "ip": "109.232.236.90",
+    "timestamp": "2022-05-11T15:54:36.719280648Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-permitted-cross-domain-policies",
+    "type": "http",
+    "host": "https://kelrisks.beta.gouv.fr",
+    "matched-at": "https://kelrisks.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: 7b9b25df-dd3d-42a8-9c55-c4b68cc713af\r\n\r\n",
+    "ip": "109.232.236.90",
+    "timestamp": "2022-05-11T15:54:36.719293348Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-opener-policy",
+    "type": "http",
+    "host": "https://kelrisks.beta.gouv.fr",
+    "matched-at": "https://kelrisks.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: 7b9b25df-dd3d-42a8-9c55-c4b68cc713af\r\n\r\n",
+    "ip": "109.232.236.90",
+    "timestamp": "2022-05-11T15:54:36.719312548Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-max-age",
+    "type": "http",
+    "host": "https://kelrisks.beta.gouv.fr",
+    "matched-at": "https://kelrisks.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: 7b9b25df-dd3d-42a8-9c55-c4b68cc713af\r\n\r\n",
+    "ip": "109.232.236.90",
+    "timestamp": "2022-05-11T15:54:36.719325048Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -976,9 +971,9 @@
     "host": "https://kelrisks.beta.gouv.fr",
     "matched-at": "https://kelrisks.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: d7c59cd5-d89e-4c84-86e2-440bd9c3ddc8\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: 7b9b25df-dd3d-42a8-9c55-c4b68cc713af\r\n\r\n",
     "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.920141704Z",
+    "timestamp": "2022-05-11T15:54:36.719338148Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -1005,14 +1000,14 @@
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "content-security-policy",
+    "matcher-name": "referrer-policy",
     "type": "http",
     "host": "https://kelrisks.beta.gouv.fr",
     "matched-at": "https://kelrisks.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: d7c59cd5-d89e-4c84-86e2-440bd9c3ddc8\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: 7b9b25df-dd3d-42a8-9c55-c4b68cc713af\r\n\r\n",
     "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.920246405Z",
+    "timestamp": "2022-05-11T15:54:36.719356248Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -1039,14 +1034,14 @@
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "x-frame-options",
+    "matcher-name": "clear-site-data",
     "type": "http",
     "host": "https://kelrisks.beta.gouv.fr",
     "matched-at": "https://kelrisks.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: d7c59cd5-d89e-4c84-86e2-440bd9c3ddc8\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: 7b9b25df-dd3d-42a8-9c55-c4b68cc713af\r\n\r\n",
     "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.920347307Z",
+    "timestamp": "2022-05-11T15:54:36.719369848Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -1073,14 +1068,14 @@
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "x-permitted-cross-domain-policies",
+    "matcher-name": "cross-origin-embedder-policy",
     "type": "http",
     "host": "https://kelrisks.beta.gouv.fr",
     "matched-at": "https://kelrisks.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: d7c59cd5-d89e-4c84-86e2-440bd9c3ddc8\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: 7b9b25df-dd3d-42a8-9c55-c4b68cc713af\r\n\r\n",
     "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.920449008Z",
+    "timestamp": "2022-05-11T15:54:36.719386148Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -1107,14 +1102,14 @@
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "access-control-allow-origin",
+    "matcher-name": "permission-policy",
     "type": "http",
     "host": "https://kelrisks.beta.gouv.fr",
     "matched-at": "https://kelrisks.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: kelrisks.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 08 May 2022 04:58:23 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: d7c59cd5-d89e-4c84-86e2-440bd9c3ddc8\r\n\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Wed, 11 May 2022 15:54:36 GMT\r\nLocation: https://errial.georisques.gouv.fr\r\nX-Request-Id: 7b9b25df-dd3d-42a8-9c55-c4b68cc713af\r\n\r\n",
     "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:23.92054891Z",
+    "timestamp": "2022-05-11T15:54:36.719399548Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://kelrisks.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://errial.georisques.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -1141,7 +1136,7 @@
       "TLS13"
     ],
     "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:58:41.52634815Z",
+    "timestamp": "2022-05-11T15:54:39.596501372Z",
     "matcher-status": true,
     "matched-line": null
   },
@@ -1178,9 +1173,9 @@
       "betagouv-redirections.osc-fr1.scalingo.io.",
       "sc-lb-pool-01.osc-fr1.scalingo-network.com."
     ],
-    "request": ";; opcode: QUERY, status: NOERROR, id: 60904\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;kelrisks.beta.gouv.fr.\tIN\t NS\n",
-    "response": ";; opcode: QUERY, status: NOERROR, id: 60904\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 1232\n\n;; QUESTION SECTION:\n;kelrisks.beta.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nkelrisks.beta.gouv.fr.\t10800\tIN\tCNAME\tbetagouv-redirections.osc-fr1.scalingo.io.\nbetagouv-redirections.osc-fr1.scalingo.io.\t300\tIN\tCNAME\tsc-lb-pool-01.osc-fr1.scalingo-network.com.\n\n;; AUTHORITY SECTION:\nscalingo-network.com.\t3600\tIN\tSOA\tburt.ns.cloudflare.com. dns.cloudflare.com. 2277339532 10000 2400 604800 3600\n",
-    "timestamp": "2022-05-08T04:59:03.647692838Z",
+    "request": ";; opcode: QUERY, status: NOERROR, id: 58608\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;kelrisks.beta.gouv.fr.\tIN\t NS\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 58608\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 1232\n\n;; QUESTION SECTION:\n;kelrisks.beta.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nkelrisks.beta.gouv.fr.\t10800\tIN\tCNAME\tbetagouv-redirections.osc-fr1.scalingo.io.\nbetagouv-redirections.osc-fr1.scalingo.io.\t300\tIN\tCNAME\tsc-lb-pool-01.osc-fr1.scalingo-network.com.\n\n;; AUTHORITY SECTION:\nscalingo-network.com.\t3600\tIN\tSOA\tburt.ns.cloudflare.com. dns.cloudflare.com. 2277339532 10000 2400 604800 3600\n",
+    "timestamp": "2022-05-11T15:54:48.926854431Z",
     "matcher-status": true,
     "matched-line": null
   },
@@ -1206,7 +1201,7 @@
       "kelrisks.beta.gouv.fr"
     ],
     "ip": "109.232.236.90",
-    "timestamp": "2022-05-08T04:59:52.457301715Z",
+    "timestamp": "2022-05-11T15:54:49.252213611Z",
     "matcher-status": true,
     "matched-line": null
   }
