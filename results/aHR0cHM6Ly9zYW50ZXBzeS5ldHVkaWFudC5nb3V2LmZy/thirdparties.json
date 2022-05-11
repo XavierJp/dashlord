@@ -15,7 +15,7 @@
       "value": "1",
       "domain": "santepsy.etudiant.gouv.fr",
       "path": "/",
-      "expires": 1651995701,
+      "expires": 1652294071,
       "size": 17,
       "httpOnly": false,
       "secure": true,
@@ -27,10 +27,10 @@
     },
     {
       "name": "_pk_id.160.22ad",
-      "value": "6522e834dbba6211.1651993901.",
+      "value": "e76bbf6e5964a884.1652292272.",
       "domain": "santepsy.etudiant.gouv.fr",
       "path": "/",
-      "expires": 1685949101,
+      "expires": 1686247472,
       "size": 43,
       "httpOnly": false,
       "secure": true,
@@ -43,9 +43,9 @@
   ],
   "headers": {
     "server": "nginx",
-    "date": "Sun, 08 May 2022 07:11:40 GMT",
+    "date": "Wed, 11 May 2022 18:04:30 GMT",
     "content-type": "text/html; charset=UTF-8",
-    "x-request-id": "ea93cecb-799b-495f-a0c3-47ede90a37b9",
+    "x-request-id": "ba02d795-3063-4938-a85d-c9d6fa6bae48",
     "cross-origin-opener-policy": "same-origin",
     "cross-origin-resource-policy": "same-origin",
     "x-dns-prefetch-control": "off",
@@ -160,7 +160,7 @@
     },
     {
       "hostname": "cdn.jsdelivr.net",
-      "ip": "104.16.89.20",
+      "ip": "104.16.88.20",
       "geoip": null
     }
   ]
