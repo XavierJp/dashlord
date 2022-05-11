@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 04:21:26",
+	"@generated": "Wed, 11 May 2022 15:20:52",
 	"site":[ 
 		{
 			"@name": "https://emplois.inclusion.beta.gouv.fr",
@@ -210,7 +210,7 @@
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "68"
+					"sourceid": "72"
 				},
 				{
 					"pluginid": "10017",
@@ -231,6 +231,13 @@
 						},
 						{
 							"uri": "https://emplois.inclusion.beta.gouv.fr/",
+							"method": "GET",
+							"param": "https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.9.3/tarteaucitron.min.js",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.9.3/tarteaucitron.min.js\" integrity=\"\" crossorigin=\"anonymous\"></script>"
+						},
+						{
+							"uri": "https://emplois.inclusion.beta.gouv.fr/accounts/signup/",
 							"method": "GET",
 							"param": "https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.9.3/tarteaucitron.min.js",
 							"attack": "",
@@ -300,7 +307,7 @@
 							"evidence": "<script src=\"https://stats.inclusion.beta.gouv.fr/app/iframeResizer.js\"></script>"
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
@@ -721,89 +728,89 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "4yDcqTbEP19njZ12MtwhRWwsiZvG4WVyzT4IxWId5QmJQhUt5Pv42QvDQBIa5BaA"
+							"evidence": "bCzi4irVE9st9PIFkcBdjtXHWwZiNGu2lSTefUFRiL9jm7JoSYUqnOb5xkeKqGn8"
 						},
 						{
 							"uri": "https://emplois.inclusion.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "8yE2EGPHBChRdsRI675vufyoHKuTgw07DMpoeQsobSgmqVMZvTrUcVqKZG8uHwhN"
+							"evidence": "cnuzUcKQP1YneMOe6OxWaKLcVFYWBTxLIkDMLnp7hRHoywnluAUQ9djCS3X0GZ5T"
 						},
 						{
 							"uri": "https://emplois.inclusion.beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "thrH3UnAmrg7DY6u9eNjmUPQ5BfWo4IDGHEtjk6QTGSdahqEecinx7UymRwV0zXG"
+							"evidence": "uWHBuzl01PNDAtKIvuUNZIPYOslSYlt1659i9ekbqzLM92IHgIAl1N0K6f7e8HFr"
 						},
 						{
 							"uri": "https://emplois.inclusion.beta.gouv.fr/accounts/signup/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "thrH3UnAmrg7DY6u9eNjmUPQ5BfWo4IDGHEtjk6QTGSdahqEecinx7UymRwV0zXG"
+							"evidence": "uWHBuzl01PNDAtKIvuUNZIPYOslSYlt1659i9ekbqzLM92IHgIAl1N0K6f7e8HFr"
 						},
 						{
 							"uri": "https://emplois.inclusion.beta.gouv.fr/login/job_seeker",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "thrH3UnAmrg7DY6u9eNjmUPQ5BfWo4IDGHEtjk6QTGSdahqEecinx7UymRwV0zXG"
+							"evidence": "uWHBuzl01PNDAtKIvuUNZIPYOslSYlt1659i9ekbqzLM92IHgIAl1N0K6f7e8HFr"
 						},
 						{
 							"uri": "https://emplois.inclusion.beta.gouv.fr/login/labor_inspector",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "thrH3UnAmrg7DY6u9eNjmUPQ5BfWo4IDGHEtjk6QTGSdahqEecinx7UymRwV0zXG"
+							"evidence": "uWHBuzl01PNDAtKIvuUNZIPYOslSYlt1659i9ekbqzLM92IHgIAl1N0K6f7e8HFr"
 						},
 						{
 							"uri": "https://emplois.inclusion.beta.gouv.fr/login/prescriber",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "thrH3UnAmrg7DY6u9eNjmUPQ5BfWo4IDGHEtjk6QTGSdahqEecinx7UymRwV0zXG"
+							"evidence": "uWHBuzl01PNDAtKIvuUNZIPYOslSYlt1659i9ekbqzLM92IHgIAl1N0K6f7e8HFr"
 						},
 						{
 							"uri": "https://emplois.inclusion.beta.gouv.fr/login/siae_staff",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "thrH3UnAmrg7DY6u9eNjmUPQ5BfWo4IDGHEtjk6QTGSdahqEecinx7UymRwV0zXG"
+							"evidence": "uWHBuzl01PNDAtKIvuUNZIPYOslSYlt1659i9ekbqzLM92IHgIAl1N0K6f7e8HFr"
 						},
 						{
 							"uri": "https://emplois.inclusion.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "thrH3UnAmrg7DY6u9eNjmUPQ5BfWo4IDGHEtjk6QTGSdahqEecinx7UymRwV0zXG"
+							"evidence": "uWHBuzl01PNDAtKIvuUNZIPYOslSYlt1659i9ekbqzLM92IHgIAl1N0K6f7e8HFr"
 						},
 						{
 							"uri": "https://emplois.inclusion.beta.gouv.fr/search/prescribers",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "thrH3UnAmrg7DY6u9eNjmUPQ5BfWo4IDGHEtjk6QTGSdahqEecinx7UymRwV0zXG"
+							"evidence": "uWHBuzl01PNDAtKIvuUNZIPYOslSYlt1659i9ekbqzLM92IHgIAl1N0K6f7e8HFr"
 						},
 						{
 							"uri": "https://emplois.inclusion.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "thrH3UnAmrg7DY6u9eNjmUPQ5BfWo4IDGHEtjk6QTGSdahqEecinx7UymRwV0zXG"
+							"evidence": "uWHBuzl01PNDAtKIvuUNZIPYOslSYlt1659i9ekbqzLM92IHgIAl1N0K6f7e8HFr"
 						},
 						{
 							"uri": "https://emplois.inclusion.beta.gouv.fr/stats/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "thrH3UnAmrg7DY6u9eNjmUPQ5BfWo4IDGHEtjk6QTGSdahqEecinx7UymRwV0zXG"
+							"evidence": "uWHBuzl01PNDAtKIvuUNZIPYOslSYlt1659i9ekbqzLM92IHgIAl1N0K6f7e8HFr"
 						}
 					],
 					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD \u07296\uFFFD?_g\uFFFD\uFFFDv2\uFFFD!El,\uFFFD\uFFFD\uFFFD\uFFFDer\uFFFD>\\x0008\uFFFDb\\x001d\uFFFD\t\uFFFDB\\x0015-\uFFFD\uFFFD\uFFFD\uFFFD\\x000b\uFFFD@\\x0012\\x001a\uFFFD\\x0016\uFFFD</p>",
+					"otherinfo": "<p>l,\uFFFD\uFFFD*\uFFFD\\x0013\uFFFD-\uFFFD\uFFFD\\x0005\uFFFD\uFFFD]\uFFFD\uFFFD\uFFFD[\\x0006b4k\uFFFD\uFFFD$\uFFFD}AQ\uFFFD\uFFFDc\uFFFD\uFFFDhI\uFFFD*\uFFFD\uFFFD\uFFFD\uFFFDG\uFFFD\uFFFDi\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
