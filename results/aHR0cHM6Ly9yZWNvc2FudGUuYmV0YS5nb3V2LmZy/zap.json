@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 06:56:33",
+	"@generated": "Wed, 11 May 2022 17:59:07",
 	"site":[ 
 		{
 			"@name": "https://recosante.beta.gouv.fr",
@@ -157,14 +157,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/place/44109/nantes/",
+							"uri": "https://recosante.beta.gouv.fr/place/34172/montpellier/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/place/67482/strasbourg/",
+							"uri": "https://recosante.beta.gouv.fr/place/44109/nantes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -232,6 +232,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://recosante.beta.gouv.fr/mentions-legales",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://recosante.beta.gouv.fr/place/06088/nice/",
 							"method": "GET",
 							"param": "X-Frame-Options",
@@ -282,13 +289,6 @@
 						},
 						{
 							"uri": "https://recosante.beta.gouv.fr/place/75056/paris/",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://recosante.beta.gouv.fr/politiquedeconfidentialite",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -349,14 +349,14 @@
 							"evidence": "<link rel=\"preconnect\" href=\"https://stats.data.gouv.fr\"/>"
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/place/44109/nantes/",
+							"uri": "https://recosante.beta.gouv.fr/place/34172/montpellier/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<link rel=\"preconnect\" href=\"https://stats.data.gouv.fr\"/>"
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/place/67482/strasbourg/",
+							"uri": "https://recosante.beta.gouv.fr/place/44109/nantes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -445,14 +445,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/place/44109/nantes/",
+							"uri": "https://recosante.beta.gouv.fr/place/34172/montpellier/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/place/67482/strasbourg/",
+							"uri": "https://recosante.beta.gouv.fr/place/44109/nantes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -541,14 +541,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/place/44109/nantes/",
+							"uri": "https://recosante.beta.gouv.fr/place/34172/montpellier/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/place/67482/strasbourg/",
+							"uri": "https://recosante.beta.gouv.fr/place/44109/nantes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -630,49 +630,35 @@
 							"evidence": "807395231"
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1139396248"
-						},
-						{
-							"uri": "https://recosante.beta.gouv.fr/",
+							"uri": "https://recosante.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "2145949318"
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/",
+							"uri": "https://recosante.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "23000091"
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "807395231"
-						},
-						{
-							"uri": "https://recosante.beta.gouv.fr/robots.txt",
+							"uri": "https://recosante.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "2145949318"
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/robots.txt",
+							"uri": "https://recosante.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "23000091"
 						}
 					],
-					"count": "10",
+					"count": "8",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1139396248, which evaluates to: 2006-02-08 10:57:28</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -699,6 +685,13 @@
 						},
 						{
 							"uri": "https://recosante.beta.gouv.fr/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://recosante.beta.gouv.fr/mentions-legales",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -759,13 +752,6 @@
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
-						},
-						{
-							"uri": "https://recosante.beta.gouv.fr/politiquedeconfidentialite",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
 						}
 					],
 					"count": "11",
@@ -822,14 +808,14 @@
 							"evidence": "TextInput__Wrapper-sc-porxga-0"
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/place/44109/nantes/",
+							"uri": "https://recosante.beta.gouv.fr/place/34172/montpellier/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "TextInput__Wrapper-sc-porxga-0"
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/place/67482/strasbourg/",
+							"uri": "https://recosante.beta.gouv.fr/place/44109/nantes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -945,7 +931,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "196"
+					"sourceid": "195"
 				},
 				{
 					"pluginid": "10109",
@@ -993,14 +979,14 @@
 							"evidence": "<noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript>"
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/place/44109/nantes/",
+							"uri": "https://recosante.beta.gouv.fr/place/34172/montpellier/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript>"
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/place/67482/strasbourg/",
+							"uri": "https://recosante.beta.gouv.fr/place/44109/nantes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1068,6 +1054,13 @@
 							"evidence": "public, max-age=0, must-revalidate"
 						},
 						{
+							"uri": "https://recosante.beta.gouv.fr/mentions-legales",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "public, max-age=0, must-revalidate"
+						},
+						{
 							"uri": "https://recosante.beta.gouv.fr/place/06088/nice/",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -1118,13 +1111,6 @@
 						},
 						{
 							"uri": "https://recosante.beta.gouv.fr/place/75056/paris/",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "public, max-age=0, must-revalidate"
-						},
-						{
-							"uri": "https://recosante.beta.gouv.fr/politiquedeconfidentialite",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1185,14 +1171,14 @@
 							"evidence": "Age: 0"
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/place/44109/nantes/",
+							"uri": "https://recosante.beta.gouv.fr/place/34172/montpellier/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "Age: 0"
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/place/67482/strasbourg/",
+							"uri": "https://recosante.beta.gouv.fr/place/44109/nantes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1281,14 +1267,14 @@
 							"evidence": "max-age=0"
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/place/44109/nantes/",
+							"uri": "https://recosante.beta.gouv.fr/place/34172/montpellier/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "max-age=0"
 						},
 						{
-							"uri": "https://recosante.beta.gouv.fr/place/67482/strasbourg/",
+							"uri": "https://recosante.beta.gouv.fr/place/44109/nantes/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
