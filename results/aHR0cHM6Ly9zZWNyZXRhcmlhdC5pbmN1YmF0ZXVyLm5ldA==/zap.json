@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 07:13:21",
+	"@generated": "Wed, 11 May 2022 18:16:19",
 	"site":[ 
 		{
 			"@name": "https://secretariat.incubateur.net",
@@ -188,6 +188,13 @@
 							"evidence": "Set-Cookie: connect.sid"
 						},
 						{
+							"uri": "https://secretariat.incubateur.net/login",
+							"method": "GET",
+							"param": "connect.sid",
+							"attack": "",
+							"evidence": "Set-Cookie: connect.sid"
+						},
+						{
 							"uri": "https://secretariat.incubateur.net/login?next=/robots.txt",
 							"method": "GET",
 							"param": "connect.sid",
@@ -230,7 +237,7 @@
 							"evidence": "Set-Cookie: connect.sid"
 						}
 					],
-					"count": "7",
+					"count": "8",
 					"solution": "<p>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p>",
@@ -564,7 +571,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "20220329"
+							"evidence": "20220426"
 						},
 						{
 							"uri": "https://secretariat.incubateur.net/public/js/shared.js",
@@ -608,7 +615,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "48"
+					"sourceid": "37"
 				},
 				{
 					"pluginid": "10021",
@@ -649,14 +656,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://secretariat.incubateur.net/onboarding",
+							"uri": "https://secretariat.incubateur.net/public/js/Home.js?1.0.0",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://secretariat.incubateur.net/public/js/Home.js?1.0.0",
+							"uri": "https://secretariat.incubateur.net/public/js/shared.js",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -735,7 +742,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3AinU1Askw_uGpDpjEJpqntkZABqnnCetA"
+							"evidence": "3A9b8ofMmgOnAaMu1cunMmnegMGTQvoQBh"
 						},
 						{
 							"uri": "https://secretariat.incubateur.net/login",
@@ -749,7 +756,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "fa0-/0G7JBbNBLfJO6zsI/7CkikchII"
+							"evidence": "10b4-5dXUTHSA88KdeWOgHBfcNsMnBBE"
 						},
 						{
 							"uri": "https://secretariat.incubateur.net/login?next=/sitemap.xml",
@@ -757,13 +764,6 @@
 							"param": "",
 							"attack": "",
 							"evidence": "fa3-TIH4n6vcgLpWvrJGgaU6zH5dje0"
-						},
-						{
-							"uri": "https://secretariat.incubateur.net/onboarding",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAA5klEQVQ4jc3QMUuCURTG8V8tNQRGY45BS01OfQHH8EMEbUJ9iQga+yAFKo42BI3RYkRQkxKuCba9DZ6LF3nT3DxwuNzn+Z9zzz2sU3TwgrMFzHkw7TLzG0VkD/3QxnjFY+aPyxq8ZcCy/ExFm3HuYWvJF/PYwX4uXK/wespb2MjGPwzjHu+o4ST8JzwH04i6DxykCSZRfPGP8S+D/cnFUYiVuHdKCpO2G+yI2RIf4kyLLEoaFHNMLzePTb9xtXh6cBPs0bxRxxfucIoqtiOrpstrBVP/q3sFTXQxjJcmGITWNNvTmsQvxG9Kly7hW/kAAAAASUVORK5CYII="
 						},
 						{
 							"uri": "https://secretariat.incubateur.net/public/js/Home.js?1.0.0",
@@ -777,14 +777,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3APO9cJdCujiXQsTgYu5kwDFo7qoNAkBpH"
+							"evidence": "3ASVMSK2ujyV8z6ESo80YKRM4zv6y00SL1"
 						},
 						{
 							"uri": "https://secretariat.incubateur.net/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3AinU1Askw_uGpDpjEJpqntkZABqnnCetA"
+							"evidence": "3A9b8ofMmgOnAaMu1cunMmnegMGTQvoQBh"
 						},
 						{
 							"uri": "https://secretariat.incubateur.net/static/css/main.css",
@@ -798,14 +798,21 @@
 							"method": "POST",
 							"param": "",
 							"attack": "",
-							"evidence": "3AinU1Askw_uGpDpjEJpqntkZABqnnCetA"
+							"evidence": "3A9b8ofMmgOnAaMu1cunMmnegMGTQvoQBh"
 						},
 						{
 							"uri": "https://secretariat.incubateur.net/login?next=/robots.txt",
 							"method": "POST",
 							"param": "",
 							"attack": "",
-							"evidence": "3AinU1Askw_uGpDpjEJpqntkZABqnnCetA"
+							"evidence": "3A9b8ofMmgOnAaMu1cunMmnegMGTQvoQBh"
+						},
+						{
+							"uri": "https://secretariat.incubateur.net/login?next=/sitemap.xml",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "3A9b8ofMmgOnAaMu1cunMmnegMGTQvoQBh"
 						}
 					],
 					"count": "12",
@@ -901,7 +908,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "48"
+					"sourceid": "37"
 				},
 				{
 					"pluginid": "10049",
@@ -948,7 +955,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10015",
