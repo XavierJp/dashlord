@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 03:24:01",
+	"@generated": "Wed, 11 May 2022 14:16:56",
 	"site":[ 
 		{
 			"@name": "https://contrat.apprentissage.beta.gouv.fr",
@@ -86,7 +86,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "98"
+					"sourceid": "95"
 				},
 				{
 					"pluginid": "10055",
@@ -207,14 +207,14 @@
 					"desc": "<p>Application Source Code was disclosed by the web server - SQL</p>",
 					"instances":[ 
 						{
-							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/embed/dashboard/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTE5ODA4MDUsImlhdCI6MTY1MTk4MDIwNH0.zh1XuJWKfhfzAF7Ytms2ABMmK_inSrD6OhNZeWWoGQE",
+							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/embed/dashboard/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTIyNzkxODIsImlhdCI6MTY1MjI3ODU4MX0.nwcPQWZqiDrXpxBPrXJhQ8HdiQ5whH1IdHXJgSL3vwE",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "Select one or more values from a list or search box."
 						},
 						{
-							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/embed/dashboard/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTE5ODA4MDUsImlhdCI6MTY1MTk4MDIwNH0.zh1XuJWKfhfzAF7Ytms2ABMmK_inSrD6OhNZeWWoGQE%5C",
+							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/embed/dashboard/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTIyNzkxODIsImlhdCI6MTY1MjI3ODU4MX0.nwcPQWZqiDrXpxBPrXJhQ8HdiQ5whH1IdHXJgSL3vwE%5C",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -227,7 +227,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "112"
+					"sourceid": "111"
 				},
 				{
 					"pluginid": "10054",
@@ -240,7 +240,7 @@
 					"desc": "<p>A cookie has been set with its SameSite attribute set to \"none\", which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
 					"instances":[ 
 						{
-							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/embed/dashboard/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTE5ODA4MDUsImlhdCI6MTY1MTk4MDIwNH0.zh1XuJWKfhfzAF7Ytms2ABMmK_inSrD6OhNZeWWoGQE",
+							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/embed/dashboard/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTIyNzkxODIsImlhdCI6MTY1MjI3ODU4MX0.nwcPQWZqiDrXpxBPrXJhQ8HdiQ5whH1IdHXJgSL3vwE",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -253,7 +253,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "112"
+					"sourceid": "111"
 				},
 				{
 					"pluginid": "10110",
@@ -293,7 +293,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "111"
+					"sourceid": "125"
 				},
 				{
 					"pluginid": "10063",
@@ -402,28 +402,28 @@
 					"desc": "<p>HTTP Strict Transport Security (HSTS) headers were found, a response with multiple HSTS header entries is not compliant with the specification (RFC 6797) and only the first HSTS header will be processed others will be ignored by user agents or the HSTS policy may be incorrectly applied.</p><p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL).</p>",
 					"instances":[ 
 						{
-							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/api/public/oembed?format=json&url=https%3A%2F%2Fcontrat.apprentissage.beta.gouv.fr%2Fmetabase%2Fembed%2Fdashboard%2FeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTE5ODA4MDUsImlhdCI6MTY1MTk4MDIwNH0.zh1XuJWKfhfzAF7Ytms2ABMmK_inSrD6OhNZeWWoGQE",
+							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/api/public/oembed?format=json&url=https%3A%2F%2Fcontrat.apprentissage.beta.gouv.fr%2Fmetabase%2Fembed%2Fdashboard%2FeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTIyNzkxODIsImlhdCI6MTY1MjI3ODU4MX0.nwcPQWZqiDrXpxBPrXJhQ8HdiQ5whH1IdHXJgSL3vwE",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/api/public/oembed?format=json&url=https%3A%2F%2Fcontrat.apprentissage.beta.gouv.fr%2Fmetabase%2Fembed%2Fdashboard%2FeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTE5ODA4MDUsImlhdCI6MTY1MTk4MDIwNH0.zh1XuJWKfhfzAF7Ytms2ABMmK_inSrD6OhNZeWWoGQE%5C",
+							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/api/public/oembed?format=json&url=https%3A%2F%2Fcontrat.apprentissage.beta.gouv.fr%2Fmetabase%2Fembed%2Fdashboard%2FeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTIyNzkxODIsImlhdCI6MTY1MjI3ODU4MX0.nwcPQWZqiDrXpxBPrXJhQ8HdiQ5whH1IdHXJgSL3vwE%5C",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/embed/dashboard/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTE5ODA4MDUsImlhdCI6MTY1MTk4MDIwNH0.zh1XuJWKfhfzAF7Ytms2ABMmK_inSrD6OhNZeWWoGQE",
+							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/embed/dashboard/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTIyNzkxODIsImlhdCI6MTY1MjI3ODU4MX0.nwcPQWZqiDrXpxBPrXJhQ8HdiQ5whH1IdHXJgSL3vwE",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/embed/dashboard/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTE5ODA4MDUsImlhdCI6MTY1MTk4MDIwNH0.zh1XuJWKfhfzAF7Ytms2ABMmK_inSrD6OhNZeWWoGQE%5C",
+							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/embed/dashboard/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTIyNzkxODIsImlhdCI6MTY1MjI3ODU4MX0.nwcPQWZqiDrXpxBPrXJhQ8HdiQ5whH1IdHXJgSL3vwE%5C",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -436,7 +436,7 @@
 					"reference": "<p>http://tools.ietf.org/html/rfc6797#section-8.1</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "161"
+					"sourceid": "162"
 				},
 				{
 					"pluginid": "10096",
@@ -570,82 +570,82 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/bVt1jqA0sCWcv_XNpbGdj/_buildManifest"
+							"evidence": "/_next/static/MWB3C1v9OVfbRcvLJiGPd/_buildManifest"
 						},
 						{
 							"uri": "https://contrat.apprentissage.beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/bVt1jqA0sCWcv_XNpbGdj/_buildManifest"
+							"evidence": "/_next/static/MWB3C1v9OVfbRcvLJiGPd/_buildManifest"
 						},
 						{
 							"uri": "https://contrat.apprentissage.beta.gouv.fr/auth/confirmation",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "6f55-kxlyaE5TEV58ZSWO5HESa0ynkEk"
+							"evidence": "6f55-FyugJSSJoDMlUgZFZx9cmZcZvm0"
 						},
 						{
 							"uri": "https://contrat.apprentissage.beta.gouv.fr/auth/connexion",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/bVt1jqA0sCWcv_XNpbGdj/_buildManifest"
+							"evidence": "/_next/static/MWB3C1v9OVfbRcvLJiGPd/_buildManifest"
 						},
 						{
 							"uri": "https://contrat.apprentissage.beta.gouv.fr/auth/finalize",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/bVt1jqA0sCWcv_XNpbGdj/_buildManifest"
+							"evidence": "/_next/static/MWB3C1v9OVfbRcvLJiGPd/_buildManifest"
 						},
 						{
 							"uri": "https://contrat.apprentissage.beta.gouv.fr/auth/inscription",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/bVt1jqA0sCWcv_XNpbGdj/_buildManifest"
+							"evidence": "/_next/static/MWB3C1v9OVfbRcvLJiGPd/_buildManifest"
 						},
 						{
 							"uri": "https://contrat.apprentissage.beta.gouv.fr/en-attente-confirmation",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "68d1-T8SZfwOKcN8s3qLNNeg4exL23Bo"
+							"evidence": "68d1-+x/TrHZ4rd1+bffjqbFTytTCF3U"
 						},
 						{
 							"uri": "https://contrat.apprentissage.beta.gouv.fr/forgotten-password",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "68d1-T8SZfwOKcN8s3qLNNeg4exL23Bo"
+							"evidence": "68d1-+x/TrHZ4rd1+bffjqbFTytTCF3U"
 						},
 						{
 							"uri": "https://contrat.apprentissage.beta.gouv.fr/reset-password",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "68d1-T8SZfwOKcN8s3qLNNeg4exL23Bo"
+							"evidence": "68d1-+x/TrHZ4rd1+bffjqbFTytTCF3U"
 						},
 						{
 							"uri": "https://contrat.apprentissage.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "68d1-T8SZfwOKcN8s3qLNNeg4exL23Bo"
+							"evidence": "68d1-+x/TrHZ4rd1+bffjqbFTytTCF3U"
 						},
 						{
 							"uri": "https://contrat.apprentissage.beta.gouv.fr/stats",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/bVt1jqA0sCWcv_XNpbGdj/_buildManifest"
+							"evidence": "/_next/static/MWB3C1v9OVfbRcvLJiGPd/_buildManifest"
 						}
 					],
 					"count": "11",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\u0577X\uFFFD\\x0003K\\x0002Y\uFFFD\uFFFD\\\uFFFD[\\x0019\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0016\\x0007p\uFFFD\uFFFD\u04D5}\uFFFD\\\uFFFD\uFFFDb\\x0018\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -962,28 +962,28 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/api/public/oembed?format=json&url=https%3A%2F%2Fcontrat.apprentissage.beta.gouv.fr%2Fmetabase%2Fembed%2Fdashboard%2FeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTE5ODA4MDUsImlhdCI6MTY1MTk4MDIwNH0.zh1XuJWKfhfzAF7Ytms2ABMmK_inSrD6OhNZeWWoGQE",
+							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/api/public/oembed?format=json&url=https%3A%2F%2Fcontrat.apprentissage.beta.gouv.fr%2Fmetabase%2Fembed%2Fdashboard%2FeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTIyNzkxODIsImlhdCI6MTY1MjI3ODU4MX0.nwcPQWZqiDrXpxBPrXJhQ8HdiQ5whH1IdHXJgSL3vwE",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": "max-age=0, no-cache, must-revalidate, proxy-revalidate"
 						},
 						{
-							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/api/public/oembed?format=json&url=https%3A%2F%2Fcontrat.apprentissage.beta.gouv.fr%2Fmetabase%2Fembed%2Fdashboard%2FeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTE5ODA4MDUsImlhdCI6MTY1MTk4MDIwNH0.zh1XuJWKfhfzAF7Ytms2ABMmK_inSrD6OhNZeWWoGQE%5C",
+							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/api/public/oembed?format=json&url=https%3A%2F%2Fcontrat.apprentissage.beta.gouv.fr%2Fmetabase%2Fembed%2Fdashboard%2FeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTIyNzkxODIsImlhdCI6MTY1MjI3ODU4MX0.nwcPQWZqiDrXpxBPrXJhQ8HdiQ5whH1IdHXJgSL3vwE%5C",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": "max-age=0, no-cache, must-revalidate, proxy-revalidate"
 						},
 						{
-							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/embed/dashboard/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTE5ODA4MDUsImlhdCI6MTY1MTk4MDIwNH0.zh1XuJWKfhfzAF7Ytms2ABMmK_inSrD6OhNZeWWoGQE",
+							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/embed/dashboard/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTIyNzkxODIsImlhdCI6MTY1MjI3ODU4MX0.nwcPQWZqiDrXpxBPrXJhQ8HdiQ5whH1IdHXJgSL3vwE",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": "max-age=0, no-cache, must-revalidate, proxy-revalidate"
 						},
 						{
-							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/embed/dashboard/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTE5ODA4MDUsImlhdCI6MTY1MTk4MDIwNH0.zh1XuJWKfhfzAF7Ytms2ABMmK_inSrD6OhNZeWWoGQE%5C",
+							"uri": "https://contrat.apprentissage.beta.gouv.fr/metabase/embed/dashboard/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE2NTIyNzkxODIsImlhdCI6MTY1MjI3ODU4MX0.nwcPQWZqiDrXpxBPrXJhQ8HdiQ5whH1IdHXJgSL3vwE%5C",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1003,7 +1003,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "161"
+					"sourceid": "162"
 				},
 				{
 					"pluginid": "10049",
@@ -1043,7 +1043,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "59"
+					"sourceid": "60"
 				},
 				{
 					"pluginid": "10049",
