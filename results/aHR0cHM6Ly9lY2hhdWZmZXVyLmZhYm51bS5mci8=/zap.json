@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 09:00:56",
+	"@generated": "Wed, 11 May 2022 19:54:55",
 	"site":[ 
 		{
 			"@name": "https://echauffeur.fabnum.fr",
@@ -447,7 +447,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "48"
+					"sourceid": "46"
 				},
 				{
 					"pluginid": "10063",
@@ -584,7 +584,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://echauffeur.fabnum.fr/_nuxt/css/e1e6f57.css",
+							"uri": "https://echauffeur.fabnum.fr/_nuxt/css/129c605.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -925,7 +925,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "74"
+					"sourceid": "73"
 				},
 				{
 					"pluginid": "10027",
@@ -1224,6 +1224,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://echauffeur.fabnum.fr/_nuxt/3e567fc.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=31536000"
+						},
+						{
 							"uri": "https://echauffeur.fabnum.fr/_nuxt/584be2f.js",
 							"method": "GET",
 							"param": "",
@@ -1232,13 +1239,6 @@
 						},
 						{
 							"uri": "https://echauffeur.fabnum.fr/_nuxt/67133e8.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=31536000"
-						},
-						{
-							"uri": "https://echauffeur.fabnum.fr/_nuxt/css/e1e6f57.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
