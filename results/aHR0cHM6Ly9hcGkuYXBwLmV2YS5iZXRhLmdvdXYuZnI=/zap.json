@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 11:15:09",
+	"@generated": "Wed, 11 May 2022 22:03:08",
 	"site":[ 
 		{
 			"@name": "https://api.app.eva.beta.gouv.fr",
@@ -56,14 +56,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link rel=\"stylesheet\" media=\"all\" href=\"https://eva.beta.gouv.fr/pro/assets/active_admin-5bcdc22c51e9ac437cd1aecbc1ce0a87e7a206527fc8e488a425065c34eadf9e.css\" />"
+							"evidence": "<link rel=\"stylesheet\" media=\"all\" href=\"https://eva.beta.gouv.fr/pro/assets/active_admin-766f6e1addcd99297b62fab67f8b5083e7ab8425faecc4cb1f8706df62459d01.css\" />"
 						},
 						{
 							"uri": "https://api.app.eva.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://eva.beta.gouv.fr/pro/assets/active_admin-c9f9481babad8fff8ebddf78879b357b3e905cfc51460cffa008d625853b91d7.js\"></script>"
+							"evidence": "<script src=\"https://eva.beta.gouv.fr/pro/assets/active_admin-18f12ca4d1c53a7d4cfe97f7cdfc1afc4131a1555c0d4a0a26b7ab358c4c48c2.js\"></script>"
 						},
 						{
 							"uri": "https://api.app.eva.beta.gouv.fr",
@@ -122,9 +122,9 @@
 						{
 							"uri": "https://api.app.eva.beta.gouv.fr",
 							"method": "GET",
-							"param": "https://eva.beta.gouv.fr/pro/assets/active_admin-c9f9481babad8fff8ebddf78879b357b3e905cfc51460cffa008d625853b91d7.js",
+							"param": "https://eva.beta.gouv.fr/pro/assets/active_admin-18f12ca4d1c53a7d4cfe97f7cdfc1afc4131a1555c0d4a0a26b7ab358c4c48c2.js",
 							"attack": "",
-							"evidence": "<script src=\"https://eva.beta.gouv.fr/pro/assets/active_admin-c9f9481babad8fff8ebddf78879b357b3e905cfc51460cffa008d625853b91d7.js\"></script>"
+							"evidence": "<script src=\"https://eva.beta.gouv.fr/pro/assets/active_admin-18f12ca4d1c53a7d4cfe97f7cdfc1afc4131a1555c0d4a0a26b7ab358c4c48c2.js\"></script>"
 						},
 						{
 							"uri": "https://api.app.eva.beta.gouv.fr",
@@ -234,7 +234,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10094",
@@ -251,12 +251,12 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BjpWKzU4CKbJVTsw3VaYjMVeVvQt7KFbsGDkcuzBP7zUHfo4c"
+							"evidence": "km55L7Qrty5Cly3dXJXgliycrCGW5V719R1iLczS9CGyhqdfBpc1kWGVKwh2BRz"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x0018\uFFFDX\uFFFD\uFFFD\uFFFD\"\uFFFD%T\uFFFD\uFFFDuZb3\\x0015y[\u0437\uFFFD\uFFFDn\uFFFD\uFFFD\uFFFD\u02F3\\x0004\uFFFD\uFFFDPw\uFFFD\uFFFD</p>",
+					"otherinfo": "<p>\uFFFDny/\uFFFD+\uFFFD.B\uFFFD-\uFFFD\\\uFFFD\uFFFD\uFFFD,\uFFFD\uFFFD!\uFFFD\uFFFD^\uFFFD\uFFFD\\x001db-\uFFFD\uFFFD\uFFFD!\uFFFD\uFFFD\uFFFD_\\x0006\uFFFD5\uFFFDa\uFFFD+\\x0008v\\x0005\\x001c</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -352,7 +352,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				}
 			]
 		}
