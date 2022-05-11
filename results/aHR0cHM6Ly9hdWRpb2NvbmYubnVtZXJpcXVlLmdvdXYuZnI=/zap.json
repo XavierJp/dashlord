@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 02:44:04",
+	"@generated": "Wed, 11 May 2022 13:30:40",
 	"site":[ 
 		{
 			"@name": "https://audioconf.numerique.gouv.fr",
@@ -310,7 +310,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://audioconf.numerique.gouv.fr/static/images/favicon/favicon-16x16.png",
+							"uri": "https://audioconf.numerique.gouv.fr/static/remixicon/remixicon.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -502,7 +502,7 @@
 							"evidence": "X-Powered-By: Express"
 						},
 						{
-							"uri": "https://audioconf.numerique.gouv.fr/static/images/favicon/favicon-16x16.png",
+							"uri": "https://audioconf.numerique.gouv.fr/static/remixicon/remixicon.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -535,6 +535,13 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
+							"uri": "https://audioconf.numerique.gouv.fr/static/css/custom.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "46597790"
+						},
+						{
 							"uri": "https://audioconf.numerique.gouv.fr/static/gouvfr/css/dsfr.min.css",
 							"method": "GET",
 							"param": "",
@@ -542,20 +549,20 @@
 							"evidence": "23000091"
 						},
 						{
-							"uri": "https://audioconf.numerique.gouv.fr/static/remixicon/remixicon.css",
+							"uri": "https://audioconf.numerique.gouv.fr/static/images/favicon/favicon-32x32.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "49721007"
+							"evidence": "93168247"
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>23000091, which evaluates to: 1970-09-24 04:54:51</p>",
+					"otherinfo": "<p>46597790, which evaluates to: 1971-06-24 07:49:50</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "32"
+					"sourceid": "29"
 				},
 				{
 					"pluginid": "10021",
@@ -668,14 +675,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3156-w0wmlb6KD89VoojRU4NVXN+rdm8"
+							"evidence": "315c-yWgEM7m4LE3pdUOAmq/eaH4On2c"
 						},
 						{
 							"uri": "https://audioconf.numerique.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3156-w0wmlb6KD89VoojRU4NVXN+rdm8"
+							"evidence": "315c-yWgEM7m4LE3pdUOAmq/eaH4On2c"
 						},
 						{
 							"uri": "https://audioconf.numerique.gouv.fr/contact",
@@ -703,47 +710,47 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3A4iq12UT-y7SFxThgd6pbeROV98DvGlIB"
+							"evidence": "3AmkLyJW6I10tfg-5Srrx1dTPyRX7HaFvC"
 						},
 						{
 							"uri": "https://audioconf.numerique.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "t79GHvTHG10tBmFzioVoEMamG8TW4LwfeHrYmPMa6u1vzEtCYXgNcAV8hwEtOJNV7wNpmW/O7Vj6LxDEzyoYFg=="
+							"evidence": "UmIrpvdUmhVowwHA+IEG2tqIgualytzo5xrbyO00nZ5Dl0pkLNOq8rcm7CqIJeUSj6I4mpCqxs2XNsAk2bEIEA=="
 						},
 						{
 							"uri": "https://audioconf.numerique.gouv.fr/static/css/custom.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "t79GHvTHG10tBmFzioVoEMamG8TW4LwfeHrYmPMa6u1vzEtCYXgNcAV8hwEtOJNV7wNpmW/O7Vj6LxDEzyoYFg=="
+							"evidence": "UmIrpvdUmhVowwHA+IEG2tqIgualytzo5xrbyO00nZ5Dl0pkLNOq8rcm7CqIJeUSj6I4mpCqxs2XNsAk2bEIEA=="
 						},
 						{
 							"uri": "https://audioconf.numerique.gouv.fr/static/gouvfr/css/dsfr.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "t79GHvTHG10tBmFzioVoEMamG8TW4LwfeHrYmPMa6u1vzEtCYXgNcAV8hwEtOJNV7wNpmW/O7Vj6LxDEzyoYFg=="
+							"evidence": "UmIrpvdUmhVowwHA+IEG2tqIgualytzo5xrbyO00nZ5Dl0pkLNOq8rcm7CqIJeUSj6I4mpCqxs2XNsAk2bEIEA=="
 						},
 						{
-							"uri": "https://audioconf.numerique.gouv.fr/static/images/favicon/favicon-16x16.png",
+							"uri": "https://audioconf.numerique.gouv.fr/static/remixicon/remixicon.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "t79GHvTHG10tBmFzioVoEMamG8TW4LwfeHrYmPMa6u1vzEtCYXgNcAV8hwEtOJNV7wNpmW/O7Vj6LxDEzyoYFg=="
+							"evidence": "UmIrpvdUmhVowwHA+IEG2tqIgualytzo5xrbyO00nZ5Dl0pkLNOq8rcm7CqIJeUSj6I4mpCqxs2XNsAk2bEIEA=="
 						},
 						{
 							"uri": "https://audioconf.numerique.gouv.fr/stats",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "ca98-1bKjeyhUG4cd52CAR4u+AkfHRVQ"
+							"evidence": "d0ef-xXcl4eep9Zn9UiIQki7AhpnhbLs"
 						}
 					],
 					"count": "11",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD^z\uFFFD\r0\uFFFDV\uFFFD(?=V\uFFFD#EN\rUs~\uFFFD\u067C</p>",
+					"otherinfo": "<p>\uFFFD^\\\uFFFD%\uFFFD\\x0010\uFFFD\uFFFD\uFFFD7\uFFFD\uFFFD\\x000e\\x0002j\uFFFDy\uFFFD\uFFFD:}\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -999,7 +1006,7 @@
 							"evidence": "max-age=0"
 						},
 						{
-							"uri": "https://audioconf.numerique.gouv.fr/static/images/favicon/favicon-16x16.png",
+							"uri": "https://audioconf.numerique.gouv.fr/static/remixicon/remixicon.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
