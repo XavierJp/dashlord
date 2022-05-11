@@ -7,12 +7,12 @@
   ],
   "cookies": [],
   "headers": {
-    "date": "Sun, 08 May 2022 10:36:11 GMT",
+    "date": "Wed, 11 May 2022 21:28:41 GMT",
     "content-type": "text/html",
-    "x-request-id": "0b13a4ed-f11d-4d33-a392-be39e4b0ee9a",
+    "x-request-id": "920eb867-359b-439b-84e8-01e2ccf8a3c2",
     "strict-transport-security": "max-age=31536000",
-    "content-security-policy": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/plausible.js https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io",
-    "etag": "\"1n963o9\"",
+    "content-security-policy": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/ https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://plausible.io",
+    "etag": "\"1px29x9\"",
     "permissions-policy": "interest-cohort=()",
     "x-content-type-options": "nosniff",
     "x-frame-options": "DENY",
@@ -79,20 +79,8 @@
     },
     {
       "hostname": "plausible.io",
-      "ip": "212.102.40.114",
+      "ip": "37.19.206.70",
       "geoip": {
-        "city": {
-          "geoname_id": 4684888,
-          "names": {
-            "de": "Dallas",
-            "en": "Dallas",
-            "es": "Dallas",
-            "fr": "Dallas",
-            "ja": "ダラス",
-            "pt-BR": "Dallas",
-            "ru": "Даллас"
-          }
-        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -122,14 +110,10 @@
           }
         },
         "location": {
-          "accuracy_radius": 20,
-          "latitude": 32.7908,
-          "longitude": -96.8336,
-          "metro_code": 623,
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
           "time_zone": "America/Chicago"
-        },
-        "postal": {
-          "code": "75207"
         },
         "registered_country": {
           "geoname_id": 2635167,
@@ -144,21 +128,7 @@
             "ru": "Британия",
             "zh-CN": "英国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 4736286,
-            "iso_code": "TX",
-            "names": {
-              "en": "Texas",
-              "es": "Texas",
-              "fr": "Texas",
-              "ja": "テキサス州",
-              "ru": "Техас",
-              "zh-CN": "德克萨斯州"
-            }
-          }
-        ]
+        }
       }
     }
   ]

@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 10:35:11",
+	"@generated": "Wed, 11 May 2022 21:27:49",
 	"site":[ 
 		{
 			"@name": "https://dora.fabrique.social.gouv.fr",
@@ -63,21 +63,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/plausible.js https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io"
+							"evidence": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/ https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://plausible.io"
 						},
 						{
 							"uri": "https://dora.fabrique.social.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/plausible.js https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io"
+							"evidence": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/ https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://plausible.io"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/auth",
+							"uri": "https://dora.fabrique.social.gouv.fr/?category=ZAP&city=ZAP&subcategory=ZAP",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/plausible.js https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io"
+							"evidence": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/ https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://plausible.io"
 						}
 					],
 					"count": "3",
@@ -103,21 +103,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/plausible.js https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io"
+							"evidence": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/ https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://plausible.io"
 						},
 						{
 							"uri": "https://dora.fabrique.social.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/plausible.js https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io"
+							"evidence": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/ https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://plausible.io"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/auth",
+							"uri": "https://dora.fabrique.social.gouv.fr/?category=ZAP&city=ZAP&subcategory=ZAP",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/plausible.js https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io"
+							"evidence": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/ https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://plausible.io"
 						}
 					],
 					"count": "3",
@@ -143,21 +143,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/plausible.js https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io"
+							"evidence": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/ https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://plausible.io"
 						},
 						{
 							"uri": "https://dora.fabrique.social.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/plausible.js https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io"
+							"evidence": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/ https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://plausible.io"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/auth",
+							"uri": "https://dora.fabrique.social.gouv.fr/?category=ZAP&city=ZAP&subcategory=ZAP",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/plausible.js https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io"
+							"evidence": "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/ https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://plausible.io"
 						}
 					],
 					"count": "3",
@@ -199,7 +199,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "55"
+					"sourceid": "56"
 				},
 				{
 					"pluginid": "10020",
@@ -232,7 +232,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "55"
+					"sourceid": "56"
 				},
 				{
 					"pluginid": "90003",
@@ -266,56 +266,56 @@
 							"evidence": "<script defer data-domain=\"dora.fabrique.social.gouv.fr\" src=\"https://plausible.io/js/plausible.js\" data-svelte=\"svelte-1mnkhyw\"></script>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/assoc-rencontre-inse",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/ass-travail-temporai",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script defer data-domain=\"dora.fabrique.social.gouv.fr\" src=\"https://plausible.io/js/plausible.js\" data-svelte=\"svelte-1mnkhyw\"></script>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/chez-babel",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/association-coup-de--sbvd",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script defer data-domain=\"dora.fabrique.social.gouv.fr\" src=\"https://plausible.io/js/plausible.js\" data-svelte=\"svelte-1mnkhyw\"></script>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/communaute-d-agglome",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/centre-intercommunal",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script defer data-domain=\"dora.fabrique.social.gouv.fr\" src=\"https://plausible.io/js/plausible.js\" data-svelte=\"svelte-1mnkhyw\"></script>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/lilavie",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/federation-apajh-fed",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script defer data-domain=\"dora.fabrique.social.gouv.fr\" src=\"https://plausible.io/js/plausible.js\" data-svelte=\"svelte-1mnkhyw\"></script>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/lycee-polyvalent-la-",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/handicaptitude",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script defer data-domain=\"dora.fabrique.social.gouv.fr\" src=\"https://plausible.io/js/plausible.js\" data-svelte=\"svelte-1mnkhyw\"></script>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/ninokid",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/les-papillons-blancs",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script defer data-domain=\"dora.fabrique.social.gouv.fr\" src=\"https://plausible.io/js/plausible.js\" data-svelte=\"svelte-1mnkhyw\"></script>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/pole-emploi-nancy-ma",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/reseau-canope",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script defer data-domain=\"dora.fabrique.social.gouv.fr\" src=\"https://plausible.io/js/plausible.js\" data-svelte=\"svelte-1mnkhyw\"></script>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/territoire-emplois-t",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/syndicat-mixte-du-po",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -362,56 +362,56 @@
 							"evidence": "<script defer data-domain=\"dora.fabrique.social.gouv.fr\" src=\"https://plausible.io/js/plausible.js\" data-svelte=\"svelte-1mnkhyw\"></script>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/assoc-rencontre-inse",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/ass-travail-temporai",
 							"method": "GET",
 							"param": "https://plausible.io/js/plausible.js",
 							"attack": "",
 							"evidence": "<script defer data-domain=\"dora.fabrique.social.gouv.fr\" src=\"https://plausible.io/js/plausible.js\" data-svelte=\"svelte-1mnkhyw\"></script>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/chez-babel",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/association-coup-de--sbvd",
 							"method": "GET",
 							"param": "https://plausible.io/js/plausible.js",
 							"attack": "",
 							"evidence": "<script defer data-domain=\"dora.fabrique.social.gouv.fr\" src=\"https://plausible.io/js/plausible.js\" data-svelte=\"svelte-1mnkhyw\"></script>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/communaute-d-agglome",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/centre-intercommunal",
 							"method": "GET",
 							"param": "https://plausible.io/js/plausible.js",
 							"attack": "",
 							"evidence": "<script defer data-domain=\"dora.fabrique.social.gouv.fr\" src=\"https://plausible.io/js/plausible.js\" data-svelte=\"svelte-1mnkhyw\"></script>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/lilavie",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/federation-apajh-fed",
 							"method": "GET",
 							"param": "https://plausible.io/js/plausible.js",
 							"attack": "",
 							"evidence": "<script defer data-domain=\"dora.fabrique.social.gouv.fr\" src=\"https://plausible.io/js/plausible.js\" data-svelte=\"svelte-1mnkhyw\"></script>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/lycee-polyvalent-la-",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/handicaptitude",
 							"method": "GET",
 							"param": "https://plausible.io/js/plausible.js",
 							"attack": "",
 							"evidence": "<script defer data-domain=\"dora.fabrique.social.gouv.fr\" src=\"https://plausible.io/js/plausible.js\" data-svelte=\"svelte-1mnkhyw\"></script>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/ninokid",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/les-papillons-blancs",
 							"method": "GET",
 							"param": "https://plausible.io/js/plausible.js",
 							"attack": "",
 							"evidence": "<script defer data-domain=\"dora.fabrique.social.gouv.fr\" src=\"https://plausible.io/js/plausible.js\" data-svelte=\"svelte-1mnkhyw\"></script>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/pole-emploi-nancy-ma",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/reseau-canope",
 							"method": "GET",
 							"param": "https://plausible.io/js/plausible.js",
 							"attack": "",
 							"evidence": "<script defer data-domain=\"dora.fabrique.social.gouv.fr\" src=\"https://plausible.io/js/plausible.js\" data-svelte=\"svelte-1mnkhyw\"></script>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/territoire-emplois-t",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/syndicat-mixte-du-po",
 							"method": "GET",
 							"param": "https://plausible.io/js/plausible.js",
 							"attack": "",
@@ -437,7 +437,7 @@
 					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
 					"instances":[ 
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/pages/__layout.svelte-0a303ee0.js",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/pages/__layout.svelte-02589c07.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -457,7 +457,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "76"
+					"sourceid": "77"
 				},
 				{
 					"pluginid": "10063",
@@ -470,21 +470,21 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/chunks/api-7a29796d.js",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/chunks/api-8fba8eb7.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/chunks/auth-361560ba.js",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/chunks/auth-8532c9a4.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/chunks/centered-grid-3418dc6d.js",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/chunks/env-ffcbc9c7.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -526,14 +526,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/pages/__layout.svelte-0a303ee0.js",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/pages/__layout.svelte-02589c07.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/start-6f5d5b0b.js",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/start-364f9264.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -560,7 +560,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "78"
+					"sourceid": "81"
 				},
 				{
 					"pluginid": "10096",
@@ -573,13 +573,6 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "46964818"
-						},
-						{
 							"uri": "https://dora.fabrique.social.gouv.fr/_app/assets/centered-grid-339de363.css",
 							"method": "GET",
 							"param": "",
@@ -587,55 +580,34 @@
 							"evidence": "00000026"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/start-6f5d5b0b.js",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/start-364f9264.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "13467669"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/start-6f5d5b0b.js",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/start-364f9264.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "20740153"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/start-6f5d5b0b.js",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/start-364f9264.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "24540728"
-						},
-						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/start-6f5d5b0b.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "45826646"
-						},
-						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/start-6f5d5b0b.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "72735439"
-						},
-						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/start-6f5d5b0b.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "89175651"
+							"evidence": "34734398"
 						}
 					],
-					"count": "8",
+					"count": "4",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>46964818, which evaluates to: 1971-06-28 13:46:58</p>",
+					"otherinfo": "<p>00000026, which evaluates to: 1970-01-01 00:00:26</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "9"
+					"sourceid": "69"
 				},
 				{
 					"pluginid": "10021",
@@ -669,14 +641,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/assets/field-6cd02e1f.css",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/assets/field-76a7f648.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/assets/pages/__layout.svelte-391692bb.css",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/assets/pages/__layout.svelte-eb700c99.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -704,14 +676,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/pages/__layout.svelte-0a303ee0.js",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/pages/__layout.svelte-02589c07.js",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/start-6f5d5b0b.js",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/start-364f9264.js",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -738,7 +710,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "69"
+					"sourceid": "70"
 				},
 				{
 					"pluginid": "10094",
@@ -772,7 +744,7 @@
 							"evidence": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAASpAAAEqQFY9d3tAAACkUlEQVRYhc2XsWvbQBTGP7uOk6BCoF0KHZqhnUqo06VbnaUQOiVToZON5lL9B23/Aw0da+qp0MleCoYuVrd0SBxCp3RIh0KngCHGiZ1U5VOeHMk+6c5Cgf5ARpzfu+/p7undU8H3fZjQcAYVAFsANgBUE1w8AF0Abdu1eibzagNoOIMaAAfAI6NIr9gH4Nqu1cwUQMMZrAJopjytKVyVmu1aRyr7YoI4l7qXgzhkjp7MqQ9AlrwFYCUH8RDO1ZK5Y8S2QKJs5SisYtt2rXY4PglA9ryX85Or6AOohDlRihg0TcRv3irg3loJq2s3YuNHBxf4dXCOk2Pta70iWnydL1dA9uajzvPxZhnrmwupNnudMXY7I91UpM5XNExCR2f99OWiVpzQhrYGBJqFD69PWOH20uxNnnwaw5VYL0p5TYR7Pq84ZCXoq2GrGCZDEkw4FaNTHz+8cXDxXkWSb4SNkq7aTWc7RPzzuyFGw0vh3c4YL94so7xUmPFlgClUlaVYx+HO+UQ8CGjoB2NZyBRAnmQK4MGTEm7fvXLlPceyoPVihbtzP54H3Ovnr5Ymy07x6f0PfXVoV+Dwu3pvKfiwuhBcKnHC0mwSgJdmwARjUZkX+hicC15RerhUWNGOf/81DoG2hudBlwG0DQzx5f2pURC0oa0h7fA07Jk0neXlAp7ZizNJGfLn5wW+Ns5iNSKFfdu1KmESuiYenJhPp8oJjvE/Q3Hylj/Rjqg7TxPKg4anJCRHDBIuime7VnAGRetAbZ6WjILfPp3NIxrSF62ASR2QHm2ma70GYt8IsUIk3Wr9GsXr0Y54JgAJgg3jtixVXvSlHZ/5TFOWYomyoquShnjShivrzf/7caoIJP/PcwD/APUxGhwOWj+2AAAAAElFTkSuQmCC"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/chunks/field-01529ecf.js",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/chunks/field-d93fed0d.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -786,35 +758,35 @@
 							"evidence": "com/serve/MUIEAEkY4naptXBIq5NdRg5UPxP1wmwbGCinne5c1gynY-wfrZ0Dz0QP_NqkXtfyYqhdaq3AO8VFZJ9giRi9ZT0eah7Ut2U0LeKSTVIHQb_5nhvTLUMWXo9ZMeIYCHVlzmjkXGQ66S5ewcYpSADUgV--2RVZ_mrnsRJQoCNwZ8y-sWzfQsEzfKuTA7SLbZ_dWeqaigudym3EaiHT"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/chunks/utils-9f2f00c4.js",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/chunks/utils-8e55ce9e.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "disableForced4SpacesIndentedSublists"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/pages/__layout.svelte-0a303ee0.js",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/pages/__layout.svelte-02589c07.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAASpAAAEqQFY9d3tAAACkUlEQVRYhc2XsWvbQBTGP7uOk6BCoF0KHZqhnUqo06VbnaUQOiVToZON5lL9B23/Aw0da+qp0MleCoYuVrd0SBxCp3RIh0KngCHGiZ1U5VOeHMk+6c5Cgf5ARpzfu+/p7undU8H3fZjQcAYVAFsANgBUE1w8AF0Abdu1eibzagNoOIMaAAfAI6NIr9gH4Nqu1cwUQMMZrAJopjytKVyVmu1aRyr7YoI4l7qXgzhkjp7MqQ9AlrwFYCUH8RDO1ZK5Y8S2QKJs5SisYtt2rXY4PglA9ryX85Or6AOohDlRihg0TcRv3irg3loJq2s3YuNHBxf4dXCOk2Pta70iWnydL1dA9uajzvPxZhnrmwupNnudMXY7I91UpM5XNExCR2f99OWiVpzQhrYGBJqFD69PWOH20uxNnnwaw5VYL0p5TYR7Pq84ZCXoq2GrGCZDEkw4FaNTHz+8cXDxXkWSb4SNkq7aTWc7RPzzuyFGw0vh3c4YL94so7xUmPFlgClUlaVYx+HO+UQ8CGjoB2NZyBRAnmQK4MGTEm7fvXLlPceyoPVihbtzP54H3Ovnr5Ymy07x6f0PfXVoV+Dwu3pvKfiwuhBcKnHC0mwSgJdmwARjUZkX+hicC15RerhUWNGOf/81DoG2hudBlwG0DQzx5f2pURC0oa0h7fA07Jk0neXlAp7ZizNJGfLn5wW+Ns5iNSKFfdu1KmESuiYenJhPp8oJjvE/Q3Hylj/Rjqg7TxPKg4anJCRHDBIuime7VnAGRetAbZ6WjILfPp3NIxrSF62ASR2QHm2ma70GYt8IsUIk3Wr9GsXr0Y54JgAJgg3jtixVXvSlHZ/5TFOWYomyoquShnjShivrzf/7caoIJP/PcwD/APUxGhwOWj+2AAAAAElFTkSuQmCC"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/lycee-polyvalent-la-",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/association-coup-de--sbvd",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAASpAAAEqQFY9d3tAAACkUlEQVRYhc2XsWvbQBTGP7uOk6BCoF0KHZqhnUqo06VbnaUQOiVToZON5lL9B23/Aw0da+qp0MleCoYuVrd0SBxCp3RIh0KngCHGiZ1U5VOeHMk+6c5Cgf5ARpzfu+/p7undU8H3fZjQcAYVAFsANgBUE1w8AF0Abdu1eibzagNoOIMaAAfAI6NIr9gH4Nqu1cwUQMMZrAJopjytKVyVmu1aRyr7YoI4l7qXgzhkjp7MqQ9AlrwFYCUH8RDO1ZK5Y8S2QKJs5SisYtt2rXY4PglA9ryX85Or6AOohDlRihg0TcRv3irg3loJq2s3YuNHBxf4dXCOk2Pta70iWnydL1dA9uajzvPxZhnrmwupNnudMXY7I91UpM5XNExCR2f99OWiVpzQhrYGBJqFD69PWOH20uxNnnwaw5VYL0p5TYR7Pq84ZCXoq2GrGCZDEkw4FaNTHz+8cXDxXkWSb4SNkq7aTWc7RPzzuyFGw0vh3c4YL94so7xUmPFlgClUlaVYx+HO+UQ8CGjoB2NZyBRAnmQK4MGTEm7fvXLlPceyoPVihbtzP54H3Ovnr5Ymy07x6f0PfXVoV+Dwu3pvKfiwuhBcKnHC0mwSgJdmwARjUZkX+hicC15RerhUWNGOf/81DoG2hudBlwG0DQzx5f2pURC0oa0h7fA07Jk0neXlAp7ZizNJGfLn5wW+Ns5iNSKFfdu1KmESuiYenJhPp8oJjvE/Q3Hylj/Rjqg7TxPKg4anJCRHDBIuime7VnAGRetAbZ6WjILfPp3NIxrSF62ASR2QHm2ma70GYt8IsUIk3Wr9GsXr0Y54JgAJgg3jtixVXvSlHZ/5TFOWYomyoquShnjShivrzf/7caoIJP/PcwD/APUxGhwOWj+2AAAAAElFTkSuQmCC"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/pole-emploi-nancy-ma",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/federation-apajh-fed",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAASpAAAEqQFY9d3tAAACkUlEQVRYhc2XsWvbQBTGP7uOk6BCoF0KHZqhnUqo06VbnaUQOiVToZON5lL9B23/Aw0da+qp0MleCoYuVrd0SBxCp3RIh0KngCHGiZ1U5VOeHMk+6c5Cgf5ARpzfu+/p7undU8H3fZjQcAYVAFsANgBUE1w8AF0Abdu1eibzagNoOIMaAAfAI6NIr9gH4Nqu1cwUQMMZrAJopjytKVyVmu1aRyr7YoI4l7qXgzhkjp7MqQ9AlrwFYCUH8RDO1ZK5Y8S2QKJs5SisYtt2rXY4PglA9ryX85Or6AOohDlRihg0TcRv3irg3loJq2s3YuNHBxf4dXCOk2Pta70iWnydL1dA9uajzvPxZhnrmwupNnudMXY7I91UpM5XNExCR2f99OWiVpzQhrYGBJqFD69PWOH20uxNnnwaw5VYL0p5TYR7Pq84ZCXoq2GrGCZDEkw4FaNTHz+8cXDxXkWSb4SNkq7aTWc7RPzzuyFGw0vh3c4YL94so7xUmPFlgClUlaVYx+HO+UQ8CGjoB2NZyBRAnmQK4MGTEm7fvXLlPceyoPVihbtzP54H3Ovnr5Ymy07x6f0PfXVoV+Dwu3pvKfiwuhBcKnHC0mwSgJdmwARjUZkX+hicC15RerhUWNGOf/81DoG2hudBlwG0DQzx5f2pURC0oa0h7fA07Jk0neXlAp7ZizNJGfLn5wW+Ns5iNSKFfdu1KmESuiYenJhPp8oJjvE/Q3Hylj/Rjqg7TxPKg4anJCRHDBIuime7VnAGRetAbZ6WjILfPp3NIxrSF62ASR2QHm2ma70GYt8IsUIk3Wr9GsXr0Y54JgAJgg3jtixVXvSlHZ/5TFOWYomyoquShnjShivrzf/7caoIJP/PcwD/APUxGhwOWj+2AAAAAElFTkSuQmCC"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/territoire-emplois-t",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/handicaptitude",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -868,7 +840,14 @@
 							"evidence": "from"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/chunks/auth-361560ba.js",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/chunks/api-8fba8eb7.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "from"
+						},
+						{
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/chunks/auth-8532c9a4.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -889,35 +868,21 @@
 							"evidence": "from"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/chunks/logger-a52a61f0.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "bug"
-						},
-						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/chunks/logger-a52a61f0.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "FROM"
-						},
-						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/pages/__layout.svelte-0a303ee0.js",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/pages/__layout.svelte-02589c07.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "from"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/pages/__layout.svelte-0a303ee0.js",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/pages/__layout.svelte-02589c07.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "user"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/start-6f5d5b0b.js",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/start-364f9264.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -938,13 +903,13 @@
 							"evidence": "from"
 						}
 					],
-					"count": "13",
+					"count": "12",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bFROM\\b and was detected in the element starting with: \"<script type=\"module\" data-hydrate=\"1ka12nc\"></p><p>\t\timport { start } from \"/_app/start-6f5d5b0b.js\";</p><p>\t\tstart({</p><p>\t\t\ttarget: document.q\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bFROM\\b and was detected in the element starting with: \"<script type=\"module\" data-hydrate=\"cwqd3j\"></p><p>\t\timport { start } from \"/_app/start-364f9264.js\";</p><p>\t\tstart({</p><p>\t\t\ttarget: document.qu\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "9"
 				},
 				{
 					"pluginid": "10109",
@@ -999,35 +964,35 @@
 							"evidence": "<script\n      type=\"text/javascript\"\n      src=\"/tarteaucitron-1.9.4/tarteaucitron.js\"\n    ></script>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/chez-babel",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/association-coup-de--sbvd",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<a class=\"flex flex-row justify-between py-s8 text-f14 lg:items-center lg:pr-s32 text-gray-text-alt2\" href=\"#\" target=\"_blank\" rel=\"noopener nofollow\" >Gestion des cookies\n  </a>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/lilavie",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/federation-apajh-fed",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<a class=\"flex flex-row justify-between py-s8 text-f14 lg:items-center lg:pr-s32 text-gray-text-alt2\" href=\"#\" target=\"_blank\" rel=\"noopener nofollow\" >Gestion des cookies\n  </a>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/lycee-polyvalent-la-",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/handicaptitude",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<a class=\"flex flex-row justify-between py-s8 text-f14 lg:items-center lg:pr-s32 text-gray-text-alt2\" href=\"#\" target=\"_blank\" rel=\"noopener nofollow\" >Gestion des cookies\n  </a>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/pole-emploi-nancy-ma",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/reseau-canope",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<a class=\"flex flex-row justify-between py-s8 text-f14 lg:items-center lg:pr-s32 text-gray-text-alt2\" href=\"#\" target=\"_blank\" rel=\"noopener nofollow\" >Gestion des cookies\n  </a>"
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/territoire-emplois-t",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/syndicat-mixte-du-po",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1102,28 +1067,28 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/chez-babel",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/association-coup-de--sbvd",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/lycee-polyvalent-la-",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/federation-apajh-fed",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/pole-emploi-nancy-ma",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/handicaptitude",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/structures/territoire-emplois-t",
+							"uri": "https://dora.fabrique.social.gouv.fr/structures/syndicat-mixte-du-po",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1184,14 +1149,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/assets/field-6cd02e1f.css",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/assets/field-76a7f648.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://dora.fabrique.social.gouv.fr/_app/assets/pages/__layout.svelte-391692bb.css",
+							"uri": "https://dora.fabrique.social.gouv.fr/_app/assets/pages/__layout.svelte-eb700c99.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",

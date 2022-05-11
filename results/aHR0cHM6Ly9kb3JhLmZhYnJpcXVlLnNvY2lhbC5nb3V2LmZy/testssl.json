@@ -276,7 +276,7 @@
               "ip"           : "dora.fabrique.social.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "03B289301D1BDFEBF23A71905F10BDEA34E2"
+              "finding"      : "03321CE3261FFDADE5E6B8465A362A8C2E21"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -290,21 +290,21 @@
               "ip"           : "dora.fabrique.social.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "B96F39E9D2E03B13DAA88F75E8DF75B6CBA1DAA4"
+              "finding"      : "4450DB8FDBA9CAEE36F9451C50499361E07D5F83"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "dora.fabrique.social.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "A59C7F7D9B661045C6A4C65CE479B02735695A6C044B47050F9B9F2D938FE879"
+              "finding"      : "F9312CB2BB4CC2CF96474B80D77A8FDA7B3370D116DF9D4E1B2C2F57FF71CF2B"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "dora.fabrique.social.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE----- MIIFPjCCBCagAwIBAgISA7KJMB0b3+vyOnGQXxC96jTiMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjAzMTAxNTE2MDlaFw0yMjA2MDgxNTE2MDhaMCcxJTAjBgNVBAMT HGRvcmEuZmFicmlxdWUuc29jaWFsLmdvdXYuZnIwggEiMA0GCSqGSIb3DQEBAQUA A4IBDwAwggEKAoIBAQDZttsdG+/4S8uWw/aQ7dZZmBnDbDaUD5d8RzV9ZSbdA/TQ vlMQzgBW/i6iOpEWLJJPuXTwhsv52YzegxSikTb5lVC7mZ0B/m34fDCz2HKmiVya O1pgw5sIHsJi4UEPof1yodKCixCcGx3WHjNmlylWLXEbfZwRtaz1yPWJxC+q063A WUJWPRiRJmiEBoQOA0TZG+gkhcW/K2m4jA2uObuJmEQ8gsGcq6Mgi8+MnhohCeBe 2KCFG9bgk6xpjgz3GOOl/N3HKVOE/qXEOwnp708KA2X1XUgUB4Ra+IMgXLe3DWhT OJpCU1OAPLBCtODM8GsTd+i5//ALewMdaXz7I9t/AgMBAAGjggJXMIICUzAOBgNV HQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1Ud EwEB/wQCMAAwHQYDVR0OBBYEFNeWikvtIE50M3Kq9AldgHdpdW9OMB8GA1UdIwQY MBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEF BQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8v cjMuaS5sZW5jci5vcmcvMCcGA1UdEQQgMB6CHGRvcmEuZmFicmlxdWUuc29jaWFs LmdvdXYuZnIwTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAm BggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEEBgorBgEE AdZ5AgQCBIH1BIHyAPAAdgApeb7wnjk5IfBWc59jpXflvld9nGAK+PlNXSZcJV3H hAAAAX90nb9wAAAEAwBHMEUCIQCWfE9idtG8/8FsUOxWKNb0+7I32LnEcZdf8QdL 9QDdMgIgBsL4FDN3/Fa81FygaWR3lqZiPZAreyAFOMG7beMwRKYAdgBByMqx3yJG ShDGoToJQodeTjGLGwPr60vHaPCQYpYG9gAAAX90ncFhAAAEAwBHMEUCIQDeDEHs NBFlDrLxhVi4ksPc0fHgWzDKjQHcc9kd6BO/JAIgQ8MVXOmDyAEtOVt5dqDwQ3TQ 9h+KyJ+C3A4NP2hOAaUwDQYJKoZIhvcNAQELBQADggEBAGIjofnjUxFAmo3jGYDq 83mrd19caj/QYevzFlNhz+/Q22Zr8uMvAsuLNJkFMTnztM1+rCUJcHkrLqupEvGM RSpakNXMwaifMhVTe1zXk6gTEn69vpgTfP/lRYlZCj64ztPsirDnQNsmNYNAc9Nz PJ4AigJn7ehZlhcicZQ7ySkn9BUJ/Llkpo9udm8KmstF+OiUtYXVW0fhpSr/xv8X ujSnK6GfLvi1qpZ1fOPq/viDFV9sHAeqIq/oJmn72bwoRDUwXCTu5wfvOClvzWbC 2FpjLWA/oa5qBtSqFpVwL+Qp4gaBCwb7mowE9diAOBm5GD4J6RqQizBrcgr66H5X HNE= -----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE----- MIIFPjCCBCagAwIBAgISAzIc4yYf/a3l5rhGWjYqjC4hMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjA1MDkxNTE3MjdaFw0yMjA4MDcxNTE3MjZaMCcxJTAjBgNVBAMT HGRvcmEuZmFicmlxdWUuc29jaWFsLmdvdXYuZnIwggEiMA0GCSqGSIb3DQEBAQUA A4IBDwAwggEKAoIBAQCyUfqJodjkRKy9ojPrDuLkcZRYNtRXZ+Rz2Dz6dB99jqUI Ba82e8iq1p1Qv1PvlP0f/pAM5WFLH1dWK0NbyweS1jUT7A/ERjJqt2lmKSByzm7V NMhjQ+J02ZuNe2MFV3CgXJBGgkSC8x6OAlgBiRq8/GNRDlRB3TOqR5MYoWVpU7Br mdWr+UG0Q+Ix5WK4z5JOEFakiXFmAguwGRLEz4+yjZBtGjVwvLWqK1XVLx9ljS3j ommc2q7JMzgb1uEQ0CFvq2g54FdVZn+X7mBf0W6KsIs76rgtyXZVji48EwS1I5/1 M13op2Eq9Vk3hKvxu3FKxkJziri2njTag99YctBBAgMBAAGjggJXMIICUzAOBgNV HQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1Ud EwEB/wQCMAAwHQYDVR0OBBYEFGBYy0GNpjthBlKbZmoaG+Y1liy4MB8GA1UdIwQY MBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEF BQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8v cjMuaS5sZW5jci5vcmcvMCcGA1UdEQQgMB6CHGRvcmEuZmFicmlxdWUuc29jaWFs LmdvdXYuZnIwTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAm BggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEEBgorBgEE AdZ5AgQCBIH1BIHyAPAAdgBByMqx3yJGShDGoToJQodeTjGLGwPr60vHaPCQYpYG 9gAAAYCpnIAHAAAEAwBHMEUCIA0Z/FRRl7rAJwD9z0L04zzKwTQXOpjSydd+1YZ+ z1EPAiEA0tvaP1DQZb/ulCKfJ+kl/fcqRbAsP39wZFUVxAFFX/QAdgBGpVXrdfqR IDC1oolp9PN9ESxBdL79SbiFq/L8cP5tRwAAAYCpnIAmAAAEAwBHMEUCIAoqYzqo oMAk28HarltldQdN2GSMqH460UdOGmIK+0SdAiEA/iVL4BgadJybwpdvq2zJH4Ae fKn9wfs7CwJZLpPWOCUwDQYJKoZIhvcNAQELBQADggEBALpdaPYck3h2+gCbjjJf C9XijXooM70e3bO2A36PkH89G6CxjzjqwBlOBgvoGKaBJGyckbv+qDulVqqA/cVt gccbSwwSRQiu4n/2DiiHMjkozNySkZ4ZItukSu46Es9ERARHmORC/wcSuhYSqlkm kupeM7YQBfipF0lJw49BhQOgiJrf06zRTKd+iP+bNlcAjYhbeg3HA9aK38EI44Xo RtOpCz8bcMi00zD5o5P2C/cFwmaFvu8UUTcxxIJBmc8a/NrvvyBVDQmNPC97DgF1 gs14qPCngIY7aGJqUVpyE0i5WJLFItIW4G1k6kuEIWv8UsNmy52qWg0D64wLdLow vOU= -----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -353,21 +353,21 @@
               "ip"           : "dora.fabrique.social.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "31 >= 30 days"
+              "finding"      : "87 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "dora.fabrique.social.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2022-03-10 15:16"
+              "finding"      : "2022-05-09 15:17"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "dora.fabrique.social.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2022-06-08 15:16"
+              "finding"      : "2022-08-07 15:17"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -556,7 +556,7 @@
               "ip"           : "dora.fabrique.social.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1652006264"
+              "finding"      : "1652304601"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -626,7 +626,7 @@
               "ip"           : "dora.fabrique.social.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/plausible.js https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io"
+              "finding"      : "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/ https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://plausible.io"
           }
 ,         {
               "id"           : "Permissions-Policy",
@@ -771,7 +771,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://censys.io/ipv4?q=A59C7F7D9B661045C6A4C65CE479B02735695A6C044B47050F9B9F2D938FE879"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://censys.io/ipv4?q=F9312CB2BB4CC2CF96474B80D77A8FDA7B3370D116DF9D4E1B2C2F57FF71CF2B"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1356,7 +1356,7 @@
               "ip"           : "dora.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "sessionresumption_ID",
@@ -1426,7 +1426,7 @@
               "ip"           : "dora.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "03B289301D1BDFEBF23A71905F10BDEA34E2"
+              "finding"      : "03321CE3261FFDADE5E6B8465A362A8C2E21"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -1440,21 +1440,21 @@
               "ip"           : "dora.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "B96F39E9D2E03B13DAA88F75E8DF75B6CBA1DAA4"
+              "finding"      : "4450DB8FDBA9CAEE36F9451C50499361E07D5F83"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "dora.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "A59C7F7D9B661045C6A4C65CE479B02735695A6C044B47050F9B9F2D938FE879"
+              "finding"      : "F9312CB2BB4CC2CF96474B80D77A8FDA7B3370D116DF9D4E1B2C2F57FF71CF2B"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "dora.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE----- MIIFPjCCBCagAwIBAgISA7KJMB0b3+vyOnGQXxC96jTiMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjAzMTAxNTE2MDlaFw0yMjA2MDgxNTE2MDhaMCcxJTAjBgNVBAMT HGRvcmEuZmFicmlxdWUuc29jaWFsLmdvdXYuZnIwggEiMA0GCSqGSIb3DQEBAQUA A4IBDwAwggEKAoIBAQDZttsdG+/4S8uWw/aQ7dZZmBnDbDaUD5d8RzV9ZSbdA/TQ vlMQzgBW/i6iOpEWLJJPuXTwhsv52YzegxSikTb5lVC7mZ0B/m34fDCz2HKmiVya O1pgw5sIHsJi4UEPof1yodKCixCcGx3WHjNmlylWLXEbfZwRtaz1yPWJxC+q063A WUJWPRiRJmiEBoQOA0TZG+gkhcW/K2m4jA2uObuJmEQ8gsGcq6Mgi8+MnhohCeBe 2KCFG9bgk6xpjgz3GOOl/N3HKVOE/qXEOwnp708KA2X1XUgUB4Ra+IMgXLe3DWhT OJpCU1OAPLBCtODM8GsTd+i5//ALewMdaXz7I9t/AgMBAAGjggJXMIICUzAOBgNV HQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1Ud EwEB/wQCMAAwHQYDVR0OBBYEFNeWikvtIE50M3Kq9AldgHdpdW9OMB8GA1UdIwQY MBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEF BQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8v cjMuaS5sZW5jci5vcmcvMCcGA1UdEQQgMB6CHGRvcmEuZmFicmlxdWUuc29jaWFs LmdvdXYuZnIwTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAm BggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEEBgorBgEE AdZ5AgQCBIH1BIHyAPAAdgApeb7wnjk5IfBWc59jpXflvld9nGAK+PlNXSZcJV3H hAAAAX90nb9wAAAEAwBHMEUCIQCWfE9idtG8/8FsUOxWKNb0+7I32LnEcZdf8QdL 9QDdMgIgBsL4FDN3/Fa81FygaWR3lqZiPZAreyAFOMG7beMwRKYAdgBByMqx3yJG ShDGoToJQodeTjGLGwPr60vHaPCQYpYG9gAAAX90ncFhAAAEAwBHMEUCIQDeDEHs NBFlDrLxhVi4ksPc0fHgWzDKjQHcc9kd6BO/JAIgQ8MVXOmDyAEtOVt5dqDwQ3TQ 9h+KyJ+C3A4NP2hOAaUwDQYJKoZIhvcNAQELBQADggEBAGIjofnjUxFAmo3jGYDq 83mrd19caj/QYevzFlNhz+/Q22Zr8uMvAsuLNJkFMTnztM1+rCUJcHkrLqupEvGM RSpakNXMwaifMhVTe1zXk6gTEn69vpgTfP/lRYlZCj64ztPsirDnQNsmNYNAc9Nz PJ4AigJn7ehZlhcicZQ7ySkn9BUJ/Llkpo9udm8KmstF+OiUtYXVW0fhpSr/xv8X ujSnK6GfLvi1qpZ1fOPq/viDFV9sHAeqIq/oJmn72bwoRDUwXCTu5wfvOClvzWbC 2FpjLWA/oa5qBtSqFpVwL+Qp4gaBCwb7mowE9diAOBm5GD4J6RqQizBrcgr66H5X HNE= -----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE----- MIIFPjCCBCagAwIBAgISAzIc4yYf/a3l5rhGWjYqjC4hMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjA1MDkxNTE3MjdaFw0yMjA4MDcxNTE3MjZaMCcxJTAjBgNVBAMT HGRvcmEuZmFicmlxdWUuc29jaWFsLmdvdXYuZnIwggEiMA0GCSqGSIb3DQEBAQUA A4IBDwAwggEKAoIBAQCyUfqJodjkRKy9ojPrDuLkcZRYNtRXZ+Rz2Dz6dB99jqUI Ba82e8iq1p1Qv1PvlP0f/pAM5WFLH1dWK0NbyweS1jUT7A/ERjJqt2lmKSByzm7V NMhjQ+J02ZuNe2MFV3CgXJBGgkSC8x6OAlgBiRq8/GNRDlRB3TOqR5MYoWVpU7Br mdWr+UG0Q+Ix5WK4z5JOEFakiXFmAguwGRLEz4+yjZBtGjVwvLWqK1XVLx9ljS3j ommc2q7JMzgb1uEQ0CFvq2g54FdVZn+X7mBf0W6KsIs76rgtyXZVji48EwS1I5/1 M13op2Eq9Vk3hKvxu3FKxkJziri2njTag99YctBBAgMBAAGjggJXMIICUzAOBgNV HQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1Ud EwEB/wQCMAAwHQYDVR0OBBYEFGBYy0GNpjthBlKbZmoaG+Y1liy4MB8GA1UdIwQY MBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEF BQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8v cjMuaS5sZW5jci5vcmcvMCcGA1UdEQQgMB6CHGRvcmEuZmFicmlxdWUuc29jaWFs LmdvdXYuZnIwTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAm BggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEEBgorBgEE AdZ5AgQCBIH1BIHyAPAAdgBByMqx3yJGShDGoToJQodeTjGLGwPr60vHaPCQYpYG 9gAAAYCpnIAHAAAEAwBHMEUCIA0Z/FRRl7rAJwD9z0L04zzKwTQXOpjSydd+1YZ+ z1EPAiEA0tvaP1DQZb/ulCKfJ+kl/fcqRbAsP39wZFUVxAFFX/QAdgBGpVXrdfqR IDC1oolp9PN9ESxBdL79SbiFq/L8cP5tRwAAAYCpnIAmAAAEAwBHMEUCIAoqYzqo oMAk28HarltldQdN2GSMqH460UdOGmIK+0SdAiEA/iVL4BgadJybwpdvq2zJH4Ae fKn9wfs7CwJZLpPWOCUwDQYJKoZIhvcNAQELBQADggEBALpdaPYck3h2+gCbjjJf C9XijXooM70e3bO2A36PkH89G6CxjzjqwBlOBgvoGKaBJGyckbv+qDulVqqA/cVt gccbSwwSRQiu4n/2DiiHMjkozNySkZ4ZItukSu46Es9ERARHmORC/wcSuhYSqlkm kupeM7YQBfipF0lJw49BhQOgiJrf06zRTKd+iP+bNlcAjYhbeg3HA9aK38EI44Xo RtOpCz8bcMi00zD5o5P2C/cFwmaFvu8UUTcxxIJBmc8a/NrvvyBVDQmNPC97DgF1 gs14qPCngIY7aGJqUVpyE0i5WJLFItIW4G1k6kuEIWv8UsNmy52qWg0D64wLdLow vOU= -----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -1503,21 +1503,21 @@
               "ip"           : "dora.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "31 >= 30 days"
+              "finding"      : "87 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "dora.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2022-03-10 15:16"
+              "finding"      : "2022-05-09 15:17"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "dora.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2022-06-08 15:16"
+              "finding"      : "2022-08-07 15:17"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -1706,7 +1706,7 @@
               "ip"           : "dora.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1652006405"
+              "finding"      : "1652304696"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1776,7 +1776,7 @@
               "ip"           : "dora.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/plausible.js https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io"
+              "finding"      : "default-src 'none';  connect-src https://api.dora.fabrique.social.gouv.fr  https://api-adresse.data.gouv.fr/ https://plausible.io/api/event https://*.sentry.io http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com  https://client.crisp.chat/static/ wss://client.relay.crisp.chat/ https://storage.crisp.chat/users/upload/; script-src 'self' 'unsafe-inline' https://metabase.dora.fabrique.social.gouv.fr/app/iframeResizer.js https://plausible.io/js/ https://static.hotjar.com https://script.hotjar.com http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/; font-src 'self' http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://client.crisp.chat/static/; img-src 'self' data: http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://*.crisp.chat/; style-src 'self' 'unsafe-inline' https://client.crisp.chat/; frame-src http://metabase.dora.fabrique.social.gouv.fr https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io https://plausible.io"
           }
 ,         {
               "id"           : "Permissions-Policy",
@@ -1921,7 +1921,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://censys.io/ipv4?q=A59C7F7D9B661045C6A4C65CE479B02735695A6C044B47050F9B9F2D938FE879"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://censys.io/ipv4?q=F9312CB2BB4CC2CF96474B80D77A8FDA7B3370D116DF9D4E1B2C2F57FF71CF2B"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -2304,6 +2304,6 @@
               "ip"           : "dora.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "293"
+              "finding"      : "192"
           }
 ]
