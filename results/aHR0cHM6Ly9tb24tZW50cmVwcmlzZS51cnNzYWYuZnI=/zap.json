@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 05:35:48",
+	"@generated": "Wed, 11 May 2022 16:30:55",
 	"site":[ 
 		{
 			"@name": "https://mon-entreprise.urssaf.fr",
@@ -160,21 +160,14 @@
 							"evidence": "Access-Control-Allow-Origin: *"
 						},
 						{
+							"uri": "https://mon-entreprise.urssaf.fr/twemoji/2/72x72/1f4c5.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *"
+						},
+						{
 							"uri": "https://mon-entreprise.urssaf.fr/twemoji/2/72x72/1f4ca.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Access-Control-Allow-Origin: *"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/twemoji/2/72x72/1f4d6.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Access-Control-Allow-Origin: *"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/twemoji/2/72x72/1f4de.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -210,6 +203,13 @@
 						},
 						{
 							"uri": "https://mon-entreprise.urssaf.fr/twemoji/2/72x72/1f6b6-200d-2642-fe0f.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *"
+						},
+						{
+							"uri": "https://mon-entreprise.urssaf.fr/twemoji/2/72x72/1f91d.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -434,7 +434,7 @@
 					"desc": "<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>",
 					"instances":[ 
 						{
-							"uri": "https://mon-entreprise.urssaf.fr/twemoji/2/72x72/1f91d.png",
+							"uri": "https://mon-entreprise.urssaf.fr/twemoji/2/72x72/1f449.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -447,7 +447,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "150"
+					"sourceid": "197"
 				},
 				{
 					"pluginid": "10017",
@@ -563,7 +563,7 @@
 							"evidence": "eval"
 						},
 						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
+							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.3a357c59.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -576,7 +576,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "142"
+					"sourceid": "136"
 				},
 				{
 					"pluginid": "10063",
@@ -706,14 +706,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://mon-entreprise.urssaf.fr/twemoji/2/72x72/1f4ca.png",
+							"uri": "https://mon-entreprise.urssaf.fr/twemoji/2/72x72/1f4c5.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://mon-entreprise.urssaf.fr/twemoji/2/72x72/1f4de.png",
+							"uri": "https://mon-entreprise.urssaf.fr/twemoji/2/72x72/1f4ca.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -792,7 +792,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "60232905"
+						},
+						{
+							"uri": "https://mon-entreprise.urssaf.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "66021549"
+						},
+						{
+							"uri": "https://mon-entreprise.urssaf.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "60232905"
 						},
 						{
 							"uri": "https://mon-entreprise.urssaf.fr/",
@@ -802,508 +816,18 @@
 							"evidence": "66021549"
 						},
 						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
+							"uri": "https://mon-entreprise.urssaf.fr/cr%C3%A9er",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "00000026"
+							"evidence": "60232905"
 						},
 						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
+							"uri": "https://mon-entreprise.urssaf.fr/dev",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "0123456789"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1018393087"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1073741823"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1073741824"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1073741825"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1088475391"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1097458175"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1182971135"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1211993087"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1221709055"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "12582911"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1258324735"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "134217727"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "134217728"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "13554175"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1433087999"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1604231423"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "16423679"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "16711680"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "16711935"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "16744447"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "16777215"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1687547391"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1714657791"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1724754687"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1768516095"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1784335871"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1804477439"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1887473919"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1900907951"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2005441023"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20080501"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20130318"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20140326"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20140530"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20160709"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20170301"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20170420"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20170505"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20170511"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20180515"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20180801"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20180930"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20190101"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20190423"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20190608"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20190626"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20200101"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20200320"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20200515"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20220104"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2070474495"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2096890111"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2147418367"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2147472639"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "268435456"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "29990101"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "33554432"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "401237780"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "421097727"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "512819199"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "548580095"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "579543807"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "59312805"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "62914560"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "66021549"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "67108864"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "780883967"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "793726975"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "805306368"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "852308735"
+							"evidence": "60232905"
 						},
 						{
 							"uri": "https://mon-entreprise.urssaf.fr/simulateurs/auto-entrepreneur",
@@ -1311,11 +835,32 @@
 							"param": "",
 							"attack": "",
 							"evidence": "00000026"
+						},
+						{
+							"uri": "https://mon-entreprise.urssaf.fr/simulateurs/auto-entrepreneur",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "60232905"
+						},
+						{
+							"uri": "https://mon-entreprise.urssaf.fr/simulateurs/salaire-brut-net",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "60232905"
+						},
+						{
+							"uri": "https://mon-entreprise.urssaf.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "60232905"
 						}
 					],
-					"count": "75",
+					"count": "10",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>66021549, which evaluates to: 1972-02-04 03:19:09</p>",
+					"otherinfo": "<p>60232905, which evaluates to: 1971-11-29 03:21:45</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -1442,7 +987,7 @@
 							"evidence": "Button__StyledButton-sc-qwx7gx-0"
 						},
 						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
+							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.3a357c59.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1531,14 +1076,14 @@
 							"evidence": "from"
 						},
 						{
-							"uri": "https://mon-entreprise.urssaf.fr/dev",
+							"uri": "https://mon-entreprise.urssaf.fr/cr%C3%A9er",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "from"
 						},
 						{
-							"uri": "https://mon-entreprise.urssaf.fr/simulateurs/salaire-brut-net",
+							"uri": "https://mon-entreprise.urssaf.fr/dev",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1566,14 +1111,14 @@
 							"evidence": "USER"
 						},
 						{
-							"uri": "https://mon-entreprise.urssaf.fr/dev",
+							"uri": "https://mon-entreprise.urssaf.fr/cr%C3%A9er",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "USER"
 						},
 						{
-							"uri": "https://mon-entreprise.urssaf.fr/simulateurs/salaire-brut-net",
+							"uri": "https://mon-entreprise.urssaf.fr/dev",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1613,7 +1158,7 @@
 							"evidence": "<script>"
 						},
 						{
-							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.a8debb1c.js",
+							"uri": "https://mon-entreprise.urssaf.fr/assets/sentry.3a357c59.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1626,7 +1171,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "142"
+					"sourceid": "136"
 				},
 				{
 					"pluginid": "10015",
@@ -1739,28 +1284,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 3358"
-						},
-						{
-							"uri": "https://mon-entreprise.urssaf.fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 3359"
+							"evidence": "Age: 31296"
 						},
 						{
 							"uri": "https://mon-entreprise.urssaf.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 3359"
+							"evidence": "Age: 31297"
 						},
 						{
 							"uri": "https://mon-entreprise.urssaf.fr/cr%C3%A9er",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 3372"
+							"evidence": "Age: 0"
 						},
 						{
 							"uri": "https://mon-entreprise.urssaf.fr/dev",
@@ -1781,7 +1319,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 0"
+							"evidence": "Age: 19647"
 						},
 						{
 							"uri": "https://mon-entreprise.urssaf.fr/simulateurs",
@@ -1802,24 +1340,24 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 3411"
+							"evidence": "Age: 0"
 						},
 						{
 							"uri": "https://mon-entreprise.urssaf.fr/simulateurs/salaire-brut-net",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 3384"
+							"evidence": "Age: 0"
 						},
 						{
 							"uri": "https://mon-entreprise.urssaf.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 0"
+							"evidence": "Age: 1"
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
