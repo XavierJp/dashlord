@@ -276,7 +276,7 @@
               "ip"           : "pdf.dora.incubateur.net/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0335485E846663D0BD6148034F9C13E9E370"
+              "finding"      : "046658402F8A9534EFD610DD01FED921A041"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -290,21 +290,21 @@
               "ip"           : "pdf.dora.incubateur.net/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "4A7606FBB0C299EF77B4590A57E7A1DD5C5DD211"
+              "finding"      : "F6C12F355772E12D2CC9CD2B7ED06516B9F94BBD"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "pdf.dora.incubateur.net/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "3901596D83B7B139293FCDF19A57928CA01037CB8E59B9F099B32CC36A47971C"
+              "finding"      : "E42A109D3FF76056BA1558809C46EE1A6215AB41DB0495EAC3C355945ABA0D41"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "pdf.dora.incubateur.net/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE----- MIIFNjCCBB6gAwIBAgISAzVIXoRmY9C9YUgDT5wT6eNwMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjAzMTAwODQzMTBaFw0yMjA2MDgwODQzMDlaMCIxIDAeBgNVBAMT F3BkZi5kb3JhLmluY3ViYXRldXIubmV0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A MIIBCgKCAQEArRH35/QbNamH5aboRpdcszwRhrOEr2ehdXKCOgJJdrCo8VfCVC0N bPDsBt94fv5QAP1eC2NOzUzSz7qznHJlmOl9Wumoi5vCBUe0mckgnEwJpGt1GLzg nJ3ZnKxeOljuyBgsvXxgsztwq4HYUvhAMqZyudUy510FUrDZ9yhUCADZDHRd3ZER HFbAXq3EiaDWlhe6IGSEHSUx575DJo5OZy+NB2pITATTm5QJUjbLlYcZmMksoWcA jHNGQ7ADksiU+M7DzXKt5oiTT1BwJhPn2fwpYEEs5HtysAVhc4rBBvWa0p6U1+ji EyNAzYg/i9rH7g0jBSWGONPJDizoH/CToQIDAQABo4ICVDCCAlAwDgYDVR0PAQH/ BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8E AjAAMB0GA1UdDgQWBBSRtUvxR1HhhPRp/2ZQ0H4DuD+MZjAfBgNVHSMEGDAWgBQU LrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGG FWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmku bGVuY3Iub3JnLzAiBgNVHREEGzAZghdwZGYuZG9yYS5pbmN1YmF0ZXVyLm5ldDBM BgNVHSAERTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIB FhpodHRwOi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQYGCisGAQQB1nkCBAIEgfcE gfQA8gB3ACl5vvCeOTkh8FZzn2Old+W+V32cYAr4+U1dJlwlXceEAAABf3M196UA AAQDAEgwRgIhAOpSoOXr9dVgjxdttE6AJOmcI2Za7ihKi6RwD54V2bZ4AiEAjSiE /fU8B7d1Vcup/FvWvn2j9ILs2IiYrbgYUNZMb8EAdwDfpV6raIJPH2yt7rhfTj5a 6s2iEqRqXo47EsAgRFwqcwAAAX9zNfmaAAAEAwBIMEYCIQDyAccIPSGZv8f/D6CE E3hOtRiVFnhryikmcZQAPE1JVQIhAO/pkShFHGNtHS83vBjxYcSQUiaUv/JojjF2 o7VxAMudMA0GCSqGSIb3DQEBCwUAA4IBAQAdcM9/yjg9iokaV4rtLWDmrzDM8Z6z anFXYo+CgeMX7hYWFu3MERFtGywAMXs8/zJCtql4F5lwYXzVzmhrYidNr+35bKA4 9mmnJer6g/SHtfnt0jfLasqFidHTey7kATi8R9LegF9cAewghUexMaTTAMEbLAka trJ43AHohPbYHJbSvCP6KX5g1dSJvhFYLqLC/mO5ekd7Kei5wi8jmEisHoEeSd+m QTfi1HuVk6baXjeAZ9b2f0bt6WdH2usynuEvX+9cssYRp6qw3KxrrrnoDPaXncKf vuph7JW0jOMtvi2ThU7BmM9xvABiYebG0kK2QK8kVrUCJUtgsk20tu6G -----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE----- MIIFNDCCBBygAwIBAgISBGZYQC+KlTTv1hDdAf7ZIaBBMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjA1MDkwODQ2MTBaFw0yMjA4MDcwODQ2MDlaMCIxIDAeBgNVBAMT F3BkZi5kb3JhLmluY3ViYXRldXIubmV0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A MIIBCgKCAQEAumwQR+RLOxctyny4fM8ULx9RtprqBYZwkxJhZ9EhrfvaGEMGhXXu BLtZx1gqwTqq83xxrmX67QOKxeGT1BAHKofoLqUOY5zgw0N9UgG5iPIUQWRjEgbc 0kanBG/nz9Ig9FTFNAlMZRGbntEEqdJnn4tNpa4f8sDGHFji4hA3eLTQSgKcqgZ2 +Y2oeeaz6UtwbJFiM/T/wOLPvje7FXS8EbVWtWMKXqkMmWnBojaPW8p1kFJpSmEy K2cI7GgxgGmXf0qoWxvXIm3O1Hs8A2GS5uSZsacUpHq+3QNdDav5TfiyjoJOODsS aoPda272SU1n6N8fYb9BarPsTpPSWXFzzwIDAQABo4ICUjCCAk4wDgYDVR0PAQH/ BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8E AjAAMB0GA1UdDgQWBBSpACnRAK/qw65cH71rQCH3Hm9smjAfBgNVHSMEGDAWgBQU LrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGG FWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmku bGVuY3Iub3JnLzAiBgNVHREEGzAZghdwZGYuZG9yYS5pbmN1YmF0ZXVyLm5ldDBM BgNVHSAERTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIB FhpodHRwOi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQQGCisGAQQB1nkCBAIEgfUE gfIA8AB2AEHIyrHfIkZKEMahOglCh15OMYsbA+vrS8do8JBilgb2AAABgKg2RjUA AAQDAEcwRQIgEDDJMQJp+yGeQq8B1FWEt2ihFBykFDSxRIn4Xazv01sCIQDgsRhE hIptjF79ROP0EqeLQpa/5cfYY8e6ppBgXKRIAgB2ACl5vvCeOTkh8FZzn2Old+W+ V32cYAr4+U1dJlwlXceEAAABgKg2RgQAAAQDAEcwRQIhAOpjnq07MFz71vIODhnJ +fv42zuA8FtOUWiDBbnnWknQAiBvmQZa2wcCVomK7EB+/PV3jDjRJyLLknZLZ6EU ktdfHTANBgkqhkiG9w0BAQsFAAOCAQEAQ5kXdud0lNxdNk0BLC0WfJ6zyaMsrf/L vsK7TfUVRatLuNkN69ouLGatrYwtNy9kmmO3hn4WMP5ddvBvEc8GiBhK0PWdrEmV 4xwdGiAStUHgJAYK2cqhkRgw9U+KOPOGHxUc1n//7PCEktsP66AOcUWxshmfBdn3 huNfI0R3HcSUCRxCHA2rcbPQdo21aX7pm7buRkHVgW4E085VVzk51h5JnwN/CT/A wGJoFCx0jD2/B7l2Y5/jmY8KiPQ5Scs5tz//w7JYSe2zmdTNxG21wlgqIfbu+yxp TIQ+XwWK8RldJR/xCSxohiUo/my2zmGzBNJPw4nXwvvdSdbczmwB+g== -----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -353,21 +353,21 @@
               "ip"           : "pdf.dora.incubateur.net/148.253.96.193",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "30 >= 30 days"
+              "finding"      : "87 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "pdf.dora.incubateur.net/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2022-03-10 08:43"
+              "finding"      : "2022-05-09 08:46"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "pdf.dora.incubateur.net/148.253.96.193",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2022-06-08 08:43"
+              "finding"      : "2022-08-07 08:46"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -556,7 +556,7 @@
               "ip"           : "pdf.dora.incubateur.net/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1652007437"
+              "finding"      : "1652305635"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -778,7 +778,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://censys.io/ipv4?q=3901596D83B7B139293FCDF19A57928CA01037CB8E59B9F099B32CC36A47971C"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://censys.io/ipv4?q=E42A109D3FF76056BA1558809C46EE1A6215AB41DB0495EAC3C355945ABA0D41"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1433,7 +1433,7 @@
               "ip"           : "pdf.dora.incubateur.net/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0335485E846663D0BD6148034F9C13E9E370"
+              "finding"      : "046658402F8A9534EFD610DD01FED921A041"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -1447,21 +1447,21 @@
               "ip"           : "pdf.dora.incubateur.net/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "4A7606FBB0C299EF77B4590A57E7A1DD5C5DD211"
+              "finding"      : "F6C12F355772E12D2CC9CD2B7ED06516B9F94BBD"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "pdf.dora.incubateur.net/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "3901596D83B7B139293FCDF19A57928CA01037CB8E59B9F099B32CC36A47971C"
+              "finding"      : "E42A109D3FF76056BA1558809C46EE1A6215AB41DB0495EAC3C355945ABA0D41"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "pdf.dora.incubateur.net/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE----- MIIFNjCCBB6gAwIBAgISAzVIXoRmY9C9YUgDT5wT6eNwMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjAzMTAwODQzMTBaFw0yMjA2MDgwODQzMDlaMCIxIDAeBgNVBAMT F3BkZi5kb3JhLmluY3ViYXRldXIubmV0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A MIIBCgKCAQEArRH35/QbNamH5aboRpdcszwRhrOEr2ehdXKCOgJJdrCo8VfCVC0N bPDsBt94fv5QAP1eC2NOzUzSz7qznHJlmOl9Wumoi5vCBUe0mckgnEwJpGt1GLzg nJ3ZnKxeOljuyBgsvXxgsztwq4HYUvhAMqZyudUy510FUrDZ9yhUCADZDHRd3ZER HFbAXq3EiaDWlhe6IGSEHSUx575DJo5OZy+NB2pITATTm5QJUjbLlYcZmMksoWcA jHNGQ7ADksiU+M7DzXKt5oiTT1BwJhPn2fwpYEEs5HtysAVhc4rBBvWa0p6U1+ji EyNAzYg/i9rH7g0jBSWGONPJDizoH/CToQIDAQABo4ICVDCCAlAwDgYDVR0PAQH/ BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8E AjAAMB0GA1UdDgQWBBSRtUvxR1HhhPRp/2ZQ0H4DuD+MZjAfBgNVHSMEGDAWgBQU LrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGG FWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmku bGVuY3Iub3JnLzAiBgNVHREEGzAZghdwZGYuZG9yYS5pbmN1YmF0ZXVyLm5ldDBM BgNVHSAERTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIB FhpodHRwOi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQYGCisGAQQB1nkCBAIEgfcE gfQA8gB3ACl5vvCeOTkh8FZzn2Old+W+V32cYAr4+U1dJlwlXceEAAABf3M196UA AAQDAEgwRgIhAOpSoOXr9dVgjxdttE6AJOmcI2Za7ihKi6RwD54V2bZ4AiEAjSiE /fU8B7d1Vcup/FvWvn2j9ILs2IiYrbgYUNZMb8EAdwDfpV6raIJPH2yt7rhfTj5a 6s2iEqRqXo47EsAgRFwqcwAAAX9zNfmaAAAEAwBIMEYCIQDyAccIPSGZv8f/D6CE E3hOtRiVFnhryikmcZQAPE1JVQIhAO/pkShFHGNtHS83vBjxYcSQUiaUv/JojjF2 o7VxAMudMA0GCSqGSIb3DQEBCwUAA4IBAQAdcM9/yjg9iokaV4rtLWDmrzDM8Z6z anFXYo+CgeMX7hYWFu3MERFtGywAMXs8/zJCtql4F5lwYXzVzmhrYidNr+35bKA4 9mmnJer6g/SHtfnt0jfLasqFidHTey7kATi8R9LegF9cAewghUexMaTTAMEbLAka trJ43AHohPbYHJbSvCP6KX5g1dSJvhFYLqLC/mO5ekd7Kei5wi8jmEisHoEeSd+m QTfi1HuVk6baXjeAZ9b2f0bt6WdH2usynuEvX+9cssYRp6qw3KxrrrnoDPaXncKf vuph7JW0jOMtvi2ThU7BmM9xvABiYebG0kK2QK8kVrUCJUtgsk20tu6G -----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE----- MIIFNDCCBBygAwIBAgISBGZYQC+KlTTv1hDdAf7ZIaBBMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjA1MDkwODQ2MTBaFw0yMjA4MDcwODQ2MDlaMCIxIDAeBgNVBAMT F3BkZi5kb3JhLmluY3ViYXRldXIubmV0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A MIIBCgKCAQEAumwQR+RLOxctyny4fM8ULx9RtprqBYZwkxJhZ9EhrfvaGEMGhXXu BLtZx1gqwTqq83xxrmX67QOKxeGT1BAHKofoLqUOY5zgw0N9UgG5iPIUQWRjEgbc 0kanBG/nz9Ig9FTFNAlMZRGbntEEqdJnn4tNpa4f8sDGHFji4hA3eLTQSgKcqgZ2 +Y2oeeaz6UtwbJFiM/T/wOLPvje7FXS8EbVWtWMKXqkMmWnBojaPW8p1kFJpSmEy K2cI7GgxgGmXf0qoWxvXIm3O1Hs8A2GS5uSZsacUpHq+3QNdDav5TfiyjoJOODsS aoPda272SU1n6N8fYb9BarPsTpPSWXFzzwIDAQABo4ICUjCCAk4wDgYDVR0PAQH/ BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8E AjAAMB0GA1UdDgQWBBSpACnRAK/qw65cH71rQCH3Hm9smjAfBgNVHSMEGDAWgBQU LrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGG FWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmku bGVuY3Iub3JnLzAiBgNVHREEGzAZghdwZGYuZG9yYS5pbmN1YmF0ZXVyLm5ldDBM BgNVHSAERTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIB FhpodHRwOi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQQGCisGAQQB1nkCBAIEgfUE gfIA8AB2AEHIyrHfIkZKEMahOglCh15OMYsbA+vrS8do8JBilgb2AAABgKg2RjUA AAQDAEcwRQIgEDDJMQJp+yGeQq8B1FWEt2ihFBykFDSxRIn4Xazv01sCIQDgsRhE hIptjF79ROP0EqeLQpa/5cfYY8e6ppBgXKRIAgB2ACl5vvCeOTkh8FZzn2Old+W+ V32cYAr4+U1dJlwlXceEAAABgKg2RgQAAAQDAEcwRQIhAOpjnq07MFz71vIODhnJ +fv42zuA8FtOUWiDBbnnWknQAiBvmQZa2wcCVomK7EB+/PV3jDjRJyLLknZLZ6EU ktdfHTANBgkqhkiG9w0BAQsFAAOCAQEAQ5kXdud0lNxdNk0BLC0WfJ6zyaMsrf/L vsK7TfUVRatLuNkN69ouLGatrYwtNy9kmmO3hn4WMP5ddvBvEc8GiBhK0PWdrEmV 4xwdGiAStUHgJAYK2cqhkRgw9U+KOPOGHxUc1n//7PCEktsP66AOcUWxshmfBdn3 huNfI0R3HcSUCRxCHA2rcbPQdo21aX7pm7buRkHVgW4E085VVzk51h5JnwN/CT/A wGJoFCx0jD2/B7l2Y5/jmY8KiPQ5Scs5tz//w7JYSe2zmdTNxG21wlgqIfbu+yxp TIQ+XwWK8RldJR/xCSxohiUo/my2zmGzBNJPw4nXwvvdSdbczmwB+g== -----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -1510,21 +1510,21 @@
               "ip"           : "pdf.dora.incubateur.net/185.21.194.105",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "30 >= 30 days"
+              "finding"      : "87 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "pdf.dora.incubateur.net/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2022-03-10 08:43"
+              "finding"      : "2022-05-09 08:46"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "pdf.dora.incubateur.net/185.21.194.105",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2022-06-08 08:43"
+              "finding"      : "2022-08-07 08:46"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -1713,7 +1713,7 @@
               "ip"           : "pdf.dora.incubateur.net/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1652007581"
+              "finding"      : "1652305727"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1935,7 +1935,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://censys.io/ipv4?q=3901596D83B7B139293FCDF19A57928CA01037CB8E59B9F099B32CC36A47971C"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://censys.io/ipv4?q=E42A109D3FF76056BA1558809C46EE1A6215AB41DB0495EAC3C355945ABA0D41"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -2318,6 +2318,6 @@
               "ip"           : "pdf.dora.incubateur.net/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "296"
+              "finding"      : "188"
           }
 ]
