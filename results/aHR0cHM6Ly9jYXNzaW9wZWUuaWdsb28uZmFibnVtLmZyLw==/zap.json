@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 09:44:04",
+	"@generated": "Wed, 11 May 2022 20:38:15",
 	"site":[ 
 		{
 			"@name": "https://cassiopee.igloo.fabnum.fr",
@@ -364,13 +364,6 @@
 							"evidence": "query"
 						},
 						{
-							"uri": "https://cassiopee.igloo.fabnum.fr/_nuxt/9690f2e.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "bug"
-						},
-						{
 							"uri": "https://cassiopee.igloo.fabnum.fr/_nuxt/b2cc55c.js",
 							"method": "GET",
 							"param": "",
@@ -378,7 +371,7 @@
 							"evidence": "query"
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"(window.webpackJsonp=window.webpackJsonp||[]).push([[5],[,,,,,,function(t,e,n){\"use strict\";n.r(e),function(t,n){var r=Object.fr\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
@@ -450,7 +443,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10015",
@@ -598,7 +591,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "21"
+					"sourceid": "24"
 				}
 			]
 		}

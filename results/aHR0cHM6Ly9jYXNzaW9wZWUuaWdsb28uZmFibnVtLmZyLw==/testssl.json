@@ -353,7 +353,7 @@
               "ip"           : "cassiopee.igloo.fabnum.fr/51.159.27.6",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "89 >= 30 days"
+              "finding"      : "85 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -556,7 +556,7 @@
               "ip"           : "cassiopee.igloo.fabnum.fr/51.159.27.6",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1652003217"
+              "finding"      : "1652301650"
           }
 ,         {
               "id"           : "HSTS",
@@ -1119,6 +1119,6 @@
               "ip"           : "cassiopee.igloo.fabnum.fr/51.159.27.6",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "156"
+              "finding"      : "99"
           }
 ]
