@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 06:26:49",
+	"@generated": "Wed, 11 May 2022 17:23:13",
 	"site":[ 
 		{
 			"@name": "https://pilotage.inclusion.beta.gouv.fr",
@@ -39,7 +39,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10055",
@@ -72,7 +72,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10038",
@@ -482,7 +482,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "44"
+					"sourceid": "43"
 				},
 				{
 					"pluginid": "10063",
@@ -1457,13 +1457,6 @@
 							"evidence": "995338651"
 						},
 						{
-							"uri": "https://pilotage.inclusion.beta.gouv.fr/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "62776261"
-						},
-						{
 							"uri": "https://pilotage.inclusion.beta.gouv.fr/stylesheets/app.css",
 							"method": "GET",
 							"param": "",
@@ -1492,13 +1485,13 @@
 							"evidence": "2147483647"
 						}
 					],
-					"count": "115",
+					"count": "114",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1009589776, which evaluates to: 2001-12-29 01:36:16</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "44"
+					"sourceid": "43"
 				},
 				{
 					"pluginid": "10021",
@@ -1745,6 +1738,13 @@
 							"evidence": "user"
 						},
 						{
+							"uri": "https://pilotage.inclusion.beta.gouv.fr/tableaux-de-bord/analyse-des-publics/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "user"
+						},
+						{
 							"uri": "https://pilotage.inclusion.beta.gouv.fr/tableaux-de-bord/donner-votre-avis/",
 							"method": "GET",
 							"param": "",
@@ -1767,13 +1767,6 @@
 						},
 						{
 							"uri": "https://pilotage.inclusion.beta.gouv.fr/tableaux-de-bord/prescripteurs-habilites/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "user"
-						},
-						{
-							"uri": "https://pilotage.inclusion.beta.gouv.fr/tableaux-de-bord/recrutement/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1812,7 +1805,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "44"
+					"sourceid": "43"
 				},
 				{
 					"pluginid": "10015",
@@ -2011,7 +2004,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10049",

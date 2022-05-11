@@ -353,7 +353,7 @@
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.111.153",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "76 >= 30 days"
+              "finding"      : "72 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -556,21 +556,21 @@
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.111.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+101 seconds from localtime"
+              "finding"      : "+104 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.111.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1651991304"
+              "finding"      : "1652289890"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.111.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "101 seconds"
+              "finding"      : "104 seconds"
           }
 ,         {
               "id"           : "HSTS",
@@ -619,7 +619,7 @@
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.111.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-iad-kiad7000162-IAD"
+              "finding"      : "cache-iad-kiad7000020-IAD"
           }
 ,         {
               "id"           : "Cache-Control",
@@ -1356,7 +1356,7 @@
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.110.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -1496,7 +1496,7 @@
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.110.153",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "76 >= 30 days"
+              "finding"      : "72 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1699,21 +1699,21 @@
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.110.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+185 seconds from localtime"
+              "finding"      : "+191 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.110.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1651991389"
+              "finding"      : "1652289977"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.110.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "185 seconds"
+              "finding"      : "191 seconds"
           }
 ,         {
               "id"           : "HSTS",
@@ -1762,7 +1762,7 @@
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.110.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-iad-kiad7000060-IAD"
+              "finding"      : "cache-iad-kiad7000170-IAD"
           }
 ,         {
               "id"           : "Cache-Control",
@@ -2639,7 +2639,7 @@
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.109.153",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "76 >= 30 days"
+              "finding"      : "72 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -2842,21 +2842,21 @@
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.109.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+273 seconds from localtime"
+              "finding"      : "+281 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.109.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1651991476"
+              "finding"      : "1652290067"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.109.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "273 seconds"
+              "finding"      : "281 seconds"
           }
 ,         {
               "id"           : "HSTS",
@@ -2905,7 +2905,7 @@
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.109.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-iad-kiad7000072-IAD"
+              "finding"      : "cache-iad-kiad7000059-IAD"
           }
 ,         {
               "id"           : "Cache-Control",
@@ -2920,7 +2920,7 @@
               "port"         : "443",
               "severity"     : "INFO",
               "cwe"          : "CWE-200",
-              "finding"      : "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 2"
+              "finding"      : "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 1"
           }
 ,         {
               "id"           : "heartbleed",
@@ -3782,7 +3782,7 @@
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.108.153",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "76 >= 30 days"
+              "finding"      : "72 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -3985,21 +3985,21 @@
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.108.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+361 seconds from localtime"
+              "finding"      : "+374 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.108.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1651991564"
+              "finding"      : "1652290160"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.108.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "361 seconds"
+              "finding"      : "374 seconds"
           }
 ,         {
               "id"           : "HSTS",
@@ -4048,7 +4048,7 @@
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.108.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-iad-kiad7000103-IAD"
+              "finding"      : "cache-iad-kiad7000176-IAD"
           }
 ,         {
               "id"           : "Cache-Control",
@@ -4576,6 +4576,6 @@
               "ip"           : "pilotage.inclusion.beta.gouv.fr/185.199.108.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "350"
+              "finding"      : "366"
           }
 ]
