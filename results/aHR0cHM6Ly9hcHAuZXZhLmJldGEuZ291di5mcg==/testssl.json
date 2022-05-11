@@ -206,7 +206,7 @@
               "ip"           : "app.eva.beta.gouv.fr/185.31.40.19",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "sessionresumption_ID",
@@ -353,7 +353,7 @@
               "ip"           : "app.eva.beta.gouv.fr/185.31.40.19",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "55 >= 30 days"
+              "finding"      : "52 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -556,7 +556,7 @@
               "ip"           : "app.eva.beta.gouv.fr/185.31.40.19",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1652007913"
+              "finding"      : "1652306716"
           }
 ,         {
               "id"           : "HSTS",
@@ -1119,6 +1119,6 @@
               "ip"           : "app.eva.beta.gouv.fr/185.31.40.19",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "145"
+              "finding"      : "140"
           }
 ]
