@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 10:25:09",
+	"@generated": "Wed, 11 May 2022 21:19:51",
 	"site":[ 
 		{
 			"@name": "https://inclusion.beta.gouv.fr",
@@ -298,7 +298,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "42"
+					"sourceid": "43"
 				},
 				{
 					"pluginid": "10063",
@@ -488,7 +488,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "40"
+					"sourceid": "32"
 				},
 				{
 					"pluginid": "10021",
@@ -683,7 +683,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "42"
+					"sourceid": "43"
 				},
 				{
 					"pluginid": "10015",
