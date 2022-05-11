@@ -1,103 +1,27 @@
 [
   {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
+    "template": "ssl/ssl-dns-names.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
+    "template-id": "ssl-dns-names",
     "info": {
-      "name": "HTTP Missing Security Headers",
+      "name": "SSL DNS Names",
       "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
+        "pdteam"
       ],
       "tags": [
-        "misconfig",
-        "generic"
+        "ssl"
       ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "cross-origin-resource-policy",
-    "type": "http",
+    "type": "ssl",
     "host": "https://app.covoiturage.beta.gouv.fr/login",
     "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
-    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Sun, 08 May 2022 04:01:18 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 6febba17-1902dd04</p></body></html>",
+    "extracted-results": [
+      "app.covoiturage.beta.gouv.fr"
+    ],
     "ip": "185.31.40.11",
-    "timestamp": "2022-05-08T04:01:18.712856761Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-max-age",
-    "type": "http",
-    "host": "https://app.covoiturage.beta.gouv.fr/login",
-    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
-    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Sun, 08 May 2022 04:01:18 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 6febba17-1902dd04</p></body></html>",
-    "ip": "185.31.40.11",
-    "timestamp": "2022-05-08T04:01:18.71325727Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-methods",
-    "type": "http",
-    "host": "https://app.covoiturage.beta.gouv.fr/login",
-    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
-    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Sun, 08 May 2022 04:01:18 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 6febba17-1902dd04</p></body></html>",
-    "ip": "185.31.40.11",
-    "timestamp": "2022-05-08T04:01:18.71329247Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
+    "timestamp": "2022-05-11T14:54:18.641692283Z",
     "matcher-status": true,
     "matched-line": null
   },
@@ -128,383 +52,9 @@
     "host": "https://app.covoiturage.beta.gouv.fr/login",
     "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
     "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Sun, 08 May 2022 04:01:18 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 6febba17-1902dd04</p></body></html>",
+    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Wed, 11 May 2022 14:54:26 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 9d525179-5d02a6ef</p></body></html>",
     "ip": "185.31.40.11",
-    "timestamp": "2022-05-08T04:01:18.713312971Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "clear-site-data",
-    "type": "http",
-    "host": "https://app.covoiturage.beta.gouv.fr/login",
-    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
-    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Sun, 08 May 2022 04:01:18 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 6febba17-1902dd04</p></body></html>",
-    "ip": "185.31.40.11",
-    "timestamp": "2022-05-08T04:01:18.713329071Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-opener-policy",
-    "type": "http",
-    "host": "https://app.covoiturage.beta.gouv.fr/login",
-    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
-    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Sun, 08 May 2022 04:01:18 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 6febba17-1902dd04</p></body></html>",
-    "ip": "185.31.40.11",
-    "timestamp": "2022-05-08T04:01:18.713349472Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-origin",
-    "type": "http",
-    "host": "https://app.covoiturage.beta.gouv.fr/login",
-    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
-    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Sun, 08 May 2022 04:01:18 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 6febba17-1902dd04</p></body></html>",
-    "ip": "185.31.40.11",
-    "timestamp": "2022-05-08T04:01:18.713364772Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-expose-headers",
-    "type": "http",
-    "host": "https://app.covoiturage.beta.gouv.fr/login",
-    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
-    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Sun, 08 May 2022 04:01:18 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 6febba17-1902dd04</p></body></html>",
-    "ip": "185.31.40.11",
-    "timestamp": "2022-05-08T04:01:18.713379372Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-frame-options",
-    "type": "http",
-    "host": "https://app.covoiturage.beta.gouv.fr/login",
-    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
-    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Sun, 08 May 2022 04:01:18 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 6febba17-1902dd04</p></body></html>",
-    "ip": "185.31.40.11",
-    "timestamp": "2022-05-08T04:01:18.713398773Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-content-type-options",
-    "type": "http",
-    "host": "https://app.covoiturage.beta.gouv.fr/login",
-    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
-    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Sun, 08 May 2022 04:01:18 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 6febba17-1902dd04</p></body></html>",
-    "ip": "185.31.40.11",
-    "timestamp": "2022-05-08T04:01:18.713412673Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-permitted-cross-domain-policies",
-    "type": "http",
-    "host": "https://app.covoiturage.beta.gouv.fr/login",
-    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
-    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Sun, 08 May 2022 04:01:18 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 6febba17-1902dd04</p></body></html>",
-    "ip": "185.31.40.11",
-    "timestamp": "2022-05-08T04:01:18.713431873Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-credentials",
-    "type": "http",
-    "host": "https://app.covoiturage.beta.gouv.fr/login",
-    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
-    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Sun, 08 May 2022 04:01:18 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 6febba17-1902dd04</p></body></html>",
-    "ip": "185.31.40.11",
-    "timestamp": "2022-05-08T04:01:18.713462374Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "strict-transport-security",
-    "type": "http",
-    "host": "https://app.covoiturage.beta.gouv.fr/login",
-    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
-    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Sun, 08 May 2022 04:01:18 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 6febba17-1902dd04</p></body></html>",
-    "ip": "185.31.40.11",
-    "timestamp": "2022-05-08T04:01:18.713478274Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "content-security-policy",
-    "type": "http",
-    "host": "https://app.covoiturage.beta.gouv.fr/login",
-    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
-    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Sun, 08 May 2022 04:01:18 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 6febba17-1902dd04</p></body></html>",
-    "ip": "185.31.40.11",
-    "timestamp": "2022-05-08T04:01:18.713496075Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "referrer-policy",
-    "type": "http",
-    "host": "https://app.covoiturage.beta.gouv.fr/login",
-    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
-    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Sun, 08 May 2022 04:01:18 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 6febba17-1902dd04</p></body></html>",
-    "ip": "185.31.40.11",
-    "timestamp": "2022-05-08T04:01:18.713512875Z",
+    "timestamp": "2022-05-11T14:54:26.644507411Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
     "matcher-status": true,
     "matched-line": null
@@ -536,36 +86,486 @@
     "host": "https://app.covoiturage.beta.gouv.fr/login",
     "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
     "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Sun, 08 May 2022 04:01:18 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 6febba17-1902dd04</p></body></html>",
+    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Wed, 11 May 2022 14:54:26 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 9d525179-5d02a6ef</p></body></html>",
     "ip": "185.31.40.11",
-    "timestamp": "2022-05-08T04:01:18.713532575Z",
+    "timestamp": "2022-05-11T14:54:26.645674927Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
     "matcher-status": true,
     "matched-line": null
   },
   {
-    "template": "ssl/ssl-dns-names.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
-    "template-id": "ssl-dns-names",
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
     "info": {
-      "name": "SSL DNS Names",
+      "name": "HTTP Missing Security Headers",
       "author": [
-        "pdteam"
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
       ],
       "tags": [
-        "ssl"
+        "misconfig",
+        "generic"
       ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
       "reference": null,
       "severity": "info"
     },
-    "type": "ssl",
+    "matcher-name": "access-control-max-age",
+    "type": "http",
     "host": "https://app.covoiturage.beta.gouv.fr/login",
     "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
-    "extracted-results": [
-      "app.covoiturage.beta.gouv.fr"
-    ],
+    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Wed, 11 May 2022 14:54:26 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 9d525179-5d02a6ef</p></body></html>",
     "ip": "185.31.40.11",
-    "timestamp": "2022-05-08T04:01:42.98895779Z",
+    "timestamp": "2022-05-11T14:54:26.646904744Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-frame-options",
+    "type": "http",
+    "host": "https://app.covoiturage.beta.gouv.fr/login",
+    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
+    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Wed, 11 May 2022 14:54:26 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 9d525179-5d02a6ef</p></body></html>",
+    "ip": "185.31.40.11",
+    "timestamp": "2022-05-11T14:54:26.647858657Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "clear-site-data",
+    "type": "http",
+    "host": "https://app.covoiturage.beta.gouv.fr/login",
+    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
+    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Wed, 11 May 2022 14:54:26 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 9d525179-5d02a6ef</p></body></html>",
+    "ip": "185.31.40.11",
+    "timestamp": "2022-05-11T14:54:26.648783369Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://app.covoiturage.beta.gouv.fr/login",
+    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
+    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Wed, 11 May 2022 14:54:26 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 9d525179-5d02a6ef</p></body></html>",
+    "ip": "185.31.40.11",
+    "timestamp": "2022-05-11T14:54:26.649682882Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-methods",
+    "type": "http",
+    "host": "https://app.covoiturage.beta.gouv.fr/login",
+    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
+    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Wed, 11 May 2022 14:54:26 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 9d525179-5d02a6ef</p></body></html>",
+    "ip": "185.31.40.11",
+    "timestamp": "2022-05-11T14:54:26.650550094Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-content-type-options",
+    "type": "http",
+    "host": "https://app.covoiturage.beta.gouv.fr/login",
+    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
+    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Wed, 11 May 2022 14:54:26 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 9d525179-5d02a6ef</p></body></html>",
+    "ip": "185.31.40.11",
+    "timestamp": "2022-05-11T14:54:26.651398405Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-opener-policy",
+    "type": "http",
+    "host": "https://app.covoiturage.beta.gouv.fr/login",
+    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
+    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Wed, 11 May 2022 14:54:26 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 9d525179-5d02a6ef</p></body></html>",
+    "ip": "185.31.40.11",
+    "timestamp": "2022-05-11T14:54:26.652296518Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-origin",
+    "type": "http",
+    "host": "https://app.covoiturage.beta.gouv.fr/login",
+    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
+    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Wed, 11 May 2022 14:54:26 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 9d525179-5d02a6ef</p></body></html>",
+    "ip": "185.31.40.11",
+    "timestamp": "2022-05-11T14:54:26.653144629Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-credentials",
+    "type": "http",
+    "host": "https://app.covoiturage.beta.gouv.fr/login",
+    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
+    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Wed, 11 May 2022 14:54:26 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 9d525179-5d02a6ef</p></body></html>",
+    "ip": "185.31.40.11",
+    "timestamp": "2022-05-11T14:54:26.65321133Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "strict-transport-security",
+    "type": "http",
+    "host": "https://app.covoiturage.beta.gouv.fr/login",
+    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
+    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Wed, 11 May 2022 14:54:26 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 9d525179-5d02a6ef</p></body></html>",
+    "ip": "185.31.40.11",
+    "timestamp": "2022-05-11T14:54:26.653232231Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "content-security-policy",
+    "type": "http",
+    "host": "https://app.covoiturage.beta.gouv.fr/login",
+    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
+    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Wed, 11 May 2022 14:54:26 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 9d525179-5d02a6ef</p></body></html>",
+    "ip": "185.31.40.11",
+    "timestamp": "2022-05-11T14:54:26.653250531Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-permitted-cross-domain-policies",
+    "type": "http",
+    "host": "https://app.covoiturage.beta.gouv.fr/login",
+    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
+    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Wed, 11 May 2022 14:54:26 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 9d525179-5d02a6ef</p></body></html>",
+    "ip": "185.31.40.11",
+    "timestamp": "2022-05-11T14:54:26.653269431Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "referrer-policy",
+    "type": "http",
+    "host": "https://app.covoiturage.beta.gouv.fr/login",
+    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
+    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Wed, 11 May 2022 14:54:26 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 9d525179-5d02a6ef</p></body></html>",
+    "ip": "185.31.40.11",
+    "timestamp": "2022-05-11T14:54:26.653283331Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://app.covoiturage.beta.gouv.fr/login",
+    "matched-at": "https://app.covoiturage.beta.gouv.fr/login",
+    "request": "GET /login HTTP/1.1\r\nHost: app.covoiturage.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nDate: Wed, 11 May 2022 14:54:26 GMT\r\nVia: 1.1 alproxy\r\n\r\n<html><body><h1>Forbidden<br>Request was blocked by WAF.</h1><p></p><p>Request ID: 9d525179-5d02a6ef</p></body></html>",
+    "ip": "185.31.40.11",
+    "timestamp": "2022-05-11T14:54:26.653301631Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.covoiturage.beta.gouv.fr/login'",
     "matcher-status": true,
     "matched-line": null
   },
@@ -591,7 +591,7 @@
       "TLS13"
     ],
     "ip": "185.31.40.11",
-    "timestamp": "2022-05-08T04:03:32.88579919Z",
+    "timestamp": "2022-05-11T14:55:05.209822721Z",
     "matcher-status": true,
     "matched-line": null
   }
