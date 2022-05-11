@@ -42,19 +42,19 @@
     },
     {
       "type": "unknown",
-      "url": "https://posthog.diagomonito.net/decide/?v=2&ip=1&_=1651983094181"
+      "url": "https://posthog.diagomonito.net/decide/?v=2&ip=1&_=1652281670080"
     },
     {
       "type": "unknown",
-      "url": "https://posthog.diagomonito.net/e/?ip=1&_=1651983094189"
+      "url": "https://posthog.diagomonito.net/e/?ip=1&_=1652281670088"
     }
   ],
   "cookies": [],
   "headers": {
     "server": "nginx",
-    "date": "Sun, 08 May 2022 04:11:33 GMT",
+    "date": "Wed, 11 May 2022 15:07:49 GMT",
     "content-type": "text/html; charset=utf-8",
-    "etag": "\"1f9b9-MlRpuDU3zi7t0Z0KT3d7CVubCFA\"",
+    "etag": "\"1fa3d-5Uya1NI2bdB5Yz1YLxplgoq4qWA\"",
     "cache-control": "s-maxage=600, stale-while-revalidate",
     "vary": "Accept-Encoding",
     "content-encoding": "gzip",
@@ -120,7 +120,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "142.251.16.95",
+      "ip": "142.250.114.95",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -174,7 +174,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "172.253.122.94",
+      "ip": "142.251.46.131",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -228,7 +228,7 @@
     },
     {
       "hostname": "i.ytimg.com",
-      "ip": "142.250.65.86",
+      "ip": "142.251.46.150",
       "geoip": {
         "continent": {
           "code": "NA",
