@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 02:35:31",
+	"@generated": "Wed, 11 May 2022 13:24:42",
 	"site":[ 
 		{
 			"@name": "https://app.pix.fr",
@@ -188,7 +188,7 @@
 					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
 					"instances":[ 
 						{
-							"uri": "https://app.pix.fr/assets/vendor-5eb351cdbee349dd07fdaee69f5755e7.js",
+							"uri": "https://app.pix.fr/assets/vendor-3e285c43a92c464864d16c1d909b8c26.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -228,14 +228,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://app.pix.fr/assets/mon-pix-745f8c81501648fef245bc027ba9297f.js",
+							"uri": "https://app.pix.fr/assets/mon-pix-33ad78904d939f35e7d8e1f3521818a8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://app.pix.fr/assets/vendor-5eb351cdbee349dd07fdaee69f5755e7.js",
+							"uri": "https://app.pix.fr/assets/vendor-3e285c43a92c464864d16c1d909b8c26.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -286,52 +286,52 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "411980083"
+							"evidence": "254655768"
 						},
 						{
 							"uri": "https://app.pix.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "453053225"
+							"evidence": "42612553"
 						},
 						{
 							"uri": "https://app.pix.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "450774818"
+							"evidence": "261401303"
 						},
 						{
 							"uri": "https://app.pix.fr/apple-touch-icon-pix_app.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "452211991"
+							"evidence": "41610899"
 						},
 						{
 							"uri": "https://app.pix.fr/apple-touch-icon-pix_app.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "453053227"
+							"evidence": "42358180"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/mon-pix-7be46cfb6d0616e32a545ee0d34254cd.css",
+							"uri": "https://app.pix.fr/assets/mon-pix-f4ea6cd46a7f8e22734cbb51c142743f.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "106645585"
+							"evidence": "315360000"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/mon-pix-7be46cfb6d0616e32a545ee0d34254cd.css",
+							"uri": "https://app.pix.fr/assets/mon-pix-f4ea6cd46a7f8e22734cbb51c142743f.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "108717763"
+							"evidence": "42358181"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/mon-pix-7be46cfb6d0616e32a545ee0d34254cd.css",
+							"uri": "https://app.pix.fr/assets/vendor-8d0d586cafad4df70eb24150b3ffea2d.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -342,44 +342,44 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "106095617"
+							"evidence": "92116097"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/vendor-8d0d586cafad4df70eb24150b3ffea2d.css",
+							"uri": "https://app.pix.fr/ember-cli-matomo-tag-manager/start-matomo-event-9ad981fd3c2536928c3d223abe3c7dc4.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "108810548"
+							"evidence": "91863569"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/vendor-8d0d586cafad4df70eb24150b3ffea2d.css",
+							"uri": "https://app.pix.fr/ember-cli-matomo-tag-manager/start-matomo-event-9ad981fd3c2536928c3d223abe3c7dc4.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "315360000"
+							"evidence": "92116101"
 						},
 						{
 							"uri": "https://app.pix.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "108810546"
+							"evidence": "77407297"
 						},
 						{
 							"uri": "https://app.pix.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "450774816"
+							"evidence": "42612563"
 						}
 					],
 					"count": "13",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>411980083, which evaluates to: 1983-01-21 06:54:43</p>",
+					"otherinfo": "<p>254655768, which evaluates to: 1978-01-26 09:42:48</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10094",
@@ -406,7 +406,7 @@
 							"evidence": "22isMessageStatusTogglingEnabled"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/vendor-5eb351cdbee349dd07fdaee69f5755e7.js",
+							"uri": "https://app.pix.fr/assets/vendor-3e285c43a92c464864d16c1d909b8c26.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -446,112 +446,112 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
 					"instances":[ 
 						{
-							"uri": "https://app.pix.fr/assets/mon-pix-745f8c81501648fef245bc027ba9297f.js",
+							"uri": "https://app.pix.fr/assets/mon-pix-33ad78904d939f35e7d8e1f3521818a8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "from"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/mon-pix-745f8c81501648fef245bc027ba9297f.js",
+							"uri": "https://app.pix.fr/assets/mon-pix-33ad78904d939f35e7d8e1f3521818a8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "later"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/mon-pix-745f8c81501648fef245bc027ba9297f.js",
+							"uri": "https://app.pix.fr/assets/mon-pix-33ad78904d939f35e7d8e1f3521818a8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "query"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/mon-pix-745f8c81501648fef245bc027ba9297f.js",
+							"uri": "https://app.pix.fr/assets/mon-pix-33ad78904d939f35e7d8e1f3521818a8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "select"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/mon-pix-745f8c81501648fef245bc027ba9297f.js",
+							"uri": "https://app.pix.fr/assets/mon-pix-33ad78904d939f35e7d8e1f3521818a8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "user"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/mon-pix-745f8c81501648fef245bc027ba9297f.js",
+							"uri": "https://app.pix.fr/assets/mon-pix-33ad78904d939f35e7d8e1f3521818a8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "username"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/vendor-5eb351cdbee349dd07fdaee69f5755e7.js",
+							"uri": "https://app.pix.fr/assets/vendor-3e285c43a92c464864d16c1d909b8c26.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "BUG"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/vendor-5eb351cdbee349dd07fdaee69f5755e7.js",
+							"uri": "https://app.pix.fr/assets/vendor-3e285c43a92c464864d16c1d909b8c26.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "from"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/vendor-5eb351cdbee349dd07fdaee69f5755e7.js",
+							"uri": "https://app.pix.fr/assets/vendor-3e285c43a92c464864d16c1d909b8c26.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "later"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/vendor-5eb351cdbee349dd07fdaee69f5755e7.js",
+							"uri": "https://app.pix.fr/assets/vendor-3e285c43a92c464864d16c1d909b8c26.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "query"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/vendor-5eb351cdbee349dd07fdaee69f5755e7.js",
+							"uri": "https://app.pix.fr/assets/vendor-3e285c43a92c464864d16c1d909b8c26.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "select"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/vendor-5eb351cdbee349dd07fdaee69f5755e7.js",
+							"uri": "https://app.pix.fr/assets/vendor-3e285c43a92c464864d16c1d909b8c26.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "TODO"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/vendor-5eb351cdbee349dd07fdaee69f5755e7.js",
+							"uri": "https://app.pix.fr/assets/vendor-3e285c43a92c464864d16c1d909b8c26.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "user"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/vendor-5eb351cdbee349dd07fdaee69f5755e7.js",
+							"uri": "https://app.pix.fr/assets/vendor-3e285c43a92c464864d16c1d909b8c26.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "username"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/vendor-5eb351cdbee349dd07fdaee69f5755e7.js",
+							"uri": "https://app.pix.fr/assets/vendor-3e285c43a92c464864d16c1d909b8c26.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "where"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/vendor-5eb351cdbee349dd07fdaee69f5755e7.js",
+							"uri": "https://app.pix.fr/assets/vendor-3e285c43a92c464864d16c1d909b8c26.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -591,7 +591,7 @@
 							"evidence": "<script type=\"text/javascript\" async defer src=\"https://analytics.pix.fr/js/container_fNoTNeFZ.js\"></script>"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/vendor-5eb351cdbee349dd07fdaee69f5755e7.js",
+							"uri": "https://app.pix.fr/assets/vendor-3e285c43a92c464864d16c1d909b8c26.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -703,35 +703,35 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 63208"
+							"evidence": "Age: 1403"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/mon-pix-745f8c81501648fef245bc027ba9297f.js",
+							"uri": "https://app.pix.fr/assets/mon-pix-33ad78904d939f35e7d8e1f3521818a8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 127958"
+							"evidence": "Age: 0"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/mon-pix-7be46cfb6d0616e32a545ee0d34254cd.css",
+							"uri": "https://app.pix.fr/assets/mon-pix-f4ea6cd46a7f8e22734cbb51c142743f.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 208369"
+							"evidence": "Age: 0"
 						},
 						{
 							"uri": "https://app.pix.fr/assets/vendor-8d0d586cafad4df70eb24150b3ffea2d.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 222769"
+							"evidence": "Age: 0"
 						},
 						{
 							"uri": "https://app.pix.fr/ember-cli-matomo-tag-manager/start-matomo-event-9ad981fd3c2536928c3d223abe3c7dc4.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 63230"
+							"evidence": "Age: 1405"
 						},
 						{
 							"uri": "https://app.pix.fr/images/interwind-5fe40c7fe159b0f34afe8360ab8ae303.gif",
@@ -788,14 +788,14 @@
 							"evidence": "max-age=86400"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/mon-pix-745f8c81501648fef245bc027ba9297f.js",
+							"uri": "https://app.pix.fr/assets/mon-pix-33ad78904d939f35e7d8e1f3521818a8.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "max-age=315360000"
 						},
 						{
-							"uri": "https://app.pix.fr/assets/mon-pix-7be46cfb6d0616e32a545ee0d34254cd.css",
+							"uri": "https://app.pix.fr/assets/mon-pix-f4ea6cd46a7f8e22734cbb51c142743f.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -836,7 +836,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "17"
+					"sourceid": "18"
 				},
 				{
 					"pluginid": "10049",

@@ -38,29 +38,29 @@
     },
     {
       "type": "unknown",
-      "url": "https://analytics.pix.fr/piwik.php?action_name=%2Fconnexion&idsite=3&rec=1&r=952528&h=2&m=36&s=53&url=https%3A%2F%2Fapp.pix.fr%2Fconnexion&_id=f890cdb1ac0123e1&_idn=0&_refts=0&send_image=0&cookie=1&res=800x600&pv_id=gbAIs0&pf_net=273&pf_srv=144&pf_tfr=1&pf_dm1=849&pf_dm2=225&pf_onl=0"
+      "url": "https://analytics.pix.fr/piwik.php?action_name=%2Fconnexion&idsite=3&rec=1&r=346598&h=13&m=26&s=1&url=https%3A%2F%2Fapp.pix.fr%2Fconnexion&_id=28dbd4cebbabbca1&_idn=0&_refts=0&send_image=0&cookie=1&res=800x600&pv_id=il6NlS&pf_net=268&pf_srv=96&pf_tfr=1&pf_dm1=784&pf_dm2=174&pf_onl=1"
     },
     {
       "type": "unknown",
-      "url": "https://analytics.pix.fr/piwik.php?action_name=%2Fconnexion&idsite=3&rec=1&r=451233&h=2&m=36&s=54&url=https%3A%2F%2Fapp.pix.fr%2Fconnexion&_id=f890cdb1ac0123e1&_idn=0&_refts=0&send_image=0&cookie=1&res=800x600&pf_net=273&pf_srv=144&pf_tfr=1&pf_dm1=849&pf_dm2=225&pf_onl=0&pv_id=gNTEWt"
+      "url": "https://analytics.pix.fr/piwik.php?action_name=%2Fconnexion&idsite=3&rec=1&r=770807&h=13&m=26&s=2&url=https%3A%2F%2Fapp.pix.fr%2Fconnexion&_id=28dbd4cebbabbca1&_idn=0&_refts=0&send_image=0&cookie=1&res=800x600&pf_net=268&pf_srv=96&pf_tfr=1&pf_dm1=784&pf_dm2=174&pf_onl=1&pv_id=4y1wUF"
     }
   ],
   "cookies": [],
   "headers": {
     "server": "nginx",
-    "date": "Sun, 08 May 2022 02:36:52 GMT",
+    "date": "Wed, 11 May 2022 13:26:00 GMT",
     "content-type": "text/html; charset=utf-8",
     "bln-client-accept-encoding": "gzip, deflate, br",
     "bln-client-accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
-    "x-request-id": "a54db79f-6632-4f5b-916b-02d9d5221beb",
-    "last-modified": "Fri, 06 May 2022 14:46:43 GMT",
-    "etag": "W/\"627534d3-17b5\"",
-    "expires": "Sun, 08 May 2022 02:36:51 GMT",
+    "x-request-id": "20babef9-2b71-4b97-a38a-290065a18112",
+    "last-modified": "Wed, 11 May 2022 12:59:51 GMT",
+    "etag": "W/\"627bb347-17b5\"",
+    "expires": "Wed, 11 May 2022 13:25:59 GMT",
     "cache-control": "no-cache",
     "x-robots-tag": "noindex",
     "content-encoding": "gzip",
     "vary": "Accept-Encoding",
-    "x-varnish": "411084788",
+    "x-varnish": "434690668",
     "age": "0",
     "via": "1.1 varnish (Varnish/6.5)",
     "accept-ranges": "bytes",
@@ -69,14 +69,14 @@
     "x-content-type-options": "nosniff",
     "referrer-policy": "origin-when-cross-origin",
     "x-xss-protection": "1",
-    "bln-server": "172.27.197.54",
+    "bln-server": "172.26.13.155",
     "bln-version": "1.12.0",
     "datacenter": "pa2.par"
   },
   "endpoints": [
     {
       "hostname": "app.pix.fr",
-      "ip": "185.94.140.195",
+      "ip": "185.94.140.194",
       "geoip": {
         "continent": {
           "code": "EU",
@@ -132,7 +132,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "172.253.122.95",
+      "ip": "172.217.15.106",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -280,7 +280,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "142.250.31.94",
+      "ip": "172.217.13.227",
       "geoip": {
         "continent": {
           "code": "NA",
