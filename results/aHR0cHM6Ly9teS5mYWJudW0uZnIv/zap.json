@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 10:14:21",
+	"@generated": "Wed, 11 May 2022 21:08:44",
 	"site":[ 
 		{
 			"@name": "https://my.fabnum.fr",
@@ -908,6 +908,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://my.fabnum.fr/3rdparty/js/jquery.min.js?be40cea600f9d8709e8f713a67a8197a3eb7cc03",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://my.fabnum.fr/3rdparty/slick.css?be40cea600f9d8709e8f713a67a8197a3eb7cc03",
 							"method": "GET",
 							"param": "",
@@ -923,13 +930,6 @@
 						},
 						{
 							"uri": "https://my.fabnum.fr/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://my.fabnum.fr/theme.css?be40cea600f9d8709e8f713a67a8197a3eb7cc03",
 							"method": "GET",
 							"param": "",
 							"attack": "",

@@ -388,7 +388,7 @@
               "ip"           : "my.fabnum.fr/92.169.104.206",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "57 >= 30 days"
+              "finding"      : "53 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -598,7 +598,7 @@
               "ip"           : "my.fabnum.fr/92.169.104.206",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1652004994"
+              "finding"      : "1652303469"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1189,6 +1189,6 @@
               "ip"           : "my.fabnum.fr/92.169.104.206",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "142"
+              "finding"      : "145"
           }
 ]
