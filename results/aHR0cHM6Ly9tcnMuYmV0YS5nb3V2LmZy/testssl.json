@@ -521,7 +521,7 @@
               "ip"           : "mrs.beta.gouv.fr/37.187.143.237",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "48 >= 30 days"
+              "finding"      : "45 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -724,7 +724,7 @@
               "ip"           : "mrs.beta.gouv.fr/37.187.143.237",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1651988602"
+              "finding"      : "1652286847"
           }
 ,         {
               "id"           : "HSTS",
@@ -1310,6 +1310,6 @@
               "ip"           : "mrs.beta.gouv.fr/37.187.143.237",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "209"
+              "finding"      : "207"
           }
 ]
