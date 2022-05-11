@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 06:20:38",
+	"@generated": "Wed, 11 May 2022 17:17:48",
 	"site":[ 
 		{
 			"@name": "https://pro.passculture.beta.gouv.fr",
@@ -115,12 +115,12 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1651584237"
+							"evidence": "1652275406"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1651584237, which evaluates to: 2022-05-03 13:23:57</p>",
+					"otherinfo": "<p>1652275406, which evaluates to: 2022-05-11 13:23:26</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -141,12 +141,12 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "ADPycdszweWfL2yhINB4byaYWxCNZnOlWnVFPXJs6q_CAYNn-sf6KKNwR26OFgcVcrHa8N6gZA5tVvBXhV5l1-SNlaafyw"
+							"evidence": "ADPycdsMUcgwZ5xzvsv8Qgku2Ejgvfj7KZpdEqKxKjjKGPDpdOw1iFFBXr-HVtJQwJ-M9U_ZZUvw882oXApxLVL5akqRKQ"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\\x00003\uFFFDq\uFFFD3\uFFFD\uFFFD/l\uFFFD \uFFFDxo&\uFFFD[\\x0010\uFFFDfs\uFFFDZuE=rl\uFFFD\uFFFD\\x0001\uFFFDg\uFFFD\uFFFD\uFFFD(\uFFFDpGn\uFFFD\\x0016\\x0007\\x0015r\uFFFD\uFFFD\uFFFD\u07A0d\\x000emV\uFFFDW\uFFFD^e\uFFFD\u4355\uFFFD\uFFFD\uFFFD</p>",
+					"otherinfo": "<p>\\x00003\uFFFDq\uFFFD\\x000cQ\uFFFD0g\uFFFDs\uFFFD\uFFFD\uFFFDB\t.\uFFFDH\uFFFD\uFFFD\uFFFD)\uFFFD]\\x0012\uFFFD\uFFFD*8\uFFFD\\x0018\uFFFD\uFFFDt\uFFFD5\uFFFDQA^\uFFFD\uFFFDV\uFFFDP\uFFFD\uFFFD\uFFFD\uFFFDO\uFFFDeK\uFFFD\uFFFD\u0368\\</p><p>q-R\uFFFDjJ\uFFFD)</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -219,7 +219,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 2114"
+							"evidence": "Age: 102"
 						}
 					],
 					"count": "1",
