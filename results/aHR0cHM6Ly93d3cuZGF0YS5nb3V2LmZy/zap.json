@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 08:07:06",
+	"@generated": "Wed, 11 May 2022 19:05:22",
 	"site":[ 
 		{
 			"@name": "https://www.data.gouv.fr",
@@ -524,11 +524,11 @@
 					],
 					"count": "12",
 					"solution": "<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>",
-					"otherinfo": "<p>Location header URI length: 126 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20220508-074540/export-dataset-20220508-074540.csv].</p><p>Predicted response size: 426.</p><p>Response Body Length: 459.</p>",
+					"otherinfo": "<p>Location header URI length: 126 [https://static.data.gouv.fr/resources/catalogue-des-donnees-de-data-gouv-fr/20220511-074549/export-dataset-20220511-074549.csv].</p><p>Predicted response size: 426.</p><p>Response Body Length: 459.</p>",
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "117"
+					"sourceid": "118"
 				},
 				{
 					"pluginid": "10011",
@@ -973,7 +973,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "3260"
+					"sourceid": "3221"
 				},
 				{
 					"pluginid": "10035",
@@ -1100,7 +1100,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "20220508"
+							"evidence": "20220511"
 						},
 						{
 							"uri": "https://www.data.gouv.fr/fr/",
@@ -1114,7 +1114,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "20220508"
+							"evidence": "20220511"
 						}
 					],
 					"count": "4",
@@ -1140,89 +1140,89 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "eyJjc3JmX3Rva2VuIjoiMGRhMzc4YzMzOGU5OTJjOWU2YzYxYjgzMmUzZWY3ZTlmMGM0MDg0ZCJ9"
+							"evidence": "eyJjc3JmX3Rva2VuIjoiZDA5YTU5ZTJmNzBiYTU1ZWI0ZWZjNmM3NTMxZjRlMzRmMmQzODQ0MiJ9"
 						},
 						{
 							"uri": "https://www.data.gouv.fr/datasets.csv",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYmUyMDE0ZjY3Zjk5NzkxYzVhYmI1YzM1MTBhYjNmN2YzOGQwZGNkMSJ9"
+							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYThhODg1NWU0YjQzYmQxOTE3MDNlN2I5MWVjOWRhNjA3YWQxZWJlYSJ9"
 						},
 						{
 							"uri": "https://www.data.gouv.fr/en/datasets.csv",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYmUyMDE0ZjY3Zjk5NzkxYzVhYmI1YzM1MTBhYjNmN2YzOGQwZGNkMSJ9"
+							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYThhODg1NWU0YjQzYmQxOTE3MDNlN2I5MWVjOWRhNjA3YWQxZWJlYSJ9"
 						},
 						{
 							"uri": "https://www.data.gouv.fr/en/resources.csv",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYmUyMDE0ZjY3Zjk5NzkxYzVhYmI1YzM1MTBhYjNmN2YzOGQwZGNkMSJ9"
+							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYThhODg1NWU0YjQzYmQxOTE3MDNlN2I5MWVjOWRhNjA3YWQxZWJlYSJ9"
 						},
 						{
 							"uri": "https://www.data.gouv.fr/en/reuses.csv",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYmUyMDE0ZjY3Zjk5NzkxYzVhYmI1YzM1MTBhYjNmN2YzOGQwZGNkMSJ9"
+							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYThhODg1NWU0YjQzYmQxOTE3MDNlN2I5MWVjOWRhNjA3YWQxZWJlYSJ9"
 						},
 						{
 							"uri": "https://www.data.gouv.fr/es/datasets.csv",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYmUyMDE0ZjY3Zjk5NzkxYzVhYmI1YzM1MTBhYjNmN2YzOGQwZGNkMSJ9"
+							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYThhODg1NWU0YjQzYmQxOTE3MDNlN2I5MWVjOWRhNjA3YWQxZWJlYSJ9"
 						},
 						{
 							"uri": "https://www.data.gouv.fr/es/resources.csv",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYmUyMDE0ZjY3Zjk5NzkxYzVhYmI1YzM1MTBhYjNmN2YzOGQwZGNkMSJ9"
+							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYThhODg1NWU0YjQzYmQxOTE3MDNlN2I5MWVjOWRhNjA3YWQxZWJlYSJ9"
 						},
 						{
 							"uri": "https://www.data.gouv.fr/fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "eyJjc3JmX3Rva2VuIjoiYmUyMDE0ZjY3Zjk5NzkxYzVhYmI1YzM1MTBhYjNmN2YzOGQwZGNkMSJ9"
+							"evidence": "eyJjc3JmX3Rva2VuIjoiYThhODg1NWU0YjQzYmQxOTE3MDNlN2I5MWVjOWRhNjA3YWQxZWJlYSJ9"
 						},
 						{
 							"uri": "https://www.data.gouv.fr/fr/datasets.csv",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYmUyMDE0ZjY3Zjk5NzkxYzVhYmI1YzM1MTBhYjNmN2YzOGQwZGNkMSJ9"
+							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYThhODg1NWU0YjQzYmQxOTE3MDNlN2I5MWVjOWRhNjA3YWQxZWJlYSJ9"
 						},
 						{
 							"uri": "https://www.data.gouv.fr/fr/resources.csv",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYmUyMDE0ZjY3Zjk5NzkxYzVhYmI1YzM1MTBhYjNmN2YzOGQwZGNkMSJ9"
+							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYThhODg1NWU0YjQzYmQxOTE3MDNlN2I5MWVjOWRhNjA3YWQxZWJlYSJ9"
 						},
 						{
 							"uri": "https://www.data.gouv.fr/resources.csv",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYmUyMDE0ZjY3Zjk5NzkxYzVhYmI1YzM1MTBhYjNmN2YzOGQwZGNkMSJ9"
+							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYThhODg1NWU0YjQzYmQxOTE3MDNlN2I5MWVjOWRhNjA3YWQxZWJlYSJ9"
 						},
 						{
 							"uri": "https://www.data.gouv.fr/reuses.csv",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYmUyMDE0ZjY3Zjk5NzkxYzVhYmI1YzM1MTBhYjNmN2YzOGQwZGNkMSJ9"
+							"evidence": "eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYThhODg1NWU0YjQzYmQxOTE3MDNlN2I5MWVjOWRhNjA3YWQxZWJlYSJ9"
 						}
 					],
 					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>{\"csrf_token\":\"0da378c338e992c9e6c61b832e3ef7e9f0c4084d\"}</p>",
+					"otherinfo": "<p>{\"csrf_token\":\"d09a59e2f70ba55eb4efc6c7531f4e34f2d38442\"}</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -1329,7 +1329,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "204"
+					"sourceid": "206"
 				},
 				{
 					"pluginid": "10109",
@@ -1832,7 +1832,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "226"
+					"sourceid": "228"
 				}
 			]
 		}
