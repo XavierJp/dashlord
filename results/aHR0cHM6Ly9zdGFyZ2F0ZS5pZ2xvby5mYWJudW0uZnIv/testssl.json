@@ -353,7 +353,7 @@
               "ip"           : "stargate.igloo.fabnum.fr/51.159.27.6",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "58 >= 30 days"
+              "finding"      : "54 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -556,7 +556,7 @@
               "ip"           : "stargate.igloo.fabnum.fr/51.159.27.6",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1652002949"
+              "finding"      : "1652301557"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1161,6 +1161,6 @@
               "ip"           : "stargate.igloo.fabnum.fr/51.159.27.6",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "97"
+              "finding"      : "145"
           }
 ]

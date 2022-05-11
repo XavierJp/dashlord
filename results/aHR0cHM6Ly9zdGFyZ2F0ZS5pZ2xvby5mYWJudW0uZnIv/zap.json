@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 09:40:24",
+	"@generated": "Wed, 11 May 2022 20:37:01",
 	"site":[ 
 		{
 			"@name": "https://stargate.igloo.fabnum.fr",
@@ -303,6 +303,13 @@
 							"evidence": "f54-4Y113iJaMy293vSLPU7mvTgNi+8"
 						},
 						{
+							"uri": "https://stargate.igloo.fabnum.fr/_next/static/chunks/2965a781d568074a04af936ff1ae3ac7fe8cc7e8.788fc0ae1572d604c6bd.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+						},
+						{
 							"uri": "https://stargate.igloo.fabnum.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -317,7 +324,7 @@
 							"evidence": "16f3-7V77bO7rUran/muaf21xr3Iedlg"
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p>\uFFFD>\uFFFDu\uFFFD\"Z3-\uFFFD\uFFFD\uFFFD=N\uFFFD8\r\uFFFD\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
