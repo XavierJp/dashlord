@@ -174,6 +174,38 @@
     },
     {
       "type": "cloudfront",
+      "url": "https://d2uvddcac8vf0w.cloudfront.net/packs/media/images/homepage/partenaires/colored_logo/logo-le-reseau-49afc3dba589edcc11f7fd0b8b9f53b8.png",
+      "details": {
+        "id": "cloudfront",
+        "message": "Host files locally"
+      }
+    },
+    {
+      "type": "cloudfront",
+      "url": "https://d2uvddcac8vf0w.cloudfront.net/packs/media/images/homepage/partenaires/colored_logo/logo-tous-en-stage-204491c50b2288b375d92edf04165064.png",
+      "details": {
+        "id": "cloudfront",
+        "message": "Host files locally"
+      }
+    },
+    {
+      "type": "cloudfront",
+      "url": "https://d2uvddcac8vf0w.cloudfront.net/packs/media/images/homepage/partenaires/colored_logo/logo-viens-voir-mon-taf-03ac3ffe955f336aba7b5116b8202265.png",
+      "details": {
+        "id": "cloudfront",
+        "message": "Host files locally"
+      }
+    },
+    {
+      "type": "cloudfront",
+      "url": "https://d2uvddcac8vf0w.cloudfront.net/packs/media/images/homepage/partenaires/colored_logo/logo-epc-35fa76a1dd09ab160c37aa3933f73a6a.png",
+      "details": {
+        "id": "cloudfront",
+        "message": "Host files locally"
+      }
+    },
+    {
+      "type": "cloudfront",
       "url": "https://d2uvddcac8vf0w.cloudfront.net/packs/media/images/homepage/partenaires/colored_logo/logo-un-stage-et-apres-ce5b1ba2373a3f5d3ff597c86857990f.png",
       "details": {
         "id": "cloudfront",
@@ -190,22 +222,6 @@
     },
     {
       "type": "cloudfront",
-      "url": "https://d2uvddcac8vf0w.cloudfront.net/packs/media/images/homepage/partenaires/colored_logo/logo-moi-dans-10-ans-my-future-fd412de7ef23264f6cefcb2a43e7b800.png",
-      "details": {
-        "id": "cloudfront",
-        "message": "Host files locally"
-      }
-    },
-    {
-      "type": "cloudfront",
-      "url": "https://d2uvddcac8vf0w.cloudfront.net/packs/media/images/homepage/partenaires/colored_logo/logo-le-reseau-49afc3dba589edcc11f7fd0b8b9f53b8.png",
-      "details": {
-        "id": "cloudfront",
-        "message": "Host files locally"
-      }
-    },
-    {
-      "type": "cloudfront",
       "url": "https://d2uvddcac8vf0w.cloudfront.net/packs/media/images/homepage/partenaires/colored_logo/logo-telemaque-5f8d91393de352dd2160a2e2ed477adb.png",
       "details": {
         "id": "cloudfront",
@@ -214,23 +230,7 @@
     },
     {
       "type": "cloudfront",
-      "url": "https://d2uvddcac8vf0w.cloudfront.net/packs/media/images/homepage/partenaires/colored_logo/logo-epc-35fa76a1dd09ab160c37aa3933f73a6a.png",
-      "details": {
-        "id": "cloudfront",
-        "message": "Host files locally"
-      }
-    },
-    {
-      "type": "cloudfront",
-      "url": "https://d2uvddcac8vf0w.cloudfront.net/packs/media/images/homepage/partenaires/colored_logo/logo-viens-voir-mon-taf-03ac3ffe955f336aba7b5116b8202265.png",
-      "details": {
-        "id": "cloudfront",
-        "message": "Host files locally"
-      }
-    },
-    {
-      "type": "cloudfront",
-      "url": "https://d2uvddcac8vf0w.cloudfront.net/packs/media/images/homepage/partenaires/colored_logo/logo-tous-en-stage-204491c50b2288b375d92edf04165064.png",
+      "url": "https://d2uvddcac8vf0w.cloudfront.net/packs/media/images/homepage/partenaires/colored_logo/logo-moi-dans-10-ans-my-future-fd412de7ef23264f6cefcb2a43e7b800.png",
       "details": {
         "id": "cloudfront",
         "message": "Host files locally"
@@ -362,7 +362,7 @@
     },
     {
       "type": "vimeo",
-      "url": "https://f.vimeocdn.com/p/4.0.9/js/player.js",
+      "url": "https://f.vimeocdn.com/p/4.1.0/js/player.js",
       "details": {
         "id": "vimeo",
         "message": "use peertube"
@@ -370,7 +370,7 @@
     },
     {
       "type": "vimeo",
-      "url": "https://f.vimeocdn.com/p/4.0.9/css/player.css",
+      "url": "https://f.vimeocdn.com/p/4.1.0/css/player.css",
       "details": {
         "id": "vimeo",
         "message": "use peertube"
@@ -386,53 +386,53 @@
     },
     {
       "type": "unknown",
-      "url": "https://66vod-adaptive.akamaized.net/exp=1652003981~acl=%2F78028dc2-49ef-45c6-93ad-d5e50ab622c9%2F%2A~hmac=fbaa20c4dbb03cf75af3480a73369cd1887f1202127b0cf91b4e7fe00412b4f0/78028dc2-49ef-45c6-93ad-d5e50ab622c9/sep/video/40d25c55,47721640,2371fe48,8f22716c,1d3604e8/audio/eed61639,f8aea600/master.json?query_string_ranges=1&base64_init=1"
+      "url": "https://66vod-adaptive.akamaized.net/exp=1652302621~acl=%2F78028dc2-49ef-45c6-93ad-d5e50ab622c9%2F%2A~hmac=54c337a05a1d03787dc0e32928a195b1da807d4beaa5961d52c5ad41990d52bf/78028dc2-49ef-45c6-93ad-d5e50ab622c9/sep/video/40d25c55,47721640,2371fe48,8f22716c,1d3604e8/audio/eed61639,f8aea600/master.json?query_string_ranges=1&base64_init=1"
     },
     {
       "type": "unknown",
-      "url": "https://betagouv-matomo.osc-secnum-fr1.scalingo.io/piwik.php?action_name=Accueil%20%7C%20Monstage&idsite=2&rec=1&r=716517&h=8&m=54&s=42&url=https%3A%2F%2Fwww.monstagedetroisieme.fr%2F&_id=&_idn=1&_refts=0&send_image=0&cookie=1&res=800x600&_cvar=%7B%221%22%3A%5B%22UserType%22%2C%22Visiteur%22%5D%7D&pv_id=Jf35wv&fa_pv=1&fa_fp[0][fa_vid]=KuokCB&fa_fp[0][fa_id]=home_search_form&fa_fp[0][fa_fv]=1&pf_net=344&pf_srv=162&pf_tfr=2&pf_dm1=269"
+      "url": "https://66vod-adaptive.akamaized.net/exp=1652302621~acl=%2F78028dc2-49ef-45c6-93ad-d5e50ab622c9%2F%2A~hmac=54c337a05a1d03787dc0e32928a195b1da807d4beaa5961d52c5ad41990d52bf/78028dc2-49ef-45c6-93ad-d5e50ab622c9/parcel/audio/f8aea600.mp4?range=1046-50738"
     },
     {
       "type": "unknown",
-      "url": "https://66vod-adaptive.akamaized.net/exp=1652003981~acl=%2F78028dc2-49ef-45c6-93ad-d5e50ab622c9%2F%2A~hmac=fbaa20c4dbb03cf75af3480a73369cd1887f1202127b0cf91b4e7fe00412b4f0/78028dc2-49ef-45c6-93ad-d5e50ab622c9/parcel/audio/f8aea600.mp4?range=1046-50738"
+      "url": "https://66vod-adaptive.akamaized.net/exp=1652302621~acl=%2F78028dc2-49ef-45c6-93ad-d5e50ab622c9%2F%2A~hmac=54c337a05a1d03787dc0e32928a195b1da807d4beaa5961d52c5ad41990d52bf/78028dc2-49ef-45c6-93ad-d5e50ab622c9/parcel/video/8f22716c.mp4?range=1044-139219"
     },
     {
       "type": "unknown",
-      "url": "https://66vod-adaptive.akamaized.net/exp=1652003981~acl=%2F78028dc2-49ef-45c6-93ad-d5e50ab622c9%2F%2A~hmac=fbaa20c4dbb03cf75af3480a73369cd1887f1202127b0cf91b4e7fe00412b4f0/78028dc2-49ef-45c6-93ad-d5e50ab622c9/parcel/video/8f22716c.mp4?range=1044-139219"
+      "url": "https://66vod-adaptive.akamaized.net/exp=1652302621~acl=%2F78028dc2-49ef-45c6-93ad-d5e50ab622c9%2F%2A~hmac=54c337a05a1d03787dc0e32928a195b1da807d4beaa5961d52c5ad41990d52bf/78028dc2-49ef-45c6-93ad-d5e50ab622c9/sep/video/47721640/chop/segment-1.m4s"
     },
     {
       "type": "unknown",
-      "url": "https://66vod-adaptive.akamaized.net/exp=1652003981~acl=%2F78028dc2-49ef-45c6-93ad-d5e50ab622c9%2F%2A~hmac=fbaa20c4dbb03cf75af3480a73369cd1887f1202127b0cf91b4e7fe00412b4f0/78028dc2-49ef-45c6-93ad-d5e50ab622c9/sep/video/47721640/chop/segment-1.m4s"
+      "url": "https://betagouv-matomo.osc-secnum-fr1.scalingo.io/piwik.php?action_name=Accueil%20%7C%20Monstage&idsite=2&rec=1&r=829931&h=19&m=52&s=2&url=https%3A%2F%2Fwww.monstagedetroisieme.fr%2F&_id=&_idn=1&_refts=0&send_image=0&cookie=1&res=800x600&_cvar=%7B%221%22%3A%5B%22UserType%22%2C%22Visiteur%22%5D%7D&pv_id=h2m7vE&fa_pv=1&fa_fp[0][fa_vid]=lpOwwd&fa_fp[0][fa_id]=home_search_form&fa_fp[0][fa_fv]=1&pf_net=267&pf_srv=144&pf_tfr=20&pf_dm1=358"
     },
     {
       "type": "unknown",
-      "url": "https://66vod-adaptive.akamaized.net/exp=1652003981~acl=%2F78028dc2-49ef-45c6-93ad-d5e50ab622c9%2F%2A~hmac=fbaa20c4dbb03cf75af3480a73369cd1887f1202127b0cf91b4e7fe00412b4f0/78028dc2-49ef-45c6-93ad-d5e50ab622c9/parcel/audio/f8aea600.mp4?range=50739-100361"
+      "url": "https://66vod-adaptive.akamaized.net/exp=1652302621~acl=%2F78028dc2-49ef-45c6-93ad-d5e50ab622c9%2F%2A~hmac=54c337a05a1d03787dc0e32928a195b1da807d4beaa5961d52c5ad41990d52bf/78028dc2-49ef-45c6-93ad-d5e50ab622c9/parcel/audio/f8aea600.mp4?range=50739-100361"
     },
     {
       "type": "unknown",
-      "url": "https://66vod-adaptive.akamaized.net/exp=1652003981~acl=%2F78028dc2-49ef-45c6-93ad-d5e50ab622c9%2F%2A~hmac=fbaa20c4dbb03cf75af3480a73369cd1887f1202127b0cf91b4e7fe00412b4f0/78028dc2-49ef-45c6-93ad-d5e50ab622c9/parcel/audio/f8aea600.mp4?range=100362-150015"
+      "url": "https://66vod-adaptive.akamaized.net/exp=1652302621~acl=%2F78028dc2-49ef-45c6-93ad-d5e50ab622c9%2F%2A~hmac=54c337a05a1d03787dc0e32928a195b1da807d4beaa5961d52c5ad41990d52bf/78028dc2-49ef-45c6-93ad-d5e50ab622c9/parcel/audio/f8aea600.mp4?range=100362-150015"
     },
     {
       "type": "unknown",
-      "url": "https://66vod-adaptive.akamaized.net/exp=1652003981~acl=%2F78028dc2-49ef-45c6-93ad-d5e50ab622c9%2F%2A~hmac=fbaa20c4dbb03cf75af3480a73369cd1887f1202127b0cf91b4e7fe00412b4f0/78028dc2-49ef-45c6-93ad-d5e50ab622c9/sep/video/47721640/chop/segment-2.m4s"
+      "url": "https://66vod-adaptive.akamaized.net/exp=1652302621~acl=%2F78028dc2-49ef-45c6-93ad-d5e50ab622c9%2F%2A~hmac=54c337a05a1d03787dc0e32928a195b1da807d4beaa5961d52c5ad41990d52bf/78028dc2-49ef-45c6-93ad-d5e50ab622c9/sep/video/47721640/chop/segment-2.m4s"
     },
     {
       "type": "unknown",
-      "url": "https://66vod-adaptive.akamaized.net/exp=1652003981~acl=%2F78028dc2-49ef-45c6-93ad-d5e50ab622c9%2F%2A~hmac=fbaa20c4dbb03cf75af3480a73369cd1887f1202127b0cf91b4e7fe00412b4f0/78028dc2-49ef-45c6-93ad-d5e50ab622c9/sep/video/47721640/chop/segment-3.m4s"
+      "url": "https://66vod-adaptive.akamaized.net/exp=1652302621~acl=%2F78028dc2-49ef-45c6-93ad-d5e50ab622c9%2F%2A~hmac=54c337a05a1d03787dc0e32928a195b1da807d4beaa5961d52c5ad41990d52bf/78028dc2-49ef-45c6-93ad-d5e50ab622c9/sep/video/47721640/chop/segment-3.m4s"
     },
     {
       "type": "unknown",
-      "url": "https://66vod-adaptive.akamaized.net/exp=1652003981~acl=%2F78028dc2-49ef-45c6-93ad-d5e50ab622c9%2F%2A~hmac=fbaa20c4dbb03cf75af3480a73369cd1887f1202127b0cf91b4e7fe00412b4f0/78028dc2-49ef-45c6-93ad-d5e50ab622c9/parcel/audio/f8aea600.mp4?range=150016-199669"
+      "url": "https://66vod-adaptive.akamaized.net/exp=1652302621~acl=%2F78028dc2-49ef-45c6-93ad-d5e50ab622c9%2F%2A~hmac=54c337a05a1d03787dc0e32928a195b1da807d4beaa5961d52c5ad41990d52bf/78028dc2-49ef-45c6-93ad-d5e50ab622c9/parcel/audio/f8aea600.mp4?range=150016-199669"
     }
   ],
   "cookies": [
     {
       "name": "_monstage_session",
-      "value": "yH5OvFR50ApFWdT7sJ6bahx2thFrxMp%2FGWTO4SM5epgzNRZml4ffeBmzNsFtXdw2ruwQWA2Lt7w4WDfApVAqKio3LwBsId5tbDK6axMRPXgB8dQtIrBH6Ch%2FFl8RskntPIfeoqvjgvZCMnNKN5k%3D--8k%2BzpCBj6s7GPTy1--DO1KbMcMCShIts1gFnw4cA%3D%3D",
+      "value": "OpL7ue8Y5ciVR7XI6m7BrfxTNaXS%2BUIHEdHmPzHWkbznZLVk75B4jaaPDKei8q%2BBWbOurmZRp5qvMmKDlXQVg7Tih3HiarCw2s4aE7eKnaNywhGN%2FClWbcKXOOtWsub6DntFZDvs%2BupYMpf%2FZAc%3D--W2WiHW656IL5ArGX--3qHaVal6WCIXymtcL9g9DQ%3D%3D",
       "domain": "www.monstagedetroisieme.fr",
       "path": "/",
       "expires": -1,
-      "size": 221,
+      "size": 225,
       "httpOnly": true,
       "secure": true,
       "session": true,
@@ -442,7 +442,7 @@
     }
   ],
   "headers": {
-    "date": "Sun, 08 May 2022 08:54:41 GMT",
+    "date": "Wed, 11 May 2022 19:52:01 GMT",
     "content-type": "text/html; charset=utf-8",
     "transfer-encoding": "chunked",
     "x-frame-options": "SAMEORIGIN",
@@ -453,13 +453,13 @@
     "referrer-policy": "strict-origin-when-cross-origin",
     "vary": "Accept-Encoding",
     "content-encoding": "gzip",
-    "etag": "W/\"6ed56fe6f2b005bbe5a6da89bf7cb205\"",
+    "etag": "W/\"528c2cc2aed567abb556c809d2b8319f\"",
     "cache-control": "max-age=0, private, must-revalidate",
-    "set-cookie": "_monstage_session=yH5OvFR50ApFWdT7sJ6bahx2thFrxMp%2FGWTO4SM5epgzNRZml4ffeBmzNsFtXdw2ruwQWA2Lt7w4WDfApVAqKio3LwBsId5tbDK6axMRPXgB8dQtIrBH6Ch%2FFl8RskntPIfeoqvjgvZCMnNKN5k%3D--8k%2BzpCBj6s7GPTy1--DO1KbMcMCShIts1gFnw4cA%3D%3D; path=/; secure; HttpOnly",
-    "x-request-id": "b7e68d6c-7e07-4389-9ee6-e4dac18e0dc2",
-    "x-runtime": "0.038486",
+    "set-cookie": "_monstage_session=OpL7ue8Y5ciVR7XI6m7BrfxTNaXS%2BUIHEdHmPzHWkbznZLVk75B4jaaPDKei8q%2BBWbOurmZRp5qvMmKDlXQVg7Tih3HiarCw2s4aE7eKnaNywhGN%2FClWbcKXOOtWsub6DntFZDvs%2BupYMpf%2FZAc%3D--W2WiHW656IL5ArGX--3qHaVal6WCIXymtcL9g9DQ%3D%3D; path=/; secure; HttpOnly",
+    "x-request-id": "a604c018-f4ba-411c-837a-f0ec0ed447c5",
+    "x-runtime": "0.050524",
     "strict-transport-security": "max-age=63072000; includeSubDomains",
-    "sozu-id": "01G2HE1H1VHECJMHM6ZZ8XXDRV"
+    "sozu-id": "01G2TAV9JB944HMA5AP5ABTKKE"
   },
   "endpoints": [
     {
@@ -520,7 +520,7 @@
     },
     {
       "hostname": "d2uvddcac8vf0w.cloudfront.net",
-      "ip": "108.156.223.70",
+      "ip": "99.84.185.7",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -574,7 +574,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "142.251.46.138",
+      "ip": "142.250.188.42",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -628,12 +628,12 @@
     },
     {
       "hostname": "player.vimeo.com",
-      "ip": "162.159.128.61",
+      "ip": "162.159.138.60",
       "geoip": null
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "142.251.35.195",
+      "ip": "172.217.13.67",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -743,18 +743,13 @@
     },
     {
       "hostname": "f.vimeocdn.com",
-      "ip": "151.101.50.109",
+      "ip": "146.75.30.109",
       "geoip": {
         "city": {
-          "geoname_id": 4684888,
+          "geoname_id": 4744870,
           "names": {
-            "de": "Dallas",
-            "en": "Dallas",
-            "es": "Dallas",
-            "fr": "Dallas",
-            "ja": "ダラス",
-            "pt-BR": "Dallas",
-            "ru": "Даллас"
+            "en": "Ashburn",
+            "ru": "Ашберн"
           }
         },
         "continent": {
@@ -787,13 +782,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 32.7767,
-          "longitude": -96.805,
-          "metro_code": 623,
-          "time_zone": "America/Chicago"
+          "latitude": 39.018,
+          "longitude": -77.539,
+          "metro_code": 511,
+          "time_zone": "America/New_York"
         },
         "postal": {
-          "code": "75270"
+          "code": "20147"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -811,15 +806,15 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 4736286,
-            "iso_code": "TX",
+            "geoname_id": 6254928,
+            "iso_code": "VA",
             "names": {
-              "en": "Texas",
-              "es": "Texas",
-              "fr": "Texas",
-              "ja": "テキサス州",
-              "ru": "Техас",
-              "zh-CN": "德克萨斯州"
+              "en": "Virginia",
+              "fr": "Virginie",
+              "ja": "バージニア州",
+              "pt-BR": "Virgínia",
+              "ru": "Вирджиния",
+              "zh-CN": "弗吉尼亚州"
             }
           }
         ]
@@ -827,18 +822,13 @@
     },
     {
       "hostname": "i.vimeocdn.com",
-      "ip": "151.101.50.109",
+      "ip": "146.75.30.109",
       "geoip": {
         "city": {
-          "geoname_id": 4684888,
+          "geoname_id": 4744870,
           "names": {
-            "de": "Dallas",
-            "en": "Dallas",
-            "es": "Dallas",
-            "fr": "Dallas",
-            "ja": "ダラス",
-            "pt-BR": "Dallas",
-            "ru": "Даллас"
+            "en": "Ashburn",
+            "ru": "Ашберн"
           }
         },
         "continent": {
@@ -871,13 +861,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 32.7767,
-          "longitude": -96.805,
-          "metro_code": 623,
-          "time_zone": "America/Chicago"
+          "latitude": 39.018,
+          "longitude": -77.539,
+          "metro_code": 511,
+          "time_zone": "America/New_York"
         },
         "postal": {
-          "code": "75270"
+          "code": "20147"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -895,15 +885,15 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 4736286,
-            "iso_code": "TX",
+            "geoname_id": 6254928,
+            "iso_code": "VA",
             "names": {
-              "en": "Texas",
-              "es": "Texas",
-              "fr": "Texas",
-              "ja": "テキサス州",
-              "ru": "Техас",
-              "zh-CN": "德克萨斯州"
+              "en": "Virginia",
+              "fr": "Virginie",
+              "ja": "バージニア州",
+              "pt-BR": "Virgínia",
+              "ru": "Вирджиния",
+              "zh-CN": "弗吉尼亚州"
             }
           }
         ]
@@ -911,18 +901,13 @@
     },
     {
       "hostname": "66vod-adaptive.akamaized.net",
-      "ip": "184.28.41.71",
+      "ip": "23.222.5.74",
       "geoip": {
         "city": {
-          "geoname_id": 4684888,
+          "geoname_id": 4744870,
           "names": {
-            "de": "Dallas",
-            "en": "Dallas",
-            "es": "Dallas",
-            "fr": "Dallas",
-            "ja": "ダラス",
-            "pt-BR": "Dallas",
-            "ru": "Даллас"
+            "en": "Ashburn",
+            "ru": "Ашберн"
           }
         },
         "continent": {
@@ -955,13 +940,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 32.7767,
-          "longitude": -96.805,
-          "metro_code": 623,
-          "time_zone": "America/Chicago"
+          "latitude": 39.0469,
+          "longitude": -77.4903,
+          "metro_code": 511,
+          "time_zone": "America/New_York"
         },
         "postal": {
-          "code": "75270"
+          "code": "20149"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -979,15 +964,15 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 4736286,
-            "iso_code": "TX",
+            "geoname_id": 6254928,
+            "iso_code": "VA",
             "names": {
-              "en": "Texas",
-              "es": "Texas",
-              "fr": "Texas",
-              "ja": "テキサス州",
-              "ru": "Техас",
-              "zh-CN": "德克萨斯州"
+              "en": "Virginia",
+              "fr": "Virginie",
+              "ja": "バージニア州",
+              "pt-BR": "Virgínia",
+              "ru": "Вирджиния",
+              "zh-CN": "弗吉尼亚州"
             }
           }
         ]

@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 08:53:44",
+	"@generated": "Wed, 11 May 2022 19:51:03",
 	"site":[ 
 		{
 			"@name": "https://www.monstagedetroisieme.fr",
@@ -39,7 +39,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "107"
+					"sourceid": "102"
 				},
 				{
 					"pluginid": "10202",
@@ -80,14 +80,14 @@
 							"evidence": "<form class=\"\" id=\"mobile_internship_offers_index_search_form\" action=\"/internship_offers\" accept-charset=\"UTF-8\" method=\"get\">"
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/internship_offers/search?school_track=troisieme_generale&week_ids%5B%5D=176",
+							"uri": "https://www.monstagedetroisieme.fr/internship_offers/search?school_track=troisieme_generale&week_ids%5B%5D=177",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form class=\"\" id=\"mobile_internship_offers_index_search_form\" action=\"/internship_offers\" accept-charset=\"UTF-8\" method=\"get\">"
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/internship_offers?commit=Afficher+les+r%C3%A9sultats&school_track=troisieme_generale&week_ids%5B%5D=176",
+							"uri": "https://www.monstagedetroisieme.fr/internship_offers?commit=Afficher+les+r%C3%A9sultats&school_track=troisieme_generale&week_ids%5B%5D=177",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -101,7 +101,7 @@
 							"evidence": "<form class=\"d-none d-md-block rounded-6\" id=\"desktop_internship_offers_index_search_form\" action=\"/internship_offers\" accept-charset=\"UTF-8\" method=\"get\">"
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/internship_offers?page=2&school_track=troisieme_generale&week_ids%5B%5D=176",
+							"uri": "https://www.monstagedetroisieme.fr/internship_offers?page=2&school_track=troisieme_generale&week_ids%5B%5D=177",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -115,14 +115,14 @@
 							"evidence": "<form class=\"d-none d-md-block rounded-6\" id=\"desktop_internship_offers_index_search_form\" action=\"/internship_offers\" accept-charset=\"UTF-8\" method=\"get\">"
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/internship_offers?page=3&school_track=troisieme_generale&week_ids%5B%5D=176",
+							"uri": "https://www.monstagedetroisieme.fr/internship_offers?page=3&school_track=troisieme_generale&week_ids%5B%5D=177",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form class=\"d-none d-md-block rounded-6\" id=\"desktop_internship_offers_index_search_form\" action=\"/internship_offers\" accept-charset=\"UTF-8\" method=\"get\">"
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/internship_offers?school_track=troisieme_generale&week_ids%5B%5D=176",
+							"uri": "https://www.monstagedetroisieme.fr/internship_offers?school_track=troisieme_generale&week_ids%5B%5D=177",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -131,7 +131,7 @@
 					],
 					"count": "11",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
-					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"checkbox_176\" \"checkbox_177\" \"checkbox_178\" \"checkbox_179\" \"input-search-by-week\" \"test-desktop-submit-search\" ].</p>",
+					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"checkbox_177\" \"checkbox_178\" \"checkbox_179\" \"input-search-by-week\" \"test-desktop-submit-search\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
@@ -278,7 +278,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "179"
+					"sourceid": "169"
 				},
 				{
 					"pluginid": "90003",
@@ -789,7 +789,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "179"
+					"sourceid": "169"
 				},
 				{
 					"pluginid": "10096",
@@ -806,7 +806,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "39519705"
+						},
+						{
+							"uri": "https://www.monstagedetroisieme.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "654158859"
+						},
+						{
+							"uri": "https://www.monstagedetroisieme.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "81614441"
 						},
 						{
 							"uri": "https://www.monstagedetroisieme.fr/",
@@ -3420,9 +3434,9 @@
 							"evidence": "0001753026"
 						}
 					],
-					"count": "374",
+					"count": "376",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>654158859, which evaluates to: 1990-09-24 06:47:39</p>",
+					"otherinfo": "<p>39519705, which evaluates to: 1971-04-03 09:41:45</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -3529,7 +3543,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "179"
+					"sourceid": "169"
 				},
 				{
 					"pluginid": "10094",
@@ -3546,42 +3560,42 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2F5QgkP7qJKcfCxzUyiUpLUYwJPGl1nmlTdq0BzP1eXJS46yVWfmuLXwcegk"
+							"evidence": "xgfOEXtAYiaCguboZHr05NMLVNx46M"
 						},
 						{
 							"uri": "https://www.monstagedetroisieme.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3+t5l+90uINnxBirtsjc8awXw2/OVbwLJuCLKv5zooODO4ZN+pzecrUaeVM8M72ETpw/35xnZstKMlky5jdJdw=="
+							"evidence": "2BY6YTFsaVCxGyTcq2jrvqKrrWuuxLUQKDjDeSsWxqT1"
 						},
 						{
 							"uri": "https://www.monstagedetroisieme.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FcaW1oujxENAmGA6f9XHSLU52OlDjmbmmN00tTjt5rWGr"
+							"evidence": "2Fssajh6jPUS9vAff1Bkl4kNIcXUCO0yvFqtLWRt5hIrJzZQl9Qg3ic8IM"
 						},
 						{
 							"uri": "https://www.monstagedetroisieme.fr/documents-utiles",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "ztjlF2MoY7CwXmCChrM6cz8GL1klVNf5N61q3PlbxQl"
+							"evidence": "2FXOO5vGCNCdMwzETybGeDixcpqzgnXzrHY"
 						},
 						{
 							"uri": "https://www.monstagedetroisieme.fr/internship_offers",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BS8X2g9q0cq6u41qCLWNNCykeNwQNcCO0eRezGs"
+							"evidence": "2BAv1SD3VuWlAiTw17lb3HR949KvAX"
 						},
 						{
 							"uri": "https://www.monstagedetroisieme.fr/internship_offers/search",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BT2hXn9xBrAeVRyw8Gi2rNbXAmj704vpN8rtSb8V24OYgHBNOxTs0uno2AFqBk89Bducr0E1GlG4QKSz0k3PXwwM6T7jNHo8Mz992TOmkI3dULybWo7O8Z3Ero"
+							"evidence": "2Bf8NqVPyRK3UTFOQxgmvX6NRrdLZFubZ10v"
 						},
 						{
 							"uri": "https://www.monstagedetroisieme.fr/modes_d_emploi/MS3_Mode-d-emploi-eleves.pdf",
@@ -3616,23 +3630,23 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FBEg5nEC56Q5feh3hwl9IS8sln6lU"
+							"evidence": "2Fx7yQhGJh3odGst3QItOOn1U6GpzJMxp7HR3TodJx"
 						},
 						{
 							"uri": "https://www.monstagedetroisieme.fr/users/sign_up",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "r4ttOX10NRfVxH2DTqrcTr8ZG3qVmv"
+							"evidence": "2FSPO4yJbKTJJcqoQfxYvLOpxMJ0jqIJchUrc0y"
 						}
 					],
 					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD^P\uFFFDC\uFFFD\uFFFD\uFFFD\uFFFD|,sS(\uFFFD\uFFFD\uFFFD\\x0018\uFFFD\uFFFD\u0197Y\uFFFD7j\uFFFD\\x001c\uFFFD\uFFFD\uFFFD\uFFFDK\uFFFD\uFFFDUg\u6E35\uFFFDq\uFFFD$</p>",
+					"otherinfo": "<p>\uFFFD\\x0007\uFFFD\\x0011{@b&\uFFFD\uFFFD\uFFFD\uFFFDdz\uFFFD\uFFFD\uFFFD\\x000bT\uFFFDx\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10024",
@@ -3645,84 +3659,84 @@
 					"desc": "<p>The request appeared to contain sensitive information leaked in the URL. This can violate PCI and most organizational compliance policies. You can configure the list of strings for this check to add or remove values specific to your environment.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.monstagedetroisieme.fr/users/sign_in?user%5Btargeted_offer_id%5D=25980",
+							"uri": "https://www.monstagedetroisieme.fr/users/sign_in?user%5Btargeted_offer_id%5D=25987",
 							"method": "GET",
 							"param": "user[targeted_offer_id]",
 							"attack": "",
 							"evidence": "user[targeted_offer_id]"
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/users/sign_in?user%5Btargeted_offer_id%5D=25981",
+							"uri": "https://www.monstagedetroisieme.fr/users/sign_in?user%5Btargeted_offer_id%5D=25988",
 							"method": "GET",
 							"param": "user[targeted_offer_id]",
 							"attack": "",
 							"evidence": "user[targeted_offer_id]"
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/users/sign_in?user%5Btargeted_offer_id%5D=25982",
+							"uri": "https://www.monstagedetroisieme.fr/users/sign_in?user%5Btargeted_offer_id%5D=25989",
 							"method": "GET",
 							"param": "user[targeted_offer_id]",
 							"attack": "",
 							"evidence": "user[targeted_offer_id]"
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/users/sign_in?user%5Btargeted_offer_id%5D=25983",
+							"uri": "https://www.monstagedetroisieme.fr/users/sign_in?user%5Btargeted_offer_id%5D=25990",
 							"method": "GET",
 							"param": "user[targeted_offer_id]",
 							"attack": "",
 							"evidence": "user[targeted_offer_id]"
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/users/sign_in?user%5Btargeted_offer_id%5D=25984",
+							"uri": "https://www.monstagedetroisieme.fr/users/sign_in?user%5Btargeted_offer_id%5D=25991",
 							"method": "GET",
 							"param": "user[targeted_offer_id]",
 							"attack": "",
 							"evidence": "user[targeted_offer_id]"
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/users/sign_in?user%5Btargeted_offer_id%5D=25985",
+							"uri": "https://www.monstagedetroisieme.fr/users/sign_in?user%5Btargeted_offer_id%5D=25992",
 							"method": "GET",
 							"param": "user[targeted_offer_id]",
 							"attack": "",
 							"evidence": "user[targeted_offer_id]"
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/users/sign_up?as=Student&user%5Btargeted_offer_id%5D=25980",
+							"uri": "https://www.monstagedetroisieme.fr/users/sign_up?as=Student&user%5Btargeted_offer_id%5D=25987",
 							"method": "GET",
 							"param": "user[targeted_offer_id]",
 							"attack": "",
 							"evidence": "user[targeted_offer_id]"
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/users/sign_up?as=Student&user%5Btargeted_offer_id%5D=25981",
+							"uri": "https://www.monstagedetroisieme.fr/users/sign_up?as=Student&user%5Btargeted_offer_id%5D=25988",
 							"method": "GET",
 							"param": "user[targeted_offer_id]",
 							"attack": "",
 							"evidence": "user[targeted_offer_id]"
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/users/sign_up?as=Student&user%5Btargeted_offer_id%5D=25982",
+							"uri": "https://www.monstagedetroisieme.fr/users/sign_up?as=Student&user%5Btargeted_offer_id%5D=25989",
 							"method": "GET",
 							"param": "user[targeted_offer_id]",
 							"attack": "",
 							"evidence": "user[targeted_offer_id]"
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/users/sign_up?as=Student&user%5Btargeted_offer_id%5D=25983",
+							"uri": "https://www.monstagedetroisieme.fr/users/sign_up?as=Student&user%5Btargeted_offer_id%5D=25990",
 							"method": "GET",
 							"param": "user[targeted_offer_id]",
 							"attack": "",
 							"evidence": "user[targeted_offer_id]"
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/users/sign_up?as=Student&user%5Btargeted_offer_id%5D=25984",
+							"uri": "https://www.monstagedetroisieme.fr/users/sign_up?as=Student&user%5Btargeted_offer_id%5D=25991",
 							"method": "GET",
 							"param": "user[targeted_offer_id]",
 							"attack": "",
 							"evidence": "user[targeted_offer_id]"
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/users/sign_up?as=Student&user%5Btargeted_offer_id%5D=25985",
+							"uri": "https://www.monstagedetroisieme.fr/users/sign_up?as=Student&user%5Btargeted_offer_id%5D=25992",
 							"method": "GET",
 							"param": "user[targeted_offer_id]",
 							"attack": "",
@@ -3735,7 +3749,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1045"
+					"sourceid": "1046"
 				},
 				{
 					"pluginid": "10027",
@@ -4138,7 +4152,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "96"
+					"sourceid": "91"
 				},
 				{
 					"pluginid": "10031",
@@ -4151,42 +4165,42 @@
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.monstagedetroisieme.fr/internship_offers/search?school_track=troisieme_generale&week_ids%5B%5D=176",
+							"uri": "https://www.monstagedetroisieme.fr/internship_offers/search?school_track=troisieme_generale&week_ids%5B%5D=177",
 							"method": "GET",
 							"param": "school_track",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/internship_offers/search?school_track=troisieme_generale&week_ids%5B%5D=176",
+							"uri": "https://www.monstagedetroisieme.fr/internship_offers/search?school_track=troisieme_generale&week_ids%5B%5D=177",
 							"method": "GET",
 							"param": "week_ids[]",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/internship_offers?commit=Afficher+les+r%C3%A9sultats&school_track=troisieme_generale&week_ids%5B%5D=176",
+							"uri": "https://www.monstagedetroisieme.fr/internship_offers?commit=Afficher+les+r%C3%A9sultats&school_track=troisieme_generale&week_ids%5B%5D=177",
 							"method": "GET",
 							"param": "school_track",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/internship_offers?commit=Afficher+les+r%C3%A9sultats&school_track=troisieme_generale&week_ids%5B%5D=176",
+							"uri": "https://www.monstagedetroisieme.fr/internship_offers?commit=Afficher+les+r%C3%A9sultats&school_track=troisieme_generale&week_ids%5B%5D=177",
 							"method": "GET",
 							"param": "week_ids[]",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/internship_offers?school_track=troisieme_generale&week_ids%5B%5D=176",
+							"uri": "https://www.monstagedetroisieme.fr/internship_offers?school_track=troisieme_generale&week_ids%5B%5D=177",
 							"method": "GET",
 							"param": "school_track",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.monstagedetroisieme.fr/internship_offers?school_track=troisieme_generale&week_ids%5B%5D=176",
+							"uri": "https://www.monstagedetroisieme.fr/internship_offers?school_track=troisieme_generale&week_ids%5B%5D=177",
 							"method": "GET",
 							"param": "week_ids[]",
 							"attack": "",
@@ -4244,11 +4258,11 @@
 					],
 					"count": "13",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://www.monstagedetroisieme.fr/internship_offers/search?school_track=troisieme_generale&week_ids%5B%5D=176</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [option] tag [value] attribute </p><p></p><p>The user input found was:</p><p>school_track=troisieme_generale</p><p></p><p>The user-controlled value was:</p><p>troisieme_generale</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://www.monstagedetroisieme.fr/internship_offers/search?school_track=troisieme_generale&week_ids%5B%5D=177</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [option] tag [value] attribute </p><p></p><p>The user input found was:</p><p>school_track=troisieme_generale</p><p></p><p>The user-controlled value was:</p><p>troisieme_generale</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "406"
+					"sourceid": "401"
 				}
 			]
 		}
