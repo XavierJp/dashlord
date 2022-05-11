@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 06:19:20",
+	"@generated": "Wed, 11 May 2022 17:18:21",
 	"site":[ 
 		{
 			"@name": "https://app.passculture.beta.gouv.fr",
@@ -145,21 +145,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link href=\"https://passculture.app/static/js/3.73b80b0e.chunk.js\" rel=\"prefetch\">"
+							"evidence": "<link href=\"https://passculture.app/static/js/3.933fac85.chunk.js\" rel=\"prefetch\">"
 						},
 						{
 							"uri": "https://app.passculture.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link href=\"https://passculture.app/static/js/4.3cece9fa.chunk.js\" rel=\"prefetch\">"
+							"evidence": "<link href=\"https://passculture.app/static/js/4.94b655e8.chunk.js\" rel=\"prefetch\">"
 						},
 						{
 							"uri": "https://app.passculture.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link href=\"https://passculture.app/static/js/5.71f80afa.chunk.js\" rel=\"prefetch\">"
+							"evidence": "<link href=\"https://passculture.app/static/js/5.3afa5788.chunk.js\" rel=\"prefetch\">"
 						},
 						{
 							"uri": "https://app.passculture.beta.gouv.fr",
@@ -201,14 +201,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://passculture.app/static/js/2.0eda051f.chunk.js\"></script>"
+							"evidence": "<script src=\"https://passculture.app/static/js/2.bb58bbc7.chunk.js\"></script>"
 						},
 						{
 							"uri": "https://app.passculture.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://passculture.app/static/js/main.d5504e40.chunk.js\"></script>"
+							"evidence": "<script src=\"https://passculture.app/static/js/main.8c1330bd.chunk.js\"></script>"
 						},
 						{
 							"uri": "https://app.passculture.beta.gouv.fr",
@@ -239,16 +239,16 @@
 						{
 							"uri": "https://app.passculture.beta.gouv.fr",
 							"method": "GET",
-							"param": "https://passculture.app/static/js/2.0eda051f.chunk.js",
+							"param": "https://passculture.app/static/js/2.bb58bbc7.chunk.js",
 							"attack": "",
-							"evidence": "<script src=\"https://passculture.app/static/js/2.0eda051f.chunk.js\"></script>"
+							"evidence": "<script src=\"https://passculture.app/static/js/2.bb58bbc7.chunk.js\"></script>"
 						},
 						{
 							"uri": "https://app.passculture.beta.gouv.fr",
 							"method": "GET",
-							"param": "https://passculture.app/static/js/main.d5504e40.chunk.js",
+							"param": "https://passculture.app/static/js/main.8c1330bd.chunk.js",
 							"attack": "",
-							"evidence": "<script src=\"https://passculture.app/static/js/main.d5504e40.chunk.js\"></script>"
+							"evidence": "<script src=\"https://passculture.app/static/js/main.8c1330bd.chunk.js\"></script>"
 						},
 						{
 							"uri": "https://app.passculture.beta.gouv.fr",
@@ -354,7 +354,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1651653219"
+							"evidence": "1652276434"
 						}
 					],
 					"count": "2",
@@ -406,12 +406,12 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "ADPycdu_a4K4RXn7CT-s_AYkWGwCD6VMVUknnqgvlalL37BcR34H6zwmc_vBGBfM-jzupFVLP-OB2ISiy5jr6gybGYawVqcyi2ll"
+							"evidence": "ADPycdvRcbdYob5QMe7eyEpViiEIMTgbC46ZvXD4G0uEEsNyF2nTa3nuRLIk8LI63Rw2Ueax2wvIa629c1slTMW5Q3QO3X9XLdCn"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\\x00003\uFFFDq\u06FFk\uFFFD\uFFFDEy\uFFFD\t?\uFFFD\uFFFD\\x0006$Xl\\x0002\\x000f\uFFFDLUI'\uFFFD\uFFFD/\uFFFD\uFFFDK\u07F0\\G~\\x0007\uFFFD<&s\uFFFD\uFFFD\\x0018\\x0017\uFFFD\uFFFD<\uFFFDUK?\uFFFD\u0604\uFFFD\u02D8\uFFFD\uFFFD\\x000c\uFFFD\\x0019\uFFFD\uFFFDV\uFFFD2\uFFFDie</p>",
+					"otherinfo": "<p>\\x00003\uFFFDq\uFFFD\uFFFDq\uFFFDX\uFFFD\uFFFDP1\uFFFD\uFFFD\uFFFDJU\uFFFD!\\x000818\\x001b\\x000b\uFFFD\uFFFD\uFFFDp\uFFFD\\x001bK\uFFFD\\x0012\uFFFDr\\x0017i\uFFFDky\uFFFDD\uFFFD$\uFFFD:\uFFFD\\x001c6Q\uFFFD\uFFFD\\x000b\uFFFDk\uFFFD\uFFFDs[%L\u0179Ct\\x000e\uFFFDW-\u0427</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -467,32 +467,6 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1"
-				},
-				{
-					"pluginid": "10050",
-					"alertRef": "10050",
-					"alert": "Retrieved from Cache",
-					"name": "Retrieved from Cache",
-					"riskcode": "0",
-					"confidence": "2",
-					"riskdesc": "Informational (Medium)",
-					"desc": "<p>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance. </p>",
-					"instances":[ 
-						{
-							"uri": "https://app.passculture.beta.gouv.fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 1055"
-						}
-					],
-					"count": "1",
-					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
-					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
-					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
-					"cweid": "-1",
-					"wascid": "-1",
 					"sourceid": "1"
 				},
 				{
