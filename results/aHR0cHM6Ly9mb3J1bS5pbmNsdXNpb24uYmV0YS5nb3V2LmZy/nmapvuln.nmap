@@ -1,4 +1,4 @@
-# Nmap 7.91 scan initiated Sun May  8 04:36:19 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln forum.inclusion.beta.gouv.fr
+# Nmap 7.91 scan initiated Wed May 11 15:29:41 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln forum.inclusion.beta.gouv.fr
 Nmap scan report for forum.inclusion.beta.gouv.fr (184.104.202.143)
 Host is up (0.10s latency).
 Other addresses for forum.inclusion.beta.gouv.fr (not scanned): 2001:470:1:9a5::143
@@ -11,7 +11,7 @@ PORT    STATE SERVICE   VERSION
 |     cache-control: no-cache
 |     content-length: 1427
 |     content-type: text/html
-|     cdck-proxy-id: app-router-tiehunter01.dub2
+|     cdck-proxy-id: app-router-tiehunter02.dub2
 |     cdck-proxy-id: app-balancer-tieinterceptor1a.dub2
 |     connection: close
 |     <html>
@@ -42,7 +42,7 @@ PORT    STATE SERVICE   VERSION
 |     cache-control: no-cache
 |     content-length: 1427
 |     content-type: text/html
-|     cdck-proxy-id: app-router-tiehunter01.dub2
+|     cdck-proxy-id: app-router-tiehunter02.dub2
 |     cdck-proxy-id: app-balancer-tieinterceptor1a.dub2
 |     connection: close
 |     <html>
@@ -69,91 +69,91 @@ PORT    STATE SERVICE   VERSION
 |_http-server-header: nginx
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.91%I=7%D=5/8%Time=627748D2%P=x86_64-alpine-linux-musl%r(
-SF:GetRequest,667,"HTTP/1\.1\x20404\x20Not\x20Found\r\ncache-control:\x20n
-SF:o-cache\r\ncontent-length:\x201427\r\ncontent-type:\x20text/html\r\ncdc
-SF:k-proxy-id:\x20app-router-tiehunter01\.dub2\r\ncdck-proxy-id:\x20app-ba
-SF:lancer-tieinterceptor1a\.dub2\r\nconnection:\x20close\r\n\r\n<html>\n<h
-SF:ead>\n\x20\x20<title>Site\x20Not\x20Found\x20-\x20Discourse</title>\n\n
-SF:\x20\x20<link\x20href=\"https://fonts\.googleapis\.com/css\?family=Open
-SF:\+Sans:300,600,700\"\x20rel=\"stylesheet\"\x20type=\"text/css\">\n\x20\
-SF:x20<style>\n\x20\x20\x20\x20body\x20{\n\x20\x20\x20\x20\x20\x20font-fam
-SF:ily:\x20'Open\x20Sans',Arial,sans-serif;\n\x20\x20\x20\x20\x20\x20backg
-SF:round-color:\x20rgb\(231,238,247\);\n\x20\x20\x20\x20\x20\x20background
-SF:-image:\x20url\('https://discourse-cdn\.s3\.amazonaws\.com/bg\.jpg'\);\
-SF:n\x20\x20\x20\x20\x20\x20background-repeat:\x20repeat;\n\x20\x20\x20\x2
-SF:0\x20\x20background-position:\x20left\x20top;\n\x20\x20\x20\x20\x20\x20
-SF:padding-bottom:\x203em;\n\x20\x20\x20\x20}\n\n\x20\x20\x20\x20#logo\x20
-SF:{\n\x20\x20\x20\x20\x20\x20width:\x2080%;\n\x20\x20\x20\x20}\n\n\n\x20\
-SF:x20\x20\x20\.content\x20{\n\x20\x20\x20\x20\x20\x20width:\x2060%;\n\x20
-SF:\x20\x20\x20\x20\x20max-width:\x20600px;\n\x20\x20\x20\x20\x20\x20margi
-SF:n:\x201em\x20auto;\n\x20\x20\x20\x20\x20\x20background-color:\x20white;
-SF:\n\x20\x20\x20\x20\x20\x20padding:\x201em;\n\x20\x20\x20\x20\x20\x20box
-SF:-shadow:\x200\x205px\x2010px\x20rgba\(0,0,0,0\.2\);\n\x20\x20\x20\x20\x
-SF:20\x20bo")%r(HTTPOptions,667,"HTTP/1\.1\x20404\x20Not\x20Found\r\ncache
-SF:-control:\x20no-cache\r\ncontent-length:\x201427\r\ncontent-type:\x20te
-SF:xt/html\r\ncdck-proxy-id:\x20app-router-tiehunter01\.dub2\r\ncdck-proxy
-SF:-id:\x20app-balancer-tieinterceptor1a\.dub2\r\nconnection:\x20close\r\n
-SF:\r\n<html>\n<head>\n\x20\x20<title>Site\x20Not\x20Found\x20-\x20Discour
-SF:se</title>\n\n\x20\x20<link\x20href=\"https://fonts\.googleapis\.com/cs
-SF:s\?family=Open\+Sans:300,600,700\"\x20rel=\"stylesheet\"\x20type=\"text
-SF:/css\">\n\x20\x20<style>\n\x20\x20\x20\x20body\x20{\n\x20\x20\x20\x20\x
-SF:20\x20font-family:\x20'Open\x20Sans',Arial,sans-serif;\n\x20\x20\x20\x2
-SF:0\x20\x20background-color:\x20rgb\(231,238,247\);\n\x20\x20\x20\x20\x20
-SF:\x20background-image:\x20url\('https://discourse-cdn\.s3\.amazonaws\.co
-SF:m/bg\.jpg'\);\n\x20\x20\x20\x20\x20\x20background-repeat:\x20repeat;\n\
-SF:x20\x20\x20\x20\x20\x20background-position:\x20left\x20top;\n\x20\x20\x
-SF:20\x20\x20\x20padding-bottom:\x203em;\n\x20\x20\x20\x20}\n\n\x20\x20\x2
-SF:0\x20#logo\x20{\n\x20\x20\x20\x20\x20\x20width:\x2080%;\n\x20\x20\x20\x
-SF:20}\n\n\n\x20\x20\x20\x20\.content\x20{\n\x20\x20\x20\x20\x20\x20width:
-SF:\x2060%;\n\x20\x20\x20\x20\x20\x20max-width:\x20600px;\n\x20\x20\x20\x2
-SF:0\x20\x20margin:\x201em\x20auto;\n\x20\x20\x20\x20\x20\x20background-co
-SF:lor:\x20white;\n\x20\x20\x20\x20\x20\x20padding:\x201em;\n\x20\x20\x20\
-SF:x20\x20\x20box-shadow:\x200\x205px\x2010px\x20rgba\(0,0,0,0\.2\);\n\x20
-SF:\x20\x20\x20\x20\x20bo");
+SF-Port80-TCP:V=7.91%I=7%D=5/11%Time=627BD674%P=x86_64-alpine-linux-musl%r
+SF:(GetRequest,667,"HTTP/1\.1\x20404\x20Not\x20Found\r\ncache-control:\x20
+SF:no-cache\r\ncontent-length:\x201427\r\ncontent-type:\x20text/html\r\ncd
+SF:ck-proxy-id:\x20app-router-tiehunter02\.dub2\r\ncdck-proxy-id:\x20app-b
+SF:alancer-tieinterceptor1a\.dub2\r\nconnection:\x20close\r\n\r\n<html>\n<
+SF:head>\n\x20\x20<title>Site\x20Not\x20Found\x20-\x20Discourse</title>\n\
+SF:n\x20\x20<link\x20href=\"https://fonts\.googleapis\.com/css\?family=Ope
+SF:n\+Sans:300,600,700\"\x20rel=\"stylesheet\"\x20type=\"text/css\">\n\x20
+SF:\x20<style>\n\x20\x20\x20\x20body\x20{\n\x20\x20\x20\x20\x20\x20font-fa
+SF:mily:\x20'Open\x20Sans',Arial,sans-serif;\n\x20\x20\x20\x20\x20\x20back
+SF:ground-color:\x20rgb\(231,238,247\);\n\x20\x20\x20\x20\x20\x20backgroun
+SF:d-image:\x20url\('https://discourse-cdn\.s3\.amazonaws\.com/bg\.jpg'\);
+SF:\n\x20\x20\x20\x20\x20\x20background-repeat:\x20repeat;\n\x20\x20\x20\x
+SF:20\x20\x20background-position:\x20left\x20top;\n\x20\x20\x20\x20\x20\x2
+SF:0padding-bottom:\x203em;\n\x20\x20\x20\x20}\n\n\x20\x20\x20\x20#logo\x2
+SF:0{\n\x20\x20\x20\x20\x20\x20width:\x2080%;\n\x20\x20\x20\x20}\n\n\n\x20
+SF:\x20\x20\x20\.content\x20{\n\x20\x20\x20\x20\x20\x20width:\x2060%;\n\x2
+SF:0\x20\x20\x20\x20\x20max-width:\x20600px;\n\x20\x20\x20\x20\x20\x20marg
+SF:in:\x201em\x20auto;\n\x20\x20\x20\x20\x20\x20background-color:\x20white
+SF:;\n\x20\x20\x20\x20\x20\x20padding:\x201em;\n\x20\x20\x20\x20\x20\x20bo
+SF:x-shadow:\x200\x205px\x2010px\x20rgba\(0,0,0,0\.2\);\n\x20\x20\x20\x20\
+SF:x20\x20bo")%r(HTTPOptions,667,"HTTP/1\.1\x20404\x20Not\x20Found\r\ncach
+SF:e-control:\x20no-cache\r\ncontent-length:\x201427\r\ncontent-type:\x20t
+SF:ext/html\r\ncdck-proxy-id:\x20app-router-tiehunter02\.dub2\r\ncdck-prox
+SF:y-id:\x20app-balancer-tieinterceptor1a\.dub2\r\nconnection:\x20close\r\
+SF:n\r\n<html>\n<head>\n\x20\x20<title>Site\x20Not\x20Found\x20-\x20Discou
+SF:rse</title>\n\n\x20\x20<link\x20href=\"https://fonts\.googleapis\.com/c
+SF:ss\?family=Open\+Sans:300,600,700\"\x20rel=\"stylesheet\"\x20type=\"tex
+SF:t/css\">\n\x20\x20<style>\n\x20\x20\x20\x20body\x20{\n\x20\x20\x20\x20\
+SF:x20\x20font-family:\x20'Open\x20Sans',Arial,sans-serif;\n\x20\x20\x20\x
+SF:20\x20\x20background-color:\x20rgb\(231,238,247\);\n\x20\x20\x20\x20\x2
+SF:0\x20background-image:\x20url\('https://discourse-cdn\.s3\.amazonaws\.c
+SF:om/bg\.jpg'\);\n\x20\x20\x20\x20\x20\x20background-repeat:\x20repeat;\n
+SF:\x20\x20\x20\x20\x20\x20background-position:\x20left\x20top;\n\x20\x20\
+SF:x20\x20\x20\x20padding-bottom:\x203em;\n\x20\x20\x20\x20}\n\n\x20\x20\x
+SF:20\x20#logo\x20{\n\x20\x20\x20\x20\x20\x20width:\x2080%;\n\x20\x20\x20\
+SF:x20}\n\n\n\x20\x20\x20\x20\.content\x20{\n\x20\x20\x20\x20\x20\x20width
+SF::\x2060%;\n\x20\x20\x20\x20\x20\x20max-width:\x20600px;\n\x20\x20\x20\x
+SF:20\x20\x20margin:\x201em\x20auto;\n\x20\x20\x20\x20\x20\x20background-c
+SF:olor:\x20white;\n\x20\x20\x20\x20\x20\x20padding:\x201em;\n\x20\x20\x20
+SF:\x20\x20\x20box-shadow:\x200\x205px\x2010px\x20rgba\(0,0,0,0\.2\);\n\x2
+SF:0\x20\x20\x20\x20\x20bo");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port443-TCP:V=7.91%T=SSL%I=7%D=5/8%Time=627748D9%P=x86_64-alpine-linux-
-SF:musl%r(GetRequest,667,"HTTP/1\.1\x20404\x20Not\x20Found\r\ncache-contro
-SF:l:\x20no-cache\r\ncontent-length:\x201427\r\ncontent-type:\x20text/html
-SF:\r\ncdck-proxy-id:\x20app-router-tiehunter01\.dub2\r\ncdck-proxy-id:\x2
-SF:0app-balancer-tieinterceptor1a\.dub2\r\nconnection:\x20close\r\n\r\n<ht
-SF:ml>\n<head>\n\x20\x20<title>Site\x20Not\x20Found\x20-\x20Discourse</tit
-SF:le>\n\n\x20\x20<link\x20href=\"https://fonts\.googleapis\.com/css\?fami
-SF:ly=Open\+Sans:300,600,700\"\x20rel=\"stylesheet\"\x20type=\"text/css\">
-SF:\n\x20\x20<style>\n\x20\x20\x20\x20body\x20{\n\x20\x20\x20\x20\x20\x20f
-SF:ont-family:\x20'Open\x20Sans',Arial,sans-serif;\n\x20\x20\x20\x20\x20\x
-SF:20background-color:\x20rgb\(231,238,247\);\n\x20\x20\x20\x20\x20\x20bac
-SF:kground-image:\x20url\('https://discourse-cdn\.s3\.amazonaws\.com/bg\.j
-SF:pg'\);\n\x20\x20\x20\x20\x20\x20background-repeat:\x20repeat;\n\x20\x20
-SF:\x20\x20\x20\x20background-position:\x20left\x20top;\n\x20\x20\x20\x20\
-SF:x20\x20padding-bottom:\x203em;\n\x20\x20\x20\x20}\n\n\x20\x20\x20\x20#l
-SF:ogo\x20{\n\x20\x20\x20\x20\x20\x20width:\x2080%;\n\x20\x20\x20\x20}\n\n
-SF:\n\x20\x20\x20\x20\.content\x20{\n\x20\x20\x20\x20\x20\x20width:\x2060%
-SF:;\n\x20\x20\x20\x20\x20\x20max-width:\x20600px;\n\x20\x20\x20\x20\x20\x
-SF:20margin:\x201em\x20auto;\n\x20\x20\x20\x20\x20\x20background-color:\x2
-SF:0white;\n\x20\x20\x20\x20\x20\x20padding:\x201em;\n\x20\x20\x20\x20\x20
-SF:\x20box-shadow:\x200\x205px\x2010px\x20rgba\(0,0,0,0\.2\);\n\x20\x20\x2
-SF:0\x20\x20\x20bo")%r(HTTPOptions,667,"HTTP/1\.1\x20404\x20Not\x20Found\r
-SF:\ncache-control:\x20no-cache\r\ncontent-length:\x201427\r\ncontent-type
-SF::\x20text/html\r\ncdck-proxy-id:\x20app-router-tiehunter01\.dub2\r\ncdc
-SF:k-proxy-id:\x20app-balancer-tieinterceptor1a\.dub2\r\nconnection:\x20cl
-SF:ose\r\n\r\n<html>\n<head>\n\x20\x20<title>Site\x20Not\x20Found\x20-\x20
-SF:Discourse</title>\n\n\x20\x20<link\x20href=\"https://fonts\.googleapis\
-SF:.com/css\?family=Open\+Sans:300,600,700\"\x20rel=\"stylesheet\"\x20type
-SF:=\"text/css\">\n\x20\x20<style>\n\x20\x20\x20\x20body\x20{\n\x20\x20\x2
-SF:0\x20\x20\x20font-family:\x20'Open\x20Sans',Arial,sans-serif;\n\x20\x20
-SF:\x20\x20\x20\x20background-color:\x20rgb\(231,238,247\);\n\x20\x20\x20\
-SF:x20\x20\x20background-image:\x20url\('https://discourse-cdn\.s3\.amazon
-SF:aws\.com/bg\.jpg'\);\n\x20\x20\x20\x20\x20\x20background-repeat:\x20rep
-SF:eat;\n\x20\x20\x20\x20\x20\x20background-position:\x20left\x20top;\n\x2
-SF:0\x20\x20\x20\x20\x20padding-bottom:\x203em;\n\x20\x20\x20\x20}\n\n\x20
-SF:\x20\x20\x20#logo\x20{\n\x20\x20\x20\x20\x20\x20width:\x2080%;\n\x20\x2
-SF:0\x20\x20}\n\n\n\x20\x20\x20\x20\.content\x20{\n\x20\x20\x20\x20\x20\x2
-SF:0width:\x2060%;\n\x20\x20\x20\x20\x20\x20max-width:\x20600px;\n\x20\x20
-SF:\x20\x20\x20\x20margin:\x201em\x20auto;\n\x20\x20\x20\x20\x20\x20backgr
-SF:ound-color:\x20white;\n\x20\x20\x20\x20\x20\x20padding:\x201em;\n\x20\x
-SF:20\x20\x20\x20\x20box-shadow:\x200\x205px\x2010px\x20rgba\(0,0,0,0\.2\)
-SF:;\n\x20\x20\x20\x20\x20\x20bo");
+SF-Port443-TCP:V=7.91%T=SSL%I=7%D=5/11%Time=627BD67A%P=x86_64-alpine-linux
+SF:-musl%r(GetRequest,667,"HTTP/1\.1\x20404\x20Not\x20Found\r\ncache-contr
+SF:ol:\x20no-cache\r\ncontent-length:\x201427\r\ncontent-type:\x20text/htm
+SF:l\r\ncdck-proxy-id:\x20app-router-tiehunter02\.dub2\r\ncdck-proxy-id:\x
+SF:20app-balancer-tieinterceptor1a\.dub2\r\nconnection:\x20close\r\n\r\n<h
+SF:tml>\n<head>\n\x20\x20<title>Site\x20Not\x20Found\x20-\x20Discourse</ti
+SF:tle>\n\n\x20\x20<link\x20href=\"https://fonts\.googleapis\.com/css\?fam
+SF:ily=Open\+Sans:300,600,700\"\x20rel=\"stylesheet\"\x20type=\"text/css\"
+SF:>\n\x20\x20<style>\n\x20\x20\x20\x20body\x20{\n\x20\x20\x20\x20\x20\x20
+SF:font-family:\x20'Open\x20Sans',Arial,sans-serif;\n\x20\x20\x20\x20\x20\
+SF:x20background-color:\x20rgb\(231,238,247\);\n\x20\x20\x20\x20\x20\x20ba
+SF:ckground-image:\x20url\('https://discourse-cdn\.s3\.amazonaws\.com/bg\.
+SF:jpg'\);\n\x20\x20\x20\x20\x20\x20background-repeat:\x20repeat;\n\x20\x2
+SF:0\x20\x20\x20\x20background-position:\x20left\x20top;\n\x20\x20\x20\x20
+SF:\x20\x20padding-bottom:\x203em;\n\x20\x20\x20\x20}\n\n\x20\x20\x20\x20#
+SF:logo\x20{\n\x20\x20\x20\x20\x20\x20width:\x2080%;\n\x20\x20\x20\x20}\n\
+SF:n\n\x20\x20\x20\x20\.content\x20{\n\x20\x20\x20\x20\x20\x20width:\x2060
+SF:%;\n\x20\x20\x20\x20\x20\x20max-width:\x20600px;\n\x20\x20\x20\x20\x20\
+SF:x20margin:\x201em\x20auto;\n\x20\x20\x20\x20\x20\x20background-color:\x
+SF:20white;\n\x20\x20\x20\x20\x20\x20padding:\x201em;\n\x20\x20\x20\x20\x2
+SF:0\x20box-shadow:\x200\x205px\x2010px\x20rgba\(0,0,0,0\.2\);\n\x20\x20\x
+SF:20\x20\x20\x20bo")%r(HTTPOptions,667,"HTTP/1\.1\x20404\x20Not\x20Found\
+SF:r\ncache-control:\x20no-cache\r\ncontent-length:\x201427\r\ncontent-typ
+SF:e:\x20text/html\r\ncdck-proxy-id:\x20app-router-tiehunter02\.dub2\r\ncd
+SF:ck-proxy-id:\x20app-balancer-tieinterceptor1a\.dub2\r\nconnection:\x20c
+SF:lose\r\n\r\n<html>\n<head>\n\x20\x20<title>Site\x20Not\x20Found\x20-\x2
+SF:0Discourse</title>\n\n\x20\x20<link\x20href=\"https://fonts\.googleapis
+SF:\.com/css\?family=Open\+Sans:300,600,700\"\x20rel=\"stylesheet\"\x20typ
+SF:e=\"text/css\">\n\x20\x20<style>\n\x20\x20\x20\x20body\x20{\n\x20\x20\x
+SF:20\x20\x20\x20font-family:\x20'Open\x20Sans',Arial,sans-serif;\n\x20\x2
+SF:0\x20\x20\x20\x20background-color:\x20rgb\(231,238,247\);\n\x20\x20\x20
+SF:\x20\x20\x20background-image:\x20url\('https://discourse-cdn\.s3\.amazo
+SF:naws\.com/bg\.jpg'\);\n\x20\x20\x20\x20\x20\x20background-repeat:\x20re
+SF:peat;\n\x20\x20\x20\x20\x20\x20background-position:\x20left\x20top;\n\x
+SF:20\x20\x20\x20\x20\x20padding-bottom:\x203em;\n\x20\x20\x20\x20}\n\n\x2
+SF:0\x20\x20\x20#logo\x20{\n\x20\x20\x20\x20\x20\x20width:\x2080%;\n\x20\x
+SF:20\x20\x20}\n\n\n\x20\x20\x20\x20\.content\x20{\n\x20\x20\x20\x20\x20\x
+SF:20width:\x2060%;\n\x20\x20\x20\x20\x20\x20max-width:\x20600px;\n\x20\x2
+SF:0\x20\x20\x20\x20margin:\x201em\x20auto;\n\x20\x20\x20\x20\x20\x20backg
+SF:round-color:\x20white;\n\x20\x20\x20\x20\x20\x20padding:\x201em;\n\x20\
+SF:x20\x20\x20\x20\x20box-shadow:\x200\x205px\x2010px\x20rgba\(0,0,0,0\.2\
+SF:);\n\x20\x20\x20\x20\x20\x20bo");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun May  8 04:36:59 2022 -- 1 IP address (1 host up) scanned in 40.52 seconds
+# Nmap done at Wed May 11 15:30:20 2022 -- 1 IP address (1 host up) scanned in 39.82 seconds

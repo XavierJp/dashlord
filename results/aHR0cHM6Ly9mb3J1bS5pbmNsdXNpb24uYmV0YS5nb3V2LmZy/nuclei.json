@@ -1,31 +1,66 @@
 [
   {
-    "template": "technologies/nginx/nginx-version.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/nginx/nginx-version.yaml",
-    "template-id": "nginx-version",
+    "template": "technologies/waf-detect.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/waf-detect.yaml",
+    "template-id": "waf-detect",
     "info": {
-      "name": "nginx version detect",
+      "name": "WAF Detection",
       "author": [
-        "philippedelteil"
+        "dwisiswant0",
+        "lu4nx"
       ],
       "tags": [
+        "waf",
         "tech",
-        "nginx"
+        "misc"
       ],
-      "description": "Some nginx servers have the version on the response header. Useful when you need to find specific CVEs on your targets.",
+      "description": "A web application firewall was detected.",
+      "reference": [
+        "https://github.com/ekultek/whatwaf"
+      ],
+      "severity": "info",
+      "classification": {
+        "cve-id": null,
+        "cwe-id": [
+          "cwe-200"
+        ]
+      }
+    },
+    "matcher-name": "nginxgeneric",
+    "type": "http",
+    "host": "https://forum.inclusion.beta.gouv.fr",
+    "matched-at": "https://forum.inclusion.beta.gouv.fr/",
+    "request": "POST / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCdck-Proxy-Id: app-router-tiehunter02.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nDate: Wed, 11 May 2022 15:31:38 GMT\r\nDiscourse-Rate-Limit-Error-Code: ip_10_secs_limit\r\nRetry-After: 9\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\n\r\nSlow down, too many requests from this IP address.\nPlease retry again in 9 seconds.\nError code: ip_10_secs_limit.\n",
+    "ip": "184.104.202.143",
+    "timestamp": "2022-05-11T15:31:38.083027618Z",
+    "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: forum.inclusion.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "technologies/tech-detect.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/tech-detect.yaml",
+    "template-id": "tech-detect",
+    "info": {
+      "name": "Wappalyzer Technology Detection",
+      "author": [
+        "hakluke"
+      ],
+      "tags": [
+        "tech"
+      ],
       "reference": null,
       "severity": "info"
     },
+    "matcher-name": "discourse",
     "type": "http",
     "host": "https://forum.inclusion.beta.gouv.fr",
     "matched-at": "https://forum.inclusion.beta.gouv.fr",
-    "extracted-results": [
-      "nginx"
-    ],
     "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-cache, no-store\r\nCdck-Proxy-Id: app-router-tiehunter01.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nContent-Security-Policy: upgrade-insecure-requests; base-uri 'self'; object-src 'none'; script-src https://forum.inclusion.beta.gouv.fr/logs/ https://forum.inclusion.beta.gouv.fr/sidekiq/ https://forum.inclusion.beta.gouv.fr/mini-profiler-resources/ https://aws1.discourse-cdn.com/standard20/assets/ https://aws1.discourse-cdn.com/standard20/brotli_asset/ https://forum.inclusion.beta.gouv.fr/extra-locales/ https://dub2.discourse-cdn.com/standard20/highlight-js/ https://dub2.discourse-cdn.com/standard20/javascripts/ https://dub2.discourse-cdn.com/standard20/plugins/ https://dub2.discourse-cdn.com/standard20/theme-javascripts/ https://dub2.discourse-cdn.com/standard20/svg-sprite/ https://stats.data.gouv.fr/matomo.js https://stats.data.gouv.fr/piwik.php https://stats.data.gouv.fr/ http://forum.inclusion.beta.gouv.fr/matomo.js http://forum.inclusion.beta.gouv.fr/hotjar.js https://static.hotjar.com/ https://script.hotjar.com/; worker-src 'self' https://aws1.discourse-cdn.com/standard20/assets/ https://aws1.discourse-cdn.com/standard20/brotli_asset/ https://dub2.discourse-cdn.com/standard20/javascripts/ https://dub2.discourse-cdn.com/standard20/plugins/; manifest-src 'self'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 04:38:10 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Accept-Encoding\r\nVary: Accept\r\nX-Content-Type-Options: nosniff\r\nX-Discourse-Cached: skip\r\nX-Discourse-Route: categories/index\r\nX-Discourse-Trackview: 1\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies: none\r\nX-Request-Id: d563ea39-73dc-4e7b-b7e3-3ac72e710b88\r\nX-Xss-Protection: 0\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Communauté de l&#39;inclusion - Le forum de l&#39;inclusion est ouvert à tous les acteurs de l&#39;inclusion. Partagez vos pratiques, posez vos questions au sujet de la Plateforme de l&#39;Inclusion, ou échangez avec d&#39;autres acteurs : Pôle emploi, Mission Locale, Cap Emploi, associations, bénévoles, CIP, entreprises [...]</title>\n    <meta name=\"description\" content=\"L&#39;espace d&#39;échange des acteurs du réseau de l&#39;inclusion\">\n    <meta name=\"generator\" content=\"Discourse 2.9.0.beta4 - https://github.com/discourse/discourse version db9ae32e41098ece977c0725addc9fc91ef89429\">\n<link rel=\"icon\" type=\"image/png\" href=\"https://aws1.discourse-cdn.com/standard20/uploads/communauteinclusion/optimized/1X/a07679729a1e853552e36066838c0f0a9ed767f1_2_32x32.svg\">\n<link rel=\"apple-touch-icon\" type=\"image/png\" href=\"https://aws1.discourse-cdn.com/standard20/uploads/communauteinclusion/optimized/1X/a07679729a1e853552e36066838c0f0a9ed767f1_2_180x180.svg\">\n<meta name=\"theme-color\" content=\"#ffffff\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover\">\n<link rel=\"canonical\" href=\"https://forum.inclusion.beta.gouv.fr/\" />\n<script type=\"application/ld+json\">{\"@context\":\"http://schema.org\",\"@type\":\"WebSite\",\"url\":\"https://forum.inclusion.beta.gouv.fr\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https://forum.inclusion.beta.gouv.fr/search?q={search_term_string}\",\"query-input\":\"required name=search_term_string\"}}</script>\n<link rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"https://forum.inclusion.beta.gouv.fr/opensearch.xml\" title=\"Communauté de l&#39;inclusion Search\">\n\n    <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/color_definitions_clair_2_3_9be2c9abb63591db32378d10f77b58de4968d4a8.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" class=\"light-scheme\"/>\n\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/desktop_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"desktop\"  />\n\n\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-adplugin_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-adplugin\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-akismet_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-akismet\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-cakeday_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-cakeday\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-chat-integration_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-chat-integration\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-details_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-details\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-footnote_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-footnote\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-local-dates_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-local-dates\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-narrative-bot_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-narrative-bot\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-presence_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-presence\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-solved_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-solved\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-spoiler-alert_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-spoiler-alert\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/hosted-site_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"hosted-site\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/lazy-yt_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"lazy-yt\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/poll_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"poll\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/poll_desktop_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"poll_desktop\"  />\n\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/desktop_theme_6_190104436087b1e5d416a51b18fdb10c662c4c22.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"desktop_theme\" data-theme-id=\"6\" data-theme-name=\"discourse-search-banner\"/>\n<link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/desktop_theme_3_85e9a87f51b38e95b4f1d7a91e1db3e99bca6225.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"desktop_theme\" data-theme-id=\"3\" data-theme-name=\"clair\"/>\n\n    \n<script src=\"https://dub2.discourse-cdn.com/standard20/theme-javascripts/0828be4560e695619a7505baa86c3068cf1c6bcb.js?__ws=forum.inclusion.beta.gouv.fr\" data-theme-id=\"4\"></script>\n\n<script src=\"https://dub2.discourse-cdn.com/standard20/theme-javascripts/723ec67d0fa7134fc9afd3ff6fcbb434351336bc.js?__ws=forum.inclusion.beta.gouv.fr\" data-theme-id=\"5\"></script>\n    \n      <meta property=\"og:site_name\" content=\"Communauté de l&#39;inclusion\" />\n<meta property=\"og:type\" content=\"website\" />\n<meta name=\"twitter:card\" content=\"summary\" />\n<meta name=\"twitter:image\" content=\"https://aws1.discourse-cdn.com/standard20/uploads/communauteinclusion/original/1X/eeb7dd54fc7087cee4fb8e5dc0dc0e1270bd6a32.png\" />\n<meta property=\"og:image\" content=\"https://aws1.discourse-cdn.com/standard20/uploads/communauteinclusion/original/1X/eeb7dd54fc7087cee4fb8e5dc0dc0e1270bd6a32.png\" />\n<meta property=\"og:url\" content=\"https://forum.inclusion.beta.gouv.fr/\" />\n<meta name=\"twitter:url\" content=\"https://forum.inclusion.beta.gouv.fr/\" />\n<meta property=\"og:title\" content=\"Communauté de l&#39;inclusion\" />\n<meta name=\"twitter:title\" content=\"Communauté de l&#39;inclusion\" />\n<meta property=\"og:description\" content=\"L&#39;espace d&#39;échange des acteurs du réseau de l&#39;inclusion\" />\n<meta name=\"twitter:description\" content=\"L&#39;espace d&#39;échange des acteurs du réseau de l&#39;inclusion\" />\n\n    \n  </head>\n  <body class=\"crawler\">\n    \n    <header>\n  <a href=\"/\">\n    <h1>Communauté de l&#39;inclusion</h1>\n  </a>\n</header>\n\n    <div id=\"main-outlet\" class=\"wrap\" role=\"main\">\n      <div itemscope itemtype='http://schema.org/ItemList'>\n  <meta itemprop='itemListOrder' content='http://schema.org/ItemListOrderDescending'>\n  <table class='category-list'>\n    <thead>\n      <tr>\n        <th class='category'>Catégorie</th>\n        <th class='topics'>Sujets</th>\n      </tr>\n    </thead>\n    <tbody>\n        <tr>\n          <td class='category' style='border-color: #231F20;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='0'>\n              <meta itemprop='url' content='/c/actualites/81'>\n              <h3>\n                <a href='/c/actualites/81'>\n                  <span itemprop='name'>Actualités &amp; Informations</span>\n                </a>\n              </h3>\n              <div itemprop='description'>Découvrez toute l’actualité des acteurs de l’inclusion (Evolutions des services de la plateforme, nouveautés, astuces…)</div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='79 Sujets'>79</div>\n          </td>\n        </tr>\n        <tr>\n          <td class='category' style='border-color: #9C6FF4;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='1'>\n              <meta itemprop='url' content='/c/spie/49'>\n              <h3>\n                <a href='/c/spie/49'>\n                  <span itemprop='name'>Service Public de l&#39;Insertion et de l&#39;Emploi</span>\n                </a>\n              </h3>\n              <div itemprop='description'>SPIE = Service Public de l’Insertion et de l’Emploi.</div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='12 Sujets'>12</div>\n          </td>\n        </tr>\n        <tr>\n          <td class='category' style='border-color: #F25154;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='2'>\n              <meta itemprop='url' content='/c/le-marche-de-linclusion-vous/53'>\n              <h3>\n                <a href='/c/le-marche-de-linclusion-vous/53'>\n                  <span itemprop='name'>Le marché de l&#39;inclusion &amp; vous</span>\n                </a>\n              </h3>\n              <div itemprop='description'>Mise en visibilité des offres commerciales des Entreprises Sociales Inclusives (ou Employeurs Solidaires)</div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='3 Sujets'>3</div>\n          </td>\n        </tr>\n        <tr>\n          <td class='category' style='border-color: #FEAD1D;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='3'>\n              <meta itemprop='url' content='/c/le-pilotage-de-linclusion/106'>\n              <h3>\n                <a href='/c/le-pilotage-de-linclusion/106'>\n                  <span itemprop='name'>Le pilotage de l&#39;inclusion &amp; vous</span>\n                </a>\n              </h3>\n              <div itemprop='description'>Proposer des tableaux de bord prêts à l’emploi pour permettre aux acteurs de l’inclusion de prendre des décisions mieux éclairées, tout en réduisant le temps de collecte de données et de production d’indicateurs</div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='5 Sujets'>5</div>\n          </td>\n        </tr>\n        <tr>\n          <td class='category' style='border-color: #0088CC;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='4'>\n              <meta itemprop='url' content='/c/les-emplois-de-linclusion/109'>\n              <h3>\n                <a href='/c/les-emplois-de-linclusion/109'>\n                  <span itemprop='name'>Les emplois de l&#39;inclusion</span>\n                </a>\n              </h3>\n              <div itemprop='description'></div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='87 Sujets'>87</div>\n          </td>\n        </tr>\n    </tbody>\n  </table>\n</div>\n\n\n\n\n    </div>\n    <footer class=\"container wrap\">\n  <nav class='crawler-nav'>\n    <ul>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/' itemprop=\"url\">Accueil </a>\n        </span>\n      </li>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/categories' itemprop=\"url\">Catégories </a>\n        </span>\n      </li>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/guidelines' itemprop=\"url\">Charte </a>\n        </span>\n      </li>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/tos' itemprop=\"url\">Conditions générales d&#39;utilisation </a>\n        </span>\n      </li>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/privacy' itemprop=\"url\">Politique de confidentialité </a>\n        </span>\n      </li>\n    </ul>\n  </nav>\n  <p class='powered-by-link'>Optimisé par <a href=\"https://www.discourse.org\">Discourse</a>, le rendu est meilleur quand JavaScript est activé.</p>\n</footer>\n\n    \n    \n  </body>\n  \n</html>\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-cache, no-store\r\nCdck-Proxy-Id: app-router-tiehunter02.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nContent-Security-Policy: upgrade-insecure-requests; base-uri 'self'; object-src 'none'; script-src https://forum.inclusion.beta.gouv.fr/logs/ https://forum.inclusion.beta.gouv.fr/sidekiq/ https://forum.inclusion.beta.gouv.fr/mini-profiler-resources/ https://aws1.discourse-cdn.com/standard20/assets/ https://aws1.discourse-cdn.com/standard20/brotli_asset/ https://forum.inclusion.beta.gouv.fr/extra-locales/ https://dub2.discourse-cdn.com/standard20/highlight-js/ https://dub2.discourse-cdn.com/standard20/javascripts/ https://dub2.discourse-cdn.com/standard20/plugins/ https://dub2.discourse-cdn.com/standard20/theme-javascripts/ https://dub2.discourse-cdn.com/standard20/svg-sprite/ https://stats.data.gouv.fr/matomo.js https://stats.data.gouv.fr/piwik.php https://stats.data.gouv.fr/ http://forum.inclusion.beta.gouv.fr/matomo.js http://forum.inclusion.beta.gouv.fr/hotjar.js https://static.hotjar.com/ https://script.hotjar.com/; worker-src 'self' https://aws1.discourse-cdn.com/standard20/assets/ https://aws1.discourse-cdn.com/standard20/brotli_asset/ https://dub2.discourse-cdn.com/standard20/javascripts/ https://dub2.discourse-cdn.com/standard20/plugins/; manifest-src 'self'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 15:31:37 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Accept-Encoding\r\nVary: Accept\r\nX-Content-Type-Options: nosniff\r\nX-Discourse-Cached: true\r\nX-Discourse-Route: categories/index\r\nX-Discourse-Trackview: 1\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies: none\r\nX-Request-Id: 3c9ae68b-2716-4fa5-9ad9-7c97f3abb50a\r\nX-Xss-Protection: 0\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Communauté de l&#39;inclusion - Le forum de l&#39;inclusion est ouvert à tous les acteurs de l&#39;inclusion. Partagez vos pratiques, posez vos questions au sujet de la Plateforme de l&#39;Inclusion, ou échangez avec d&#39;autres acteurs : Pôle emploi, Mission Locale, Cap Emploi, associations, bénévoles, CIP, entreprises [...]</title>\n    <meta name=\"description\" content=\"L&#39;espace d&#39;échange des acteurs du réseau de l&#39;inclusion\">\n    <meta name=\"generator\" content=\"Discourse 2.9.0.beta4 - https://github.com/discourse/discourse version db9ae32e41098ece977c0725addc9fc91ef89429\">\n<link rel=\"icon\" type=\"image/png\" href=\"https://aws1.discourse-cdn.com/standard20/uploads/communauteinclusion/optimized/1X/a07679729a1e853552e36066838c0f0a9ed767f1_2_32x32.svg\">\n<link rel=\"apple-touch-icon\" type=\"image/png\" href=\"https://aws1.discourse-cdn.com/standard20/uploads/communauteinclusion/optimized/1X/a07679729a1e853552e36066838c0f0a9ed767f1_2_180x180.svg\">\n<meta name=\"theme-color\" content=\"#ffffff\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover\">\n<link rel=\"canonical\" href=\"https://forum.inclusion.beta.gouv.fr/\" />\n<script type=\"application/ld+json\">{\"@context\":\"http://schema.org\",\"@type\":\"WebSite\",\"url\":\"https://forum.inclusion.beta.gouv.fr\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https://forum.inclusion.beta.gouv.fr/search?q={search_term_string}\",\"query-input\":\"required name=search_term_string\"}}</script>\n<link rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"https://forum.inclusion.beta.gouv.fr/opensearch.xml\" title=\"Communauté de l&#39;inclusion Search\">\n\n    <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/color_definitions_clair_2_3_9be2c9abb63591db32378d10f77b58de4968d4a8.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" class=\"light-scheme\"/>\n\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/desktop_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"desktop\"  />\n\n\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-adplugin_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-adplugin\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-akismet_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-akismet\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-cakeday_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-cakeday\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-chat-integration_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-chat-integration\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-details_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-details\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-footnote_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-footnote\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-local-dates_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-local-dates\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-narrative-bot_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-narrative-bot\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-presence_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-presence\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-solved_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-solved\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-spoiler-alert_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-spoiler-alert\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/hosted-site_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"hosted-site\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/lazy-yt_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"lazy-yt\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/poll_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"poll\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/poll_desktop_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"poll_desktop\"  />\n\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/desktop_theme_6_190104436087b1e5d416a51b18fdb10c662c4c22.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"desktop_theme\" data-theme-id=\"6\" data-theme-name=\"discourse-search-banner\"/>\n<link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/desktop_theme_3_85e9a87f51b38e95b4f1d7a91e1db3e99bca6225.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"desktop_theme\" data-theme-id=\"3\" data-theme-name=\"clair\"/>\n\n    \n<script src=\"https://dub2.discourse-cdn.com/standard20/theme-javascripts/0828be4560e695619a7505baa86c3068cf1c6bcb.js?__ws=forum.inclusion.beta.gouv.fr\" data-theme-id=\"4\"></script>\n\n<script src=\"https://dub2.discourse-cdn.com/standard20/theme-javascripts/723ec67d0fa7134fc9afd3ff6fcbb434351336bc.js?__ws=forum.inclusion.beta.gouv.fr\" data-theme-id=\"5\"></script>\n    \n      <meta property=\"og:site_name\" content=\"Communauté de l&#39;inclusion\" />\n<meta property=\"og:type\" content=\"website\" />\n<meta name=\"twitter:card\" content=\"summary\" />\n<meta name=\"twitter:image\" content=\"https://aws1.discourse-cdn.com/standard20/uploads/communauteinclusion/original/1X/eeb7dd54fc7087cee4fb8e5dc0dc0e1270bd6a32.png\" />\n<meta property=\"og:image\" content=\"https://aws1.discourse-cdn.com/standard20/uploads/communauteinclusion/original/1X/eeb7dd54fc7087cee4fb8e5dc0dc0e1270bd6a32.png\" />\n<meta property=\"og:url\" content=\"https://forum.inclusion.beta.gouv.fr/\" />\n<meta name=\"twitter:url\" content=\"https://forum.inclusion.beta.gouv.fr/\" />\n<meta property=\"og:title\" content=\"Communauté de l&#39;inclusion\" />\n<meta name=\"twitter:title\" content=\"Communauté de l&#39;inclusion\" />\n<meta property=\"og:description\" content=\"L&#39;espace d&#39;échange des acteurs du réseau de l&#39;inclusion\" />\n<meta name=\"twitter:description\" content=\"L&#39;espace d&#39;échange des acteurs du réseau de l&#39;inclusion\" />\n\n    \n  </head>\n  <body class=\"crawler\">\n    \n    <header>\n  <a href=\"/\">\n    <h1>Communauté de l&#39;inclusion</h1>\n  </a>\n</header>\n\n    <div id=\"main-outlet\" class=\"wrap\" role=\"main\">\n      <div itemscope itemtype='http://schema.org/ItemList'>\n  <meta itemprop='itemListOrder' content='http://schema.org/ItemListOrderDescending'>\n  <table class='category-list'>\n    <thead>\n      <tr>\n        <th class='category'>Catégorie</th>\n        <th class='topics'>Sujets</th>\n      </tr>\n    </thead>\n    <tbody>\n        <tr>\n          <td class='category' style='border-color: #231F20;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='0'>\n              <meta itemprop='url' content='/c/actualites/81'>\n              <h3>\n                <a href='/c/actualites/81'>\n                  <span itemprop='name'>Actualités &amp; Informations</span>\n                </a>\n              </h3>\n              <div itemprop='description'>Découvrez toute l’actualité des acteurs de l’inclusion (Evolutions des services de la plateforme, nouveautés, astuces…)</div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='79 Sujets'>79</div>\n          </td>\n        </tr>\n        <tr>\n          <td class='category' style='border-color: #9C6FF4;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='1'>\n              <meta itemprop='url' content='/c/spie/49'>\n              <h3>\n                <a href='/c/spie/49'>\n                  <span itemprop='name'>Service Public de l&#39;Insertion et de l&#39;Emploi</span>\n                </a>\n              </h3>\n              <div itemprop='description'>SPIE = Service Public de l’Insertion et de l’Emploi.</div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='12 Sujets'>12</div>\n          </td>\n        </tr>\n        <tr>\n          <td class='category' style='border-color: #F25154;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='2'>\n              <meta itemprop='url' content='/c/le-marche-de-linclusion-vous/53'>\n              <h3>\n                <a href='/c/le-marche-de-linclusion-vous/53'>\n                  <span itemprop='name'>Le marché de l&#39;inclusion &amp; vous</span>\n                </a>\n              </h3>\n              <div itemprop='description'>Mise en visibilité des offres commerciales des Entreprises Sociales Inclusives (ou Employeurs Solidaires)</div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='3 Sujets'>3</div>\n          </td>\n        </tr>\n        <tr>\n          <td class='category' style='border-color: #FEAD1D;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='3'>\n              <meta itemprop='url' content='/c/le-pilotage-de-linclusion/106'>\n              <h3>\n                <a href='/c/le-pilotage-de-linclusion/106'>\n                  <span itemprop='name'>Le pilotage de l&#39;inclusion &amp; vous</span>\n                </a>\n              </h3>\n              <div itemprop='description'>Proposer des tableaux de bord prêts à l’emploi pour permettre aux acteurs de l’inclusion de prendre des décisions mieux éclairées, tout en réduisant le temps de collecte de données et de production d’indicateurs</div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='5 Sujets'>5</div>\n          </td>\n        </tr>\n        <tr>\n          <td class='category' style='border-color: #0088CC;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='4'>\n              <meta itemprop='url' content='/c/les-emplois-de-linclusion/109'>\n              <h3>\n                <a href='/c/les-emplois-de-linclusion/109'>\n                  <span itemprop='name'>Les emplois de l&#39;inclusion</span>\n                </a>\n              </h3>\n              <div itemprop='description'></div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='87 Sujets'>87</div>\n          </td>\n        </tr>\n    </tbody>\n  </table>\n</div>\n\n\n\n\n    </div>\n    <footer class=\"container wrap\">\n  <nav class='crawler-nav'>\n    <ul>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/' itemprop=\"url\">Accueil </a>\n        </span>\n      </li>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/categories' itemprop=\"url\">Catégories </a>\n        </span>\n      </li>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/guidelines' itemprop=\"url\">Charte </a>\n        </span>\n      </li>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/tos' itemprop=\"url\">Conditions générales d&#39;utilisation </a>\n        </span>\n      </li>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/privacy' itemprop=\"url\">Politique de confidentialité </a>\n        </span>\n      </li>\n    </ul>\n  </nav>\n  <p class='powered-by-link'>Optimisé par <a href=\"https://www.discourse.org\">Discourse</a>, le rendu est meilleur quand JavaScript est activé.</p>\n</footer>\n\n    \n    \n  </body>\n  \n</html>\n",
     "ip": "184.104.202.143",
-    "timestamp": "2022-05-08T04:38:10.464226125Z",
+    "timestamp": "2022-05-11T15:31:38.797805763Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -50,353 +85,42 @@
     "host": "https://forum.inclusion.beta.gouv.fr",
     "matched-at": "https://forum.inclusion.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCdck-Proxy-Id: app-router-tiehunter01.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nDate: Sun, 08 May 2022 04:38:12 GMT\r\nDiscourse-Rate-Limit-Error-Code: ip_10_secs_limit\r\nRetry-After: 9\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\n\r\nSlow down, too many requests from this IP address.\nPlease retry again in 9 seconds.\nError code: ip_10_secs_limit.\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-cache, no-store\r\nCdck-Proxy-Id: app-router-tiehunter02.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nContent-Security-Policy: upgrade-insecure-requests; base-uri 'self'; object-src 'none'; script-src https://forum.inclusion.beta.gouv.fr/logs/ https://forum.inclusion.beta.gouv.fr/sidekiq/ https://forum.inclusion.beta.gouv.fr/mini-profiler-resources/ https://aws1.discourse-cdn.com/standard20/assets/ https://aws1.discourse-cdn.com/standard20/brotli_asset/ https://forum.inclusion.beta.gouv.fr/extra-locales/ https://dub2.discourse-cdn.com/standard20/highlight-js/ https://dub2.discourse-cdn.com/standard20/javascripts/ https://dub2.discourse-cdn.com/standard20/plugins/ https://dub2.discourse-cdn.com/standard20/theme-javascripts/ https://dub2.discourse-cdn.com/standard20/svg-sprite/ https://stats.data.gouv.fr/matomo.js https://stats.data.gouv.fr/piwik.php https://stats.data.gouv.fr/ http://forum.inclusion.beta.gouv.fr/matomo.js http://forum.inclusion.beta.gouv.fr/hotjar.js https://static.hotjar.com/ https://script.hotjar.com/; worker-src 'self' https://aws1.discourse-cdn.com/standard20/assets/ https://aws1.discourse-cdn.com/standard20/brotli_asset/ https://dub2.discourse-cdn.com/standard20/javascripts/ https://dub2.discourse-cdn.com/standard20/plugins/; manifest-src 'self'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 15:31:37 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Accept-Encoding\r\nVary: Accept\r\nX-Content-Type-Options: nosniff\r\nX-Discourse-Cached: true\r\nX-Discourse-Route: categories/index\r\nX-Discourse-Trackview: 1\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies: none\r\nX-Request-Id: 3c9ae68b-2716-4fa5-9ad9-7c97f3abb50a\r\nX-Xss-Protection: 0\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Communauté de l&#39;inclusion - Le forum de l&#39;inclusion est ouvert à tous les acteurs de l&#39;inclusion. Partagez vos pratiques, posez vos questions au sujet de la Plateforme de l&#39;Inclusion, ou échangez avec d&#39;autres acteurs : Pôle emploi, Mission Locale, Cap Emploi, associations, bénévoles, CIP, entreprises [...]</title>\n    <meta name=\"description\" content=\"L&#39;espace d&#39;échange des acteurs du réseau de l&#39;inclusion\">\n    <meta name=\"generator\" content=\"Discourse 2.9.0.beta4 - https://github.com/discourse/discourse version db9ae32e41098ece977c0725addc9fc91ef89429\">\n<link rel=\"icon\" type=\"image/png\" href=\"https://aws1.discourse-cdn.com/standard20/uploads/communauteinclusion/optimized/1X/a07679729a1e853552e36066838c0f0a9ed767f1_2_32x32.svg\">\n<link rel=\"apple-touch-icon\" type=\"image/png\" href=\"https://aws1.discourse-cdn.com/standard20/uploads/communauteinclusion/optimized/1X/a07679729a1e853552e36066838c0f0a9ed767f1_2_180x180.svg\">\n<meta name=\"theme-color\" content=\"#ffffff\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover\">\n<link rel=\"canonical\" href=\"https://forum.inclusion.beta.gouv.fr/\" />\n<script type=\"application/ld+json\">{\"@context\":\"http://schema.org\",\"@type\":\"WebSite\",\"url\":\"https://forum.inclusion.beta.gouv.fr\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https://forum.inclusion.beta.gouv.fr/search?q={search_term_string}\",\"query-input\":\"required name=search_term_string\"}}</script>\n<link rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"https://forum.inclusion.beta.gouv.fr/opensearch.xml\" title=\"Communauté de l&#39;inclusion Search\">\n\n    <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/color_definitions_clair_2_3_9be2c9abb63591db32378d10f77b58de4968d4a8.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" class=\"light-scheme\"/>\n\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/desktop_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"desktop\"  />\n\n\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-adplugin_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-adplugin\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-akismet_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-akismet\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-cakeday_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-cakeday\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-chat-integration_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-chat-integration\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-details_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-details\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-footnote_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-footnote\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-local-dates_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-local-dates\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-narrative-bot_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-narrative-bot\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-presence_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-presence\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-solved_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-solved\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-spoiler-alert_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-spoiler-alert\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/hosted-site_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"hosted-site\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/lazy-yt_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"lazy-yt\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/poll_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"poll\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/poll_desktop_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"poll_desktop\"  />\n\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/desktop_theme_6_190104436087b1e5d416a51b18fdb10c662c4c22.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"desktop_theme\" data-theme-id=\"6\" data-theme-name=\"discourse-search-banner\"/>\n<link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/desktop_theme_3_85e9a87f51b38e95b4f1d7a91e1db3e99bca6225.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"desktop_theme\" data-theme-id=\"3\" data-theme-name=\"clair\"/>\n\n    \n<script src=\"https://dub2.discourse-cdn.com/standard20/theme-javascripts/0828be4560e695619a7505baa86c3068cf1c6bcb.js?__ws=forum.inclusion.beta.gouv.fr\" data-theme-id=\"4\"></script>\n\n<script src=\"https://dub2.discourse-cdn.com/standard20/theme-javascripts/723ec67d0fa7134fc9afd3ff6fcbb434351336bc.js?__ws=forum.inclusion.beta.gouv.fr\" data-theme-id=\"5\"></script>\n    \n      <meta property=\"og:site_name\" content=\"Communauté de l&#39;inclusion\" />\n<meta property=\"og:type\" content=\"website\" />\n<meta name=\"twitter:card\" content=\"summary\" />\n<meta name=\"twitter:image\" content=\"https://aws1.discourse-cdn.com/standard20/uploads/communauteinclusion/original/1X/eeb7dd54fc7087cee4fb8e5dc0dc0e1270bd6a32.png\" />\n<meta property=\"og:image\" content=\"https://aws1.discourse-cdn.com/standard20/uploads/communauteinclusion/original/1X/eeb7dd54fc7087cee4fb8e5dc0dc0e1270bd6a32.png\" />\n<meta property=\"og:url\" content=\"https://forum.inclusion.beta.gouv.fr/\" />\n<meta name=\"twitter:url\" content=\"https://forum.inclusion.beta.gouv.fr/\" />\n<meta property=\"og:title\" content=\"Communauté de l&#39;inclusion\" />\n<meta name=\"twitter:title\" content=\"Communauté de l&#39;inclusion\" />\n<meta property=\"og:description\" content=\"L&#39;espace d&#39;échange des acteurs du réseau de l&#39;inclusion\" />\n<meta name=\"twitter:description\" content=\"L&#39;espace d&#39;échange des acteurs du réseau de l&#39;inclusion\" />\n\n    \n  </head>\n  <body class=\"crawler\">\n    \n    <header>\n  <a href=\"/\">\n    <h1>Communauté de l&#39;inclusion</h1>\n  </a>\n</header>\n\n    <div id=\"main-outlet\" class=\"wrap\" role=\"main\">\n      <div itemscope itemtype='http://schema.org/ItemList'>\n  <meta itemprop='itemListOrder' content='http://schema.org/ItemListOrderDescending'>\n  <table class='category-list'>\n    <thead>\n      <tr>\n        <th class='category'>Catégorie</th>\n        <th class='topics'>Sujets</th>\n      </tr>\n    </thead>\n    <tbody>\n        <tr>\n          <td class='category' style='border-color: #231F20;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='0'>\n              <meta itemprop='url' content='/c/actualites/81'>\n              <h3>\n                <a href='/c/actualites/81'>\n                  <span itemprop='name'>Actualités &amp; Informations</span>\n                </a>\n              </h3>\n              <div itemprop='description'>Découvrez toute l’actualité des acteurs de l’inclusion (Evolutions des services de la plateforme, nouveautés, astuces…)</div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='79 Sujets'>79</div>\n          </td>\n        </tr>\n        <tr>\n          <td class='category' style='border-color: #9C6FF4;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='1'>\n              <meta itemprop='url' content='/c/spie/49'>\n              <h3>\n                <a href='/c/spie/49'>\n                  <span itemprop='name'>Service Public de l&#39;Insertion et de l&#39;Emploi</span>\n                </a>\n              </h3>\n              <div itemprop='description'>SPIE = Service Public de l’Insertion et de l’Emploi.</div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='12 Sujets'>12</div>\n          </td>\n        </tr>\n        <tr>\n          <td class='category' style='border-color: #F25154;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='2'>\n              <meta itemprop='url' content='/c/le-marche-de-linclusion-vous/53'>\n              <h3>\n                <a href='/c/le-marche-de-linclusion-vous/53'>\n                  <span itemprop='name'>Le marché de l&#39;inclusion &amp; vous</span>\n                </a>\n              </h3>\n              <div itemprop='description'>Mise en visibilité des offres commerciales des Entreprises Sociales Inclusives (ou Employeurs Solidaires)</div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='3 Sujets'>3</div>\n          </td>\n        </tr>\n        <tr>\n          <td class='category' style='border-color: #FEAD1D;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='3'>\n              <meta itemprop='url' content='/c/le-pilotage-de-linclusion/106'>\n              <h3>\n                <a href='/c/le-pilotage-de-linclusion/106'>\n                  <span itemprop='name'>Le pilotage de l&#39;inclusion &amp; vous</span>\n                </a>\n              </h3>\n              <div itemprop='description'>Proposer des tableaux de bord prêts à l’emploi pour permettre aux acteurs de l’inclusion de prendre des décisions mieux éclairées, tout en réduisant le temps de collecte de données et de production d’indicateurs</div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='5 Sujets'>5</div>\n          </td>\n        </tr>\n        <tr>\n          <td class='category' style='border-color: #0088CC;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='4'>\n              <meta itemprop='url' content='/c/les-emplois-de-linclusion/109'>\n              <h3>\n                <a href='/c/les-emplois-de-linclusion/109'>\n                  <span itemprop='name'>Les emplois de l&#39;inclusion</span>\n                </a>\n              </h3>\n              <div itemprop='description'></div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='87 Sujets'>87</div>\n          </td>\n        </tr>\n    </tbody>\n  </table>\n</div>\n\n\n\n\n    </div>\n    <footer class=\"container wrap\">\n  <nav class='crawler-nav'>\n    <ul>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/' itemprop=\"url\">Accueil </a>\n        </span>\n      </li>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/categories' itemprop=\"url\">Catégories </a>\n        </span>\n      </li>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/guidelines' itemprop=\"url\">Charte </a>\n        </span>\n      </li>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/tos' itemprop=\"url\">Conditions générales d&#39;utilisation </a>\n        </span>\n      </li>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/privacy' itemprop=\"url\">Politique de confidentialité </a>\n        </span>\n      </li>\n    </ul>\n  </nav>\n  <p class='powered-by-link'>Optimisé par <a href=\"https://www.discourse.org\">Discourse</a>, le rendu est meilleur quand JavaScript est activé.</p>\n</footer>\n\n    \n    \n  </body>\n  \n</html>\n",
     "ip": "184.104.202.143",
-    "timestamp": "2022-05-08T04:38:12.619482665Z",
+    "timestamp": "2022-05-11T15:31:38.798000275Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
   },
   {
-    "template": "dns/cname-fingerprint.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/cname-fingerprint.yaml",
-    "template-id": "cname-fingerprint",
+    "template": "technologies/metatag-cms.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/metatag-cms.yaml",
+    "template-id": "metatag-cms",
     "info": {
-      "name": "CNAME Fingerprint",
+      "name": "Metatag CMS Detection",
       "author": [
-        "pdteam"
+        "dadevel"
       ],
       "tags": [
-        "dns",
-        "cname"
+        "tech",
+        "cms"
       ],
-      "description": "A CNAME DNS record was discovered.",
+      "description": "Generic CMS Detection using html meta generator tag",
       "reference": [
-        "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
-        "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
+        "https://www.w3schools.com/tags/att_meta_name.asp"
       ],
-      "severity": "info",
-      "classification": {
-        "cve-id": null,
-        "cwe-id": [
-          "cwe-200"
-        ]
-      }
+      "severity": "info"
     },
-    "type": "dns",
+    "type": "http",
     "host": "https://forum.inclusion.beta.gouv.fr",
     "matched-at": "https://forum.inclusion.beta.gouv.fr",
     "extracted-results": [
-      "communauteinclusion.hosted-by-discourse.com."
+      "Discourse 2.9.0.beta4 - https://github.com/discourse/discourse version db9ae32e41098ece977c0725addc9fc91ef89429"
     ],
-    "request": ";; opcode: QUERY, status: NOERROR, id: 8593\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;forum.inclusion.beta.gouv.fr.\tIN\t NS\n",
-    "response": ";; opcode: QUERY, status: NOERROR, id: 8593\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 512\n\n;; QUESTION SECTION:\n;forum.inclusion.beta.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nforum.inclusion.beta.gouv.fr.\t300\tIN\tCNAME\tcommunauteinclusion.hosted-by-discourse.com.\n\n;; AUTHORITY SECTION:\nhosted-by-discourse.com.\t900\tIN\tSOA\tns-104.awsdns-13.com. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400\n",
-    "timestamp": "2022-05-08T04:38:24.508914659Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "referrer-policy",
-    "type": "http",
-    "host": "https://forum.inclusion.beta.gouv.fr",
-    "matched-at": "https://forum.inclusion.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 429\r\nCache-Control: no-cache\r\nCdck-Proxy-Id: app-router-tiehunter01.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nContent-Type: text/html\r\nRetry-After: 10\r\nStrict-Transport-Security: max-age=31536000\r\n\r\n<html><body><h1>429 Too Many Requests</h1>\n<p>Your IP address has made too many requests to this service over a short\namount of time. Please wait a few minutes and try again.</p>\n\n<p>If you are behind a proxy or coming from a large company, you and many other\nusers may appear to be the same person. Please let us know of recurring problems by email: <a href=\"mailto:team@discourse.org\">team@discourse.org</a></p>\n</body></html>\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-cache, no-store\r\nCdck-Proxy-Id: app-router-tiehunter02.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nContent-Security-Policy: upgrade-insecure-requests; base-uri 'self'; object-src 'none'; script-src https://forum.inclusion.beta.gouv.fr/logs/ https://forum.inclusion.beta.gouv.fr/sidekiq/ https://forum.inclusion.beta.gouv.fr/mini-profiler-resources/ https://aws1.discourse-cdn.com/standard20/assets/ https://aws1.discourse-cdn.com/standard20/brotli_asset/ https://forum.inclusion.beta.gouv.fr/extra-locales/ https://dub2.discourse-cdn.com/standard20/highlight-js/ https://dub2.discourse-cdn.com/standard20/javascripts/ https://dub2.discourse-cdn.com/standard20/plugins/ https://dub2.discourse-cdn.com/standard20/theme-javascripts/ https://dub2.discourse-cdn.com/standard20/svg-sprite/ https://stats.data.gouv.fr/matomo.js https://stats.data.gouv.fr/piwik.php https://stats.data.gouv.fr/ http://forum.inclusion.beta.gouv.fr/matomo.js http://forum.inclusion.beta.gouv.fr/hotjar.js https://static.hotjar.com/ https://script.hotjar.com/; worker-src 'self' https://aws1.discourse-cdn.com/standard20/assets/ https://aws1.discourse-cdn.com/standard20/brotli_asset/ https://dub2.discourse-cdn.com/standard20/javascripts/ https://dub2.discourse-cdn.com/standard20/plugins/; manifest-src 'self'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 15:31:37 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Accept-Encoding\r\nVary: Accept\r\nX-Content-Type-Options: nosniff\r\nX-Discourse-Cached: true\r\nX-Discourse-Route: categories/index\r\nX-Discourse-Trackview: 1\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies: none\r\nX-Request-Id: 3c9ae68b-2716-4fa5-9ad9-7c97f3abb50a\r\nX-Xss-Protection: 0\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Communauté de l&#39;inclusion - Le forum de l&#39;inclusion est ouvert à tous les acteurs de l&#39;inclusion. Partagez vos pratiques, posez vos questions au sujet de la Plateforme de l&#39;Inclusion, ou échangez avec d&#39;autres acteurs : Pôle emploi, Mission Locale, Cap Emploi, associations, bénévoles, CIP, entreprises [...]</title>\n    <meta name=\"description\" content=\"L&#39;espace d&#39;échange des acteurs du réseau de l&#39;inclusion\">\n    <meta name=\"generator\" content=\"Discourse 2.9.0.beta4 - https://github.com/discourse/discourse version db9ae32e41098ece977c0725addc9fc91ef89429\">\n<link rel=\"icon\" type=\"image/png\" href=\"https://aws1.discourse-cdn.com/standard20/uploads/communauteinclusion/optimized/1X/a07679729a1e853552e36066838c0f0a9ed767f1_2_32x32.svg\">\n<link rel=\"apple-touch-icon\" type=\"image/png\" href=\"https://aws1.discourse-cdn.com/standard20/uploads/communauteinclusion/optimized/1X/a07679729a1e853552e36066838c0f0a9ed767f1_2_180x180.svg\">\n<meta name=\"theme-color\" content=\"#ffffff\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover\">\n<link rel=\"canonical\" href=\"https://forum.inclusion.beta.gouv.fr/\" />\n<script type=\"application/ld+json\">{\"@context\":\"http://schema.org\",\"@type\":\"WebSite\",\"url\":\"https://forum.inclusion.beta.gouv.fr\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https://forum.inclusion.beta.gouv.fr/search?q={search_term_string}\",\"query-input\":\"required name=search_term_string\"}}</script>\n<link rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"https://forum.inclusion.beta.gouv.fr/opensearch.xml\" title=\"Communauté de l&#39;inclusion Search\">\n\n    <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/color_definitions_clair_2_3_9be2c9abb63591db32378d10f77b58de4968d4a8.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" class=\"light-scheme\"/>\n\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/desktop_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"desktop\"  />\n\n\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-adplugin_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-adplugin\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-akismet_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-akismet\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-cakeday_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-cakeday\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-chat-integration_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-chat-integration\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-details_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-details\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-footnote_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-footnote\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-local-dates_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-local-dates\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-narrative-bot_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-narrative-bot\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-presence_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-presence\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-solved_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-solved\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/discourse-spoiler-alert_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"discourse-spoiler-alert\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/hosted-site_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"hosted-site\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/lazy-yt_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"lazy-yt\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/poll_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"poll\"  />\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/poll_desktop_3a533a18bdeb8a44dcd0d407e515f93d3cc78006.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"poll_desktop\"  />\n\n  <link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/desktop_theme_6_190104436087b1e5d416a51b18fdb10c662c4c22.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"desktop_theme\" data-theme-id=\"6\" data-theme-name=\"discourse-search-banner\"/>\n<link href=\"https://dub2.discourse-cdn.com/standard20/stylesheets/desktop_theme_3_85e9a87f51b38e95b4f1d7a91e1db3e99bca6225.css?__ws=forum.inclusion.beta.gouv.fr\" media=\"all\" rel=\"stylesheet\" data-target=\"desktop_theme\" data-theme-id=\"3\" data-theme-name=\"clair\"/>\n\n    \n<script src=\"https://dub2.discourse-cdn.com/standard20/theme-javascripts/0828be4560e695619a7505baa86c3068cf1c6bcb.js?__ws=forum.inclusion.beta.gouv.fr\" data-theme-id=\"4\"></script>\n\n<script src=\"https://dub2.discourse-cdn.com/standard20/theme-javascripts/723ec67d0fa7134fc9afd3ff6fcbb434351336bc.js?__ws=forum.inclusion.beta.gouv.fr\" data-theme-id=\"5\"></script>\n    \n      <meta property=\"og:site_name\" content=\"Communauté de l&#39;inclusion\" />\n<meta property=\"og:type\" content=\"website\" />\n<meta name=\"twitter:card\" content=\"summary\" />\n<meta name=\"twitter:image\" content=\"https://aws1.discourse-cdn.com/standard20/uploads/communauteinclusion/original/1X/eeb7dd54fc7087cee4fb8e5dc0dc0e1270bd6a32.png\" />\n<meta property=\"og:image\" content=\"https://aws1.discourse-cdn.com/standard20/uploads/communauteinclusion/original/1X/eeb7dd54fc7087cee4fb8e5dc0dc0e1270bd6a32.png\" />\n<meta property=\"og:url\" content=\"https://forum.inclusion.beta.gouv.fr/\" />\n<meta name=\"twitter:url\" content=\"https://forum.inclusion.beta.gouv.fr/\" />\n<meta property=\"og:title\" content=\"Communauté de l&#39;inclusion\" />\n<meta name=\"twitter:title\" content=\"Communauté de l&#39;inclusion\" />\n<meta property=\"og:description\" content=\"L&#39;espace d&#39;échange des acteurs du réseau de l&#39;inclusion\" />\n<meta name=\"twitter:description\" content=\"L&#39;espace d&#39;échange des acteurs du réseau de l&#39;inclusion\" />\n\n    \n  </head>\n  <body class=\"crawler\">\n    \n    <header>\n  <a href=\"/\">\n    <h1>Communauté de l&#39;inclusion</h1>\n  </a>\n</header>\n\n    <div id=\"main-outlet\" class=\"wrap\" role=\"main\">\n      <div itemscope itemtype='http://schema.org/ItemList'>\n  <meta itemprop='itemListOrder' content='http://schema.org/ItemListOrderDescending'>\n  <table class='category-list'>\n    <thead>\n      <tr>\n        <th class='category'>Catégorie</th>\n        <th class='topics'>Sujets</th>\n      </tr>\n    </thead>\n    <tbody>\n        <tr>\n          <td class='category' style='border-color: #231F20;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='0'>\n              <meta itemprop='url' content='/c/actualites/81'>\n              <h3>\n                <a href='/c/actualites/81'>\n                  <span itemprop='name'>Actualités &amp; Informations</span>\n                </a>\n              </h3>\n              <div itemprop='description'>Découvrez toute l’actualité des acteurs de l’inclusion (Evolutions des services de la plateforme, nouveautés, astuces…)</div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='79 Sujets'>79</div>\n          </td>\n        </tr>\n        <tr>\n          <td class='category' style='border-color: #9C6FF4;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='1'>\n              <meta itemprop='url' content='/c/spie/49'>\n              <h3>\n                <a href='/c/spie/49'>\n                  <span itemprop='name'>Service Public de l&#39;Insertion et de l&#39;Emploi</span>\n                </a>\n              </h3>\n              <div itemprop='description'>SPIE = Service Public de l’Insertion et de l’Emploi.</div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='12 Sujets'>12</div>\n          </td>\n        </tr>\n        <tr>\n          <td class='category' style='border-color: #F25154;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='2'>\n              <meta itemprop='url' content='/c/le-marche-de-linclusion-vous/53'>\n              <h3>\n                <a href='/c/le-marche-de-linclusion-vous/53'>\n                  <span itemprop='name'>Le marché de l&#39;inclusion &amp; vous</span>\n                </a>\n              </h3>\n              <div itemprop='description'>Mise en visibilité des offres commerciales des Entreprises Sociales Inclusives (ou Employeurs Solidaires)</div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='3 Sujets'>3</div>\n          </td>\n        </tr>\n        <tr>\n          <td class='category' style='border-color: #FEAD1D;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='3'>\n              <meta itemprop='url' content='/c/le-pilotage-de-linclusion/106'>\n              <h3>\n                <a href='/c/le-pilotage-de-linclusion/106'>\n                  <span itemprop='name'>Le pilotage de l&#39;inclusion &amp; vous</span>\n                </a>\n              </h3>\n              <div itemprop='description'>Proposer des tableaux de bord prêts à l’emploi pour permettre aux acteurs de l’inclusion de prendre des décisions mieux éclairées, tout en réduisant le temps de collecte de données et de production d’indicateurs</div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='5 Sujets'>5</div>\n          </td>\n        </tr>\n        <tr>\n          <td class='category' style='border-color: #0088CC;'>\n            <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>\n              <meta itemprop='position' content='4'>\n              <meta itemprop='url' content='/c/les-emplois-de-linclusion/109'>\n              <h3>\n                <a href='/c/les-emplois-de-linclusion/109'>\n                  <span itemprop='name'>Les emplois de l&#39;inclusion</span>\n                </a>\n              </h3>\n              <div itemprop='description'></div>\n            </div>\n          </td>\n          <td class='topics'>\n            <div title='87 Sujets'>87</div>\n          </td>\n        </tr>\n    </tbody>\n  </table>\n</div>\n\n\n\n\n    </div>\n    <footer class=\"container wrap\">\n  <nav class='crawler-nav'>\n    <ul>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/' itemprop=\"url\">Accueil </a>\n        </span>\n      </li>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/categories' itemprop=\"url\">Catégories </a>\n        </span>\n      </li>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/guidelines' itemprop=\"url\">Charte </a>\n        </span>\n      </li>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/tos' itemprop=\"url\">Conditions générales d&#39;utilisation </a>\n        </span>\n      </li>\n      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>\n        <span itemprop='name'>\n          <a href='/privacy' itemprop=\"url\">Politique de confidentialité </a>\n        </span>\n      </li>\n    </ul>\n  </nav>\n  <p class='powered-by-link'>Optimisé par <a href=\"https://www.discourse.org\">Discourse</a>, le rendu est meilleur quand JavaScript est activé.</p>\n</footer>\n\n    \n    \n  </body>\n  \n</html>\n",
     "ip": "184.104.202.143",
-    "timestamp": "2022-05-08T04:38:33.061763159Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-resource-policy",
-    "type": "http",
-    "host": "https://forum.inclusion.beta.gouv.fr",
-    "matched-at": "https://forum.inclusion.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 429\r\nCache-Control: no-cache\r\nCdck-Proxy-Id: app-router-tiehunter01.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nContent-Type: text/html\r\nRetry-After: 10\r\nStrict-Transport-Security: max-age=31536000\r\n\r\n<html><body><h1>429 Too Many Requests</h1>\n<p>Your IP address has made too many requests to this service over a short\namount of time. Please wait a few minutes and try again.</p>\n\n<p>If you are behind a proxy or coming from a large company, you and many other\nusers may appear to be the same person. Please let us know of recurring problems by email: <a href=\"mailto:team@discourse.org\">team@discourse.org</a></p>\n</body></html>\n",
-    "ip": "184.104.202.143",
-    "timestamp": "2022-05-08T04:38:33.061852461Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-expose-headers",
-    "type": "http",
-    "host": "https://forum.inclusion.beta.gouv.fr",
-    "matched-at": "https://forum.inclusion.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 429\r\nCache-Control: no-cache\r\nCdck-Proxy-Id: app-router-tiehunter01.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nContent-Type: text/html\r\nRetry-After: 10\r\nStrict-Transport-Security: max-age=31536000\r\n\r\n<html><body><h1>429 Too Many Requests</h1>\n<p>Your IP address has made too many requests to this service over a short\namount of time. Please wait a few minutes and try again.</p>\n\n<p>If you are behind a proxy or coming from a large company, you and many other\nusers may appear to be the same person. Please let us know of recurring problems by email: <a href=\"mailto:team@discourse.org\">team@discourse.org</a></p>\n</body></html>\n",
-    "ip": "184.104.202.143",
-    "timestamp": "2022-05-08T04:38:33.061886261Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-frame-options",
-    "type": "http",
-    "host": "https://forum.inclusion.beta.gouv.fr",
-    "matched-at": "https://forum.inclusion.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 429\r\nCache-Control: no-cache\r\nCdck-Proxy-Id: app-router-tiehunter01.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nContent-Type: text/html\r\nRetry-After: 10\r\nStrict-Transport-Security: max-age=31536000\r\n\r\n<html><body><h1>429 Too Many Requests</h1>\n<p>Your IP address has made too many requests to this service over a short\namount of time. Please wait a few minutes and try again.</p>\n\n<p>If you are behind a proxy or coming from a large company, you and many other\nusers may appear to be the same person. Please let us know of recurring problems by email: <a href=\"mailto:team@discourse.org\">team@discourse.org</a></p>\n</body></html>\n",
-    "ip": "184.104.202.143",
-    "timestamp": "2022-05-08T04:38:33.063821999Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "clear-site-data",
-    "type": "http",
-    "host": "https://forum.inclusion.beta.gouv.fr",
-    "matched-at": "https://forum.inclusion.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 429\r\nCache-Control: no-cache\r\nCdck-Proxy-Id: app-router-tiehunter01.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nContent-Type: text/html\r\nRetry-After: 10\r\nStrict-Transport-Security: max-age=31536000\r\n\r\n<html><body><h1>429 Too Many Requests</h1>\n<p>Your IP address has made too many requests to this service over a short\namount of time. Please wait a few minutes and try again.</p>\n\n<p>If you are behind a proxy or coming from a large company, you and many other\nusers may appear to be the same person. Please let us know of recurring problems by email: <a href=\"mailto:team@discourse.org\">team@discourse.org</a></p>\n</body></html>\n",
-    "ip": "184.104.202.143",
-    "timestamp": "2022-05-08T04:38:33.063866399Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-opener-policy",
-    "type": "http",
-    "host": "https://forum.inclusion.beta.gouv.fr",
-    "matched-at": "https://forum.inclusion.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 429\r\nCache-Control: no-cache\r\nCdck-Proxy-Id: app-router-tiehunter01.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nContent-Type: text/html\r\nRetry-After: 10\r\nStrict-Transport-Security: max-age=31536000\r\n\r\n<html><body><h1>429 Too Many Requests</h1>\n<p>Your IP address has made too many requests to this service over a short\namount of time. Please wait a few minutes and try again.</p>\n\n<p>If you are behind a proxy or coming from a large company, you and many other\nusers may appear to be the same person. Please let us know of recurring problems by email: <a href=\"mailto:team@discourse.org\">team@discourse.org</a></p>\n</body></html>\n",
-    "ip": "184.104.202.143",
-    "timestamp": "2022-05-08T04:38:33.064212406Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-credentials",
-    "type": "http",
-    "host": "https://forum.inclusion.beta.gouv.fr",
-    "matched-at": "https://forum.inclusion.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 429\r\nCache-Control: no-cache\r\nCdck-Proxy-Id: app-router-tiehunter01.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nContent-Type: text/html\r\nRetry-After: 10\r\nStrict-Transport-Security: max-age=31536000\r\n\r\n<html><body><h1>429 Too Many Requests</h1>\n<p>Your IP address has made too many requests to this service over a short\namount of time. Please wait a few minutes and try again.</p>\n\n<p>If you are behind a proxy or coming from a large company, you and many other\nusers may appear to be the same person. Please let us know of recurring problems by email: <a href=\"mailto:team@discourse.org\">team@discourse.org</a></p>\n</body></html>\n",
-    "ip": "184.104.202.143",
-    "timestamp": "2022-05-08T04:38:33.064250507Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-max-age",
-    "type": "http",
-    "host": "https://forum.inclusion.beta.gouv.fr",
-    "matched-at": "https://forum.inclusion.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 429\r\nCache-Control: no-cache\r\nCdck-Proxy-Id: app-router-tiehunter01.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nContent-Type: text/html\r\nRetry-After: 10\r\nStrict-Transport-Security: max-age=31536000\r\n\r\n<html><body><h1>429 Too Many Requests</h1>\n<p>Your IP address has made too many requests to this service over a short\namount of time. Please wait a few minutes and try again.</p>\n\n<p>If you are behind a proxy or coming from a large company, you and many other\nusers may appear to be the same person. Please let us know of recurring problems by email: <a href=\"mailto:team@discourse.org\">team@discourse.org</a></p>\n</body></html>\n",
-    "ip": "184.104.202.143",
-    "timestamp": "2022-05-08T04:38:33.064272407Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "permission-policy",
-    "type": "http",
-    "host": "https://forum.inclusion.beta.gouv.fr",
-    "matched-at": "https://forum.inclusion.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 429\r\nCache-Control: no-cache\r\nCdck-Proxy-Id: app-router-tiehunter01.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nContent-Type: text/html\r\nRetry-After: 10\r\nStrict-Transport-Security: max-age=31536000\r\n\r\n<html><body><h1>429 Too Many Requests</h1>\n<p>Your IP address has made too many requests to this service over a short\namount of time. Please wait a few minutes and try again.</p>\n\n<p>If you are behind a proxy or coming from a large company, you and many other\nusers may appear to be the same person. Please let us know of recurring problems by email: <a href=\"mailto:team@discourse.org\">team@discourse.org</a></p>\n</body></html>\n",
-    "ip": "184.104.202.143",
-    "timestamp": "2022-05-08T04:38:33.064290108Z",
+    "timestamp": "2022-05-11T15:31:38.806061898Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -428,77 +152,9 @@
     "host": "https://forum.inclusion.beta.gouv.fr",
     "matched-at": "https://forum.inclusion.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 429\r\nCache-Control: no-cache\r\nCdck-Proxy-Id: app-router-tiehunter01.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nContent-Type: text/html\r\nRetry-After: 10\r\nStrict-Transport-Security: max-age=31536000\r\n\r\n<html><body><h1>429 Too Many Requests</h1>\n<p>Your IP address has made too many requests to this service over a short\namount of time. Please wait a few minutes and try again.</p>\n\n<p>If you are behind a proxy or coming from a large company, you and many other\nusers may appear to be the same person. Please let us know of recurring problems by email: <a href=\"mailto:team@discourse.org\">team@discourse.org</a></p>\n</body></html>\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCdck-Proxy-Id: app-router-tiehunter02.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nDate: Wed, 11 May 2022 15:31:41 GMT\r\nDiscourse-Rate-Limit-Error-Code: ip_10_secs_limit\r\nRetry-After: 10\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\n\r\nSlow down, too many requests from this IP address.\nPlease retry again in 10 seconds.\nError code: ip_10_secs_limit.\n",
     "ip": "184.104.202.143",
-    "timestamp": "2022-05-08T04:38:33.064322808Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-embedder-policy",
-    "type": "http",
-    "host": "https://forum.inclusion.beta.gouv.fr",
-    "matched-at": "https://forum.inclusion.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 429\r\nCache-Control: no-cache\r\nCdck-Proxy-Id: app-router-tiehunter01.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nContent-Type: text/html\r\nRetry-After: 10\r\nStrict-Transport-Security: max-age=31536000\r\n\r\n<html><body><h1>429 Too Many Requests</h1>\n<p>Your IP address has made too many requests to this service over a short\namount of time. Please wait a few minutes and try again.</p>\n\n<p>If you are behind a proxy or coming from a large company, you and many other\nusers may appear to be the same person. Please let us know of recurring problems by email: <a href=\"mailto:team@discourse.org\">team@discourse.org</a></p>\n</body></html>\n",
-    "ip": "184.104.202.143",
-    "timestamp": "2022-05-08T04:38:33.064342209Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-origin",
-    "type": "http",
-    "host": "https://forum.inclusion.beta.gouv.fr",
-    "matched-at": "https://forum.inclusion.beta.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 429\r\nCache-Control: no-cache\r\nCdck-Proxy-Id: app-router-tiehunter01.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nContent-Type: text/html\r\nRetry-After: 10\r\nStrict-Transport-Security: max-age=31536000\r\n\r\n<html><body><h1>429 Too Many Requests</h1>\n<p>Your IP address has made too many requests to this service over a short\namount of time. Please wait a few minutes and try again.</p>\n\n<p>If you are behind a proxy or coming from a large company, you and many other\nusers may appear to be the same person. Please let us know of recurring problems by email: <a href=\"mailto:team@discourse.org\">team@discourse.org</a></p>\n</body></html>\n",
-    "ip": "184.104.202.143",
-    "timestamp": "2022-05-08T04:38:33.064363709Z",
+    "timestamp": "2022-05-11T15:31:41.935425297Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -530,9 +186,9 @@
     "host": "https://forum.inclusion.beta.gouv.fr",
     "matched-at": "https://forum.inclusion.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 429\r\nCache-Control: no-cache\r\nCdck-Proxy-Id: app-router-tiehunter01.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nContent-Type: text/html\r\nRetry-After: 10\r\nStrict-Transport-Security: max-age=31536000\r\n\r\n<html><body><h1>429 Too Many Requests</h1>\n<p>Your IP address has made too many requests to this service over a short\namount of time. Please wait a few minutes and try again.</p>\n\n<p>If you are behind a proxy or coming from a large company, you and many other\nusers may appear to be the same person. Please let us know of recurring problems by email: <a href=\"mailto:team@discourse.org\">team@discourse.org</a></p>\n</body></html>\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCdck-Proxy-Id: app-router-tiehunter02.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nDate: Wed, 11 May 2022 15:31:41 GMT\r\nDiscourse-Rate-Limit-Error-Code: ip_10_secs_limit\r\nRetry-After: 10\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\n\r\nSlow down, too many requests from this IP address.\nPlease retry again in 10 seconds.\nError code: ip_10_secs_limit.\n",
     "ip": "184.104.202.143",
-    "timestamp": "2022-05-08T04:38:33.06439101Z",
+    "timestamp": "2022-05-11T15:31:41.935516203Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -559,14 +215,150 @@
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "content-security-policy",
+    "matcher-name": "clear-site-data",
     "type": "http",
     "host": "https://forum.inclusion.beta.gouv.fr",
     "matched-at": "https://forum.inclusion.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 429\r\nCache-Control: no-cache\r\nCdck-Proxy-Id: app-router-tiehunter01.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nContent-Type: text/html\r\nRetry-After: 10\r\nStrict-Transport-Security: max-age=31536000\r\n\r\n<html><body><h1>429 Too Many Requests</h1>\n<p>Your IP address has made too many requests to this service over a short\namount of time. Please wait a few minutes and try again.</p>\n\n<p>If you are behind a proxy or coming from a large company, you and many other\nusers may appear to be the same person. Please let us know of recurring problems by email: <a href=\"mailto:team@discourse.org\">team@discourse.org</a></p>\n</body></html>\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCdck-Proxy-Id: app-router-tiehunter02.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nDate: Wed, 11 May 2022 15:31:41 GMT\r\nDiscourse-Rate-Limit-Error-Code: ip_10_secs_limit\r\nRetry-After: 10\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\n\r\nSlow down, too many requests from this IP address.\nPlease retry again in 10 seconds.\nError code: ip_10_secs_limit.\n",
     "ip": "184.104.202.143",
-    "timestamp": "2022-05-08T04:38:33.06441341Z",
+    "timestamp": "2022-05-11T15:31:41.935549105Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-embedder-policy",
+    "type": "http",
+    "host": "https://forum.inclusion.beta.gouv.fr",
+    "matched-at": "https://forum.inclusion.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCdck-Proxy-Id: app-router-tiehunter02.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nDate: Wed, 11 May 2022 15:31:41 GMT\r\nDiscourse-Rate-Limit-Error-Code: ip_10_secs_limit\r\nRetry-After: 10\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\n\r\nSlow down, too many requests from this IP address.\nPlease retry again in 10 seconds.\nError code: ip_10_secs_limit.\n",
+    "ip": "184.104.202.143",
+    "timestamp": "2022-05-11T15:31:41.937591138Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-max-age",
+    "type": "http",
+    "host": "https://forum.inclusion.beta.gouv.fr",
+    "matched-at": "https://forum.inclusion.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCdck-Proxy-Id: app-router-tiehunter02.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nDate: Wed, 11 May 2022 15:31:41 GMT\r\nDiscourse-Rate-Limit-Error-Code: ip_10_secs_limit\r\nRetry-After: 10\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\n\r\nSlow down, too many requests from this IP address.\nPlease retry again in 10 seconds.\nError code: ip_10_secs_limit.\n",
+    "ip": "184.104.202.143",
+    "timestamp": "2022-05-11T15:31:41.93761874Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "permission-policy",
+    "type": "http",
+    "host": "https://forum.inclusion.beta.gouv.fr",
+    "matched-at": "https://forum.inclusion.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCdck-Proxy-Id: app-router-tiehunter02.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nDate: Wed, 11 May 2022 15:31:41 GMT\r\nDiscourse-Rate-Limit-Error-Code: ip_10_secs_limit\r\nRetry-After: 10\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\n\r\nSlow down, too many requests from this IP address.\nPlease retry again in 10 seconds.\nError code: ip_10_secs_limit.\n",
+    "ip": "184.104.202.143",
+    "timestamp": "2022-05-11T15:31:41.937637641Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-frame-options",
+    "type": "http",
+    "host": "https://forum.inclusion.beta.gouv.fr",
+    "matched-at": "https://forum.inclusion.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCdck-Proxy-Id: app-router-tiehunter02.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nDate: Wed, 11 May 2022 15:31:41 GMT\r\nDiscourse-Rate-Limit-Error-Code: ip_10_secs_limit\r\nRetry-After: 10\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\n\r\nSlow down, too many requests from this IP address.\nPlease retry again in 10 seconds.\nError code: ip_10_secs_limit.\n",
+    "ip": "184.104.202.143",
+    "timestamp": "2022-05-11T15:31:41.937661442Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -598,9 +390,247 @@
     "host": "https://forum.inclusion.beta.gouv.fr",
     "matched-at": "https://forum.inclusion.beta.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 429\r\nCache-Control: no-cache\r\nCdck-Proxy-Id: app-router-tiehunter01.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nContent-Type: text/html\r\nRetry-After: 10\r\nStrict-Transport-Security: max-age=31536000\r\n\r\n<html><body><h1>429 Too Many Requests</h1>\n<p>Your IP address has made too many requests to this service over a short\namount of time. Please wait a few minutes and try again.</p>\n\n<p>If you are behind a proxy or coming from a large company, you and many other\nusers may appear to be the same person. Please let us know of recurring problems by email: <a href=\"mailto:team@discourse.org\">team@discourse.org</a></p>\n</body></html>\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCdck-Proxy-Id: app-router-tiehunter02.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nDate: Wed, 11 May 2022 15:31:41 GMT\r\nDiscourse-Rate-Limit-Error-Code: ip_10_secs_limit\r\nRetry-After: 10\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\n\r\nSlow down, too many requests from this IP address.\nPlease retry again in 10 seconds.\nError code: ip_10_secs_limit.\n",
     "ip": "184.104.202.143",
-    "timestamp": "2022-05-08T04:38:33.06443131Z",
+    "timestamp": "2022-05-11T15:31:41.937678043Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-credentials",
+    "type": "http",
+    "host": "https://forum.inclusion.beta.gouv.fr",
+    "matched-at": "https://forum.inclusion.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCdck-Proxy-Id: app-router-tiehunter02.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nDate: Wed, 11 May 2022 15:31:41 GMT\r\nDiscourse-Rate-Limit-Error-Code: ip_10_secs_limit\r\nRetry-After: 10\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\n\r\nSlow down, too many requests from this IP address.\nPlease retry again in 10 seconds.\nError code: ip_10_secs_limit.\n",
+    "ip": "184.104.202.143",
+    "timestamp": "2022-05-11T15:31:41.937695044Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://forum.inclusion.beta.gouv.fr",
+    "matched-at": "https://forum.inclusion.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCdck-Proxy-Id: app-router-tiehunter02.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nDate: Wed, 11 May 2022 15:31:41 GMT\r\nDiscourse-Rate-Limit-Error-Code: ip_10_secs_limit\r\nRetry-After: 10\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\n\r\nSlow down, too many requests from this IP address.\nPlease retry again in 10 seconds.\nError code: ip_10_secs_limit.\n",
+    "ip": "184.104.202.143",
+    "timestamp": "2022-05-11T15:31:41.937718046Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "content-security-policy",
+    "type": "http",
+    "host": "https://forum.inclusion.beta.gouv.fr",
+    "matched-at": "https://forum.inclusion.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCdck-Proxy-Id: app-router-tiehunter02.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nDate: Wed, 11 May 2022 15:31:41 GMT\r\nDiscourse-Rate-Limit-Error-Code: ip_10_secs_limit\r\nRetry-After: 10\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\n\r\nSlow down, too many requests from this IP address.\nPlease retry again in 10 seconds.\nError code: ip_10_secs_limit.\n",
+    "ip": "184.104.202.143",
+    "timestamp": "2022-05-11T15:31:41.937738647Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "referrer-policy",
+    "type": "http",
+    "host": "https://forum.inclusion.beta.gouv.fr",
+    "matched-at": "https://forum.inclusion.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCdck-Proxy-Id: app-router-tiehunter02.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nDate: Wed, 11 May 2022 15:31:41 GMT\r\nDiscourse-Rate-Limit-Error-Code: ip_10_secs_limit\r\nRetry-After: 10\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\n\r\nSlow down, too many requests from this IP address.\nPlease retry again in 10 seconds.\nError code: ip_10_secs_limit.\n",
+    "ip": "184.104.202.143",
+    "timestamp": "2022-05-11T15:31:41.937757149Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-opener-policy",
+    "type": "http",
+    "host": "https://forum.inclusion.beta.gouv.fr",
+    "matched-at": "https://forum.inclusion.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCdck-Proxy-Id: app-router-tiehunter02.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nDate: Wed, 11 May 2022 15:31:41 GMT\r\nDiscourse-Rate-Limit-Error-Code: ip_10_secs_limit\r\nRetry-After: 10\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\n\r\nSlow down, too many requests from this IP address.\nPlease retry again in 10 seconds.\nError code: ip_10_secs_limit.\n",
+    "ip": "184.104.202.143",
+    "timestamp": "2022-05-11T15:31:41.93777385Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://forum.inclusion.beta.gouv.fr",
+    "matched-at": "https://forum.inclusion.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCdck-Proxy-Id: app-router-tiehunter02.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nDate: Wed, 11 May 2022 15:31:41 GMT\r\nDiscourse-Rate-Limit-Error-Code: ip_10_secs_limit\r\nRetry-After: 10\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\n\r\nSlow down, too many requests from this IP address.\nPlease retry again in 10 seconds.\nError code: ip_10_secs_limit.\n",
+    "ip": "184.104.202.143",
+    "timestamp": "2022-05-11T15:31:41.937793851Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-origin",
+    "type": "http",
+    "host": "https://forum.inclusion.beta.gouv.fr",
+    "matched-at": "https://forum.inclusion.beta.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: forum.inclusion.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCdck-Proxy-Id: app-router-tiehunter02.dub2\r\nCdck-Proxy-Id: app-balancer-tieinterceptor1a.dub2\r\nDate: Wed, 11 May 2022 15:31:41 GMT\r\nDiscourse-Rate-Limit-Error-Code: ip_10_secs_limit\r\nRetry-After: 10\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\n\r\nSlow down, too many requests from this IP address.\nPlease retry again in 10 seconds.\nError code: ip_10_secs_limit.\n",
+    "ip": "184.104.202.143",
+    "timestamp": "2022-05-11T15:31:41.937813352Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://forum.inclusion.beta.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -627,7 +657,7 @@
       "forum.inclusion.beta.gouv.fr"
     ],
     "ip": "184.104.202.143",
-    "timestamp": "2022-05-08T04:38:38.904058279Z",
+    "timestamp": "2022-05-11T15:31:41.96831573Z",
     "matcher-status": true,
     "matched-line": null
   },
@@ -664,35 +694,47 @@
       "10 mx-corp1.discoursemail.com.",
       "20 mx-corp.discoursemail.com."
     ],
-    "request": ";; opcode: QUERY, status: NOERROR, id: 5061\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;forum.inclusion.beta.gouv.fr.\tIN\t MX\n",
-    "response": ";; opcode: QUERY, status: NOERROR, id: 5061\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 512\n\n;; QUESTION SECTION:\n;forum.inclusion.beta.gouv.fr.\tIN\t MX\n\n;; ANSWER SECTION:\nforum.inclusion.beta.gouv.fr.\t291\tIN\tCNAME\tcommunauteinclusion.hosted-by-discourse.com.\ncommunauteinclusion.hosted-by-discourse.com.\t893\tIN\tMX\t10 mx-corp1.discoursemail.com.\ncommunauteinclusion.hosted-by-discourse.com.\t893\tIN\tMX\t20 mx-corp.discoursemail.com.\n",
-    "timestamp": "2022-05-08T04:38:58.050646438Z",
+    "request": ";; opcode: QUERY, status: NOERROR, id: 28669\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;forum.inclusion.beta.gouv.fr.\tIN\t MX\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 28669\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 1232\n\n;; QUESTION SECTION:\n;forum.inclusion.beta.gouv.fr.\tIN\t MX\n\n;; ANSWER SECTION:\nforum.inclusion.beta.gouv.fr.\t300\tIN\tCNAME\tcommunauteinclusion.hosted-by-discourse.com.\ncommunauteinclusion.hosted-by-discourse.com.\t900\tIN\tMX\t10 mx-corp1.discoursemail.com.\ncommunauteinclusion.hosted-by-discourse.com.\t900\tIN\tMX\t20 mx-corp.discoursemail.com.\n",
+    "timestamp": "2022-05-11T15:31:47.554142597Z",
     "matcher-status": true,
     "matched-line": null
   },
   {
-    "template": "ssl/tls-version.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
-    "template-id": "tls-version",
+    "template": "dns/cname-fingerprint.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/cname-fingerprint.yaml",
+    "template-id": "cname-fingerprint",
     "info": {
-      "name": "TLS Version",
+      "name": "CNAME Fingerprint",
       "author": [
         "pdteam"
       ],
       "tags": [
-        "ssl"
+        "dns",
+        "cname"
       ],
-      "reference": null,
-      "severity": "info"
+      "description": "A CNAME DNS record was discovered.",
+      "reference": [
+        "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
+        "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
+      ],
+      "severity": "info",
+      "classification": {
+        "cve-id": null,
+        "cwe-id": [
+          "cwe-200"
+        ]
+      }
     },
-    "type": "ssl",
+    "type": "dns",
     "host": "https://forum.inclusion.beta.gouv.fr",
     "matched-at": "https://forum.inclusion.beta.gouv.fr",
     "extracted-results": [
-      "TLS13"
+      "communauteinclusion.hosted-by-discourse.com."
     ],
-    "ip": "184.104.202.143",
-    "timestamp": "2022-05-08T04:38:59.731091184Z",
+    "request": ";; opcode: QUERY, status: NOERROR, id: 34981\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;forum.inclusion.beta.gouv.fr.\tIN\t NS\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 34981\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 1232\n\n;; QUESTION SECTION:\n;forum.inclusion.beta.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nforum.inclusion.beta.gouv.fr.\t300\tIN\tCNAME\tcommunauteinclusion.hosted-by-discourse.com.\n\n;; AUTHORITY SECTION:\nhosted-by-discourse.com.\t900\tIN\tSOA\tns-104.awsdns-13.com. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400\n",
+    "timestamp": "2022-05-11T15:31:55.520384989Z",
     "matcher-status": true,
     "matched-line": null
   },
@@ -727,9 +769,35 @@
     "extracted-results": [
       "letsencrypt.org"
     ],
-    "request": ";; opcode: QUERY, status: NOERROR, id: 55840\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;forum.inclusion.beta.gouv.fr.\tIN\t CAA\n",
-    "response": ";; opcode: QUERY, status: NOERROR, id: 55840\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 1232\n\n;; QUESTION SECTION:\n;forum.inclusion.beta.gouv.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\nforum.inclusion.beta.gouv.fr.\t300\tIN\tCNAME\tcommunauteinclusion.hosted-by-discourse.com.\ncommunauteinclusion.hosted-by-discourse.com.\t900\tIN\tCAA\t0 issue \"letsencrypt.org\"\n",
-    "timestamp": "2022-05-08T04:39:13.062331Z",
+    "request": ";; opcode: QUERY, status: NOERROR, id: 47581\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;forum.inclusion.beta.gouv.fr.\tIN\t CAA\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 47581\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 512\n\n;; QUESTION SECTION:\n;forum.inclusion.beta.gouv.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\nforum.inclusion.beta.gouv.fr.\t262\tIN\tCNAME\tcommunauteinclusion.hosted-by-discourse.com.\ncommunauteinclusion.hosted-by-discourse.com.\t900\tIN\tCAA\t0 issue \"letsencrypt.org\"\n",
+    "timestamp": "2022-05-11T15:32:14.557876397Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/tls-version.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
+    "template-id": "tls-version",
+    "info": {
+      "name": "TLS Version",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://forum.inclusion.beta.gouv.fr",
+    "matched-at": "https://forum.inclusion.beta.gouv.fr",
+    "extracted-results": [
+      "TLS13"
+    ],
+    "ip": "184.104.202.143",
+    "timestamp": "2022-05-11T15:32:25.957899749Z",
     "matcher-status": true,
     "matched-line": null
   }
