@@ -353,7 +353,7 @@
               "ip"           : "octopus.igloo.fabnum.fr/51.159.27.6",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "66 >= 30 days"
+              "finding"      : "63 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -556,7 +556,7 @@
               "ip"           : "octopus.igloo.fabnum.fr/51.159.27.6",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1652005267"
+              "finding"      : "1652303526"
           }
 ,         {
               "id"           : "HSTS",
@@ -1133,6 +1133,6 @@
               "ip"           : "octopus.igloo.fabnum.fr/51.159.27.6",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "96"
+              "finding"      : "151"
           }
 ]

@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.91</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln octopus.igloo.fabnum.fr</pre>
-<p class="lead">Sun May  8 10:21:49 2022 – Sun May  8 10:22:20 2022<br>1 hosts scanned.
+<p class="lead">Wed May 11 21:13:31 2022 – Wed May 11 21:14:13 2022<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -131,9 +131,15 @@
     &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;
     Your browser sent an invalid request.
     &lt;/body&gt;&lt;/html&gt;
-  FourOhFourRequest, GetRequest, HTTPOptions: 
+  FourOhFourRequest: 
     HTTP/1.0 404 Not Found
-    date: Sun, 08 May 2022 10:21:57 GMT
+    date: Wed, 11 May 2022 21:13:41 GMT
+    content-length: 21
+    content-type: text/plain; charset=utf-8
+    default backend - 404
+  GetRequest, HTTPOptions: 
+    HTTP/1.0 404 Not Found
+    date: Wed, 11 May 2022 21:13:40 GMT
     content-length: 21
     content-type: text/plain; charset=utf-8
     default backend - 404
@@ -166,13 +172,19 @@
     &lt;/body&gt;&lt;/html&gt;
   FourOhFourRequest: 
     HTTP/1.0 404 Not Found
-    date: Sun, 08 May 2022 10:22:04 GMT
+    date: Wed, 11 May 2022 21:13:48 GMT
     content-length: 21
     content-type: text/plain; charset=utf-8
     default backend - 404
-  GetRequest, HTTPOptions: 
+  GetRequest: 
     HTTP/1.0 404 Not Found
-    date: Sun, 08 May 2022 10:22:03 GMT
+    date: Wed, 11 May 2022 21:13:46 GMT
+    content-length: 21
+    content-type: text/plain; charset=utf-8
+    default backend - 404
+  HTTPOptions: 
+    HTTP/1.0 404 Not Found
+    date: Wed, 11 May 2022 21:13:47 GMT
     content-length: 21
     content-type: text/plain; charset=utf-8
     default backend - 404

@@ -32,12 +32,12 @@
   ],
   "headers": {
     "set-cookie": "auth.keycloak.state=undefined; Max-Age=-1; Path=/\nauth.strategy=keycloak; Path=/",
-    "etag": "\"a3d60-1fXnhWNROOs5fhcOG8ktbmf+EQg\"",
+    "etag": "\"a3d60-WpCkhyYojneY9GpO7GERrLaCQCc\"",
     "content-type": "text/html; charset=utf-8",
     "accept-ranges": "none",
     "vary": "Accept-Encoding",
     "content-encoding": "gzip",
-    "date": "Sun, 08 May 2022 10:19:54 GMT"
+    "date": "Wed, 11 May 2022 21:10:35 GMT"
   },
   "endpoints": [
     {
