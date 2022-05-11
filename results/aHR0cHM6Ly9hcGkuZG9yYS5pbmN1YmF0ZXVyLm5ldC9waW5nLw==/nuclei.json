@@ -1,371 +1,27 @@
 [
   {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
+    "template": "ssl/tls-version.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
+    "template-id": "tls-version",
     "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-resource-policy",
-    "type": "http",
-    "host": "https://api.dora.incubateur.net/ping/",
-    "matched-at": "https://api.dora.incubateur.net/ping/",
-    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 08 May 2022 10:51:10 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: ef62e538-066c-4c3f-8dc3-94fc1d57ab70\r\n\r\n\"ok\"",
-    "ip": "185.21.194.105",
-    "timestamp": "2022-05-08T10:51:10.192293935Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-origin",
-    "type": "http",
-    "host": "https://api.dora.incubateur.net/ping/",
-    "matched-at": "https://api.dora.incubateur.net/ping/",
-    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 08 May 2022 10:51:10 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: ef62e538-066c-4c3f-8dc3-94fc1d57ab70\r\n\r\n\"ok\"",
-    "ip": "185.21.194.105",
-    "timestamp": "2022-05-08T10:51:10.192714441Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-credentials",
-    "type": "http",
-    "host": "https://api.dora.incubateur.net/ping/",
-    "matched-at": "https://api.dora.incubateur.net/ping/",
-    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 08 May 2022 10:51:10 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: ef62e538-066c-4c3f-8dc3-94fc1d57ab70\r\n\r\n\"ok\"",
-    "ip": "185.21.194.105",
-    "timestamp": "2022-05-08T10:51:10.192736541Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-expose-headers",
-    "type": "http",
-    "host": "https://api.dora.incubateur.net/ping/",
-    "matched-at": "https://api.dora.incubateur.net/ping/",
-    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 08 May 2022 10:51:10 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: ef62e538-066c-4c3f-8dc3-94fc1d57ab70\r\n\r\n\"ok\"",
-    "ip": "185.21.194.105",
-    "timestamp": "2022-05-08T10:51:10.192759841Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-max-age",
-    "type": "http",
-    "host": "https://api.dora.incubateur.net/ping/",
-    "matched-at": "https://api.dora.incubateur.net/ping/",
-    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 08 May 2022 10:51:10 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: ef62e538-066c-4c3f-8dc3-94fc1d57ab70\r\n\r\n\"ok\"",
-    "ip": "185.21.194.105",
-    "timestamp": "2022-05-08T10:51:10.192777141Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-methods",
-    "type": "http",
-    "host": "https://api.dora.incubateur.net/ping/",
-    "matched-at": "https://api.dora.incubateur.net/ping/",
-    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 08 May 2022 10:51:10 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: ef62e538-066c-4c3f-8dc3-94fc1d57ab70\r\n\r\n\"ok\"",
-    "ip": "185.21.194.105",
-    "timestamp": "2022-05-08T10:51:10.192796042Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "clear-site-data",
-    "type": "http",
-    "host": "https://api.dora.incubateur.net/ping/",
-    "matched-at": "https://api.dora.incubateur.net/ping/",
-    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 08 May 2022 10:51:10 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: ef62e538-066c-4c3f-8dc3-94fc1d57ab70\r\n\r\n\"ok\"",
-    "ip": "185.21.194.105",
-    "timestamp": "2022-05-08T10:51:10.192812542Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-embedder-policy",
-    "type": "http",
-    "host": "https://api.dora.incubateur.net/ping/",
-    "matched-at": "https://api.dora.incubateur.net/ping/",
-    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 08 May 2022 10:51:10 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: ef62e538-066c-4c3f-8dc3-94fc1d57ab70\r\n\r\n\"ok\"",
-    "ip": "185.21.194.105",
-    "timestamp": "2022-05-08T10:51:10.192831942Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "permission-policy",
-    "type": "http",
-    "host": "https://api.dora.incubateur.net/ping/",
-    "matched-at": "https://api.dora.incubateur.net/ping/",
-    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 08 May 2022 10:51:10 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: ef62e538-066c-4c3f-8dc3-94fc1d57ab70\r\n\r\n\"ok\"",
-    "ip": "185.21.194.105",
-    "timestamp": "2022-05-08T10:51:10.192848142Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-permitted-cross-domain-policies",
-    "type": "http",
-    "host": "https://api.dora.incubateur.net/ping/",
-    "matched-at": "https://api.dora.incubateur.net/ping/",
-    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 08 May 2022 10:51:10 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: ef62e538-066c-4c3f-8dc3-94fc1d57ab70\r\n\r\n\"ok\"",
-    "ip": "185.21.194.105",
-    "timestamp": "2022-05-08T10:51:10.192862943Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "miscellaneous/options-method.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/miscellaneous/options-method.yaml",
-    "template-id": "options-method",
-    "info": {
-      "name": "Allowed Options Method",
+      "name": "TLS Version",
       "author": [
         "pdteam"
       ],
       "tags": [
-        "misc",
-        "generic"
+        "ssl"
       ],
       "reference": null,
       "severity": "info"
     },
-    "type": "http",
+    "type": "ssl",
     "host": "https://api.dora.incubateur.net/ping/",
     "matched-at": "https://api.dora.incubateur.net/ping/",
     "extracted-results": [
-      "OPTIONS, GET"
+      "TLS13"
     ],
-    "request": "OPTIONS /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 151\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 08 May 2022 10:51:40 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: f0bc8dbd-cf76-4d76-af6c-3c8c3c4b1610\r\n\r\n{\"name\":\"Ping\",\"description\":\"\",\"renders\":[\"application/json\"],\"parses\":[\"application/x-www-form-urlencoded\",\"multipart/form-data\",\"application/json\"]}",
     "ip": "185.21.194.105",
-    "timestamp": "2022-05-08T10:51:40.416560016Z",
-    "curl-command": "curl -X 'OPTIONS' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
+    "timestamp": "2022-05-11T21:43:19.972156102Z",
     "matcher-status": true,
     "matched-line": null
   },
@@ -399,12 +55,416 @@
     "host": "https://api.dora.incubateur.net/ping/",
     "matched-at": "https://api.dora.incubateur.net/ping/",
     "extracted-results": [
-      "sc-lb-pool-01.osc-secnum-fr1.scalingo-network.com.",
-      "dora-back-staging.osc-secnum-fr1.scalingo.io."
+      "dora-back-staging.osc-secnum-fr1.scalingo.io.",
+      "sc-lb-pool-01.osc-secnum-fr1.scalingo-network.com."
     ],
-    "request": ";; opcode: QUERY, status: NOERROR, id: 17279\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;api.dora.incubateur.net.\tIN\t NS\n",
-    "response": ";; opcode: QUERY, status: NOERROR, id: 17279\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 512\n\n;; QUESTION SECTION:\n;api.dora.incubateur.net.\tIN\t NS\n\n;; ANSWER SECTION:\napi.dora.incubateur.net.\t220\tIN\tCNAME\tdora-back-staging.osc-secnum-fr1.scalingo.io.\ndora-back-staging.osc-secnum-fr1.scalingo.io.\t220\tIN\tCNAME\tsc-lb-pool-01.osc-secnum-fr1.scalingo-network.com.\n\n;; AUTHORITY SECTION:\nscalingo-network.com.\t1800\tIN\tSOA\tburt.ns.cloudflare.com. dns.cloudflare.com. 2277339532 10000 2400 604800 3600\n",
-    "timestamp": "2022-05-08T10:52:11.226443242Z",
+    "request": ";; opcode: QUERY, status: NOERROR, id: 24513\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;api.dora.incubateur.net.\tIN\t NS\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 24513\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 512\n\n;; QUESTION SECTION:\n;api.dora.incubateur.net.\tIN\t NS\n\n;; ANSWER SECTION:\napi.dora.incubateur.net.\t298\tIN\tCNAME\tdora-back-staging.osc-secnum-fr1.scalingo.io.\ndora-back-staging.osc-secnum-fr1.scalingo.io.\t298\tIN\tCNAME\tsc-lb-pool-01.osc-secnum-fr1.scalingo-network.com.\n\n;; AUTHORITY SECTION:\nscalingo-network.com.\t1800\tIN\tSOA\tburt.ns.cloudflare.com. dns.cloudflare.com. 2277339532 10000 2400 604800 3600\n",
+    "timestamp": "2022-05-11T21:43:20.511111066Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "permission-policy",
+    "type": "http",
+    "host": "https://api.dora.incubateur.net/ping/",
+    "matched-at": "https://api.dora.incubateur.net/ping/",
+    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Wed, 11 May 2022 21:43:20 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: 834fc29d-1e24-423a-858a-0de183bb0db2\r\n\r\n\"ok\"",
+    "ip": "185.21.194.105",
+    "timestamp": "2022-05-11T21:43:20.664035979Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "clear-site-data",
+    "type": "http",
+    "host": "https://api.dora.incubateur.net/ping/",
+    "matched-at": "https://api.dora.incubateur.net/ping/",
+    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Wed, 11 May 2022 21:43:20 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: 834fc29d-1e24-423a-858a-0de183bb0db2\r\n\r\n\"ok\"",
+    "ip": "185.21.194.105",
+    "timestamp": "2022-05-11T21:43:20.664111579Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://api.dora.incubateur.net/ping/",
+    "matched-at": "https://api.dora.incubateur.net/ping/",
+    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Wed, 11 May 2022 21:43:20 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: 834fc29d-1e24-423a-858a-0de183bb0db2\r\n\r\n\"ok\"",
+    "ip": "185.21.194.105",
+    "timestamp": "2022-05-11T21:43:20.664143779Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-origin",
+    "type": "http",
+    "host": "https://api.dora.incubateur.net/ping/",
+    "matched-at": "https://api.dora.incubateur.net/ping/",
+    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Wed, 11 May 2022 21:43:20 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: 834fc29d-1e24-423a-858a-0de183bb0db2\r\n\r\n\"ok\"",
+    "ip": "185.21.194.105",
+    "timestamp": "2022-05-11T21:43:20.664158879Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-credentials",
+    "type": "http",
+    "host": "https://api.dora.incubateur.net/ping/",
+    "matched-at": "https://api.dora.incubateur.net/ping/",
+    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Wed, 11 May 2022 21:43:20 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: 834fc29d-1e24-423a-858a-0de183bb0db2\r\n\r\n\"ok\"",
+    "ip": "185.21.194.105",
+    "timestamp": "2022-05-11T21:43:20.664184479Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-methods",
+    "type": "http",
+    "host": "https://api.dora.incubateur.net/ping/",
+    "matched-at": "https://api.dora.incubateur.net/ping/",
+    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Wed, 11 May 2022 21:43:20 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: 834fc29d-1e24-423a-858a-0de183bb0db2\r\n\r\n\"ok\"",
+    "ip": "185.21.194.105",
+    "timestamp": "2022-05-11T21:43:20.664197879Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-permitted-cross-domain-policies",
+    "type": "http",
+    "host": "https://api.dora.incubateur.net/ping/",
+    "matched-at": "https://api.dora.incubateur.net/ping/",
+    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Wed, 11 May 2022 21:43:20 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: 834fc29d-1e24-423a-858a-0de183bb0db2\r\n\r\n\"ok\"",
+    "ip": "185.21.194.105",
+    "timestamp": "2022-05-11T21:43:20.66421538Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-embedder-policy",
+    "type": "http",
+    "host": "https://api.dora.incubateur.net/ping/",
+    "matched-at": "https://api.dora.incubateur.net/ping/",
+    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Wed, 11 May 2022 21:43:20 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: 834fc29d-1e24-423a-858a-0de183bb0db2\r\n\r\n\"ok\"",
+    "ip": "185.21.194.105",
+    "timestamp": "2022-05-11T21:43:20.66422958Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://api.dora.incubateur.net/ping/",
+    "matched-at": "https://api.dora.incubateur.net/ping/",
+    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Wed, 11 May 2022 21:43:20 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: 834fc29d-1e24-423a-858a-0de183bb0db2\r\n\r\n\"ok\"",
+    "ip": "185.21.194.105",
+    "timestamp": "2022-05-11T21:43:20.66424638Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-max-age",
+    "type": "http",
+    "host": "https://api.dora.incubateur.net/ping/",
+    "matched-at": "https://api.dora.incubateur.net/ping/",
+    "request": "GET /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 4\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Wed, 11 May 2022 21:43:20 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: 834fc29d-1e24-423a-858a-0de183bb0db2\r\n\r\n\"ok\"",
+    "ip": "185.21.194.105",
+    "timestamp": "2022-05-11T21:43:20.66425898Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "dns/dns-waf-detect.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/dns-waf-detect.yaml",
+    "template-id": "dns-waf-detect",
+    "info": {
+      "name": "DNS WAF Detection",
+      "author": [
+        "lu4nx"
+      ],
+      "tags": [
+        "tech",
+        "waf",
+        "dns"
+      ],
+      "description": "A DNS WAF was detected.",
+      "reference": null,
+      "severity": "info",
+      "classification": {
+        "cve-id": null,
+        "cwe-id": [
+          "cwe-200"
+        ]
+      }
+    },
+    "matcher-name": "cloudflare",
+    "type": "dns",
+    "host": "https://api.dora.incubateur.net/ping/",
+    "matched-at": "https://api.dora.incubateur.net/ping/",
+    "request": ";; opcode: QUERY, status: NOERROR, id: 47659\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;api.dora.incubateur.net.\tIN\t NS\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 47659\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 1232\n\n;; QUESTION SECTION:\n;api.dora.incubateur.net.\tIN\t NS\n\n;; ANSWER SECTION:\napi.dora.incubateur.net.\t300\tIN\tCNAME\tdora-back-staging.osc-secnum-fr1.scalingo.io.\ndora-back-staging.osc-secnum-fr1.scalingo.io.\t300\tIN\tCNAME\tsc-lb-pool-01.osc-secnum-fr1.scalingo-network.com.\n\n;; AUTHORITY SECTION:\nscalingo-network.com.\t3600\tIN\tSOA\tburt.ns.cloudflare.com. dns.cloudflare.com. 2277339532 10000 2400 604800 3600\n",
+    "timestamp": "2022-05-11T21:43:23.570400567Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "miscellaneous/options-method.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/miscellaneous/options-method.yaml",
+    "template-id": "options-method",
+    "info": {
+      "name": "Allowed Options Method",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "misc",
+        "generic"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "http",
+    "host": "https://api.dora.incubateur.net/ping/",
+    "matched-at": "https://api.dora.incubateur.net/ping/",
+    "extracted-results": [
+      "OPTIONS, GET"
+    ],
+    "request": "OPTIONS /ping/ HTTP/1.1\r\nHost: api.dora.incubateur.net\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 151\r\nAllow: OPTIONS, GET\r\nContent-Security-Policy: default-src 'self'\r\nContent-Type: application/json\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Wed, 11 May 2022 21:43:32 GMT\r\nReferrer-Policy: same-origin\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-Request-Id: d4588d8f-d1a2-4bdd-83e8-8d1f0e236bc1\r\n\r\n{\"name\":\"Ping\",\"description\":\"\",\"renders\":[\"application/json\"],\"parses\":[\"application/x-www-form-urlencoded\",\"multipart/form-data\",\"application/json\"]}",
+    "ip": "185.21.194.105",
+    "timestamp": "2022-05-11T21:43:32.93147893Z",
+    "curl-command": "curl -X 'OPTIONS' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://api.dora.incubateur.net/ping/'",
     "matcher-status": true,
     "matched-line": null
   }
