@@ -1,1 +1,691 @@
-[]
+[
+  {
+    "template": "dns/txt-fingerprint.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/txt-fingerprint.yaml",
+    "template-id": "txt-fingerprint",
+    "info": {
+      "name": "DNS TXT Record Detected",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "dns",
+        "txt"
+      ],
+      "description": "A DNS TXT record was detected. The TXT record lets a domain admin leave notes on a DNS server.",
+      "reference": [
+        "https://www.netspi.com/blog/technical/network-penetration-testing/analyzing-dns-txt-records-to-fingerprint-service-providers/"
+      ],
+      "severity": "info",
+      "classification": {
+        "cve-id": null,
+        "cwe-id": [
+          "cwe-200"
+        ]
+      }
+    },
+    "type": "dns",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "https://immersion.beta.pole-emploi.fr/",
+    "extracted-results": [
+      "\"v=spf1 include:spf-s.beta.pole-emploi.fr ?all\""
+    ],
+    "request": ";; opcode: QUERY, status: NOERROR, id: 57515\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;immersion.beta.pole-emploi.fr.\tIN\t TXT\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 57515\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 1232\n\n;; QUESTION SECTION:\n;immersion.beta.pole-emploi.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\nimmersion.beta.pole-emploi.fr.\t86400\tIN\tCNAME\tbeta.pole-emploi.fr.\nbeta.pole-emploi.fr.\t3600\tIN\tTXT\t\"v=spf1 include:spf-s.beta.pole-emploi.fr ?all\"\n",
+    "timestamp": "2022-05-11T15:52:38.898986294Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "cves/2018/CVE-2018-15473.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2018/CVE-2018-15473.yaml",
+    "template-id": "CVE-2018-15473",
+    "info": {
+      "name": "OpenSSH Username Enumeration <= v7.7",
+      "author": [
+        "r3dg33k",
+        "daffainfo",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "network",
+        "openssh",
+        "cve",
+        "cve2018"
+      ],
+      "description": "OpenSSH through 7.7 is prone to a user enumeration vulnerability due to not delaying bailout for an invalid authenticating user until after the packet containing the request has been fully parsed, related to auth2-gss.c, auth2-hostbased.c, and auth2-pubkey.c.",
+      "reference": [
+        "https://nvd.nist.gov/vuln/detail/cve-2018-15473"
+      ],
+      "severity": "medium",
+      "classification": {
+        "cve-id": [
+          "cve-2018-15473"
+        ],
+        "cwe-id": [
+          "cwe-362"
+        ],
+        "cvss-metrics": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+        "cvss-score": 5.3
+      }
+    },
+    "type": "network",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "immersion.beta.pole-emploi.fr:22",
+    "extracted-results": [
+      "SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.10"
+    ],
+    "response": "SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.10\r\n",
+    "ip": "213.32.73.220",
+    "timestamp": "2022-05-11T15:52:50.443250016Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/ssl-dns-names.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
+    "template-id": "ssl-dns-names",
+    "info": {
+      "name": "SSL DNS Names",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "https://immersion.beta.pole-emploi.fr/",
+    "extracted-results": [
+      "*.beta.pole-emploi.fr"
+    ],
+    "ip": "213.32.73.220",
+    "timestamp": "2022-05-11T15:53:00.785293619Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/tls-version.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
+    "template-id": "tls-version",
+    "info": {
+      "name": "TLS Version",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "https://immersion.beta.pole-emploi.fr/",
+    "extracted-results": [
+      "TLS12"
+    ],
+    "ip": "213.32.73.220",
+    "timestamp": "2022-05-11T15:53:02.299830721Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "https://immersion.beta.pole-emploi.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: immersion.beta.pole-emploi.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: no-cache\r\nContent-Type: text/html;charset=utf-8\r\nDate: Wed, 11 May 2022 15:53:20 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \n    <title>PMSMP: Immersion Facile</title>\n\n    <link\n      rel=\"apple-touch-icon\"\n      href=\"data:image/png;base64,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\"\n    />\n    <!-- 180×180 -->\n    <link\n      rel=\"icon\"\n      href=\"/assets/favicon.43b3c676.svg\"\n      type=\"image/svg+xml\"\n    />\n    <link\n      rel=\"shortcut icon\"\n      href=\"/assets/favicon.0e0a5e52.ico\"\n      type=\"image/x-icon\"\n    />\n    <link href=\"/pe-connect_svg.css\" rel=\"stylesheet\">\n    <!-- 32×32 -->\n    <!-- Matomo -->\n    <script>\n      var _paq = (window._paq = window._paq || []);\n      /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n      _paq.push([\"trackPageView\"]);\n      _paq.push([\"enableLinkTracking\"]);\n      (function () {\n        var u = \"https://stats.data.gouv.fr/\";\n        _paq.push([\"setTrackerUrl\", u + \"matomo.php\"]);\n        _paq.push([\"setSiteId\", \"207\"]);\n        var d = document,\n          g = d.createElement(\"script\"),\n          s = d.getElementsByTagName(\"script\")[0];\n        g.async = true;\n        g.src = u + \"matomo.js\";\n        s.parentNode.insertBefore(g, s);\n      })();\n    </script>\n    <!-- End Matomo Code -->\n    <!-- Matomo Tag Manager -->\n    <script>\n      var _mtm = window._mtm = window._mtm || [];\n      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});\n      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n      g.async=true; g.src='https://stats.data.gouv.fr/js/container_ibL3DRCu.js'; s.parentNode.insertBefore(g,s);\n      </script>\n    <!-- End Matomo Tag Manager -->\n    <script type=\"module\" crossorigin src=\"/assets/main.7c2b4414.js\"></script>\n    <link rel=\"stylesheet\" href=\"/assets/main.938a0541.css\">\n  </head>\n\n  <body>\n    <div id=\"root\"></div>\n    \n    \n  </body>\n</html>\n",
+    "ip": "213.32.73.220",
+    "timestamp": "2022-05-11T15:53:20.438409138Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://immersion.beta.pole-emploi.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-methods",
+    "type": "http",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "https://immersion.beta.pole-emploi.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: immersion.beta.pole-emploi.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: no-cache\r\nContent-Type: text/html;charset=utf-8\r\nDate: Wed, 11 May 2022 15:53:20 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \n    <title>PMSMP: Immersion Facile</title>\n\n    <link\n      rel=\"apple-touch-icon\"\n      href=\"data:image/png;base64,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\"\n    />\n    <!-- 180×180 -->\n    <link\n      rel=\"icon\"\n      href=\"/assets/favicon.43b3c676.svg\"\n      type=\"image/svg+xml\"\n    />\n    <link\n      rel=\"shortcut icon\"\n      href=\"/assets/favicon.0e0a5e52.ico\"\n      type=\"image/x-icon\"\n    />\n    <link href=\"/pe-connect_svg.css\" rel=\"stylesheet\">\n    <!-- 32×32 -->\n    <!-- Matomo -->\n    <script>\n      var _paq = (window._paq = window._paq || []);\n      /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n      _paq.push([\"trackPageView\"]);\n      _paq.push([\"enableLinkTracking\"]);\n      (function () {\n        var u = \"https://stats.data.gouv.fr/\";\n        _paq.push([\"setTrackerUrl\", u + \"matomo.php\"]);\n        _paq.push([\"setSiteId\", \"207\"]);\n        var d = document,\n          g = d.createElement(\"script\"),\n          s = d.getElementsByTagName(\"script\")[0];\n        g.async = true;\n        g.src = u + \"matomo.js\";\n        s.parentNode.insertBefore(g, s);\n      })();\n    </script>\n    <!-- End Matomo Code -->\n    <!-- Matomo Tag Manager -->\n    <script>\n      var _mtm = window._mtm = window._mtm || [];\n      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});\n      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n      g.async=true; g.src='https://stats.data.gouv.fr/js/container_ibL3DRCu.js'; s.parentNode.insertBefore(g,s);\n      </script>\n    <!-- End Matomo Tag Manager -->\n    <script type=\"module\" crossorigin src=\"/assets/main.7c2b4414.js\"></script>\n    <link rel=\"stylesheet\" href=\"/assets/main.938a0541.css\">\n  </head>\n\n  <body>\n    <div id=\"root\"></div>\n    \n    \n  </body>\n</html>\n",
+    "ip": "213.32.73.220",
+    "timestamp": "2022-05-11T15:53:20.438550448Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://immersion.beta.pole-emploi.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "content-security-policy",
+    "type": "http",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "https://immersion.beta.pole-emploi.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: immersion.beta.pole-emploi.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: no-cache\r\nContent-Type: text/html;charset=utf-8\r\nDate: Wed, 11 May 2022 15:53:20 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \n    <title>PMSMP: Immersion Facile</title>\n\n    <link\n      rel=\"apple-touch-icon\"\n      href=\"data:image/png;base64,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\"\n    />\n    <!-- 180×180 -->\n    <link\n      rel=\"icon\"\n      href=\"/assets/favicon.43b3c676.svg\"\n      type=\"image/svg+xml\"\n    />\n    <link\n      rel=\"shortcut icon\"\n      href=\"/assets/favicon.0e0a5e52.ico\"\n      type=\"image/x-icon\"\n    />\n    <link href=\"/pe-connect_svg.css\" rel=\"stylesheet\">\n    <!-- 32×32 -->\n    <!-- Matomo -->\n    <script>\n      var _paq = (window._paq = window._paq || []);\n      /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n      _paq.push([\"trackPageView\"]);\n      _paq.push([\"enableLinkTracking\"]);\n      (function () {\n        var u = \"https://stats.data.gouv.fr/\";\n        _paq.push([\"setTrackerUrl\", u + \"matomo.php\"]);\n        _paq.push([\"setSiteId\", \"207\"]);\n        var d = document,\n          g = d.createElement(\"script\"),\n          s = d.getElementsByTagName(\"script\")[0];\n        g.async = true;\n        g.src = u + \"matomo.js\";\n        s.parentNode.insertBefore(g, s);\n      })();\n    </script>\n    <!-- End Matomo Code -->\n    <!-- Matomo Tag Manager -->\n    <script>\n      var _mtm = window._mtm = window._mtm || [];\n      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});\n      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n      g.async=true; g.src='https://stats.data.gouv.fr/js/container_ibL3DRCu.js'; s.parentNode.insertBefore(g,s);\n      </script>\n    <!-- End Matomo Tag Manager -->\n    <script type=\"module\" crossorigin src=\"/assets/main.7c2b4414.js\"></script>\n    <link rel=\"stylesheet\" href=\"/assets/main.938a0541.css\">\n  </head>\n\n  <body>\n    <div id=\"root\"></div>\n    \n    \n  </body>\n</html>\n",
+    "ip": "213.32.73.220",
+    "timestamp": "2022-05-11T15:53:20.438604452Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://immersion.beta.pole-emploi.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-frame-options",
+    "type": "http",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "https://immersion.beta.pole-emploi.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: immersion.beta.pole-emploi.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: no-cache\r\nContent-Type: text/html;charset=utf-8\r\nDate: Wed, 11 May 2022 15:53:20 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \n    <title>PMSMP: Immersion Facile</title>\n\n    <link\n      rel=\"apple-touch-icon\"\n      href=\"data:image/png;base64,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\"\n    />\n    <!-- 180×180 -->\n    <link\n      rel=\"icon\"\n      href=\"/assets/favicon.43b3c676.svg\"\n      type=\"image/svg+xml\"\n    />\n    <link\n      rel=\"shortcut icon\"\n      href=\"/assets/favicon.0e0a5e52.ico\"\n      type=\"image/x-icon\"\n    />\n    <link href=\"/pe-connect_svg.css\" rel=\"stylesheet\">\n    <!-- 32×32 -->\n    <!-- Matomo -->\n    <script>\n      var _paq = (window._paq = window._paq || []);\n      /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n      _paq.push([\"trackPageView\"]);\n      _paq.push([\"enableLinkTracking\"]);\n      (function () {\n        var u = \"https://stats.data.gouv.fr/\";\n        _paq.push([\"setTrackerUrl\", u + \"matomo.php\"]);\n        _paq.push([\"setSiteId\", \"207\"]);\n        var d = document,\n          g = d.createElement(\"script\"),\n          s = d.getElementsByTagName(\"script\")[0];\n        g.async = true;\n        g.src = u + \"matomo.js\";\n        s.parentNode.insertBefore(g, s);\n      })();\n    </script>\n    <!-- End Matomo Code -->\n    <!-- Matomo Tag Manager -->\n    <script>\n      var _mtm = window._mtm = window._mtm || [];\n      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});\n      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n      g.async=true; g.src='https://stats.data.gouv.fr/js/container_ibL3DRCu.js'; s.parentNode.insertBefore(g,s);\n      </script>\n    <!-- End Matomo Tag Manager -->\n    <script type=\"module\" crossorigin src=\"/assets/main.7c2b4414.js\"></script>\n    <link rel=\"stylesheet\" href=\"/assets/main.938a0541.css\">\n  </head>\n\n  <body>\n    <div id=\"root\"></div>\n    \n    \n  </body>\n</html>\n",
+    "ip": "213.32.73.220",
+    "timestamp": "2022-05-11T15:53:20.438650455Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://immersion.beta.pole-emploi.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-permitted-cross-domain-policies",
+    "type": "http",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "https://immersion.beta.pole-emploi.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: immersion.beta.pole-emploi.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: no-cache\r\nContent-Type: text/html;charset=utf-8\r\nDate: Wed, 11 May 2022 15:53:20 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \n    <title>PMSMP: Immersion Facile</title>\n\n    <link\n      rel=\"apple-touch-icon\"\n      href=\"data:image/png;base64,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\"\n    />\n    <!-- 180×180 -->\n    <link\n      rel=\"icon\"\n      href=\"/assets/favicon.43b3c676.svg\"\n      type=\"image/svg+xml\"\n    />\n    <link\n      rel=\"shortcut icon\"\n      href=\"/assets/favicon.0e0a5e52.ico\"\n      type=\"image/x-icon\"\n    />\n    <link href=\"/pe-connect_svg.css\" rel=\"stylesheet\">\n    <!-- 32×32 -->\n    <!-- Matomo -->\n    <script>\n      var _paq = (window._paq = window._paq || []);\n      /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n      _paq.push([\"trackPageView\"]);\n      _paq.push([\"enableLinkTracking\"]);\n      (function () {\n        var u = \"https://stats.data.gouv.fr/\";\n        _paq.push([\"setTrackerUrl\", u + \"matomo.php\"]);\n        _paq.push([\"setSiteId\", \"207\"]);\n        var d = document,\n          g = d.createElement(\"script\"),\n          s = d.getElementsByTagName(\"script\")[0];\n        g.async = true;\n        g.src = u + \"matomo.js\";\n        s.parentNode.insertBefore(g, s);\n      })();\n    </script>\n    <!-- End Matomo Code -->\n    <!-- Matomo Tag Manager -->\n    <script>\n      var _mtm = window._mtm = window._mtm || [];\n      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});\n      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n      g.async=true; g.src='https://stats.data.gouv.fr/js/container_ibL3DRCu.js'; s.parentNode.insertBefore(g,s);\n      </script>\n    <!-- End Matomo Tag Manager -->\n    <script type=\"module\" crossorigin src=\"/assets/main.7c2b4414.js\"></script>\n    <link rel=\"stylesheet\" href=\"/assets/main.938a0541.css\">\n  </head>\n\n  <body>\n    <div id=\"root\"></div>\n    \n    \n  </body>\n</html>\n",
+    "ip": "213.32.73.220",
+    "timestamp": "2022-05-11T15:53:20.438693558Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://immersion.beta.pole-emploi.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "clear-site-data",
+    "type": "http",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "https://immersion.beta.pole-emploi.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: immersion.beta.pole-emploi.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: no-cache\r\nContent-Type: text/html;charset=utf-8\r\nDate: Wed, 11 May 2022 15:53:20 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \n    <title>PMSMP: Immersion Facile</title>\n\n    <link\n      rel=\"apple-touch-icon\"\n      href=\"data:image/png;base64,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\"\n    />\n    <!-- 180×180 -->\n    <link\n      rel=\"icon\"\n      href=\"/assets/favicon.43b3c676.svg\"\n      type=\"image/svg+xml\"\n    />\n    <link\n      rel=\"shortcut icon\"\n      href=\"/assets/favicon.0e0a5e52.ico\"\n      type=\"image/x-icon\"\n    />\n    <link href=\"/pe-connect_svg.css\" rel=\"stylesheet\">\n    <!-- 32×32 -->\n    <!-- Matomo -->\n    <script>\n      var _paq = (window._paq = window._paq || []);\n      /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n      _paq.push([\"trackPageView\"]);\n      _paq.push([\"enableLinkTracking\"]);\n      (function () {\n        var u = \"https://stats.data.gouv.fr/\";\n        _paq.push([\"setTrackerUrl\", u + \"matomo.php\"]);\n        _paq.push([\"setSiteId\", \"207\"]);\n        var d = document,\n          g = d.createElement(\"script\"),\n          s = d.getElementsByTagName(\"script\")[0];\n        g.async = true;\n        g.src = u + \"matomo.js\";\n        s.parentNode.insertBefore(g, s);\n      })();\n    </script>\n    <!-- End Matomo Code -->\n    <!-- Matomo Tag Manager -->\n    <script>\n      var _mtm = window._mtm = window._mtm || [];\n      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});\n      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n      g.async=true; g.src='https://stats.data.gouv.fr/js/container_ibL3DRCu.js'; s.parentNode.insertBefore(g,s);\n      </script>\n    <!-- End Matomo Tag Manager -->\n    <script type=\"module\" crossorigin src=\"/assets/main.7c2b4414.js\"></script>\n    <link rel=\"stylesheet\" href=\"/assets/main.938a0541.css\">\n  </head>\n\n  <body>\n    <div id=\"root\"></div>\n    \n    \n  </body>\n</html>\n",
+    "ip": "213.32.73.220",
+    "timestamp": "2022-05-11T15:53:20.438737061Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://immersion.beta.pole-emploi.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-embedder-policy",
+    "type": "http",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "https://immersion.beta.pole-emploi.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: immersion.beta.pole-emploi.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: no-cache\r\nContent-Type: text/html;charset=utf-8\r\nDate: Wed, 11 May 2022 15:53:20 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \n    <title>PMSMP: Immersion Facile</title>\n\n    <link\n      rel=\"apple-touch-icon\"\n      href=\"data:image/png;base64,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\"\n    />\n    <!-- 180×180 -->\n    <link\n      rel=\"icon\"\n      href=\"/assets/favicon.43b3c676.svg\"\n      type=\"image/svg+xml\"\n    />\n    <link\n      rel=\"shortcut icon\"\n      href=\"/assets/favicon.0e0a5e52.ico\"\n      type=\"image/x-icon\"\n    />\n    <link href=\"/pe-connect_svg.css\" rel=\"stylesheet\">\n    <!-- 32×32 -->\n    <!-- Matomo -->\n    <script>\n      var _paq = (window._paq = window._paq || []);\n      /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n      _paq.push([\"trackPageView\"]);\n      _paq.push([\"enableLinkTracking\"]);\n      (function () {\n        var u = \"https://stats.data.gouv.fr/\";\n        _paq.push([\"setTrackerUrl\", u + \"matomo.php\"]);\n        _paq.push([\"setSiteId\", \"207\"]);\n        var d = document,\n          g = d.createElement(\"script\"),\n          s = d.getElementsByTagName(\"script\")[0];\n        g.async = true;\n        g.src = u + \"matomo.js\";\n        s.parentNode.insertBefore(g, s);\n      })();\n    </script>\n    <!-- End Matomo Code -->\n    <!-- Matomo Tag Manager -->\n    <script>\n      var _mtm = window._mtm = window._mtm || [];\n      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});\n      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n      g.async=true; g.src='https://stats.data.gouv.fr/js/container_ibL3DRCu.js'; s.parentNode.insertBefore(g,s);\n      </script>\n    <!-- End Matomo Tag Manager -->\n    <script type=\"module\" crossorigin src=\"/assets/main.7c2b4414.js\"></script>\n    <link rel=\"stylesheet\" href=\"/assets/main.938a0541.css\">\n  </head>\n\n  <body>\n    <div id=\"root\"></div>\n    \n    \n  </body>\n</html>\n",
+    "ip": "213.32.73.220",
+    "timestamp": "2022-05-11T15:53:20.438788665Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://immersion.beta.pole-emploi.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-opener-policy",
+    "type": "http",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "https://immersion.beta.pole-emploi.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: immersion.beta.pole-emploi.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: no-cache\r\nContent-Type: text/html;charset=utf-8\r\nDate: Wed, 11 May 2022 15:53:20 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \n    <title>PMSMP: Immersion Facile</title>\n\n    <link\n      rel=\"apple-touch-icon\"\n      href=\"data:image/png;base64,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\"\n    />\n    <!-- 180×180 -->\n    <link\n      rel=\"icon\"\n      href=\"/assets/favicon.43b3c676.svg\"\n      type=\"image/svg+xml\"\n    />\n    <link\n      rel=\"shortcut icon\"\n      href=\"/assets/favicon.0e0a5e52.ico\"\n      type=\"image/x-icon\"\n    />\n    <link href=\"/pe-connect_svg.css\" rel=\"stylesheet\">\n    <!-- 32×32 -->\n    <!-- Matomo -->\n    <script>\n      var _paq = (window._paq = window._paq || []);\n      /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n      _paq.push([\"trackPageView\"]);\n      _paq.push([\"enableLinkTracking\"]);\n      (function () {\n        var u = \"https://stats.data.gouv.fr/\";\n        _paq.push([\"setTrackerUrl\", u + \"matomo.php\"]);\n        _paq.push([\"setSiteId\", \"207\"]);\n        var d = document,\n          g = d.createElement(\"script\"),\n          s = d.getElementsByTagName(\"script\")[0];\n        g.async = true;\n        g.src = u + \"matomo.js\";\n        s.parentNode.insertBefore(g, s);\n      })();\n    </script>\n    <!-- End Matomo Code -->\n    <!-- Matomo Tag Manager -->\n    <script>\n      var _mtm = window._mtm = window._mtm || [];\n      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});\n      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n      g.async=true; g.src='https://stats.data.gouv.fr/js/container_ibL3DRCu.js'; s.parentNode.insertBefore(g,s);\n      </script>\n    <!-- End Matomo Tag Manager -->\n    <script type=\"module\" crossorigin src=\"/assets/main.7c2b4414.js\"></script>\n    <link rel=\"stylesheet\" href=\"/assets/main.938a0541.css\">\n  </head>\n\n  <body>\n    <div id=\"root\"></div>\n    \n    \n  </body>\n</html>\n",
+    "ip": "213.32.73.220",
+    "timestamp": "2022-05-11T15:53:20.440655596Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://immersion.beta.pole-emploi.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "https://immersion.beta.pole-emploi.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: immersion.beta.pole-emploi.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: no-cache\r\nContent-Type: text/html;charset=utf-8\r\nDate: Wed, 11 May 2022 15:53:20 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \n    <title>PMSMP: Immersion Facile</title>\n\n    <link\n      rel=\"apple-touch-icon\"\n      href=\"data:image/png;base64,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\"\n    />\n    <!-- 180×180 -->\n    <link\n      rel=\"icon\"\n      href=\"/assets/favicon.43b3c676.svg\"\n      type=\"image/svg+xml\"\n    />\n    <link\n      rel=\"shortcut icon\"\n      href=\"/assets/favicon.0e0a5e52.ico\"\n      type=\"image/x-icon\"\n    />\n    <link href=\"/pe-connect_svg.css\" rel=\"stylesheet\">\n    <!-- 32×32 -->\n    <!-- Matomo -->\n    <script>\n      var _paq = (window._paq = window._paq || []);\n      /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n      _paq.push([\"trackPageView\"]);\n      _paq.push([\"enableLinkTracking\"]);\n      (function () {\n        var u = \"https://stats.data.gouv.fr/\";\n        _paq.push([\"setTrackerUrl\", u + \"matomo.php\"]);\n        _paq.push([\"setSiteId\", \"207\"]);\n        var d = document,\n          g = d.createElement(\"script\"),\n          s = d.getElementsByTagName(\"script\")[0];\n        g.async = true;\n        g.src = u + \"matomo.js\";\n        s.parentNode.insertBefore(g, s);\n      })();\n    </script>\n    <!-- End Matomo Code -->\n    <!-- Matomo Tag Manager -->\n    <script>\n      var _mtm = window._mtm = window._mtm || [];\n      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});\n      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n      g.async=true; g.src='https://stats.data.gouv.fr/js/container_ibL3DRCu.js'; s.parentNode.insertBefore(g,s);\n      </script>\n    <!-- End Matomo Tag Manager -->\n    <script type=\"module\" crossorigin src=\"/assets/main.7c2b4414.js\"></script>\n    <link rel=\"stylesheet\" href=\"/assets/main.938a0541.css\">\n  </head>\n\n  <body>\n    <div id=\"root\"></div>\n    \n    \n  </body>\n</html>\n",
+    "ip": "213.32.73.220",
+    "timestamp": "2022-05-11T15:53:20.440755103Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://immersion.beta.pole-emploi.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-credentials",
+    "type": "http",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "https://immersion.beta.pole-emploi.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: immersion.beta.pole-emploi.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: no-cache\r\nContent-Type: text/html;charset=utf-8\r\nDate: Wed, 11 May 2022 15:53:20 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \n    <title>PMSMP: Immersion Facile</title>\n\n    <link\n      rel=\"apple-touch-icon\"\n      href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAMAAAAKE/YAAAADAFBMVEX////iAAYAAJKBgYEAAJP9/f4GBpgAAJQDA5fiAAoBAZX+/v/r6/b4+PwNDZswMKjQ0Ovv7/jjAQzIyOj29vv8/P7//v4QEJwsLKfi4vISEp0yMqk3N6uhodevr920tN/2s7jS0uzx8fn+8/T7+/0eHqJCQq/lEiFJSbJLS7NTU7djY716eseRkdCtrdy4uOHX1+7Z2e/e3vAKCpokJKTiAAfkCxtaWrlcXLrqQU13d8V+fsjtXGaEhMuXl9OgoNeyst7CwuX6+v0JCZkXF58ZGaApKabjAhA/P67mGypQULVVVbjoMT7pNkNmZr5qasB1dcR8fMeJic3uaHLvbXfvcnrykZi1teC9vePExOf3vMDc3O/l5fP74eP97O309Pr++fn/+/sUFJ4cHKEgIKI1NarkCBlAQK5GRrFXV7hnZ79ycsPtWWOHh4eKis6Njc+Tk9Gbm9XwgIikpKTxiZCkpNi0tLTzmJ/0o6i6uuK/v+TNzer5zdDg4PHj4/Lm5vTu7vfw8PDx8fHz8/r//f0iIqM5OazkBBPkBhblFSTmGCfnIC/nKDXqPUlsbMFubsHsVF+AgMmFhcuNjY3uZW6UlNKmptmnp9q5ubn1p6zKyun4xcnV1e35ys362Nrt7ff86ery8vn97/D98PH+9vc8PK09Pa3lDh/mGShNTbTnJDNeXrtgYLvrS1bsUFuCgoKBgcnuYGmSkpLvcHnveIDxiI/yk5mrq9vzmqDDw8PAwOTLy+n4wcXe3t761djh4eHf3/H729373d/o6PXp6fXr6+v86uv39/f+9fb8/PwnJ6XoLTvoM0Bvb8LrR1ODg4OPj4/vdHzveoLwfIXxjJPyjpWoqNrznKK8vLy9vb31rbL2sLX2tbn2t7vLy8vOzs7S0tL4yMvb29v61Nfk5OT73N773uDo6Oj85uj97u/pOEXqRlKEhISKioqGhsucnJzwhIurq6uvr6/zlpzAwMDGxsbJycnNzc3OzurW1tbb2+/50dT84+Xz8/P09PT4+PiTjWc9AAAKM0lEQVRo3tXbdVxU2R4A8B84Mw5DDT10d3dJNwgISEopoYCUhAKKsGC3a3fHGuvauq66brrxtvNtvu3X3XUHHJy4U3fOOTP8/oJhGL6cz7knfud3QB9ltLwIiuJ4zfJlV2Oz9DQNQEjOCAZVYvzuzVnrdAUdMwYqx/yD75zRATRvJ6gZd5ds0DLa5FlQP8b3z8rSIroxDJhF7bXT2kILVgLjeLXstFbQMcagSdTf9CaPLmKDhuHe20wWbZcCCMK9dy1BtI8RoIl/byWGLrICZOHiTQRtcxtQRu1sAujMMEAb7q9jR3u5Aep4sBYzepExoI9reNECHGaoNcCJ5swDLHEGJ9oRj9kdZ0tH4zHDMox9OnwEE/oiRnQiJvMhA3zoBrQjxwnRFzX5GCeX7Wjbt/7z0sVXrl4tyTfAOY3bIu8X+/Mxr6fD+zD0Zuu963GiBbaYhugd+ND2RwFX/AlXn444DPjiM3MsaE4Y4IylWNBOgDd2YED7A+445JKzZu+SSIToBUexo6HG+32AdxCig/CboXRTPcB36NDZQCqOIEPPDCGG/ggZejMx800DVGiOESGy9e8NkA15gaTaeSu6cboxlZC53gAd2olYj96IDG1vSAz9GTK0M5CLDYjQNmyC6FJE6AKCZjiICN1HEm2dgwb9d5JomIsGHUoU/XM06BCi6ONo1h4DRNFwAQm6iyx6GRJ0IVn0j5Eo0Nlk0fAUCjTHkCy6BMnaY54OdWrQpY24WHyHBB1HFm0dhQLtRfhJzEeBTiP8JM5Cst26T4L6xA9PPPrqPSRo3E/iK1/19/xmxowZl/u/FMI/QIIOwCr+suetGVPx61GAMiToRfjI//u4/fIfP771xV/39Dw5of4W4DoSdDg2871P/vGfqW/6KfPb1gDvo8kwVWMyP3wo/iRSTf3Wc0o2t2qgPyQwetyjzO1CM/wKDToGOzl1z9NU5+ixFn69Hg3aDrf5pcsTT+HT94TTuDmi/PQLeMfpLyZHjk9GASXaFSu6f3KMvoVy7UFFCjaw9XN//kv7JPoXj14qQ4ROwtfMX7WLZkMR+kgWGrQPzpXSrf7fTaBfEr3yLho0ayXWTv1wz9sU+gfRt6/moDlHvIR5zOsRb2lwQXRiizE5Zv3t36ippf0PYnnwn6FBJ+JMrf93dHTUWvyFWnlF4JA2Ux01gQN9sbgjJw9J/eho+VmV0Z1kN4py8tRQDqHbOKoPIE5E0XJGEDBZqFav5j5LVO2i4YPYxp085rIlqt6hGfpUymQvyrQkeiawTh66sSW+25kfFuY6NOCYUOhrakdfv2SRRmgzIB5VkbRoP9lumno/JWmOl410Yp2/APfCiSYW06AzJBacdXynzsDbK4yGJ2qN7+/abC8+jHe9sHriwqQbSfTzsoM1mIl+aOXa7S8wDRiQKkWxLBIrFgN2l/BxLCLa1LPpJhehzDnuJJfj50h7gzp38g7t2UWewnRvXXJ8QbKW+wf1opGjH5ebHT8orwjFzH9VGuasmMKQXTdBWybHN3DIQ8kv1lV8qC3zsTWy6JZyD9DluLuJZvTw8vLx8ztftNPJYthQ58Rfvzdb2YzIOflmEt9Kd8iHNqq6CeB6FYfoCPqiWjuXzHhbXUDHykWn06+bfZLl7Kz6yBUGyc3XAIRGy6lps6D5HOM52G5A0Qx2zXLR7MGEPBP6m3DSeQ6rPk99/TBy/eOaXDSAYV0ll76uTaKxqwMbqdfSCXbq7xWgqXAtPkW3K+ftFv3+gc7VrImX3iSI3q8YTYVbUEy4LLtpZ/BAcV7u1LaAxSdnPpGvFE0Fe2ibqZJN1xYdmFv0ZN7qWpShvcS6WMwvkX8WQPN29u1o+Vmn6MOk1P8qUQdNhW0b/XDC8ktaSax7jJ9RD03tDLbwaK5fVBCdxpeqiwaYlyuDPscniv5JfTTA7jQpdBhRM3zOBA22EqspbgDZPU5VMwO0WYfk4NcUaGFMskcb6KmN5rdKDSAmCYdJtrOiamTaX7BKaWuQ6s6eiZZkO/QVtdC2juekV6rcaGfiW8f9KqNDHf0baOaUZL7UIziklWyYDDo56cZ2X/q9gD5vzojk5wWvInCBRMFtW/DbB+xyf59w+ccs56V3ueW87QRaWkFdL7B8ztopPBA/IP1pN3gmI9rci4unEHJbaMgCmdWGYby+/m4SS9O1StGN8VSDWkjvAGy6ZQaNsVxCCdQqpfUe8WxgvxjcKrmM5gWMyXxUJbUdn0NkyHtGKbp1s4Al3TMabGmyHix9Hpm8x0EDBpU1rMJgmQ8Kopo5e1jytcFCB9NkZq6a3gveUTmvx85deqdWxtzMpFLdnjrTkEz9WjgI69UlZ5kQ4cHRwlAmy2z3reJnbVGbSq5XHRH97OVSc0b3XDL97ePE7i6wk4Wn0ab7JAeSTmp3w0qoFDC42PWA7k5I89aPPq1y6Y1VdslW7olt1+NzNzPnAuGRIq9DspmN84Tvc2g1XaG++ZvTehqEHDQvV7hPDE1xSgzwi5jo46uLxW2Gg62dDo+qORks/2q89TCgBQszbaYGQI7D5l2Sa+nKpql3JjDpz0/p4UCLuKYxvw0KZdOMfKJBphv1GKwJmutQuLOCvmJ6KOJxToHRRYGqSAxou/O7QuQu+j0uPZ43ZzKqs/nJW09TdITUVPhasauiozlXsfUJM7OyC7SqoK3ixFNILfsU/DVDixUF4v+iIyPzj+aao8VXdr7/VPDH3LoiWBIrqg5ms3epnuZosesVTiM0hRxuZlTMG+zOk05JtjHMlK9FiD5lUREoccTi4ZoUkGcqt/otmuE2ca8eOvQqo46gxw9gdd8WB67iS3NMk00XEaL1HaYq/scST7KUlY7ZM60Iqs9CiOaJqoDMEsKVl7sJzJgu7r/WQ4h2YHvsEn7osJ0KJXoRRox3JNcRoll8y+xtYGUU4qmC2VODI4y5CNH+xr6+w5DawVPBnK5JicIFhGjOAiqXUd2k0sUijS5jb0KIXkBt8/iqdGd9kxBcaUV10TOpJUewSlXUr2l47vIGOnS6m9U5lUp7t2iaWo9Fhw5OzVOFTFu3ol4sRoYusFykArnBGUHmaAkqtEm1CmbOpTEU6S4XVGjfbOXkbWaAJGrNUS6YFIVNYB2yzOJiMmiUZCpPN8scP9okwQzQxstLovCiPR1xnCwf+2ADPvQqx1RcSfPlmvQSBWhTZ6ynhUd61yNHN1VgP6IYd4mNRIm2dyZTAc6sl9CivSrJHdwfL1uPAr2QIHnimNPll5qiI5yBfKjZS6TQGTe0dJvhwdwshmhOsSVoLdzLvJmgfVaAVqN+2QZ10enloPUYd5mtDpoVZwm6EPOXRqmMNgkGXYljVwxUQ/sagQ7FNxtVQLO2s0Gnwv0Zpei0AdC52JulGJ1xAHQw7ih6HkFgBDoZz69TgB4BHY2aHPWrenWgraOmIRqWr5mGaPg0chqi4d3piJ7/xjREw/drpiGaPp+t6+gTdHPM/wE5PABxQx8XuQAAAABJRU5ErkJggg==\"\n    />\n    <!-- 180×180 -->\n    <link\n      rel=\"icon\"\n      href=\"/assets/favicon.43b3c676.svg\"\n      type=\"image/svg+xml\"\n    />\n    <link\n      rel=\"shortcut icon\"\n      href=\"/assets/favicon.0e0a5e52.ico\"\n      type=\"image/x-icon\"\n    />\n    <link href=\"/pe-connect_svg.css\" rel=\"stylesheet\">\n    <!-- 32×32 -->\n    <!-- Matomo -->\n    <script>\n      var _paq = (window._paq = window._paq || []);\n      /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n      _paq.push([\"trackPageView\"]);\n      _paq.push([\"enableLinkTracking\"]);\n      (function () {\n        var u = \"https://stats.data.gouv.fr/\";\n        _paq.push([\"setTrackerUrl\", u + \"matomo.php\"]);\n        _paq.push([\"setSiteId\", \"207\"]);\n        var d = document,\n          g = d.createElement(\"script\"),\n          s = d.getElementsByTagName(\"script\")[0];\n        g.async = true;\n        g.src = u + \"matomo.js\";\n        s.parentNode.insertBefore(g, s);\n      })();\n    </script>\n    <!-- End Matomo Code -->\n    <!-- Matomo Tag Manager -->\n    <script>\n      var _mtm = window._mtm = window._mtm || [];\n      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});\n      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n      g.async=true; g.src='https://stats.data.gouv.fr/js/container_ibL3DRCu.js'; s.parentNode.insertBefore(g,s);\n      </script>\n    <!-- End Matomo Tag Manager -->\n    <script type=\"module\" crossorigin src=\"/assets/main.7c2b4414.js\"></script>\n    <link rel=\"stylesheet\" href=\"/assets/main.938a0541.css\">\n  </head>\n\n  <body>\n    <div id=\"root\"></div>\n    \n    \n  </body>\n</html>\n",
+    "ip": "213.32.73.220",
+    "timestamp": "2022-05-11T15:53:20.440838309Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://immersion.beta.pole-emploi.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "permission-policy",
+    "type": "http",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "https://immersion.beta.pole-emploi.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: immersion.beta.pole-emploi.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: no-cache\r\nContent-Type: text/html;charset=utf-8\r\nDate: Wed, 11 May 2022 15:53:20 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \n    <title>PMSMP: Immersion Facile</title>\n\n    <link\n      rel=\"apple-touch-icon\"\n      href=\"data:image/png;base64,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\"\n    />\n    <!-- 180×180 -->\n    <link\n      rel=\"icon\"\n      href=\"/assets/favicon.43b3c676.svg\"\n      type=\"image/svg+xml\"\n    />\n    <link\n      rel=\"shortcut icon\"\n      href=\"/assets/favicon.0e0a5e52.ico\"\n      type=\"image/x-icon\"\n    />\n    <link href=\"/pe-connect_svg.css\" rel=\"stylesheet\">\n    <!-- 32×32 -->\n    <!-- Matomo -->\n    <script>\n      var _paq = (window._paq = window._paq || []);\n      /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n      _paq.push([\"trackPageView\"]);\n      _paq.push([\"enableLinkTracking\"]);\n      (function () {\n        var u = \"https://stats.data.gouv.fr/\";\n        _paq.push([\"setTrackerUrl\", u + \"matomo.php\"]);\n        _paq.push([\"setSiteId\", \"207\"]);\n        var d = document,\n          g = d.createElement(\"script\"),\n          s = d.getElementsByTagName(\"script\")[0];\n        g.async = true;\n        g.src = u + \"matomo.js\";\n        s.parentNode.insertBefore(g, s);\n      })();\n    </script>\n    <!-- End Matomo Code -->\n    <!-- Matomo Tag Manager -->\n    <script>\n      var _mtm = window._mtm = window._mtm || [];\n      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});\n      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n      g.async=true; g.src='https://stats.data.gouv.fr/js/container_ibL3DRCu.js'; s.parentNode.insertBefore(g,s);\n      </script>\n    <!-- End Matomo Tag Manager -->\n    <script type=\"module\" crossorigin src=\"/assets/main.7c2b4414.js\"></script>\n    <link rel=\"stylesheet\" href=\"/assets/main.938a0541.css\">\n  </head>\n\n  <body>\n    <div id=\"root\"></div>\n    \n    \n  </body>\n</html>\n",
+    "ip": "213.32.73.220",
+    "timestamp": "2022-05-11T15:53:20.440932415Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://immersion.beta.pole-emploi.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-content-type-options",
+    "type": "http",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "https://immersion.beta.pole-emploi.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: immersion.beta.pole-emploi.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: no-cache\r\nContent-Type: text/html;charset=utf-8\r\nDate: Wed, 11 May 2022 15:53:20 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \n    <title>PMSMP: Immersion Facile</title>\n\n    <link\n      rel=\"apple-touch-icon\"\n      href=\"data:image/png;base64,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\"\n    />\n    <!-- 180×180 -->\n    <link\n      rel=\"icon\"\n      href=\"/assets/favicon.43b3c676.svg\"\n      type=\"image/svg+xml\"\n    />\n    <link\n      rel=\"shortcut icon\"\n      href=\"/assets/favicon.0e0a5e52.ico\"\n      type=\"image/x-icon\"\n    />\n    <link href=\"/pe-connect_svg.css\" rel=\"stylesheet\">\n    <!-- 32×32 -->\n    <!-- Matomo -->\n    <script>\n      var _paq = (window._paq = window._paq || []);\n      /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n      _paq.push([\"trackPageView\"]);\n      _paq.push([\"enableLinkTracking\"]);\n      (function () {\n        var u = \"https://stats.data.gouv.fr/\";\n        _paq.push([\"setTrackerUrl\", u + \"matomo.php\"]);\n        _paq.push([\"setSiteId\", \"207\"]);\n        var d = document,\n          g = d.createElement(\"script\"),\n          s = d.getElementsByTagName(\"script\")[0];\n        g.async = true;\n        g.src = u + \"matomo.js\";\n        s.parentNode.insertBefore(g, s);\n      })();\n    </script>\n    <!-- End Matomo Code -->\n    <!-- Matomo Tag Manager -->\n    <script>\n      var _mtm = window._mtm = window._mtm || [];\n      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});\n      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n      g.async=true; g.src='https://stats.data.gouv.fr/js/container_ibL3DRCu.js'; s.parentNode.insertBefore(g,s);\n      </script>\n    <!-- End Matomo Tag Manager -->\n    <script type=\"module\" crossorigin src=\"/assets/main.7c2b4414.js\"></script>\n    <link rel=\"stylesheet\" href=\"/assets/main.938a0541.css\">\n  </head>\n\n  <body>\n    <div id=\"root\"></div>\n    \n    \n  </body>\n</html>\n",
+    "ip": "213.32.73.220",
+    "timestamp": "2022-05-11T15:53:20.441018021Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://immersion.beta.pole-emploi.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-max-age",
+    "type": "http",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "https://immersion.beta.pole-emploi.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: immersion.beta.pole-emploi.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: no-cache\r\nContent-Type: text/html;charset=utf-8\r\nDate: Wed, 11 May 2022 15:53:20 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \n    <title>PMSMP: Immersion Facile</title>\n\n    <link\n      rel=\"apple-touch-icon\"\n      href=\"data:image/png;base64,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\"\n    />\n    <!-- 180×180 -->\n    <link\n      rel=\"icon\"\n      href=\"/assets/favicon.43b3c676.svg\"\n      type=\"image/svg+xml\"\n    />\n    <link\n      rel=\"shortcut icon\"\n      href=\"/assets/favicon.0e0a5e52.ico\"\n      type=\"image/x-icon\"\n    />\n    <link href=\"/pe-connect_svg.css\" rel=\"stylesheet\">\n    <!-- 32×32 -->\n    <!-- Matomo -->\n    <script>\n      var _paq = (window._paq = window._paq || []);\n      /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n      _paq.push([\"trackPageView\"]);\n      _paq.push([\"enableLinkTracking\"]);\n      (function () {\n        var u = \"https://stats.data.gouv.fr/\";\n        _paq.push([\"setTrackerUrl\", u + \"matomo.php\"]);\n        _paq.push([\"setSiteId\", \"207\"]);\n        var d = document,\n          g = d.createElement(\"script\"),\n          s = d.getElementsByTagName(\"script\")[0];\n        g.async = true;\n        g.src = u + \"matomo.js\";\n        s.parentNode.insertBefore(g, s);\n      })();\n    </script>\n    <!-- End Matomo Code -->\n    <!-- Matomo Tag Manager -->\n    <script>\n      var _mtm = window._mtm = window._mtm || [];\n      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});\n      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n      g.async=true; g.src='https://stats.data.gouv.fr/js/container_ibL3DRCu.js'; s.parentNode.insertBefore(g,s);\n      </script>\n    <!-- End Matomo Tag Manager -->\n    <script type=\"module\" crossorigin src=\"/assets/main.7c2b4414.js\"></script>\n    <link rel=\"stylesheet\" href=\"/assets/main.938a0541.css\">\n  </head>\n\n  <body>\n    <div id=\"root\"></div>\n    \n    \n  </body>\n</html>\n",
+    "ip": "213.32.73.220",
+    "timestamp": "2022-05-11T15:53:20.441105127Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://immersion.beta.pole-emploi.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "technologies/waf-detect.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/waf-detect.yaml",
+    "template-id": "waf-detect",
+    "info": {
+      "name": "WAF Detection",
+      "author": [
+        "dwisiswant0",
+        "lu4nx"
+      ],
+      "tags": [
+        "waf",
+        "tech",
+        "misc"
+      ],
+      "description": "A web application firewall was detected.",
+      "reference": [
+        "https://github.com/ekultek/whatwaf"
+      ],
+      "severity": "info",
+      "classification": {
+        "cve-id": null,
+        "cwe-id": [
+          "cwe-200"
+        ]
+      }
+    },
+    "matcher-name": "ats",
+    "type": "http",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "https://immersion.beta.pole-emploi.fr/",
+    "request": "POST / HTTP/1.1\r\nHost: immersion.beta.pole-emploi.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: no-cache\r\nContent-Type: text/html;charset=utf-8\r\nDate: Wed, 11 May 2022 15:53:42 GMT\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \n    <title>PMSMP: Immersion Facile</title>\n\n    <link\n      rel=\"apple-touch-icon\"\n      href=\"data:image/png;base64,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\"\n    />\n    <!-- 180×180 -->\n    <link\n      rel=\"icon\"\n      href=\"/assets/favicon.43b3c676.svg\"\n      type=\"image/svg+xml\"\n    />\n    <link\n      rel=\"shortcut icon\"\n      href=\"/assets/favicon.0e0a5e52.ico\"\n      type=\"image/x-icon\"\n    />\n    <link href=\"/pe-connect_svg.css\" rel=\"stylesheet\">\n    <!-- 32×32 -->\n    <!-- Matomo -->\n    <script>\n      var _paq = (window._paq = window._paq || []);\n      /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n      _paq.push([\"trackPageView\"]);\n      _paq.push([\"enableLinkTracking\"]);\n      (function () {\n        var u = \"https://stats.data.gouv.fr/\";\n        _paq.push([\"setTrackerUrl\", u + \"matomo.php\"]);\n        _paq.push([\"setSiteId\", \"207\"]);\n        var d = document,\n          g = d.createElement(\"script\"),\n          s = d.getElementsByTagName(\"script\")[0];\n        g.async = true;\n        g.src = u + \"matomo.js\";\n        s.parentNode.insertBefore(g, s);\n      })();\n    </script>\n    <!-- End Matomo Code -->\n    <!-- Matomo Tag Manager -->\n    <script>\n      var _mtm = window._mtm = window._mtm || [];\n      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});\n      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n      g.async=true; g.src='https://stats.data.gouv.fr/js/container_ibL3DRCu.js'; s.parentNode.insertBefore(g,s);\n      </script>\n    <!-- End Matomo Tag Manager -->\n    <script type=\"module\" crossorigin src=\"/assets/main.7c2b4414.js\"></script>\n    <link rel=\"stylesheet\" href=\"/assets/main.938a0541.css\">\n  </head>\n\n  <body>\n    <div id=\"root\"></div>\n    \n    \n  </body>\n</html>\n",
+    "ip": "213.32.73.220",
+    "timestamp": "2022-05-11T15:53:42.479598888Z",
+    "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: immersion.beta.pole-emploi.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://immersion.beta.pole-emploi.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "dns/cname-fingerprint.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/cname-fingerprint.yaml",
+    "template-id": "cname-fingerprint",
+    "info": {
+      "name": "CNAME Fingerprint",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "dns",
+        "cname"
+      ],
+      "description": "A CNAME DNS record was discovered.",
+      "reference": [
+        "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
+        "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
+      ],
+      "severity": "info",
+      "classification": {
+        "cve-id": null,
+        "cwe-id": [
+          "cwe-200"
+        ]
+      }
+    },
+    "type": "dns",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "https://immersion.beta.pole-emploi.fr/",
+    "extracted-results": [
+      "beta.pole-emploi.fr."
+    ],
+    "request": ";; opcode: QUERY, status: NOERROR, id: 5989\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;immersion.beta.pole-emploi.fr.\tIN\t NS\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 5989\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 1232\n\n;; QUESTION SECTION:\n;immersion.beta.pole-emploi.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nimmersion.beta.pole-emploi.fr.\t86400\tIN\tCNAME\tbeta.pole-emploi.fr.\nbeta.pole-emploi.fr.\t3600\tIN\tNS\tdns2.pole-emploi.fr.\nbeta.pole-emploi.fr.\t3600\tIN\tNS\tdns1.pole-emploi.fr.\n",
+    "timestamp": "2022-05-11T15:53:58.042514764Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "dns/nameserver-fingerprint.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/nameserver-fingerprint.yaml",
+    "template-id": "nameserver-fingerprint",
+    "info": {
+      "name": "NS Record Detection",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "dns",
+        "ns"
+      ],
+      "description": "An NS record was detected. An NS record delegates a subdomain to a set of name servers.",
+      "reference": null,
+      "severity": "info",
+      "classification": {
+        "cve-id": null,
+        "cwe-id": [
+          "cwe-200"
+        ]
+      }
+    },
+    "type": "dns",
+    "host": "https://immersion.beta.pole-emploi.fr/",
+    "matched-at": "https://immersion.beta.pole-emploi.fr/",
+    "extracted-results": [
+      "dns1.pole-emploi.fr.",
+      "dns2.pole-emploi.fr."
+    ],
+    "request": ";; opcode: QUERY, status: NOERROR, id: 15224\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;immersion.beta.pole-emploi.fr.\tIN\t NS\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 15224\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 1232\n\n;; QUESTION SECTION:\n;immersion.beta.pole-emploi.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nimmersion.beta.pole-emploi.fr.\t86400\tIN\tCNAME\tbeta.pole-emploi.fr.\nbeta.pole-emploi.fr.\t3600\tIN\tNS\tdns1.pole-emploi.fr.\nbeta.pole-emploi.fr.\t3600\tIN\tNS\tdns2.pole-emploi.fr.\n",
+    "timestamp": "2022-05-11T15:53:59.131864875Z",
+    "matcher-status": true,
+    "matched-line": null
+  }
+]
