@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 8 May 2022 05:10:14
+		Generated on Wed, 11 May 2022 16:05:20
 	</h3>
 
 	
@@ -196,42 +196,42 @@ td {
 			<tr>
 				<td><a href="#10055">CSP: Wildcard Directive</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10055">CSP: script-src unsafe-inline</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10055">CSP: style-src unsafe-inline</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10010">Cookie No HttpOnly Flag</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">2</td>
+				<td align="center">5</td>
 			</tr>
 			<tr>
 				<td><a href="#10011">Cookie Without Secure Flag</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">2</td>
+				<td align="center">5</td>
 			</tr>
 			<tr>
 				<td><a href="#10063">Permissions Policy Header Not Set</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">3</td>
+				<td align="center">6</td>
 			</tr>
 			<tr>
 				<td><a href="#10035">Strict-Transport-Security Header Not Set</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">7</td>
+				<td align="center">10</td>
 			</tr>
 			<tr>
 				<td><a href="#10096">Timestamp Disclosure - Unix</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">3</td>
+				<td align="center">4</td>
 			</tr>
 			<tr>
 				<td><a href="#10021">X-Content-Type-Options Header Missing</a></td>
@@ -251,12 +251,12 @@ td {
 			<tr>
 				<td><a href="#10109">Modern Web Application</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">4</td>
+				<td align="center">7</td>
 			</tr>
 			<tr>
 				<td><a href="#10015">Re-examine Cache-control Directives</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">3</td>
+				<td align="center">6</td>
 			</tr>
 			<tr>
 				<td><a href="#10049">Storable and Cacheable Content</a></td>
@@ -311,7 +311,33 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">img-src &#39;self&#39; cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr &#39;unsafe-inline&#39; stats.data.gouv.fr www.w3.org data:; script-src &#39;self&#39; stats.data.gouv.fr &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; media-src &#39;self&#39; cellar-c2.services.clever-cloud.com; font-src &#39;self&#39;; default-src &#39;self&#39;; object-src &#39;self&#39; cellar-c2.services.clever-cloud.com; frame-src &#39;self&#39;; connect-src &#39;self&#39; stats.data.gouv.fr ws: api-adresse.data.gouv.fr</td>
+						<td width="80%">font-src &#39;self&#39; client.crisp.chat; media-src &#39;self&#39; cellar-c2.services.clever-cloud.com; script-src &#39;self&#39; stats.data.gouv.fr &#39;unsafe-inline&#39; client.crisp.chat; style-src &#39;self&#39; &#39;unsafe-inline&#39; client.crisp.chat; img-src &#39;self&#39; cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr &#39;unsafe-inline&#39; stats.data.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; default-src &#39;self&#39;; connect-src &#39;self&#39; stats.data.gouv.fr ws: api-adresse.data.gouv.fr client.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr; object-src &#39;self&#39; cellar-c2.services.clever-cloud.com; frame-src &#39;self&#39; ma-cantine.crisp.help</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/">https://ma-cantine.beta.gouv.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">font-src &#39;self&#39; client.crisp.chat; media-src &#39;self&#39; cellar-c2.services.clever-cloud.com; script-src &#39;self&#39; stats.data.gouv.fr &#39;unsafe-inline&#39; client.crisp.chat; style-src &#39;self&#39; &#39;unsafe-inline&#39; client.crisp.chat; img-src &#39;self&#39; cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr &#39;unsafe-inline&#39; stats.data.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; default-src &#39;self&#39;; connect-src &#39;self&#39; stats.data.gouv.fr ws: api-adresse.data.gouv.fr client.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr; object-src &#39;self&#39; cellar-c2.services.clever-cloud.com; frame-src &#39;self&#39; ma-cantine.crisp.help</td>
 					</tr>
 				
 					<tr>
@@ -337,12 +363,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">img-src &#39;self&#39; cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr &#39;unsafe-inline&#39; stats.data.gouv.fr www.w3.org data:; script-src &#39;self&#39; stats.data.gouv.fr &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; media-src &#39;self&#39; cellar-c2.services.clever-cloud.com; font-src &#39;self&#39;; default-src &#39;self&#39;; object-src &#39;self&#39; cellar-c2.services.clever-cloud.com; frame-src &#39;self&#39;; connect-src &#39;self&#39; stats.data.gouv.fr ws: api-adresse.data.gouv.fr</td>
+						<td width="80%">font-src &#39;self&#39; client.crisp.chat; media-src &#39;self&#39; cellar-c2.services.clever-cloud.com; script-src &#39;self&#39; stats.data.gouv.fr &#39;unsafe-inline&#39; client.crisp.chat; style-src &#39;self&#39; &#39;unsafe-inline&#39; client.crisp.chat; img-src &#39;self&#39; cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr &#39;unsafe-inline&#39; stats.data.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; default-src &#39;self&#39;; connect-src &#39;self&#39; stats.data.gouv.fr ws: api-adresse.data.gouv.fr client.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr; object-src &#39;self&#39; cellar-c2.services.clever-cloud.com; frame-src &#39;self&#39; ma-cantine.crisp.help</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -431,7 +457,33 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">img-src &#39;self&#39; cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr &#39;unsafe-inline&#39; stats.data.gouv.fr www.w3.org data:; script-src &#39;self&#39; stats.data.gouv.fr &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; media-src &#39;self&#39; cellar-c2.services.clever-cloud.com; font-src &#39;self&#39;; default-src &#39;self&#39;; object-src &#39;self&#39; cellar-c2.services.clever-cloud.com; frame-src &#39;self&#39;; connect-src &#39;self&#39; stats.data.gouv.fr ws: api-adresse.data.gouv.fr</td>
+						<td width="80%">font-src &#39;self&#39; client.crisp.chat; media-src &#39;self&#39; cellar-c2.services.clever-cloud.com; script-src &#39;self&#39; stats.data.gouv.fr &#39;unsafe-inline&#39; client.crisp.chat; style-src &#39;self&#39; &#39;unsafe-inline&#39; client.crisp.chat; img-src &#39;self&#39; cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr &#39;unsafe-inline&#39; stats.data.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; default-src &#39;self&#39;; connect-src &#39;self&#39; stats.data.gouv.fr ws: api-adresse.data.gouv.fr client.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr; object-src &#39;self&#39; cellar-c2.services.clever-cloud.com; frame-src &#39;self&#39; ma-cantine.crisp.help</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/">https://ma-cantine.beta.gouv.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">font-src &#39;self&#39; client.crisp.chat; media-src &#39;self&#39; cellar-c2.services.clever-cloud.com; script-src &#39;self&#39; stats.data.gouv.fr &#39;unsafe-inline&#39; client.crisp.chat; style-src &#39;self&#39; &#39;unsafe-inline&#39; client.crisp.chat; img-src &#39;self&#39; cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr &#39;unsafe-inline&#39; stats.data.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; default-src &#39;self&#39;; connect-src &#39;self&#39; stats.data.gouv.fr ws: api-adresse.data.gouv.fr client.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr; object-src &#39;self&#39; cellar-c2.services.clever-cloud.com; frame-src &#39;self&#39; ma-cantine.crisp.help</td>
 					</tr>
 				
 					<tr>
@@ -457,12 +509,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">img-src &#39;self&#39; cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr &#39;unsafe-inline&#39; stats.data.gouv.fr www.w3.org data:; script-src &#39;self&#39; stats.data.gouv.fr &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; media-src &#39;self&#39; cellar-c2.services.clever-cloud.com; font-src &#39;self&#39;; default-src &#39;self&#39;; object-src &#39;self&#39; cellar-c2.services.clever-cloud.com; frame-src &#39;self&#39;; connect-src &#39;self&#39; stats.data.gouv.fr ws: api-adresse.data.gouv.fr</td>
+						<td width="80%">font-src &#39;self&#39; client.crisp.chat; media-src &#39;self&#39; cellar-c2.services.clever-cloud.com; script-src &#39;self&#39; stats.data.gouv.fr &#39;unsafe-inline&#39; client.crisp.chat; style-src &#39;self&#39; &#39;unsafe-inline&#39; client.crisp.chat; img-src &#39;self&#39; cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr &#39;unsafe-inline&#39; stats.data.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; default-src &#39;self&#39;; connect-src &#39;self&#39; stats.data.gouv.fr ws: api-adresse.data.gouv.fr client.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr; object-src &#39;self&#39; cellar-c2.services.clever-cloud.com; frame-src &#39;self&#39; ma-cantine.crisp.help</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -551,7 +603,33 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">img-src &#39;self&#39; cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr &#39;unsafe-inline&#39; stats.data.gouv.fr www.w3.org data:; script-src &#39;self&#39; stats.data.gouv.fr &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; media-src &#39;self&#39; cellar-c2.services.clever-cloud.com; font-src &#39;self&#39;; default-src &#39;self&#39;; object-src &#39;self&#39; cellar-c2.services.clever-cloud.com; frame-src &#39;self&#39;; connect-src &#39;self&#39; stats.data.gouv.fr ws: api-adresse.data.gouv.fr</td>
+						<td width="80%">font-src &#39;self&#39; client.crisp.chat; media-src &#39;self&#39; cellar-c2.services.clever-cloud.com; script-src &#39;self&#39; stats.data.gouv.fr &#39;unsafe-inline&#39; client.crisp.chat; style-src &#39;self&#39; &#39;unsafe-inline&#39; client.crisp.chat; img-src &#39;self&#39; cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr &#39;unsafe-inline&#39; stats.data.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; default-src &#39;self&#39;; connect-src &#39;self&#39; stats.data.gouv.fr ws: api-adresse.data.gouv.fr client.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr; object-src &#39;self&#39; cellar-c2.services.clever-cloud.com; frame-src &#39;self&#39; ma-cantine.crisp.help</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/">https://ma-cantine.beta.gouv.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">font-src &#39;self&#39; client.crisp.chat; media-src &#39;self&#39; cellar-c2.services.clever-cloud.com; script-src &#39;self&#39; stats.data.gouv.fr &#39;unsafe-inline&#39; client.crisp.chat; style-src &#39;self&#39; &#39;unsafe-inline&#39; client.crisp.chat; img-src &#39;self&#39; cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr &#39;unsafe-inline&#39; stats.data.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; default-src &#39;self&#39;; connect-src &#39;self&#39; stats.data.gouv.fr ws: api-adresse.data.gouv.fr client.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr; object-src &#39;self&#39; cellar-c2.services.clever-cloud.com; frame-src &#39;self&#39; ma-cantine.crisp.help</td>
 					</tr>
 				
 					<tr>
@@ -577,12 +655,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">img-src &#39;self&#39; cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr &#39;unsafe-inline&#39; stats.data.gouv.fr www.w3.org data:; script-src &#39;self&#39; stats.data.gouv.fr &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; media-src &#39;self&#39; cellar-c2.services.clever-cloud.com; font-src &#39;self&#39;; default-src &#39;self&#39;; object-src &#39;self&#39; cellar-c2.services.clever-cloud.com; frame-src &#39;self&#39;; connect-src &#39;self&#39; stats.data.gouv.fr ws: api-adresse.data.gouv.fr</td>
+						<td width="80%">font-src &#39;self&#39; client.crisp.chat; media-src &#39;self&#39; cellar-c2.services.clever-cloud.com; script-src &#39;self&#39; stats.data.gouv.fr &#39;unsafe-inline&#39; client.crisp.chat; style-src &#39;self&#39; &#39;unsafe-inline&#39; client.crisp.chat; img-src &#39;self&#39; cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr &#39;unsafe-inline&#39; stats.data.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; default-src &#39;self&#39;; connect-src &#39;self&#39; stats.data.gouv.fr ws: api-adresse.data.gouv.fr client.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr; object-src &#39;self&#39; cellar-c2.services.clever-cloud.com; frame-src &#39;self&#39; ma-cantine.crisp.help</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -677,6 +755,84 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/">https://ma-cantine.beta.gouv.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">csrftoken</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: csrftoken</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/">https://ma-cantine.beta.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">csrftoken</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: csrftoken</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d&#39;AURE/">https://ma-cantine.beta.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d&#39;AURE/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">csrftoken</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: csrftoken</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/robots.txt/">https://ma-cantine.beta.gouv.fr/robots.txt/</a></td>
 					</tr>
 					<tr>
@@ -702,7 +858,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">5</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -782,6 +938,84 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/">https://ma-cantine.beta.gouv.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">csrftoken</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: csrftoken</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/">https://ma-cantine.beta.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">csrftoken</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: csrftoken</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d&#39;AURE/">https://ma-cantine.beta.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d&#39;AURE/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">csrftoken</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: csrftoken</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/robots.txt/">https://ma-cantine.beta.gouv.fr/robots.txt/</a></td>
 					</tr>
 					<tr>
@@ -807,7 +1041,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">5</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -887,6 +1121,84 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/">https://ma-cantine.beta.gouv.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/">https://ma-cantine.beta.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d&#39;AURE/">https://ma-cantine.beta.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d&#39;AURE/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/robots.txt/">https://ma-cantine.beta.gouv.fr/robots.txt/</a></td>
 					</tr>
 					<tr>
@@ -913,7 +1225,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js">https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js</a></td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js">https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -938,7 +1250,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">6</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1030,6 +1342,84 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/">https://ma-cantine.beta.gouv.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/">https://ma-cantine.beta.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d&#39;AURE/">https://ma-cantine.beta.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d&#39;AURE/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/robots.txt/">https://ma-cantine.beta.gouv.fr/robots.txt/</a></td>
 					</tr>
 					<tr>
@@ -1082,7 +1472,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/css/app.959d1431.css">https://ma-cantine.beta.gouv.fr/static/css/app.959d1431.css</a></td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/css/app.c29d2c02.css">https://ma-cantine.beta.gouv.fr/static/css/app.c29d2c02.css</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1160,7 +1550,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js">https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js</a></td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js">https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1185,7 +1575,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">7</td>
+					<td width="80%">10</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1303,7 +1693,33 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/css/app.959d1431.css">https://ma-cantine.beta.gouv.fr/static/css/app.959d1431.css</a></td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/css/app.c29d2c02.css">https://ma-cantine.beta.gouv.fr/static/css/app.c29d2c02.css</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">05222567</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/css/app.c29d2c02.css">https://ma-cantine.beta.gouv.fr/static/css/app.c29d2c02.css</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1328,7 +1744,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">4</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1382,7 +1798,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/css/app.959d1431.css">https://ma-cantine.beta.gouv.fr/static/css/app.959d1431.css</a></td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/css/app.c29d2c02.css">https://ma-cantine.beta.gouv.fr/static/css/app.c29d2c02.css</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1460,7 +1876,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js">https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js</a></td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js">https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1565,7 +1981,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Hy8REybgCTXtWZrKGThfcL0xEp4AN27NPRPGZk5ps9vtT0V7x5SaiNXEwGecjFFZ</td>
+						<td width="80%">JKKYUefEAi3itVr5EYkhbFfrwIsbAAXcRK0TpLOYfkDAZybaiRhbrlnuBBRRwEr0</td>
 					</tr>
 				
 					<tr>
@@ -1591,7 +2007,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">uHEDfAhICPBeCLXShIncSBzWub9uB6V91xuDQtQIzuUufVGbe7L2SM2UYBoUOK0K</td>
+						<td width="80%">9VeHlXAcMbRvpXt1mqynWqSPPIqJyoK4Ro6fE06lmTts539Ls8wWfgQA5cm0aqkY</td>
 					</tr>
 				
 					<tr>
@@ -1799,7 +2215,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">uHEDfAhICPBeCLXShIncSBzWub9uB6V91xuDQtQIzuUufVGbe7L2SM2UYBoUOK0K</td>
+						<td width="80%">JKKYUefEAi3itVr5EYkhbFfrwIsbAAXcRK0TpLOYfkDAZybaiRhbrlnuBBRRwEr0</td>
 					</tr>
 				
 					<tr>
@@ -1831,7 +2247,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js">https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js</a></td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js">https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1910,7 +2326,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js">https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js</a></td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js">https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1936,7 +2352,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js">https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js</a></td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js">https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1962,7 +2378,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js">https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js</a></td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js">https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1988,7 +2404,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js">https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js</a></td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js">https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2014,7 +2430,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js">https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js</a></td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js">https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2040,7 +2456,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js">https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js</a></td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js">https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2066,7 +2482,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js">https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js</a></td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js">https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2163,7 +2579,7 @@ td {
 						<td width="20%"
 							class="indent2">Evidence</td>
 						<td width="80%">&lt;script type=&quot;text/javascript&quot;&gt;
-        window.CSRF_TOKEN = &quot;LNY7KN9w03J4vyQWCQIJ2BksMXxAeNGSiDO7lGIwXI2k8Izfzf6z2MNqgnM0rrLt&quot;;
+        window.CSRF_TOKEN = &quot;oL7jBygbFLuE9wO4GqO3fuqjLujQh75kwLne65PvkN4WF9y9kjLXvaymQnIwdbz8&quot;;
         window.MATOMO_ID = &quot;162&quot;;
         window.ENVIRONMENT = &quot;None&quot;
         window.ENABLE_XP_RESERVATION = &quot;True&quot; === &quot;True&quot;
@@ -2196,7 +2612,106 @@ td {
 						<td width="20%"
 							class="indent2">Evidence</td>
 						<td width="80%">&lt;script type=&quot;text/javascript&quot;&gt;
-        window.CSRF_TOKEN = &quot;Wx1jtBRyxrkjXcsu7JZKqnKILNnDfkQx4QI8OnLHnHSjUdWRYVAFwpHPD4xfLXoJ&quot;;
+        window.CSRF_TOKEN = &quot;yCnMxK9G4OKni1XO5pj8mDcx7EORHZbjg5fkQNFPEwmkY7Dyb7hHFtain8K8j1Ld&quot;;
+        window.MATOMO_ID = &quot;162&quot;;
+        window.ENVIRONMENT = &quot;None&quot;
+        window.ENABLE_XP_RESERVATION = &quot;True&quot; === &quot;True&quot;
+        window.ENABLE_XP_VEGE = &quot;False&quot; === &quot;True&quot;
+        window.ENABLE_PARTNERS = &quot;False&quot; === &quot;True&quot;
+    &lt;/script&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/">https://ma-cantine.beta.gouv.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script type=&quot;text/javascript&quot;&gt;
+        window.CSRF_TOKEN = &quot;KR9c5RI3Ci6AsO5HiwEXGUDoOqdUk33WSRp7AohnhkGSYrPMWpBRWALrTjCAg7xK&quot;;
+        window.MATOMO_ID = &quot;162&quot;;
+        window.ENVIRONMENT = &quot;None&quot;
+        window.ENABLE_XP_RESERVATION = &quot;True&quot; === &quot;True&quot;
+        window.ENABLE_XP_VEGE = &quot;False&quot; === &quot;True&quot;
+        window.ENABLE_PARTNERS = &quot;False&quot; === &quot;True&quot;
+    &lt;/script&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/">https://ma-cantine.beta.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script type=&quot;text/javascript&quot;&gt;
+        window.CSRF_TOKEN = &quot;FrGjA9Gm3v6bar0HglSAyu1xZRFj6CDINrWe5GfGIxGtG4KMUePuOa9A4K4Z2G7w&quot;;
+        window.MATOMO_ID = &quot;162&quot;;
+        window.ENVIRONMENT = &quot;None&quot;
+        window.ENABLE_XP_RESERVATION = &quot;True&quot; === &quot;True&quot;
+        window.ENABLE_XP_VEGE = &quot;False&quot; === &quot;True&quot;
+        window.ENABLE_PARTNERS = &quot;False&quot; === &quot;True&quot;
+    &lt;/script&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d&#39;AURE/">https://ma-cantine.beta.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d&#39;AURE/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script type=&quot;text/javascript&quot;&gt;
+        window.CSRF_TOKEN = &quot;hm9uYrnS4upbzoswRvT0a907V2iCux2HpmpptYWcJwZt51cBvoQUqP8a0VHiqBwv&quot;;
         window.MATOMO_ID = &quot;162&quot;;
         window.ENVIRONMENT = &quot;None&quot;
         window.ENABLE_XP_RESERVATION = &quot;True&quot; === &quot;True&quot;
@@ -2229,7 +2744,7 @@ td {
 						<td width="20%"
 							class="indent2">Evidence</td>
 						<td width="80%">&lt;script type=&quot;text/javascript&quot;&gt;
-        window.CSRF_TOKEN = &quot;MaJaXvSGBWqFhCBHKaCyyOgbRM0hPv21j0zayorGyBJVUMk0Hz0oyZJ9lcfH297C&quot;;
+        window.CSRF_TOKEN = &quot;ZzNpvP9SSscpmFYTzLWyrkQcb3BZq4kc7z3k0mIcxuMHSiIYdETsH0YfgW0Fm8O0&quot;;
         window.MATOMO_ID = &quot;162&quot;;
         window.ENVIRONMENT = &quot;None&quot;
         window.ENABLE_XP_RESERVATION = &quot;True&quot; === &quot;True&quot;
@@ -2241,7 +2756,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js">https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js</a></td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js">https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2266,7 +2781,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">4</td>
+					<td width="80%">7</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2317,6 +2832,84 @@ td {
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr">https://ma-cantine.beta.gouv.fr</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Cache-Control</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/">https://ma-cantine.beta.gouv.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Cache-Control</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/">https://ma-cantine.beta.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Cache-Control</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d&#39;AURE/">https://ma-cantine.beta.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d&#39;AURE/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2393,7 +2986,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">6</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2632,7 +3225,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/css/app.959d1431.css">https://ma-cantine.beta.gouv.fr/static/css/app.959d1431.css</a></td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/css/app.c29d2c02.css">https://ma-cantine.beta.gouv.fr/static/css/app.c29d2c02.css</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2710,7 +3303,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js">https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js</a></td>
+						<td width="80%"><a href="https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js">https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"

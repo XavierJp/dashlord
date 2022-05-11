@@ -2,16 +2,55 @@
   "trackers": [
     {
       "type": "unknown",
+      "url": "https://client.crisp.chat/l.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://client.crisp.chat/static/javascripts/client.js?019b3e9"
+    },
+    {
+      "type": "unknown",
+      "url": "https://client.crisp.chat/static/stylesheets/client_default.css?019b3e9"
+    },
+    {
+      "type": "unknown",
+      "url": "https://client.crisp.chat/settings/website/071cca61-bd5f-4950-a5ed-c02238666a5c/prelude/?callback=window.%24crisp.__spool.website_handler&2022-4-11-16-6"
+    },
+    {
+      "type": "unknown",
       "url": "https://cellar-c2.services.clever-cloud.com/ma-cantine-egalim/videos/presentation-egalim.mp4"
+    },
+    {
+      "type": "unknown",
+      "url": "https://client.crisp.chat/settings/website/071cca61-bd5f-4950-a5ed-c02238666a5c/?callback=window.%24crisp.__spool.website_handler&1652284760748"
+    },
+    {
+      "type": "unknown",
+      "url": "https://client.crisp.chat/static/javascripts/locales/en.js?019b3e9"
     }
   ],
   "cookies": [
     {
+      "name": "crisp-client%2Fsession%2F071cca61-bd5f-4950-a5ed-c02238666a5c",
+      "value": "session_5ca02d6c-9ae9-40a8-a3ea-dca4c900de25",
+      "domain": ".beta.gouv.fr",
+      "path": "/",
+      "expires": 1668053180,
+      "size": 105,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameSite": "Lax",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
       "name": "csrftoken",
-      "value": "DNQ4DBmfakw4ZHvTmgFiR6uKfS5ERXU97F6Ts2fbuakb8GPt7QijhikTdrBLccRS",
+      "value": "g0TZdLix3Uj98Nz91Z2AeacTqxGdGIxsX4KtwJSDsvDP5thwzUxbVMgSC6v4USwt",
       "domain": "ma-cantine.beta.gouv.fr",
       "path": "/",
-      "expires": 1683436273.851414,
+      "expires": 1683734777.952092,
       "size": 73,
       "httpOnly": false,
       "secure": false,
@@ -23,23 +62,23 @@
     }
   ],
   "headers": {
-    "date": "Sun, 08 May 2022 05:11:13 GMT",
+    "date": "Wed, 11 May 2022 16:06:17 GMT",
     "content-type": "text/html; charset=utf-8",
     "transfer-encoding": "chunked",
-    "content-security-policy": "img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.data.gouv.fr www.w3.org data:; script-src 'self' stats.data.gouv.fr 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src 'self' cellar-c2.services.clever-cloud.com; font-src 'self'; default-src 'self'; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self'; connect-src 'self' stats.data.gouv.fr ws: api-adresse.data.gouv.fr",
+    "content-security-policy": "font-src 'self' client.crisp.chat; media-src 'self' cellar-c2.services.clever-cloud.com; script-src 'self' stats.data.gouv.fr 'unsafe-inline' client.crisp.chat; style-src 'self' 'unsafe-inline' client.crisp.chat; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.data.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; default-src 'self'; connect-src 'self' stats.data.gouv.fr ws: api-adresse.data.gouv.fr client.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self' ma-cantine.crisp.help",
     "x-frame-options": "DENY",
     "vary": "Cookie",
     "x-content-type-options": "nosniff",
     "referrer-policy": "same-origin",
     "cross-origin-opener-policy": "same-origin",
-    "set-cookie": "csrftoken=DNQ4DBmfakw4ZHvTmgFiR6uKfS5ERXU97F6Ts2fbuakb8GPt7QijhikTdrBLccRS; expires=Sun, 07 May 2023 05:11:13 GMT; Max-Age=31449600; Path=/; SameSite=Lax",
+    "set-cookie": "csrftoken=g0TZdLix3Uj98Nz91Z2AeacTqxGdGIxsX4KtwJSDsvDP5thwzUxbVMgSC6v4USwt; expires=Wed, 10 May 2023 16:06:17 GMT; Max-Age=31449600; Path=/; SameSite=Lax",
     "content-encoding": "gzip",
-    "sozu-id": "01G2H18BS8HCDRJBMTZ33JKF2G"
+    "sozu-id": "01G2SXXZSTG5SZTCJFHQJ1YRWW"
   },
   "endpoints": [
     {
       "hostname": "ma-cantine.beta.gouv.fr",
-      "ip": "46.252.181.103",
+      "ip": "46.252.181.104",
       "geoip": {
         "continent": {
           "code": "EU",
@@ -92,6 +131,11 @@
           }
         }
       }
+    },
+    {
+      "hostname": "client.crisp.chat",
+      "ip": "104.18.29.91",
+      "geoip": null
     },
     {
       "hostname": "cellar-c2.services.clever-cloud.com",

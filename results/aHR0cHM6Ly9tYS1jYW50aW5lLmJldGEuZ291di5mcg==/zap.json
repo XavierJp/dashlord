@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 05:10:14",
+	"@generated": "Wed, 11 May 2022 16:05:20",
 	"site":[ 
 		{
 			"@name": "https://ma-cantine.beta.gouv.fr",
@@ -23,17 +23,24 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.data.gouv.fr www.w3.org data:; script-src 'self' stats.data.gouv.fr 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src 'self' cellar-c2.services.clever-cloud.com; font-src 'self'; default-src 'self'; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self'; connect-src 'self' stats.data.gouv.fr ws: api-adresse.data.gouv.fr"
+							"evidence": "font-src 'self' client.crisp.chat; media-src 'self' cellar-c2.services.clever-cloud.com; script-src 'self' stats.data.gouv.fr 'unsafe-inline' client.crisp.chat; style-src 'self' 'unsafe-inline' client.crisp.chat; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.data.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; default-src 'self'; connect-src 'self' stats.data.gouv.fr ws: api-adresse.data.gouv.fr client.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self' ma-cantine.crisp.help"
+						},
+						{
+							"uri": "https://ma-cantine.beta.gouv.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "font-src 'self' client.crisp.chat; media-src 'self' cellar-c2.services.clever-cloud.com; script-src 'self' stats.data.gouv.fr 'unsafe-inline' client.crisp.chat; style-src 'self' 'unsafe-inline' client.crisp.chat; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.data.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; default-src 'self'; connect-src 'self' stats.data.gouv.fr ws: api-adresse.data.gouv.fr client.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self' ma-cantine.crisp.help"
 						},
 						{
 							"uri": "https://ma-cantine.beta.gouv.fr/robots.txt/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.data.gouv.fr www.w3.org data:; script-src 'self' stats.data.gouv.fr 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src 'self' cellar-c2.services.clever-cloud.com; font-src 'self'; default-src 'self'; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self'; connect-src 'self' stats.data.gouv.fr ws: api-adresse.data.gouv.fr"
+							"evidence": "font-src 'self' client.crisp.chat; media-src 'self' cellar-c2.services.clever-cloud.com; script-src 'self' stats.data.gouv.fr 'unsafe-inline' client.crisp.chat; style-src 'self' 'unsafe-inline' client.crisp.chat; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.data.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; default-src 'self'; connect-src 'self' stats.data.gouv.fr ws: api-adresse.data.gouv.fr client.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self' ma-cantine.crisp.help"
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: </p><p>connect-src, frame-ancestors, form-action</p><p></p><p>The directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything.</p>",
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
@@ -56,17 +63,24 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.data.gouv.fr www.w3.org data:; script-src 'self' stats.data.gouv.fr 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src 'self' cellar-c2.services.clever-cloud.com; font-src 'self'; default-src 'self'; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self'; connect-src 'self' stats.data.gouv.fr ws: api-adresse.data.gouv.fr"
+							"evidence": "font-src 'self' client.crisp.chat; media-src 'self' cellar-c2.services.clever-cloud.com; script-src 'self' stats.data.gouv.fr 'unsafe-inline' client.crisp.chat; style-src 'self' 'unsafe-inline' client.crisp.chat; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.data.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; default-src 'self'; connect-src 'self' stats.data.gouv.fr ws: api-adresse.data.gouv.fr client.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self' ma-cantine.crisp.help"
+						},
+						{
+							"uri": "https://ma-cantine.beta.gouv.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "font-src 'self' client.crisp.chat; media-src 'self' cellar-c2.services.clever-cloud.com; script-src 'self' stats.data.gouv.fr 'unsafe-inline' client.crisp.chat; style-src 'self' 'unsafe-inline' client.crisp.chat; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.data.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; default-src 'self'; connect-src 'self' stats.data.gouv.fr ws: api-adresse.data.gouv.fr client.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self' ma-cantine.crisp.help"
 						},
 						{
 							"uri": "https://ma-cantine.beta.gouv.fr/robots.txt/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.data.gouv.fr www.w3.org data:; script-src 'self' stats.data.gouv.fr 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src 'self' cellar-c2.services.clever-cloud.com; font-src 'self'; default-src 'self'; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self'; connect-src 'self' stats.data.gouv.fr ws: api-adresse.data.gouv.fr"
+							"evidence": "font-src 'self' client.crisp.chat; media-src 'self' cellar-c2.services.clever-cloud.com; script-src 'self' stats.data.gouv.fr 'unsafe-inline' client.crisp.chat; style-src 'self' 'unsafe-inline' client.crisp.chat; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.data.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; default-src 'self'; connect-src 'self' stats.data.gouv.fr ws: api-adresse.data.gouv.fr client.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self' ma-cantine.crisp.help"
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>script-src includes unsafe-inline.</p>",
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
@@ -89,17 +103,24 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.data.gouv.fr www.w3.org data:; script-src 'self' stats.data.gouv.fr 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src 'self' cellar-c2.services.clever-cloud.com; font-src 'self'; default-src 'self'; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self'; connect-src 'self' stats.data.gouv.fr ws: api-adresse.data.gouv.fr"
+							"evidence": "font-src 'self' client.crisp.chat; media-src 'self' cellar-c2.services.clever-cloud.com; script-src 'self' stats.data.gouv.fr 'unsafe-inline' client.crisp.chat; style-src 'self' 'unsafe-inline' client.crisp.chat; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.data.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; default-src 'self'; connect-src 'self' stats.data.gouv.fr ws: api-adresse.data.gouv.fr client.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self' ma-cantine.crisp.help"
+						},
+						{
+							"uri": "https://ma-cantine.beta.gouv.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "font-src 'self' client.crisp.chat; media-src 'self' cellar-c2.services.clever-cloud.com; script-src 'self' stats.data.gouv.fr 'unsafe-inline' client.crisp.chat; style-src 'self' 'unsafe-inline' client.crisp.chat; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.data.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; default-src 'self'; connect-src 'self' stats.data.gouv.fr ws: api-adresse.data.gouv.fr client.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self' ma-cantine.crisp.help"
 						},
 						{
 							"uri": "https://ma-cantine.beta.gouv.fr/robots.txt/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.data.gouv.fr www.w3.org data:; script-src 'self' stats.data.gouv.fr 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src 'self' cellar-c2.services.clever-cloud.com; font-src 'self'; default-src 'self'; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self'; connect-src 'self' stats.data.gouv.fr ws: api-adresse.data.gouv.fr"
+							"evidence": "font-src 'self' client.crisp.chat; media-src 'self' cellar-c2.services.clever-cloud.com; script-src 'self' stats.data.gouv.fr 'unsafe-inline' client.crisp.chat; style-src 'self' 'unsafe-inline' client.crisp.chat; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.data.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; default-src 'self'; connect-src 'self' stats.data.gouv.fr ws: api-adresse.data.gouv.fr client.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self' ma-cantine.crisp.help"
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>style-src includes unsafe-inline.</p>",
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
@@ -125,6 +146,27 @@
 							"evidence": "Set-Cookie: csrftoken"
 						},
 						{
+							"uri": "https://ma-cantine.beta.gouv.fr/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken"
+						},
+						{
+							"uri": "https://ma-cantine.beta.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken"
+						},
+						{
+							"uri": "https://ma-cantine.beta.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d'AURE/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken"
+						},
+						{
 							"uri": "https://ma-cantine.beta.gouv.fr/robots.txt/",
 							"method": "GET",
 							"param": "csrftoken",
@@ -132,7 +174,7 @@
 							"evidence": "Set-Cookie: csrftoken"
 						}
 					],
-					"count": "2",
+					"count": "5",
 					"solution": "<p>Ensure that the HttpOnly flag is set for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
@@ -158,6 +200,27 @@
 							"evidence": "Set-Cookie: csrftoken"
 						},
 						{
+							"uri": "https://ma-cantine.beta.gouv.fr/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken"
+						},
+						{
+							"uri": "https://ma-cantine.beta.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken"
+						},
+						{
+							"uri": "https://ma-cantine.beta.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d'AURE/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken"
+						},
+						{
 							"uri": "https://ma-cantine.beta.gouv.fr/robots.txt/",
 							"method": "GET",
 							"param": "csrftoken",
@@ -165,7 +228,7 @@
 							"evidence": "Set-Cookie: csrftoken"
 						}
 					],
-					"count": "2",
+					"count": "5",
 					"solution": "<p>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p>",
@@ -191,6 +254,27 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://ma-cantine.beta.gouv.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://ma-cantine.beta.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://ma-cantine.beta.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d'AURE/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://ma-cantine.beta.gouv.fr/robots.txt/",
 							"method": "GET",
 							"param": "",
@@ -198,14 +282,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js",
+							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						}
 					],
-					"count": "3",
+					"count": "6",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
@@ -231,6 +315,27 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://ma-cantine.beta.gouv.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://ma-cantine.beta.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://ma-cantine.beta.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d'AURE/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://ma-cantine.beta.gouv.fr/robots.txt/",
 							"method": "GET",
 							"param": "",
@@ -245,7 +350,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://ma-cantine.beta.gouv.fr/static/css/app.959d1431.css",
+							"uri": "https://ma-cantine.beta.gouv.fr/static/css/app.c29d2c02.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -266,14 +371,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js",
+							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						}
 					],
-					"count": "7",
+					"count": "10",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
@@ -306,14 +411,21 @@
 							"evidence": "31449600"
 						},
 						{
-							"uri": "https://ma-cantine.beta.gouv.fr/static/css/app.959d1431.css",
+							"uri": "https://ma-cantine.beta.gouv.fr/static/css/app.c29d2c02.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "05222567"
+						},
+						{
+							"uri": "https://ma-cantine.beta.gouv.fr/static/css/app.c29d2c02.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "20033138"
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>31449600, which evaluates to: 1970-12-31 00:00:00</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -332,7 +444,7 @@
 					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
 					"instances":[ 
 						{
-							"uri": "https://ma-cantine.beta.gouv.fr/static/css/app.959d1431.css",
+							"uri": "https://ma-cantine.beta.gouv.fr/static/css/app.c29d2c02.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -353,7 +465,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js",
+							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -366,7 +478,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "48"
+					"sourceid": "20"
 				},
 				{
 					"pluginid": "10094",
@@ -383,14 +495,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Hy8REybgCTXtWZrKGThfcL0xEp4AN27NPRPGZk5ps9vtT0V7x5SaiNXEwGecjFFZ"
+							"evidence": "JKKYUefEAi3itVr5EYkhbFfrwIsbAAXcRK0TpLOYfkDAZybaiRhbrlnuBBRRwEr0"
 						},
 						{
 							"uri": "https://ma-cantine.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "uHEDfAhICPBeCLXShIncSBzWub9uB6V91xuDQtQIzuUufVGbe7L2SM2UYBoUOK0K"
+							"evidence": "9VeHlXAcMbRvpXt1mqynWqSPPIqJyoK4Ro6fE06lmTts539Ls8wWfgQA5cm0aqkY"
 						},
 						{
 							"uri": "https://ma-cantine.beta.gouv.fr/nos-cantines/1111--Restaurant%20Scolaire%20de%20la%20wo%C3%ABvre",
@@ -446,7 +558,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "uHEDfAhICPBeCLXShIncSBzWub9uB6V91xuDQtQIzuUufVGbe7L2SM2UYBoUOK0K"
+							"evidence": "JKKYUefEAi3itVr5EYkhbFfrwIsbAAXcRK0TpLOYfkDAZybaiRhbrlnuBBRRwEr0"
 						},
 						{
 							"uri": "https://ma-cantine.beta.gouv.fr/sitemap.xml",
@@ -456,7 +568,7 @@
 							"evidence": "fr/nos-cantines/40--Restaurant"
 						},
 						{
-							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js",
+							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -465,11 +577,11 @@
 					],
 					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\\x001f/\\x0011\\x0013&\uFFFD\t5\uFFFDY\uFFFD\uFFFD\\x00198_p\uFFFD1\\x0012\uFFFD\\x00007n\uFFFD=\\x0013\uFFFDfNi\uFFFD\uFFFD\uFFFDOE{\u01D4\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDg\uFFFD\uFFFDQY</p>",
+					"otherinfo": "<p>$\uFFFD\uFFFDQ\uFFFD\uFFFD\\x0002-\uFFFDZ\uFFFD\\x0011\uFFFD!lW\uFFFD\uFFFD\uFFFD\\x001b\\x0000\\x0005\uFFFDD\uFFFD\\x0013\uFFFD\uFFFD\uFFFD~@\uFFFDg&\u0689\\x0018[\uFFFDY\uFFFD\\x0004\\x0014Q\uFFFDJ\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10027",
@@ -482,49 +594,49 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
 					"instances":[ 
 						{
-							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js",
+							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "bug"
 						},
 						{
-							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js",
+							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "from"
 						},
 						{
-							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js",
+							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "query"
 						},
 						{
-							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js",
+							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "select"
 						},
 						{
-							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js",
+							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "todo"
 						},
 						{
-							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js",
+							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "user"
 						},
 						{
-							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js",
+							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -533,11 +645,11 @@
 					],
 					"count": "7",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bBUG\\b and was detected 6 times, the first in the element starting with: \" */var bg={MODE_NUMBER:1,MODE_ALPHA_NUM:2,MODE_8BIT_BYTE:4,MODE_KANJI:8};function yg(t){this.mode=bg.MODE_8BIT_BYTE,this.data=t}\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bBUG\\b and was detected 6 times, the first in the element starting with: \"  */var as=/[!'()*]/g,ss=function(t){return\"%\"+t.charCodeAt(0).toString(16)},os=/%2C/g,ls=function(t){return encodeURIComponent(\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "913"
+					"sourceid": "273"
 				},
 				{
 					"pluginid": "10109",
@@ -554,31 +666,52 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"LNY7KN9w03J4vyQWCQIJ2BksMXxAeNGSiDO7lGIwXI2k8Izfzf6z2MNqgnM0rrLt\";\n        window.MATOMO_ID = \"162\";\n        window.ENVIRONMENT = \"None\"\n        window.ENABLE_XP_RESERVATION = \"True\" === \"True\"\n        window.ENABLE_XP_VEGE = \"False\" === \"True\"\n        window.ENABLE_PARTNERS = \"False\" === \"True\"\n    </script>"
+							"evidence": "<script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"oL7jBygbFLuE9wO4GqO3fuqjLujQh75kwLne65PvkN4WF9y9kjLXvaymQnIwdbz8\";\n        window.MATOMO_ID = \"162\";\n        window.ENVIRONMENT = \"None\"\n        window.ENABLE_XP_RESERVATION = \"True\" === \"True\"\n        window.ENABLE_XP_VEGE = \"False\" === \"True\"\n        window.ENABLE_PARTNERS = \"False\" === \"True\"\n    </script>"
 						},
 						{
 							"uri": "https://ma-cantine.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"Wx1jtBRyxrkjXcsu7JZKqnKILNnDfkQx4QI8OnLHnHSjUdWRYVAFwpHPD4xfLXoJ\";\n        window.MATOMO_ID = \"162\";\n        window.ENVIRONMENT = \"None\"\n        window.ENABLE_XP_RESERVATION = \"True\" === \"True\"\n        window.ENABLE_XP_VEGE = \"False\" === \"True\"\n        window.ENABLE_PARTNERS = \"False\" === \"True\"\n    </script>"
+							"evidence": "<script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"yCnMxK9G4OKni1XO5pj8mDcx7EORHZbjg5fkQNFPEwmkY7Dyb7hHFtain8K8j1Ld\";\n        window.MATOMO_ID = \"162\";\n        window.ENVIRONMENT = \"None\"\n        window.ENABLE_XP_RESERVATION = \"True\" === \"True\"\n        window.ENABLE_XP_VEGE = \"False\" === \"True\"\n        window.ENABLE_PARTNERS = \"False\" === \"True\"\n    </script>"
+						},
+						{
+							"uri": "https://ma-cantine.beta.gouv.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"KR9c5RI3Ci6AsO5HiwEXGUDoOqdUk33WSRp7AohnhkGSYrPMWpBRWALrTjCAg7xK\";\n        window.MATOMO_ID = \"162\";\n        window.ENVIRONMENT = \"None\"\n        window.ENABLE_XP_RESERVATION = \"True\" === \"True\"\n        window.ENABLE_XP_VEGE = \"False\" === \"True\"\n        window.ENABLE_PARTNERS = \"False\" === \"True\"\n    </script>"
+						},
+						{
+							"uri": "https://ma-cantine.beta.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"FrGjA9Gm3v6bar0HglSAyu1xZRFj6CDINrWe5GfGIxGtG4KMUePuOa9A4K4Z2G7w\";\n        window.MATOMO_ID = \"162\";\n        window.ENVIRONMENT = \"None\"\n        window.ENABLE_XP_RESERVATION = \"True\" === \"True\"\n        window.ENABLE_XP_VEGE = \"False\" === \"True\"\n        window.ENABLE_PARTNERS = \"False\" === \"True\"\n    </script>"
+						},
+						{
+							"uri": "https://ma-cantine.beta.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d'AURE/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"hm9uYrnS4upbzoswRvT0a907V2iCux2HpmpptYWcJwZt51cBvoQUqP8a0VHiqBwv\";\n        window.MATOMO_ID = \"162\";\n        window.ENVIRONMENT = \"None\"\n        window.ENABLE_XP_RESERVATION = \"True\" === \"True\"\n        window.ENABLE_XP_VEGE = \"False\" === \"True\"\n        window.ENABLE_PARTNERS = \"False\" === \"True\"\n    </script>"
 						},
 						{
 							"uri": "https://ma-cantine.beta.gouv.fr/robots.txt/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"MaJaXvSGBWqFhCBHKaCyyOgbRM0hPv21j0zayorGyBJVUMk0Hz0oyZJ9lcfH297C\";\n        window.MATOMO_ID = \"162\";\n        window.ENVIRONMENT = \"None\"\n        window.ENABLE_XP_RESERVATION = \"True\" === \"True\"\n        window.ENABLE_XP_VEGE = \"False\" === \"True\"\n        window.ENABLE_PARTNERS = \"False\" === \"True\"\n    </script>"
+							"evidence": "<script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"ZzNpvP9SSscpmFYTzLWyrkQcb3BZq4kc7z3k0mIcxuMHSiIYdETsH0YfgW0Fm8O0\";\n        window.MATOMO_ID = \"162\";\n        window.ENVIRONMENT = \"None\"\n        window.ENABLE_XP_RESERVATION = \"True\" === \"True\"\n        window.ENABLE_XP_VEGE = \"False\" === \"True\"\n        window.ENABLE_PARTNERS = \"False\" === \"True\"\n    </script>"
 						},
 						{
-							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js",
+							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<a>"
 						}
 					],
-					"count": "4",
+					"count": "7",
 					"solution": "<p>This is an informational alert and so no changes are required.</p>",
 					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
 					"reference": "",
@@ -604,6 +737,27 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://ma-cantine.beta.gouv.fr/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://ma-cantine.beta.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://ma-cantine.beta.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d'AURE/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://ma-cantine.beta.gouv.fr/robots.txt/",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -618,7 +772,7 @@
 							"evidence": "max-age=3600"
 						}
 					],
-					"count": "3",
+					"count": "6",
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
@@ -686,7 +840,7 @@
 							"evidence": "max-age=3600"
 						},
 						{
-							"uri": "https://ma-cantine.beta.gouv.fr/static/css/app.959d1431.css",
+							"uri": "https://ma-cantine.beta.gouv.fr/static/css/app.c29d2c02.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -707,7 +861,7 @@
 							"evidence": "max-age=315360000"
 						},
 						{
-							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.10228bfa.js",
+							"uri": "https://ma-cantine.beta.gouv.fr/static/js/app.155aac49.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
