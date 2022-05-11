@@ -213,7 +213,7 @@
               "ip"           : "metiers.numerique.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -353,7 +353,7 @@
               "ip"           : "metiers.numerique.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "54 >= 30 days"
+              "finding"      : "51 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -556,7 +556,7 @@
               "ip"           : "metiers.numerique.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1652012338"
+              "finding"      : "1652310770"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1475,7 +1475,7 @@
               "ip"           : "metiers.numerique.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "54 >= 30 days"
+              "finding"      : "51 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1678,7 +1678,7 @@
               "ip"           : "metiers.numerique.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1652012433"
+              "finding"      : "1652310916"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -2248,6 +2248,6 @@
               "ip"           : "metiers.numerique.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "196"
+              "finding"      : "300"
           }
 ]
