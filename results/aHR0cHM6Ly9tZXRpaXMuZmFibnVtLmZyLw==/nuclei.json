@@ -22,9 +22,9 @@
     "host": "https://metiis.fabnum.fr/",
     "matched-at": "https://metiis.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:34:21 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:28:07 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
     "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:34:21.363364126Z",
+    "timestamp": "2022-05-11T20:28:07.318535832Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
     "matcher-status": true,
     "matched-line": null
@@ -49,471 +49,9 @@
     "host": "https://metiis.fabnum.fr/",
     "matched-at": "https://metiis.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:34:22 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:28:07 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
     "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:34:22.27198249Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "ssl/deprecated-tls.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/deprecated-tls.yaml",
-    "template-id": "deprecated-tls",
-    "info": {
-      "name": "Deprecated TLS Detection (inferior to TLS 1.2)",
-      "author": [
-        "righettod"
-      ],
-      "tags": [
-        "ssl"
-      ],
-      "reference": [
-        "https://ssl-config.mozilla.org/#config=intermediate"
-      ],
-      "severity": "info",
-      "metadata": {
-        "shodan-query": "ssl.version:sslv2 ssl.version:sslv3 ssl.version:tlsv1 ssl.version:tlsv1.1"
-      }
-    },
-    "type": "ssl",
-    "host": "https://metiis.fabnum.fr/",
-    "matched-at": "https://metiis.fabnum.fr/",
-    "extracted-results": [
-      "TLS11"
-    ],
-    "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:34:27.835741985Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "ssl/ssl-dns-names.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
-    "template-id": "ssl-dns-names",
-    "info": {
-      "name": "SSL DNS Names",
-      "author": [
-        "pdteam"
-      ],
-      "tags": [
-        "ssl"
-      ],
-      "reference": null,
-      "severity": "info"
-    },
-    "type": "ssl",
-    "host": "https://metiis.fabnum.fr/",
-    "matched-at": "https://metiis.fabnum.fr/",
-    "extracted-results": [
-      "metiis.fabnum.fr"
-    ],
-    "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:34:45.382872881Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "exposures/files/readme-md.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposures/files/readme-md.yaml",
-    "template-id": "readme-md",
-    "info": {
-      "name": "README.md file disclosure",
-      "author": [
-        "ambassify"
-      ],
-      "tags": [
-        "exposure",
-        "markdown"
-      ],
-      "description": "Internal documentation file often used in projects which can contain sensitive information.",
-      "reference": null,
-      "severity": "info",
-      "metadata": {
-        "shodan-query": "html:\"README.MD\""
-      }
-    },
-    "type": "http",
-    "host": "https://metiis.fabnum.fr/",
-    "matched-at": "https://metiis.fabnum.fr/README.md",
-    "request": "GET /README.md HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/markdown; charset=UTF-8\r\nDate: Sun, 08 May 2022 09:34:57 GMT\r\nEtag: W/\"1b3-172c76f0e51\"\r\nLast-Modified: Thu, 18 Jun 2020 12:37:23 GMT\r\nVary: Accept-Encoding\r\n\r\n# STATIC\n\n**This directory is not required, you can delete it if you don't want to use it.**\n\nThis directory contains your static files.\nEach file inside this directory is mapped to `/`.\nThus you'd want to delete this README.md before deploying to production.\n\nExample: `/static/robots.txt` is mapped as `/robots.txt`.\n\nMore information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/assets#static).\n",
-    "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:34:57.214035805Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/README.md'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-expose-headers",
-    "type": "http",
-    "host": "https://metiis.fabnum.fr/",
-    "matched-at": "https://metiis.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:35:01 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
-    "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:35:01.797235695Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "strict-transport-security",
-    "type": "http",
-    "host": "https://metiis.fabnum.fr/",
-    "matched-at": "https://metiis.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:35:01 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
-    "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:35:01.797346895Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "permission-policy",
-    "type": "http",
-    "host": "https://metiis.fabnum.fr/",
-    "matched-at": "https://metiis.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:35:01 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
-    "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:35:01.797380596Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-permitted-cross-domain-policies",
-    "type": "http",
-    "host": "https://metiis.fabnum.fr/",
-    "matched-at": "https://metiis.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:35:01 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
-    "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:35:01.797410796Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "clear-site-data",
-    "type": "http",
-    "host": "https://metiis.fabnum.fr/",
-    "matched-at": "https://metiis.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:35:01 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
-    "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:35:01.797634897Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-embedder-policy",
-    "type": "http",
-    "host": "https://metiis.fabnum.fr/",
-    "matched-at": "https://metiis.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:35:01 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
-    "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:35:01.797670997Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-max-age",
-    "type": "http",
-    "host": "https://metiis.fabnum.fr/",
-    "matched-at": "https://metiis.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:35:01 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
-    "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:35:01.797701998Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "content-security-policy",
-    "type": "http",
-    "host": "https://metiis.fabnum.fr/",
-    "matched-at": "https://metiis.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:35:01 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
-    "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:35:01.797731198Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "referrer-policy",
-    "type": "http",
-    "host": "https://metiis.fabnum.fr/",
-    "matched-at": "https://metiis.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:35:01 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
-    "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:35:01.797760698Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-resource-policy",
-    "type": "http",
-    "host": "https://metiis.fabnum.fr/",
-    "matched-at": "https://metiis.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:35:01 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
-    "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:35:01.797968399Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-content-type-options",
-    "type": "http",
-    "host": "https://metiis.fabnum.fr/",
-    "matched-at": "https://metiis.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:35:01 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
-    "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:35:01.798445602Z",
+    "timestamp": "2022-05-11T20:28:08.27485574Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
     "matcher-status": true,
     "matched-line": null
@@ -545,43 +83,9 @@
     "host": "https://metiis.fabnum.fr/",
     "matched-at": "https://metiis.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:35:01 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:28:08 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
     "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:35:01.798484803Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-origin",
-    "type": "http",
-    "host": "https://metiis.fabnum.fr/",
-    "matched-at": "https://metiis.fabnum.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:35:01 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
-    "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:35:01.798513903Z",
+    "timestamp": "2022-05-11T20:28:08.287362223Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
     "matcher-status": true,
     "matched-line": null
@@ -613,9 +117,383 @@
     "host": "https://metiis.fabnum.fr/",
     "matched-at": "https://metiis.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:35:01 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:28:08 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
     "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:35:01.798940706Z",
+    "timestamp": "2022-05-11T20:28:08.290223865Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "referrer-policy",
+    "type": "http",
+    "host": "https://metiis.fabnum.fr/",
+    "matched-at": "https://metiis.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:28:08 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
+    "ip": "51.15.215.184",
+    "timestamp": "2022-05-11T20:28:08.293129808Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://metiis.fabnum.fr/",
+    "matched-at": "https://metiis.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:28:08 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
+    "ip": "51.15.215.184",
+    "timestamp": "2022-05-11T20:28:08.295367041Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-embedder-policy",
+    "type": "http",
+    "host": "https://metiis.fabnum.fr/",
+    "matched-at": "https://metiis.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:28:08 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
+    "ip": "51.15.215.184",
+    "timestamp": "2022-05-11T20:28:08.295445942Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "permission-policy",
+    "type": "http",
+    "host": "https://metiis.fabnum.fr/",
+    "matched-at": "https://metiis.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:28:08 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
+    "ip": "51.15.215.184",
+    "timestamp": "2022-05-11T20:28:08.295476242Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-content-type-options",
+    "type": "http",
+    "host": "https://metiis.fabnum.fr/",
+    "matched-at": "https://metiis.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:28:08 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
+    "ip": "51.15.215.184",
+    "timestamp": "2022-05-11T20:28:08.295504543Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-permitted-cross-domain-policies",
+    "type": "http",
+    "host": "https://metiis.fabnum.fr/",
+    "matched-at": "https://metiis.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:28:08 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
+    "ip": "51.15.215.184",
+    "timestamp": "2022-05-11T20:28:08.295527143Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "clear-site-data",
+    "type": "http",
+    "host": "https://metiis.fabnum.fr/",
+    "matched-at": "https://metiis.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:28:08 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
+    "ip": "51.15.215.184",
+    "timestamp": "2022-05-11T20:28:08.295551043Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-max-age",
+    "type": "http",
+    "host": "https://metiis.fabnum.fr/",
+    "matched-at": "https://metiis.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:28:08 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
+    "ip": "51.15.215.184",
+    "timestamp": "2022-05-11T20:28:08.295572344Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "content-security-policy",
+    "type": "http",
+    "host": "https://metiis.fabnum.fr/",
+    "matched-at": "https://metiis.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:28:08 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
+    "ip": "51.15.215.184",
+    "timestamp": "2022-05-11T20:28:08.295599844Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://metiis.fabnum.fr/",
+    "matched-at": "https://metiis.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:28:08 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
+    "ip": "51.15.215.184",
+    "timestamp": "2022-05-11T20:28:08.295621344Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-origin",
+    "type": "http",
+    "host": "https://metiis.fabnum.fr/",
+    "matched-at": "https://metiis.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:28:08 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
+    "ip": "51.15.215.184",
+    "timestamp": "2022-05-11T20:28:08.295645345Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
     "matcher-status": true,
     "matched-line": null
@@ -647,10 +525,70 @@
     "host": "https://metiis.fabnum.fr/",
     "matched-at": "https://metiis.fabnum.fr/",
     "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 May 2022 09:35:01 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:28:08 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
     "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:35:01.799009006Z",
+    "timestamp": "2022-05-11T20:28:08.296265854Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "strict-transport-security",
+    "type": "http",
+    "host": "https://metiis.fabnum.fr/",
+    "matched-at": "https://metiis.fabnum.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: none\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 11 May 2022 20:28:08 GMT\r\nEtag: \"eef-HjbTmkri8QnP/KICFWu38QVHVe8\"\r\nVary: Accept-Encoding\r\nX-Frame-Options: DENY\r\n\r\n<!doctype html>\n<html lang=\"fr\" data-n-head=\"%7B%22lang%22:%7B%221%22:%22fr%22%7D%7D\">\n  <head >\n    <title>Metiis</title><meta data-n-head=\"1\" charset=\"utf-8\"><meta data-n-head=\"1\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta data-n-head=\"1\" data-hid=\"description\" name=\"description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><meta data-n-head=\"1\" data-hid=\"mobile-web-app-capable\" name=\"mobile-web-app-capable\" content=\"yes\"><meta data-n-head=\"1\" data-hid=\"apple-mobile-web-app-title\" name=\"apple-mobile-web-app-title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"theme-color\" name=\"theme-color\" content=\"#fff\"><meta data-n-head=\"1\" data-hid=\"og:type\" name=\"og:type\" property=\"og:type\" content=\"website\"><meta data-n-head=\"1\" data-hid=\"og:title\" name=\"og:title\" property=\"og:title\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:site_name\" name=\"og:site_name\" property=\"og:site_name\" content=\"Metiis\"><meta data-n-head=\"1\" data-hid=\"og:description\" name=\"og:description\" property=\"og:description\" content=\"Metiis - Un lien qui transforme le potentiel de la réserve en une force pour l’armée de terre\"><link data-n-head=\"1\" rel=\"apple-touch-icon\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"128×128\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"icon\" sizes=\"192×192\" href=\"/metiis-icon-192x192.png\"><link data-n-head=\"1\" rel=\"manifest\" href=\"/_nuxt/manifest.2166a0a7.json\"><link data-n-head=\"1\" rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"preload\" href=\"/_nuxt/runtime.5eeb52e.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/vendors/commons.3006a18.js\" as=\"script\"><link rel=\"preload\" href=\"/_nuxt/app.a66fe65.js\" as=\"script\">\n  </head>\n  <body >\n    <div id=\"__nuxt\"><style>#nuxt-loading {  background: white;  visibility: hidden;  opacity: 0;  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: column;  animation: nuxtLoadingIn 10s ease;  -webkit-animation: nuxtLoadingIn 10s ease;  animation-fill-mode: forwards;  overflow: hidden;}@keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}@-webkit-keyframes nuxtLoadingIn {  0% {visibility: hidden;opacity: 0;  }  20% {visibility: visible;opacity: 0;  }  100% {visibility: visible;opacity: 1;  }}#nuxt-loading>div,#nuxt-loading>div:after {  border-radius: 50%;  width: 5rem;  height: 5rem;}#nuxt-loading>div {  font-size: 10px;  position: relative;  text-indent: -9999em;  border: .5rem solid #F5F5F5;  border-left: .5rem solid #fff;  -webkit-transform: translateZ(0);  -ms-transform: translateZ(0);  transform: translateZ(0);  -webkit-animation: nuxtLoading 1.1s infinite linear;  animation: nuxtLoading 1.1s infinite linear;}#nuxt-loading.error>div {  border-left: .5rem solid #ff4500;  animation-duration: 5s;}@-webkit-keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}@keyframes nuxtLoading {  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);  }  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);  }}</style><script>window.addEventListener('error', function () {  var e = document.getElementById('nuxt-loading');  if (e) {e.className += ' error';  }});</script><div id=\"nuxt-loading\" aria-live=\"polite\" role=\"status\"><div>Loading...</div></div></div><script>window.__NUXT__={config:{},staticAssetsBase:void 0}</script>\n  <script src=\"/_nuxt/runtime.5eeb52e.js\"></script><script src=\"/_nuxt/vendors/commons.3006a18.js\"></script><script src=\"/_nuxt/app.a66fe65.js\"></script></body>\n</html>\n",
+    "ip": "51.15.215.184",
+    "timestamp": "2022-05-11T20:28:08.296533158Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/ssl-dns-names.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
+    "template-id": "ssl-dns-names",
+    "info": {
+      "name": "SSL DNS Names",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://metiis.fabnum.fr/",
+    "matched-at": "https://metiis.fabnum.fr/",
+    "extracted-results": [
+      "metiis.fabnum.fr"
+    ],
+    "ip": "51.15.215.184",
+    "timestamp": "2022-05-11T20:28:11.602327314Z",
     "matcher-status": true,
     "matched-line": null
   },
@@ -676,7 +614,69 @@
       "TLS13"
     ],
     "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:35:06.749184377Z",
+    "timestamp": "2022-05-11T20:28:16.191910655Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "exposures/files/readme-md.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposures/files/readme-md.yaml",
+    "template-id": "readme-md",
+    "info": {
+      "name": "README.md file disclosure",
+      "author": [
+        "ambassify"
+      ],
+      "tags": [
+        "exposure",
+        "markdown"
+      ],
+      "description": "Internal documentation file often used in projects which can contain sensitive information.",
+      "reference": null,
+      "severity": "info",
+      "metadata": {
+        "shodan-query": "html:\"README.MD\""
+      }
+    },
+    "type": "http",
+    "host": "https://metiis.fabnum.fr/",
+    "matched-at": "https://metiis.fabnum.fr/README.md",
+    "request": "GET /README.md HTTP/1.1\r\nHost: metiis.fabnum.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/markdown; charset=UTF-8\r\nDate: Wed, 11 May 2022 20:28:22 GMT\r\nEtag: W/\"1b3-172c76f0e51\"\r\nLast-Modified: Thu, 18 Jun 2020 12:37:23 GMT\r\nVary: Accept-Encoding\r\n\r\n# STATIC\n\n**This directory is not required, you can delete it if you don't want to use it.**\n\nThis directory contains your static files.\nEach file inside this directory is mapped to `/`.\nThus you'd want to delete this README.md before deploying to production.\n\nExample: `/static/robots.txt` is mapped as `/robots.txt`.\n\nMore information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/assets#static).\n",
+    "ip": "51.15.215.184",
+    "timestamp": "2022-05-11T20:28:22.267025524Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metiis.fabnum.fr/README.md'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/deprecated-tls.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/deprecated-tls.yaml",
+    "template-id": "deprecated-tls",
+    "info": {
+      "name": "Deprecated TLS Detection (inferior to TLS 1.2)",
+      "author": [
+        "righettod"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": [
+        "https://ssl-config.mozilla.org/#config=intermediate"
+      ],
+      "severity": "info",
+      "metadata": {
+        "shodan-query": "ssl.version:sslv2 ssl.version:sslv3 ssl.version:tlsv1 ssl.version:tlsv1.1"
+      }
+    },
+    "type": "ssl",
+    "host": "https://metiis.fabnum.fr/",
+    "matched-at": "https://metiis.fabnum.fr/",
+    "extracted-results": [
+      "TLS11"
+    ],
+    "ip": "51.15.215.184",
+    "timestamp": "2022-05-11T20:28:39.754711272Z",
     "matcher-status": true,
     "matched-line": null
   },
@@ -721,7 +721,7 @@
     ],
     "response": "SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.5\r\n",
     "ip": "51.15.215.184",
-    "timestamp": "2022-05-08T09:35:21.934340664Z",
+    "timestamp": "2022-05-11T20:28:59.44719186Z",
     "matcher-status": true,
     "matched-line": null
   }
