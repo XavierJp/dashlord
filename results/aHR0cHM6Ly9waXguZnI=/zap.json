@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 06:37:10",
+	"@generated": "Wed, 11 May 2022 17:33:37",
 	"site":[ 
 		{
 			"@name": "https://pix.fr",
@@ -218,28 +218,28 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "104617154"
+						},
+						{
+							"uri": "https://pix.fr/_nuxt/a8f2215.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "106173362"
+						},
+						{
+							"uri": "https://pix.fr/_nuxt/a8f2215.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "31536000"
-						},
-						{
-							"uri": "https://pix.fr/_nuxt/a8f2215.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "54361568"
-						},
-						{
-							"uri": "https://pix.fr/_nuxt/a8f2215.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "63291187"
 						},
 						{
 							"uri": "https://pix.fr/_nuxt/f34a225.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "104504498"
+							"evidence": "106758913"
 						},
 						{
 							"uri": "https://pix.fr/_nuxt/f34a225.js",
@@ -260,35 +260,42 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "55294752"
+							"evidence": "63783980"
 						},
 						{
 							"uri": "https://pix.fr/favicon.ico",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "104380053"
+							"evidence": "104631712"
 						},
 						{
 							"uri": "https://pix.fr/favicon.ico",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "104504497"
+							"evidence": "106758912"
 						},
 						{
 							"uri": "https://pix.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "98525183"
+							"evidence": "86795107"
 						},
 						{
 							"uri": "https://pix.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "98716543"
+							"evidence": "99786030"
+						},
+						{
+							"uri": "https://pix.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "106173360"
 						},
 						{
 							"uri": "https://pix.fr/sitemap.xml",
@@ -296,18 +303,11 @@
 							"param": "",
 							"attack": "",
 							"evidence": "1651739017"
-						},
-						{
-							"uri": "https://pix.fr/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "54361566"
 						}
 					],
 					"count": "13",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>31536000, which evaluates to: 1971-01-01 00:00:00</p>",
+					"otherinfo": "<p>104617154, which evaluates to: 1973-04-25 20:19:14</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -328,21 +328,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "_TckvcyAld8-yWtNcWT42Rs6JMlRj27EpE3izDFxDxYUC94LG7onBeerr6iH6HindmliP8bbkzCLSq01wpXepm1cz2YWWKJsiAC40Mo5SarW6T83lDcUoFa5h_cQxuPSFMCPNIwQ5Y4BmAJNGmHXmAWCm8GtVzk3wF2QCerIq2NmUAaPyT3IG6SiBOg-aOVj"
+							"evidence": "_TckvcyAld8-yWtNcWT42bEB-ewu9kjGqf-Q4HUu5yPAKY0yv2ZAs7Ii5vHTPqkH3Za6dDkxq5ADz1NwStC8WENYpdgD3Wg46hQsNqEB8sUrjH4ymRNmJamClbaYEkK3v1uMPl1OoQZKrp8SUc2XNXU1rnxT7ViNB_wfmDyZKl42egl404m2FSHqwmkYyN5Q"
 						},
 						{
 							"uri": "https://pix.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "_TckvcyAld8-yWtNcWT42XevHpt860swcMZUAd2px_cbncLfi3DbZsZrlhDDKRM2i3C9qAiZcXD9OevgYQ3JAdgFhXUbOj-UuNlo1IBlD_cY8pzJ0RjAbPFYKhuVhbUIN_Th3Fh3cJBjSDUSpngbQxTZVmxf6v_3CzzvUKjbB54tb37RkzEYHnWkCjPhRf2W"
+							"evidence": "_TckvcyAld8-yWtNcWT42S6XOsPoUnlHR7l08Tyd_GmWeRXivF74q9uMr0DycLkz0nJLBmi5VYb0DnmF4_Zjw8X6sqYcs3uz4wS12F8qptIMDwhYvDK9s4iB9qVYe5EUJGbi4CfgzgwJDCIYqG6vF3lkoU4BSkmf3Rbw1Y91zIuJCifq9tMgGDBg3P59Uv-g"
 						},
 						{
 							"uri": "https://pix.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "_TckvcyAld8-yWtNcWT42Y7Emh_F0AGdq3TjQk9zkgnUjAZrHXrjCSRwJTYTZPMdNThOykR9ybmFmcC_imANKy90DSmzN1IpbsgThj7IYaKA0Mq1JDAEojI3VPX88uXjrTNewZszhCINQJqORDb6luR_MfghxpkJGiucYNNq4SsMI2DkbafGCLjkWadCPxgJ"
+							"evidence": "_TckvcyAld8-yWtNcWT42WFEnWJRWMQJa4-OGjtLPfRkdHKAsI8vDfkQPlmITs6i3iNPWRl40Rwtoj9qpzhzixIiaWhSPh_RTymueXXK6itBZQBmKgT3qD7j7i8tbGBRXZ3HGd4ATlmyShLpk6b93M_7xE7eioAO23_tsphdVkAmXTP94JnbKFkGZcgEczeF"
 						},
 						{
 							"uri": "https://pix.fr/_nuxt/b48c2a3.js",
@@ -354,7 +354,7 @@
 					],
 					"count": "4",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD7$\uFFFD\u0300\uFFFD\uFFFD>\uFFFDkMqd\uFFFD\uFFFD\\x001b:$\uFFFDQ\uFFFDn\u0124M\uFFFD\uFFFD1q\\x000f\\x0016\\x0014\\x000b\uFFFD\\x000b\\x001b\uFFFD'\\x0005\u7AEF\uFFFD\uFFFD\uFFFDx\uFFFDvib?\uFFFD\u06D30\uFFFDJ\uFFFD5\u0095\u07A6m\\\uFFFDf\\x0016X\uFFFDl\uFFFD\\x0000\uFFFD\uFFFD\uFFFD9I\uFFFD\uFFFD\uFFFD?7\uFFFD7\\x0014\uFFFDV\uFFFD\uFFFD\uFFFD\\x0010\uFFFD\uFFFD\uFFFD\\x0014\uFFFD\uFFFD4\uFFFD\\x0010\uFFFD\\x0001\uFFFD\\x0002M\\x001aa\u05D8\\x0005\uFFFD\uFFFD\uFFFD\uFFFDW97\uFFFD]\uFFFD\t\uFFFD\u022BcfP\\x0006\uFFFD\uFFFD=\uFFFD\\x001b\uFFFD\uFFFD\\x0004\uFFFD>h\uFFFDc</p>",
+					"otherinfo": "<p>\uFFFD7$\uFFFD\u0300\uFFFD\uFFFD>\uFFFDkMqd\uFFFD\u0671\\x0001\uFFFD\uFFFD.\uFFFDH\u01A9\uFFFD\uFFFD\uFFFDu.\uFFFD#\uFFFD)\uFFFD2\uFFFDf@\uFFFD\uFFFD\"\uFFFD\uFFFD\uFFFD>\uFFFD\\x0007\u0756\uFFFDt91\uFFFD\uFFFD\\x0003\uFFFDSpJ\u043CXCX\uFFFD\uFFFD\\x0003\uFFFDh8\uFFFD\\x0014,6\uFFFD\\x0001\uFFFD\uFFFD+\uFFFD~2\uFFFD\\x0013f%\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0012B\uFFFD\uFFFD[\uFFFD>]N\uFFFD\\x0006J\uFFFD\uFFFD\\x0012Q\u03575u5\uFFFD|S\uFFFDX\uFFFD\\x0007\uFFFD\\x001f\uFFFD<\uFFFD*^6z\tx\u04C9\uFFFD\\x0015!\uFFFD\uFFFDi\\x0018\uFFFD\uFFFDP</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -502,49 +502,49 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 0"
+							"evidence": "Age: 530345"
 						},
 						{
 							"uri": "https://pix.fr/_nuxt/a8f2215.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 7283"
+							"evidence": "Age: 205188"
 						},
 						{
 							"uri": "https://pix.fr/_nuxt/b48c2a3.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 0"
+							"evidence": "Age: 531164"
 						},
 						{
 							"uri": "https://pix.fr/_nuxt/f34a225.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 295022"
+							"evidence": "Age: 305871"
 						},
 						{
 							"uri": "https://pix.fr/favicon.ico",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1522"
+							"evidence": "Age: 11203"
 						},
 						{
 							"uri": "https://pix.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1986"
+							"evidence": "Age: 2999"
 						},
 						{
 							"uri": "https://pix.fr/scripts/start-matomo-event.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 325133"
+							"evidence": "Age: 623714"
 						},
 						{
 							"uri": "https://pix.fr/sitemap.xml",
