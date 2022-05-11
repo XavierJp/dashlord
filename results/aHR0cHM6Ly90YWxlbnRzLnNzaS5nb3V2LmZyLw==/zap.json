@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 8 May 2022 09:22:40",
+	"@generated": "Wed, 11 May 2022 20:16:25",
 	"site":[ 
 		{
 			"@name": "https://talents.ssi.gouv.fr",
@@ -33,18 +33,18 @@
 							"evidence": "<form data-turbo-frame=\"job-offers\" action=\"https://talents.ssi.gouv.fr/offresdemploi\" accept-charset=\"UTF-8\" method=\"get\">"
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q&q=ZAP",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q&q=ZAP",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form data-turbo-frame=\"job-offers\" action=\"https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&amp;contract_start_on=2022-05-08&amp;job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&amp;job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&amp;job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&amp;job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&amp;job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&amp;job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&amp;published_at=2022-05-08&amp;q&amp;q=ZAP\" accept-charset=\"UTF-8\" method=\"get\">"
+							"evidence": "<form data-turbo-frame=\"job-offers\" action=\"https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&amp;contract_start_on=2022-05-11&amp;job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&amp;job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&amp;job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&amp;job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&amp;job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&amp;job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&amp;published_at=2022-05-11&amp;q&amp;q=ZAP\" accept-charset=\"UTF-8\" method=\"get\">"
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q=ZAP",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q=ZAP",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form data-turbo-frame=\"job-offers\" action=\"https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&amp;contract_start_on=2022-05-08&amp;job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&amp;job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&amp;job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&amp;job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&amp;job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&amp;job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&amp;published_at=2022-05-08&amp;q=ZAP\" accept-charset=\"UTF-8\" method=\"get\">"
+							"evidence": "<form data-turbo-frame=\"job-offers\" action=\"https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&amp;contract_start_on=2022-05-11&amp;job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&amp;job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&amp;job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&amp;job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&amp;job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&amp;job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&amp;published_at=2022-05-11&amp;q=ZAP\" accept-charset=\"UTF-8\" method=\"get\">"
 						},
 						{
 							"uri": "https://talents.ssi.gouv.fr/offresdemploi?page=2",
@@ -143,14 +143,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi/apprenti-ingenieur-devops-en-investigation-numerique-f-h",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi/charge-de-coordination-en-normalisation-et-standardisation-f-h",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi/alternant-ingenieur-devops-au-sein-du-bureau-analyse-de-la-menace-et-des-risques-f-h",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -171,7 +164,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi/ingenieur-devops-f-h",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi/chef-de-projet-communication-editoriale-f-h",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi/coordinateur-sectoriel-secteur-espace-f-h",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -245,7 +245,7 @@
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "478"
+					"sourceid": "572"
 				},
 				{
 					"pluginid": "10110",
@@ -278,7 +278,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "484"
+					"sourceid": "577"
 				},
 				{
 					"pluginid": "10063",
@@ -319,14 +319,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi/apprenti-ingenieur-devops-en-investigation-numerique-f-h",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi/charge-de-coordination-en-normalisation-et-standardisation-f-h",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi/alternant-ingenieur-devops-au-sein-du-bureau-analyse-de-la-menace-et-des-risques-f-h",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -347,7 +340,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi/ingenieur-devops-f-h",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi/chef-de-projet-communication-editoriale-f-h",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi/coordinateur-sectoriel-secteur-espace-f-h",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -511,21 +511,35 @@
 							"evidence": "98735417"
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi/apprenti-ingenieur-devops-en-investigation-numerique-f-h",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "55634296"
-						},
-						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi/chef-de-division-adjoint-coordination-territoriale-f-h",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "09863824"
-						},
-						{
 							"uri": "https://talents.ssi.gouv.fr/offresdemploi?page=2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "98735417"
+						},
+						{
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?page=3",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "98735417"
+						},
+						{
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?page=4",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "98735417"
+						},
+						{
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?page=5",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "98735417"
+						},
+						{
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?page=7",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -546,13 +560,13 @@
 							"evidence": "23000091"
 						}
 					],
-					"count": "9",
+					"count": "11",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>98735417, which evaluates to: 1973-02-16 18:30:17</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "127"
+					"sourceid": "131"
 				},
 				{
 					"pluginid": "10021",
@@ -620,7 +634,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "483"
+					"sourceid": "575"
 				},
 				{
 					"pluginid": "10094",
@@ -637,89 +651,89 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BrxJmxvcNS4nYwiCZHHEFsAekU5cHMpbzdTWkfMIYjo9ULQy1BEwIpMzuZpzfkN23xDnR2nGxghGjDBZ6YBdYK18fahA0o80pfCJyJmSQ1MvbNmTNJHeRpPcy5PiqRwQb1vvMnM4TObBkAOn6OkBxKEEzuzW97Qhe6EHDlQCCz6ZYOZX2WV3PeJdcoOqdMcQN4cyk2dLctQ7vPOeqpleixExNFdUlHTJsNmlX5LX9OP67DEio2w"
+							"evidence": "2BAEl3fOkOoocO3ZJNYwZaeHIqRKHKZE9mz21eml"
 						},
 						{
 							"uri": "https://talents.ssi.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "kuCnvbcQHzalMOIVKCJ75QlE96eAp3y5PTynGTeX32hESrelfPZup9A"
+							"evidence": "2B42hxdIoS3Fi5B5rPqaRXxhsCtOGgIzfBIYwmRzBP2hDZ9YEy8hTqI2"
 						},
 						{
 							"uri": "https://talents.ssi.gouv.fr/*/apply",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "CmM5aTe8oIdDurrk64FLSGl5eYL5ujwvxIJ05cNpZEFwGP60KcSroFYYAYzu6bMgVGQ6VlMS0ltvzBVw_5u90g"
+							"evidence": "gmxjgW8S64ctJx7Fg8fTyxKSjyToT8AInVQUE3KJNpvIKb_h33NwJJBbf0IVzX_XZkxpGabtgFxvZ8TLXc-NAA"
 						},
 						{
 							"uri": "https://talents.ssi.gouv.fr/admin",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FMZ2XXGu86QjkAzGOHb6k5AeWhWjIviDsgF5SqHmUCcfV5f7gL4A9w4fsQnrS4PCg2eTSklcC3BNY6ShgIDdLVFsvMjDNCLNSDZcvI6uV"
+							"evidence": "wbRT2bE6L8fyeFJ4823coSewU4V5aJjucfNMJxoIBLdmgz6E6ilXTqTXwFTTZQT1HQsu5t"
 						},
 						{
 							"uri": "https://talents.ssi.gouv.fr/mes-candidatures",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "DdJSAT1qYw0CgBsOcqIR5u9tWF-3B8dLlSZZeCz5ayd3qZXcIxJoKhcioGZ3yumO0nAbix2vKT8-aDjtEAuytA"
+							"evidence": "0KvC4gOWyVvjQO5NklS8WXuKXE8wnnkb2_htvDrVsUea7h6Cs_dS-F48j8oEXhBFD1S6cn48OU8py71kFZMK3A"
 						},
 						{
 							"uri": "https://talents.ssi.gouv.fr/offresdemploi",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BKrKfNg6bTMZoNSLITiimxuEoxcGeTAQlo2pn39UE2kCMlmUuZ6DwKCZB"
-						},
-						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi/charge-de-coordination-en-normalisation-et-standardisation-f-h",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "UGEdAlgLFwMDR9MLkTi15Q35okQ13qfEK7GQ3ej7Vg7vgodU0P7XEuP0FffYxI99BCsvCqMTJs"
+							"evidence": "2BbxfVBQoZkykdLAACz42Pk5gTInz2Pc"
 						},
 						{
 							"uri": "https://talents.ssi.gouv.fr/offresdemploi/charge-de-coordination-et-de-suivi-budgetaire-f-h",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BrHoUtUgFl8Y28YSWNQd8IEZSBnqyMrdBYLRh4FZISJHBVlWEyUM2CrIcFF9pwVy14Gp4z"
+							"evidence": "2B2MSONELQGgdwrFEvCUoTnEmd7uxsO1zonp22U5MVK2l32yEGXtS0w9wTi4udYvOnZJisN4dqm0y993nR5hrp"
 						},
 						{
 							"uri": "https://talents.ssi.gouv.fr/offresdemploi/chef-d-etat-major-sous-direction-expertise-f-h",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2Ffbb2szxHR4VgpQFRs1ZBNkD0SsJa720jXR7AutbFfifGgwSuj7W722inhwQVCpR3lTHVzs"
+							"evidence": "2B5Tx0ordJGVkcQHEnMyXLPnBfU0dzAceXazKq8mLv6GtlIQCrygSiQXovuiQNV9V9UodU32a2urMUK947KvAgkU2XiTUQKGDj8CiDvW"
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi/ingenieur-devops-f-h",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi/chef-de-projet-communication-editoriale-f-h",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FzHpBOoexcQRGoGZlhf17j4Yi3wv9M8bOgCf0J4iKjxFsr1ItMAdMmG"
+							"evidence": "N2dIgDeFgzlBUIkvZlS48AoJavWMc8DfPpE"
+						},
+						{
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi/coordinateur-sectoriel-secteur-espace-f-h",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2F242184kgcpkXIOZWoIdSGPyrKRM4O6"
 						},
 						{
 							"uri": "https://talents.ssi.gouv.fr/offresdemploi/veilleur-de-permanence-operationnelle",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2Fdtt7YfjugJMAUD9hil1GEtPJpgz9D5VluQ4SrHzS6BNqav0yEmNMEUiih3mbwL"
+							"evidence": "XvxWZbvByihpBouACoVfA5GflHxFP4RW3dQiqjYJOhUkSQ6X13Z2oLjn9DtpFrULV93WxyXW5V"
 						},
 						{
 							"uri": "https://talents.ssi.gouv.fr/users/sign_in",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "lmXLvrLO7BwlfXmmanfoW4yovIwWdjC4nO"
+							"evidence": "2BAn8UYHBViuh3xnNkUHB0aYw6I4f7RHQgtgHdANtbt69Us4OsSx0PEvucXt"
 						}
 					],
 					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x001a\uFFFD&lop\u0538\uFFFD\uFFFD\"\t\uFFFD\uFFFD\\x0010[\\x0000zE9ps)o7SZG\uFFFD!\uFFFD\uFFFD\uFFFDB\uFFFD\uFFFDPD\uFFFD\uFFFDL\uFFFD\uFFFDi\uFFFD\uFFFD\r\uFFFD|C\uFFFD\\x001d\uFFFD\\x001b\\x0018!\\x001a0\uFFFDg\uFFFD\\x0001u\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0003J<\u0497\uFFFD'\"fI\rL\uFFFD\uFFFDfL\uFFFDGy\\x001aOs.O\uFFFD\uFFFDpA\uFFFDo\uFFFD\uFFFD\uFFFD\uFFFD3\uFFFD\\x0006@\\x000e\uFFFD\uFFFD\uFFFD\\x0007\\x0012\uFFFD\\x0013;\uFFFD[\uFFFD\u0405\uFFFD\\x001c9P\\x0008,\uFFFDe\uFFFD\uFFFD_e\uFFFD\uFFFD\uFFFD\uFFFDu\uFFFD\\x000e\uFFFD\uFFFD\\x001c@\uFFFD\\x001c\uFFFDM\uFFFD-\uFFFDP\uFFFD\uFFFD\uFFFDz\uFFFDez,D\uFFFD\uFFFD]RQ\uFFFD&\uFFFDf\uFFFD~K_\u04CF\uFFFD\u010A\uFFFD\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD\\x0010\\x0004\uFFFDw\u0390\uFFFD(p\uFFFD\uFFFD$\uFFFD0e\uFFFD\uFFFD\"\uFFFDJ\\x001c\uFFFDD\uFFFDl\uFFFD\uFFFD\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -791,7 +805,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "478"
+					"sourceid": "572"
 				},
 				{
 					"pluginid": "10109",
@@ -832,14 +846,7 @@
 							"evidence": "<a class=\"rf-footer__brand-link\" href=\"\"><img alt=\"ANSSI - Agence nationale de la s\u00E9curit\u00E9 des syst\u00E8mes d&#39;information\" style=\"width:auto; height:5rem;\" src=\"https://oos.cloudgouv-eu-west-1.outscale.com/erecrutement-anssi-production/organizations/operator_logos/893/049/fa-/original/20180613_logo_anssi_m.png\" />\n</a>"
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi/apprenti-ingenieur-devops-en-investigation-numerique-f-h",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href='#' onclick='window.print(); return false'>\n<svg class=\"svg-inline--fa rf-icon fa-print-solid fa-w-16 rf-icon-xl\" aria-hidden=\"true\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 512 512\"><use xlink:href=\"#print-solid\"></use></svg>\n</a>"
-						},
-						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi/charge-de-coordination-en-normalisation-et-standardisation-f-h",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi/alternant-ingenieur-devops-au-sein-du-bureau-analyse-de-la-menace-et-des-risques-f-h",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -860,7 +867,14 @@
 							"evidence": "<a href='#' onclick='window.print(); return false'>\n<svg class=\"svg-inline--fa rf-icon fa-print-solid fa-w-16 rf-icon-xl\" aria-hidden=\"true\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 512 512\"><use xlink:href=\"#print-solid\"></use></svg>\n</a>"
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi/ingenieur-devops-f-h",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi/chef-de-projet-communication-editoriale-f-h",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a href='#' onclick='window.print(); return false'>\n<svg class=\"svg-inline--fa rf-icon fa-print-solid fa-w-16 rf-icon-xl\" aria-hidden=\"true\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 512 512\"><use xlink:href=\"#print-solid\"></use></svg>\n</a>"
+						},
+						{
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi/coordinateur-sectoriel-secteur-espace-f-h",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -996,14 +1010,7 @@
 							"evidence": "max-age=0, private, must-revalidate"
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi/apprenti-ingenieur-devops-en-investigation-numerique-f-h",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "max-age=0, private, must-revalidate"
-						},
-						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi/charge-de-coordination-en-normalisation-et-standardisation-f-h",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi/alternant-ingenieur-devops-au-sein-du-bureau-analyse-de-la-menace-et-des-risques-f-h",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1024,7 +1031,14 @@
 							"evidence": "max-age=0, private, must-revalidate"
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi/ingenieur-devops-f-h",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi/chef-de-projet-communication-editoriale-f-h",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "max-age=0, private, must-revalidate"
+						},
+						{
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi/coordinateur-sectoriel-secteur-espace-f-h",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1098,7 +1112,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "116"
+					"sourceid": "120"
 				},
 				{
 					"pluginid": "10031",
@@ -1111,119 +1125,119 @@
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q=ZAP",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q=ZAP",
 							"method": "GET",
 							"param": "commit",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q=ZAP",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q=ZAP",
 							"method": "GET",
 							"param": "commit",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q=ZAP",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q=ZAP",
 							"method": "GET",
 							"param": "contract_start_on",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q=ZAP",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q=ZAP",
 							"method": "GET",
 							"param": "job_offers[category_id][]",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q=ZAP",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q=ZAP",
 							"method": "GET",
 							"param": "job_offers[category_id][]",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q=ZAP",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q=ZAP",
 							"method": "GET",
 							"param": "job_offers[category_id][]",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q=ZAP",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q=ZAP",
 							"method": "GET",
 							"param": "job_offers[contract_type_id][]",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q=ZAP",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q=ZAP",
 							"method": "GET",
 							"param": "job_offers[county][]",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q=ZAP",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q=ZAP",
 							"method": "GET",
 							"param": "job_offers[county][]",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q=ZAP",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q=ZAP",
 							"method": "GET",
 							"param": "job_offers[county][]",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q=ZAP",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q=ZAP",
 							"method": "GET",
 							"param": "job_offers[experience_level_id][]",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q=ZAP",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q=ZAP",
 							"method": "GET",
 							"param": "job_offers[region][]",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q=ZAP",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q=ZAP",
 							"method": "GET",
 							"param": "job_offers[region][]",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q=ZAP",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q=ZAP",
 							"method": "GET",
 							"param": "job_offers[region][]",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q=ZAP",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q=ZAP",
 							"method": "GET",
 							"param": "job_offers[study_level_id][]",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q=ZAP",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q=ZAP",
 							"method": "GET",
 							"param": "published_at",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q=ZAP",
+							"uri": "https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q=ZAP",
 							"method": "GET",
 							"param": "q",
 							"attack": "",
@@ -1253,11 +1267,11 @@
 					],
 					"count": "20",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-08&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-08&q=ZAP</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [data-disable-with] attribute </p><p></p><p>The user input found was:</p><p>commit=Rechercher</p><p></p><p>The user-controlled value was:</p><p>rechercher</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://talents.ssi.gouv.fr/offresdemploi?commit=Rechercher&contract_start_on=2022-05-11&job_offers%5Bcategory_id%5D%5B%5D=f27f212e-6133-428b-b96a-040ed992552a&job_offers%5Bcontract_type_id%5D%5B%5D=20b56e96-b90d-4f4c-bb70-a2f3273eff62&job_offers%5Bcounty%5D%5B%5D=Hauts-de-Seine&job_offers%5Bexperience_level_id%5D%5B%5D=27f087cf-a563-457d-8c5b-ef8b21632e5d&job_offers%5Bregion%5D%5B%5D=%C3%8Ele-de-France&job_offers%5Bstudy_level_id%5D%5B%5D=b8238013-0215-480f-aa00-d8e11048265b&published_at=2022-05-11&q=ZAP</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [data-disable-with] attribute </p><p></p><p>The user input found was:</p><p>commit=Rechercher</p><p></p><p>The user-controlled value was:</p><p>rechercher</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "365"
+					"sourceid": "377"
 				}
 			]
 		}
