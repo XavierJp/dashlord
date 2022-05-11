@@ -7,28 +7,41 @@
     "last-modified": "Fri, 22 Apr 2022 08:18:15 GMT",
     "access-control-allow-origin": "*",
     "etag": "W/\"626264c7-1268a\"",
-    "expires": "Sun, 08 May 2022 07:31:04 GMT",
+    "expires": "Wed, 11 May 2022 01:59:39 GMT",
     "cache-control": "max-age=600",
     "content-encoding": "gzip",
     "x-proxy-cache": "MISS",
-    "x-github-request-id": "1E78:39C2:9965F5:EE155B:62776F60",
+    "x-github-request-id": "DB96:9586:81D0F:1334B4:627B1633",
     "accept-ranges": "bytes",
-    "date": "Sun, 08 May 2022 07:23:48 GMT",
+    "date": "Wed, 11 May 2022 18:19:37 GMT",
     "via": "1.1 varnish",
-    "age": "118",
-    "x-served-by": "cache-dfw18620-DFW",
+    "age": "209",
+    "x-served-by": "cache-iad-kiad7000140-IAD",
     "x-cache": "HIT",
-    "x-cache-hits": "2",
-    "x-timer": "S1651994629.678011,VS0,VE0",
+    "x-cache-hits": "3",
+    "x-timer": "S1652293178.684773,VS0,VE0",
     "vary": "Accept-Encoding",
-    "x-fastly-request-id": "23ee2bef60b355d97e0a7785f35365745800fd3c",
+    "x-fastly-request-id": "5a08f38e4b147d237c03e2e935cbcaa0cc6212d5",
     "content-length": "23008"
   },
   "endpoints": [
     {
       "hostname": "trackdechets.beta.gouv.fr",
-      "ip": "185.199.110.153",
+      "ip": "185.199.109.153",
       "geoip": {
+        "city": {
+          "geoname_id": 5391959,
+          "names": {
+            "de": "San Francisco",
+            "en": "San Francisco",
+            "es": "San Francisco",
+            "fr": "San Francisco",
+            "ja": "サンフランシスコ",
+            "pt-BR": "São Francisco",
+            "ru": "Сан-Франциско",
+            "zh-CN": "旧金山"
+          }
+        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -58,10 +71,14 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 34.0544,
-          "longitude": -118.244,
+          "accuracy_radius": 20,
+          "latitude": 37.7642,
+          "longitude": -122.3993,
+          "metro_code": 807,
           "time_zone": "America/Los_Angeles"
+        },
+        "postal": {
+          "code": "94107"
         },
         "registered_country": {
           "geoname_id": 6252001,
