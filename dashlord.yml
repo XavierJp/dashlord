@@ -25,14 +25,18 @@ tools:
   betagouv: true
 urls:
   - url: https://api.gouv.fr
-    category: api
+    category: startup
     betaId: api.gouv.fr
+    repositories:
+      - betagouv/api.gouv.fr
   - url: https://api.trackdechets.beta.gouv.fr
     category: api
     betaId: trackdechets
   - url: https://annuaire-entreprises.data.gouv.fr
-    category: binum
+    category: startup
     betaId: annuaire-entreprises
+    repositories:
+      - etalab/annuaire-entreprises-site
   - url: https://acceslibre.beta.gouv.fr
     category: startup
     betaId: acceslibre
@@ -102,6 +106,8 @@ urls:
   - url: https://datapass.api.gouv.fr
     category: startup
     betaId: datapass
+    repositories:
+      - betagouv/datapass
   - url: https://diagoriente.beta.gouv.fr
     category: startup
     betaId: diagoriente
